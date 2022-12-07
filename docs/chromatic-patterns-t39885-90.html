@@ -1,0 +1,993 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-gb" xml:lang="en-gb">
+<head>
+<base href="./"/>
+<link rel="canonical" href="./chromatic-patterns-t39885-90.html" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>Chromatic Patterns : Advanced solving techniques - Page 7</title>
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="content-language" content="en-gb" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="content-language" content="en" />
+<meta name="title" content="Chromatic Patterns : Advanced solving techniques - Page 7" />
+<meta name="description" content="Thank you Denis. These patterns are not 4-colorable. You proved that they are not 3-colorable (which should not be in T E(2), given there are ..." />
+<meta name="keywords" content="singles, patterns, chromatic, grids, long, didn, site, check, interesting, code, following, such, seems, list, made" />
+<meta name="category" content="general" />
+<meta name="robots" content="index,follow" />
+<meta name="distribution" content="global" />
+<meta name="resource-type" content="document" />
+<meta name="copyright" content="The New Sudoku Players Forum" />
+
+
+
+
+<!--
+	phpBB style name: prosilver
+	Based on style:   prosilver (this is the default phpBB3 style)
+	Original author:  Tom Beddard ( http://www.subBlue.com/ )
+	Modified by:
+-->
+
+<script type="text/javascript">
+// <![CDATA[
+	var jump_page = 'Enter the page number you wish to go to:';
+	var on_page = '7';
+	var per_page = '15';
+	var base_url = './chromatic-patterns-t39885.html';
+	var style_cookie = 'phpBBstyle';
+	var style_cookie_settings = '; path=/; domain=forum.enjoysudoku.com';
+	var onload_functions = new Array();
+	var onunload_functions = new Array();
+	// www.phpBB-SEO.com SEO TOOLKIT BEGIN
+	var seo_delim_start = '-';
+	var seo_static_pagination = 'page';
+	var seo_ext_pagination = '.html';
+	var seo_external = true;
+	var seo_external_sub = false;
+	var seo_ext_classes = false;
+	var seo_hashfix = false;
+	// www.phpBB-SEO.com SEO TOOLKIT END
+
+	
+
+	/**
+	* Find a member
+	*/
+	function find_username(url)
+	{
+		popup(url, 760, 570, '_usersearch');
+		return false;
+	}
+
+	/**
+	* New function for handling multiple calls to window.onload and window.unload by pentapenguin
+	*/
+	window.onload = function()
+	{
+		for (var i = 0; i < onload_functions.length; i++)
+		{
+			eval(onload_functions[i]);
+		}
+	};
+
+	window.onunload = function()
+	{
+		for (var i = 0; i < onunload_functions.length; i++)
+		{
+			eval(onunload_functions[i]);
+		}
+	};
+
+// ]]>
+</script>
+<script type="text/javascript" src="./styles/prosilver/template/styleswitcher.js"></script>
+<script type="text/javascript" src="./styles/prosilver/template/forum_fn.js"></script>
+
+<link href="./styles/prosilver/theme/print.css" rel="stylesheet" type="text/css" media="print" title="printonly" />
+<link href="style.css" rel="stylesheet" type="text/css" media="screen, projection" />
+
+<link href="./styles/prosilver/theme/normal.css" rel="stylesheet" type="text/css" title="A" />
+<link href="./styles/prosilver/theme/medium.css" rel="alternate stylesheet" type="text/css" title="A+" />
+<link href="./styles/prosilver/theme/large.css" rel="alternate stylesheet" type="text/css" title="A++" />
+
+
+
+</head>
+
+<body id="phpbb" class="section-viewtopic ltr">
+
+<div id="wrap">
+	<a id="top" name="top" accesskey="t"></a>
+	<div id="page-header">
+		<div class="headerbar">
+			<div class="inner"><span class="corners-top"><span></span></span>
+
+			<div id="site-description">
+				<a href="./" title="Board index" id="logo"><img src="./styles/prosilver/imageset/site_logo.gif" width="52" height="52" alt="" title="" /></a>
+				<h1>The New Sudoku Players' Forum</h1>
+				<p>ARCHIVED by 1to9only</p>
+				<p class="skiplink"><a href="#start_here">Skip to content</a></p>
+			</div>
+
+		
+			<div id="search-box">
+				<form action="./search.php" method="get" id="search">
+				<fieldset>
+					<input name="keywords" id="keywords" type="text" maxlength="128" title="Search for keywords" class="inputbox search" value="Search…" onclick="if(this.value=='Search…')this.value='';" onblur="if(this.value=='')this.value='Search…';" />
+					<input class="button2" value="Search" type="submit" /><br />
+					<a href="./search.php" title="View the advanced search options">Advanced search</a> <input type="hidden" name="sid" value="00000000000000000000000000000000" />
+
+				</fieldset>
+				</form>
+			</div>
+		
+
+			<span class="corners-bottom"><span></span></span></div>
+		</div>
+
+		<div class="navbar">
+			<div class="inner"><span class="corners-top"><span></span></span>
+
+			<ul class="linklist navlinks">
+				<li class="icon-home"><a href="./" accesskey="h">Board index</a>  <strong>&#8249;</strong> <a href="./sudoku-the-puzzle-f5.html">Sudoku: the puzzle</a> <strong>&#8249;</strong> <a href="./advanced-solving-techniques-f6.html">Advanced solving techniques</a></li>
+
+				<li class="rightside"><a href="#" onclick="fontsizeup(); return false;" onkeypress="return fontsizeup(event);" class="fontsize" title="Change font size">Change font size</a></li>
+
+				<li class="rightside"><a href="./viewtopic.php?f=6&amp;t=39885&amp;start=90&amp;view=print" title="Print view" accesskey="p" class="print">Print view</a></li>
+			</ul>
+
+			
+
+			<ul class="linklist rightside">
+				<li class="icon-faq"><a href="./faq.php" title="Frequently Asked Questions">FAQ</a></li>
+				<li class="icon-register"><a href="./ucp.php?mode=register">Register</a></li>
+					<li class="icon-logout"><a href="./ucp.php?mode=login" title="Login" accesskey="x">Login</a></li>
+				
+			</ul>
+
+			<span class="corners-bottom"><span></span></span></div>
+		</div>
+
+	</div>
+
+	<a name="start_here"></a>
+	<div id="page-body">
+		
+<h2><a href="./chromatic-patterns-t39885-90.html">Chromatic Patterns</a></h2>
+<!-- NOTE: remove the style="display: none" when you want to have the forum description on the topic body --><div style="display: none !important;">Advanced methods and approaches for solving Sudoku puzzles<br /></div>
+
+<div class="topic-actions">
+
+	<div class="buttons">
+	
+		<div class="reply-icon"><a href="./posting.php?mode=reply&amp;f=6&amp;t=39885" title="Post a reply"><span></span>Post a reply</a></div>
+	
+	</div>
+
+	
+		<div class="search-box">
+			<form method="get" id="topic-search" action="./search.php">
+			<fieldset>
+				<input class="inputbox search tiny"  type="text" name="keywords" id="search_keywords" size="20" value="Search this topic…" onclick="if(this.value=='Search this topic…')this.value='';" onblur="if(this.value=='')this.value='Search this topic…';" />
+				<input class="button2" type="submit" value="Search" />
+				<input type="hidden" name="t" value="39885" />
+<input type="hidden" name="sf" value="msgonly" />
+<input type="hidden" name="sid" value="00000000000000000000000000000000" />
+
+			</fieldset>
+			</form>
+		</div>
+	
+		<div class="pagination">
+112 posts
+&bull; Page <strong>7</strong> of <strong>8</strong> &bull; <span><a href="chromatic-patterns-t39885.html">1</a><span class="page-sep">, </span><a href="chromatic-patterns-t39885-15.html">2</a><span class="page-sep">, </span><a href="chromatic-patterns-t39885-30.html">3</a><span class="page-sep">, </span><a href="chromatic-patterns-t39885-45.html">4</a><span class="page-sep">, </span><a href="chromatic-patterns-t39885-60.html">5</a><span class="page-sep">, </span><a href="chromatic-patterns-t39885-75.html">6</a><span class="page-sep">, </span><strong>7</strong><span class="page-sep">, </span><a href="chromatic-patterns-t39885-105.html">8</a></span>
+		</div>
+	
+
+</div>
+<div class="clear"></div>
+
+
+	<div id="p324228" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=324228" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 class="first"><a href="./chromatic-patterns-t39885-90.html#p324228">Re: Chromatic Patterns</a></h3>
+			<p class="author"><a href="./post324228.html#p324228"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member85484.html">ryokousha</a></strong> &raquo; Sat Aug 27, 2022 6:59 am </p>
+
+			
+
+			<div class="content">Thank you Denis.<br />These patterns are not 4-colorable. You proved that they are not 3-colorable (which should not be in T&amp;E(2), given there are multiple instances of four restricted cells in the same house?). I should have been more explicit.<br /><br />I would run them through CSP-Rules myself (and have done so for simpler things), but it turns out my resources are insufficient for these kinds of proof (I'm only on a Macbook Air with 8GB RAM).</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile324228">
+			<dt>
+				<a href="./member85484.html">ryokousha</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 17</dd><dd><strong>Joined:</strong> 30 April 2022</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./chromatic-patterns-t39885-90.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p324230" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=324230" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./chromatic-patterns-t39885-90.html#p324230">Re: Chromatic Patterns</a></h3>
+			<p class="author"><a href="./post324230.html#p324230"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member2659.html">denis_berthier</a></strong> &raquo; Sat Aug 27, 2022 7:40 am </p>
+
+			
+
+			<div class="content"><blockquote><div><cite>ryokousha wrote:</cite>These patterns are not 4-colorable. You proved that they are not 3-colorable. I should have been more explicit.</div></blockquote><br />What I proved is a positive result: as 3-digit patterns, all these patterns can be proven contradictory in T&amp;E(2); they don't require T&amp;E(3) for this. <br />I don't know your definition of 4-colourable in Sudoku. I know the definition  in graph theory, but it doesn't seem to apply in any useful straightforward way to Sudoku.<br />Or are you talking of 4-digit patterns ?<br /><br /><blockquote><div><cite>ryokousha wrote:</cite>I would run them through CSP-Rules myself (and have done so for simpler things), but it turns out my resources are insufficient for these kinds of proof (I'm only on a Macbook Air with 8GB RAM).</div></blockquote><br />I hadn't noted how much memory was required, so I re-launched all (i.e. the 30 patterns), with function  call:<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>(solve-n-grids-after-first-p-from-k-digit-pattern-string-file 3 &quot;ryokousha-5chr.txt&quot; 0 30)</code></dd></dl><br /><br />1) in T&amp;E(2), i.e. with settings:<br /> (bind ?*TE2* TRUE) <br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>- 20.5 MB (sic: MB not GB)<br />- total time: 4.19 s</code></dd></dl><br /><br />2) for the more precise result,  i.e. with settings:<br /> (bind ?*Bivalue-Chains* TRUE)<br /> (bind ?*Whips* TRUE)<br /> (bind ?*z-Chains* TRUE)<br /> (bind ?*all-chains-max-length* 3)<br /> (bind ?*TE1* TRUE) <br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>- 1.53 GB <br />- total time: 2 mn 5 s</code></dd></dl></div>
+
+			
+				<div class="notice">Last edited by <a href="./member2659.html">denis_berthier</a> on Sat Aug 27, 2022 8:24 am, edited 2 times in total.
+					
+				</div>
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile324230">
+			<dt>
+				<a href="./member2659.html">denis_berthier</a>
+			</dt>
+
+			<dd>2010 Supporter</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 3317</dd><dd><strong>Joined:</strong> 19 June 2007</dd><dd><strong>Location:</strong> Paris</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="web-icon"><a href="http://denis-berthier.pagesperso-orange.fr" title="WWW: http://denis-berthier.pagesperso-orange.fr"><span>Website</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./chromatic-patterns-t39885-90.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p324231" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=324231" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./chromatic-patterns-t39885-90.html#p324231">Re: Chromatic Patterns</a></h3>
+			<p class="author"><a href="./post324231.html#p324231"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member85484.html">ryokousha</a></strong> &raquo; Sat Aug 27, 2022 8:06 am </p>
+
+			
+
+			<div class="content">The point of these patterns is: they don't work if the marked cells are restricted to <span style="font-weight: bold">four</span> values, i.e. you should run<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>(solve-k-digit-pattern-string 4 &quot;..................11.1..1........1...1.1..1..11..1...1.1..111..1..1.....1..1.....&quot;)</code></dd></dl> etc. - which then does take significantly more resources.<br /><br />It should be obvious they do not work for 3.<br /><br />I do agree with you that the terms &quot;colorable&quot; and &quot;chromatic&quot; are problematic in a sudoku context. Currently I try to use &quot;n-chromatic&quot; only for patterns for which the graph induced by the marked cells (i.e. the connection graph between these cells) is n-chromatic in the graph-theoretical sense.<br />This does not necessarily imply that the pattern is n-colorable in sudoku (so the cells in question may or may not be restricted to n values).<br />The &quot;sausage roll&quot; pattern is a good example for this: in my terminology it would be 3-chromatic, but not 3-colorable.<br /><br />Anyway this is only my private usage of the terms, but it is clear we have to be a bit careful.</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile324231">
+			<dt>
+				<a href="./member85484.html">ryokousha</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 17</dd><dd><strong>Joined:</strong> 30 April 2022</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./chromatic-patterns-t39885-90.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p324232" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=324232" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./chromatic-patterns-t39885-90.html#p324232">Re: Chromatic Patterns</a></h3>
+			<p class="author"><a href="./post324232.html#p324232"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member2659.html">denis_berthier</a></strong> &raquo; Sat Aug 27, 2022 8:50 am </p>
+
+			
+
+			<div class="content">After the surge of T&amp;E(3) puzzles, I thought we were still talking of 3-digit patterns.<br /><blockquote><div><cite>ryokousha wrote:</cite>The point of these patterns is: they don't work if the marked cells are restricted to <span style="font-weight: bold">four</span> values, i.e. you should run<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>(solve-k-digit-pattern-string 4 &quot;..................11.1..1........1...1.1..1..11..1...1.1..111..1..1.....1..1.....&quot;)</code></dd></dl> etc. - which then does take significantly more resources.<br />It should be obvious they do not work for 3.</div></blockquote><br />Not so obvious, as it requires T&amp;E(S2, 1) + W3<br /><br />As for 4, you can run the above command in T&amp;E(3). Of course, it will take more time and memory than running it in T&amp;E(2), especially as I've never tried to optimise my T&amp;E procedures.<br /><br />As a result of doing this, the following is no longer true (the proof required only 1 mn 17 s and 33.7 MB):<br /><blockquote><div><cite>ryokousha wrote:</cite>This is a 20 cell minimal arising from those. We have not yet found any proof that this can't be 4-colored.<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>------------------------------<br />&nbsp; .&nbsp; .&nbsp; . | .&nbsp; .&nbsp; . | .&nbsp; .&nbsp; .<br />&nbsp; .&nbsp; .&nbsp; . | .&nbsp; .&nbsp; . | .&nbsp; .&nbsp; .<br />&nbsp; X&nbsp; X&nbsp; . | X&nbsp; .&nbsp; . | X&nbsp; .&nbsp; .<br />------------------------------<br />&nbsp; .&nbsp; .&nbsp; . | .&nbsp; .&nbsp; . | X&nbsp; .&nbsp; .<br />&nbsp; .&nbsp; X&nbsp; . | X&nbsp; .&nbsp; . | X&nbsp; .&nbsp; .<br />&nbsp; X&nbsp; X&nbsp; . | .&nbsp; X&nbsp; . | .&nbsp; .&nbsp; X<br />------------------------------<br />&nbsp; .&nbsp; X&nbsp; . | .&nbsp; X&nbsp; X | X&nbsp; .&nbsp; .<br />&nbsp; X&nbsp; .&nbsp; . | X&nbsp; .&nbsp; . | .&nbsp; .&nbsp; .<br />&nbsp; X&nbsp; .&nbsp; . | X&nbsp; .&nbsp; . | .&nbsp; .&nbsp; .<br />------------------------------<br />..................11.1..1........1...1.1..1..11..1...1.1..111..1..1.....1..1.....<br /></code></dd></dl></div></blockquote>[/quote]</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile324232">
+			<dt>
+				<a href="./member2659.html">denis_berthier</a>
+			</dt>
+
+			<dd>2010 Supporter</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 3317</dd><dd><strong>Joined:</strong> 19 June 2007</dd><dd><strong>Location:</strong> Paris</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="web-icon"><a href="http://denis-berthier.pagesperso-orange.fr" title="WWW: http://denis-berthier.pagesperso-orange.fr"><span>Website</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./chromatic-patterns-t39885-90.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p324233" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=324233" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./chromatic-patterns-t39885-90.html#p324233">Re: Chromatic Patterns</a></h3>
+			<p class="author"><a href="./post324233.html#p324233"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member85484.html">ryokousha</a></strong> &raquo; Sat Aug 27, 2022 9:06 am </p>
+
+			
+
+			<div class="content"><blockquote><div><cite>denis_berthier wrote:</cite>Not so obvious, as it requires T&amp;E(S2, 1) + W3<br /></div></blockquote><br />It is obvious since there are more than 3 restricted cells within several houses, so the pattern cannot possibly be 3-colorable.<br />Also this deduction can't require T&amp;E(S2, 1) + W3. Could it be the code assuming the pattern is (n+1)-colorable if you check for n-colorability?</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile324233">
+			<dt>
+				<a href="./member85484.html">ryokousha</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 17</dd><dd><strong>Joined:</strong> 30 April 2022</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./chromatic-patterns-t39885-90.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p324234" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=324234" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./chromatic-patterns-t39885-90.html#p324234">Re: Chromatic Patterns</a></h3>
+			<p class="author"><a href="./post324234.html#p324234"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member85484.html">ryokousha</a></strong> &raquo; Sat Aug 27, 2022 9:10 am </p>
+
+			
+
+			<div class="content">I was (just barely) able to run CSP-Rules with T&amp;E(3) enabled:<br /><br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>GRID 0 HAS NO SOLUTION : NO CANDIDATE FOR FOR CN-CELL c7n2<br />MOST COMPLEX RULE TRIED = Z&#91;4&#93;<br />Puzzle ..................11.1..1........1...1.1..1..11..1...1.1..111..1..1.....1..1..... :<br />init-time = 0.05s, solve-time = 54m 3.85s, total-time = 54m 3.9s<br />***********************************************************************************************<br />***&nbsp; SudoRules 20.1.s based on CSP-Rules 2.1.s, config = T&amp;E(W+SFin+TridFW, 3)<br />***&nbsp; Using CLIPS 6.32-r819<br />***&nbsp; Running on MacBook Air Intel Core i5 1,6 GHz, 8 GB RAM, MacOS HighSierra 10.13.6<br />***&nbsp; Download from: https://github.com/denis-berthier/CSP-Rules-V2.1<br />***********************************************************************************************<br /></code></dd></dl><br /><br />btw. Marek told on discord he has a proof it is in T&amp;E(3), so I was expecting that. He also gave an elegant proof of impossibility based on a senior exocet and two possible resulting bivalue odddagons.</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile324234">
+			<dt>
+				<a href="./member85484.html">ryokousha</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 17</dd><dd><strong>Joined:</strong> 30 April 2022</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./chromatic-patterns-t39885-90.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p324238" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=324238" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./chromatic-patterns-t39885-90.html#p324238">Re: Chromatic Patterns</a></h3>
+			<p class="author"><a href="./post324238.html#p324238"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member2659.html">denis_berthier</a></strong> &raquo; Sat Aug 27, 2022 9:40 am </p>
+
+			
+
+			<div class="content"><blockquote><div><cite>ryokousha wrote:</cite><blockquote><div><cite>denis_berthier wrote:</cite>Not so obvious, as it requires T&amp;E(S2, 1) + W3<br /></div></blockquote><br />It is obvious since there are more than 3 restricted cells within several houses, so the pattern cannot possibly be 3-colorable.</div></blockquote><br />This supposes you don't care about the T&amp;E complexity of the proof.</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile324238">
+			<dt>
+				<a href="./member2659.html">denis_berthier</a>
+			</dt>
+
+			<dd>2010 Supporter</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 3317</dd><dd><strong>Joined:</strong> 19 June 2007</dd><dd><strong>Location:</strong> Paris</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="web-icon"><a href="http://denis-berthier.pagesperso-orange.fr" title="WWW: http://denis-berthier.pagesperso-orange.fr"><span>Website</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./chromatic-patterns-t39885-90.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p324239" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=324239" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./chromatic-patterns-t39885-90.html#p324239">Re: Chromatic Patterns</a></h3>
+			<p class="author"><a href="./post324239.html#p324239"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member85484.html">ryokousha</a></strong> &raquo; Sat Aug 27, 2022 9:41 am </p>
+
+			
+
+			<div class="content">Optimizing for MEMORY instead of SPEED seems to help:<br /><br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>GRID 0 HAS NO SOLUTION : NO CANDIDATE FOR FOR CN-CELL c7n2<br />MOST COMPLEX RULE TRIED = Z&#91;4&#93;<br />Puzzle ..................11.1..1........1...1.1..1..11..1...1.1..111..1..1.....1..1..... :<br />init-time = 0.05s, solve-time = 6m 0.85s, total-time = 6m 0.9s<br />***********************************************************************************************<br />***&nbsp; SudoRules 20.1.m based on CSP-Rules 2.1.m, config = T&amp;E(W+SFin, 2)<br />***&nbsp; Using CLIPS 6.32-r819<br />***&nbsp; Running on MacBook Air Intel Core i5 1,6 GHz, 8 GB RAM, MacOS HighSierra 10.13.6<br />***&nbsp; Download from: https://github.com/denis-berthier/CSP-Rules-V2.1<br />***********************************************************************************************<br /></code></dd></dl><br />So it is in T&amp;E(W+SFin, 2).</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile324239">
+			<dt>
+				<a href="./member85484.html">ryokousha</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 17</dd><dd><strong>Joined:</strong> 30 April 2022</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./chromatic-patterns-t39885-90.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p324240" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=324240" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./chromatic-patterns-t39885-90.html#p324240">Re: Chromatic Patterns</a></h3>
+			<p class="author"><a href="./post324240.html#p324240"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member2659.html">denis_berthier</a></strong> &raquo; Sat Aug 27, 2022 9:48 am </p>
+
+			
+
+			<div class="content"><blockquote><div><cite>ryokousha wrote:</cite>I was (just barely) able to run CSP-Rules with T&amp;E(3) enabled:<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>GRID 0 HAS NO SOLUTION : NO CANDIDATE FOR FOR CN-CELL c7n2<br />MOST COMPLEX RULE TRIED = Z&#91;4&#93;<br />Puzzle ..................11.1..1........1...1.1..1..11..1...1.1..111..1..1.....1..1..... :<br />init-time = 0.05s, solve-time = 54m 3.85s, total-time = 54m 3.9s<br />***********************************************************************************************<br />***&nbsp; SudoRules 20.1.s based on CSP-Rules 2.1.s, config = T&amp;E(W+SFin+TridFW, 3)<br />***&nbsp; Using CLIPS 6.32-r819<br />***&nbsp; Running on MacBook Air Intel Core i5 1,6 GHz, 8 GB RAM, MacOS HighSierra 10.13.6<br />***&nbsp; Download from: https://github.com/denis-berthier/CSP-Rules-V2.1<br />***********************************************************************************************<br /></code></dd></dl></div></blockquote><br />Obviously, you are not running the proof in T&amp;E(3) but in  T&amp;E(W+SFin+TridFW, 3).<br />That's why your computation time is so long.<br />You forgot to disable the rules activated by default in the config file.<br /><br /><blockquote><div><cite>ryokousha wrote:</cite>btw. Marek told on discord he has a proof it is in T&amp;E(3), so I was expecting that. </div></blockquote><br />As he doesn't have a solver, I guess he used SudoRules. There's no way one could find manually a proof in T&amp;E(3).<br /><br /><blockquote><div><cite>ryokousha wrote:</cite>He also gave an elegant proof of impossibility based on a senior exocet and two possible resulting bivalue odddagons.</div></blockquote><br />In terms of complexity, I don't think this is better than T&amp;E(3). I'm waiting to see it published on a public site.</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile324240">
+			<dt>
+				<a href="./member2659.html">denis_berthier</a>
+			</dt>
+
+			<dd>2010 Supporter</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 3317</dd><dd><strong>Joined:</strong> 19 June 2007</dd><dd><strong>Location:</strong> Paris</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="web-icon"><a href="http://denis-berthier.pagesperso-orange.fr" title="WWW: http://denis-berthier.pagesperso-orange.fr"><span>Website</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./chromatic-patterns-t39885-90.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p324241" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=324241" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./chromatic-patterns-t39885-90.html#p324241">Re: Chromatic Patterns</a></h3>
+			<p class="author"><a href="./post324241.html#p324241"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member85484.html">ryokousha</a></strong> &raquo; Sat Aug 27, 2022 9:56 am </p>
+
+			
+
+			<div class="content">Thank you. Marek just educated me on the same thing.<br />I'll run it again with all the stuff deactivated. Sorry I'm new to CSP-Rules and frankly don't understand much of the terminology yet.<br /><br />For Marek's proof, he did not claim anything for the T&amp;E depth of the senior exocet proof. He might speak for himself on the proof that the pattern is in T&amp;E(3).<br /><br />Edit: It is indeed in T&amp;E(BRT, 3), but not in T&amp;E(BRT, 2).</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile324241">
+			<dt>
+				<a href="./member85484.html">ryokousha</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 17</dd><dd><strong>Joined:</strong> 30 April 2022</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./chromatic-patterns-t39885-90.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p324243" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=324243" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./chromatic-patterns-t39885-90.html#p324243">Re: Chromatic Patterns</a></h3>
+			<p class="author"><a href="./post324243.html#p324243"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member72132.html">marek stefanik</a></strong> &raquo; Sat Aug 27, 2022 10:16 am </p>
+
+			
+
+			<div class="content"><blockquote><div><cite>denis_berthier wrote:</cite><blockquote><div><cite>ryokousha wrote:</cite>btw. Marek told on discord he has a proof it is in T&amp;E(3), so I was expecting that. </div></blockquote><br />As he doesn't have a solver, I guess he used SudoRules. There's no way one could find manually a proof in T&amp;E(3).</div></blockquote>I'll take it as a compliment.<br />Knowing about the exocet made it quite easy, actually.<br /><br />(After the quads (which are themselves in T&amp;E(3)):)<br />Depth 1 and 2: 1r7c5 2r7c6 (no loss of generality here).<br />The finish on depth 3 was quite lengthy, I'll only write the sequence of candidates which (if I didn't make a mistake) break with singles:<br />3r3c4, 4r3c4, 3r5c4, 4r5c4, 1r6c9, 2r6c9, 1r3c1, 2r3c1, 3r6c1, 4r6c1, 3r3c7, 4r3c7, 1r3c2, 2r3c2, 3r5c2, 4r5c2, 1r6c2, 2r6c2, 3r6c2, 4r6c2<br />no digit left in r6c2<br /><br />As there was no loss of generality at depth 1 and 2, analogous proofs exist for other options at these depths.<br /><br />What isn't feasible manually is to proof whether the pattern was also in T&amp;E(2), all I could say was that it seemed unlikely.<br />(Had I actually used a solver, this wouldn't have been an issue.)<br /><br />Marek</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile324243">
+			<dt>
+				<a href="./member72132.html">marek stefanik</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 268</dd><dd><strong>Joined:</strong> 05 May 2021</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./chromatic-patterns-t39885-90.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p324244" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=324244" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./chromatic-patterns-t39885-90.html#p324244">Re: Chromatic Patterns</a></h3>
+			<p class="author"><a href="./post324244.html#p324244"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member2659.html">denis_berthier</a></strong> &raquo; Sat Aug 27, 2022 10:28 am </p>
+
+			
+
+			<div class="content"><blockquote><div><cite>marek stefanik wrote:</cite><blockquote><div><cite>denis_berthier wrote:</cite><blockquote><div><cite>ryokousha wrote:</cite>btw. Marek told on discord he has a proof it is in T&amp;E(3), so I was expecting that. </div></blockquote><br />As he doesn't have a solver, I guess he used SudoRules. There's no way one could find manually a proof in T&amp;E(3).</div></blockquote>I'll take it as a compliment.</div></blockquote><br />I was talking of a direct proof in T&amp;E(3). But anyway, your proof is smart.<br />I can't see any exocet in it.</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile324244">
+			<dt>
+				<a href="./member2659.html">denis_berthier</a>
+			</dt>
+
+			<dd>2010 Supporter</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 3317</dd><dd><strong>Joined:</strong> 19 June 2007</dd><dd><strong>Location:</strong> Paris</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="web-icon"><a href="http://denis-berthier.pagesperso-orange.fr" title="WWW: http://denis-berthier.pagesperso-orange.fr"><span>Website</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./chromatic-patterns-t39885-90.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p324245" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=324245" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./chromatic-patterns-t39885-90.html#p324245">Re: Chromatic Patterns</a></h3>
+			<p class="author"><a href="./post324245.html#p324245"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member72132.html">marek stefanik</a></strong> &raquo; Sat Aug 27, 2022 11:30 am </p>
+
+			
+
+			<div class="content">Here is the exocet proof:<br /><br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1234&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1234&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1234<br />.------------------.------------------.------------------.<br />| .&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; | .&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; | .&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; |<br />| .&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; | .&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; | .&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; |<br />| 1234&nbsp; 1234&nbsp; .&nbsp; &nbsp; | 1234&nbsp; .&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; | 1234&nbsp; .&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; |&nbsp; \1234<br />:------------------+------------------+------------------:<br />| .&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; | .&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; |T1234&nbsp; .&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; |<br />| .&nbsp; &nbsp; &nbsp;1234&nbsp; .&nbsp; &nbsp; | 1234&nbsp; .&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; | 1234&nbsp; .&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; |&nbsp; \1234<br />| 1234 T1234&nbsp; .&nbsp; &nbsp; | .&nbsp; &nbsp; &nbsp;1234&nbsp; .&nbsp; &nbsp; | .&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; &nbsp;1234 |<br />:------------------+------------------+------------------:<br />| .&nbsp; &nbsp; &nbsp;1234&nbsp; .&nbsp; &nbsp; | .&nbsp; &nbsp; B1234 B1234 | 1234&nbsp; .&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; |<br />| 1234&nbsp; .&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; | 1234&nbsp; .&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; | .&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; |<br />| 1234&nbsp; .&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; | 1234&nbsp; .&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; | .&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; |<br />'------------------'------------------'------------------'</code></dd></dl>senior exocet base (1234)r7c56, targets r4c7 r6c2, cross-lines c247, cover houses r35<br />(Note that the cross-lines contain 1234 quadruples, therefore each of them must appear in the marked cells)<br /><br />WLOG, let the digit in r4c7 be 1 and the digit in r6c2 2.<br />Base cells are restricted to 12, cover-house elims 12r3c1, pairs in b8.<br /><br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>.------------------.------------------.------------------.<br />| .&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; | .&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; | .&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; |<br />| .&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; | .&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; | .&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; |<br />| 34&nbsp; &nbsp; 134&nbsp; &nbsp;.&nbsp; &nbsp; | 12&nbsp; &nbsp; .&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; | 234&nbsp; &nbsp;.&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; |<br />:------------------+------------------+------------------:<br />| .&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; | .&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; | 1&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; |<br />| .&nbsp; &nbsp; &nbsp;134&nbsp; &nbsp;.&nbsp; &nbsp; | 12&nbsp; &nbsp; .&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; | 234&nbsp; &nbsp;.&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; |<br />| 134&nbsp; &nbsp;2&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; | .&nbsp; &nbsp; &nbsp;134&nbsp; &nbsp;.&nbsp; &nbsp; | .&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; &nbsp;34&nbsp; &nbsp;|<br />:------------------+------------------+------------------:<br />| .&nbsp; &nbsp; &nbsp;34&nbsp; &nbsp; .&nbsp; &nbsp; | .&nbsp; &nbsp; &nbsp;12&nbsp; &nbsp; 12&nbsp; &nbsp;| 34&nbsp; &nbsp; .&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; |<br />| 1234&nbsp; .&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; | 34&nbsp; &nbsp; .&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; | .&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; |<br />| 1234&nbsp; .&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; | 34&nbsp; &nbsp; .&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; | .&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; |<br />'------------------'------------------'------------------'</code></dd></dl><br />Suppose r3c4=1:<br />singles: 1c2, 2c4 (in full quads)<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>.------------------.------------------.------------------.<br />| .&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; | .&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; | .&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; |<br />| .&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; | .&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; | .&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; |<br />|#34&nbsp; &nbsp;#34&nbsp; &nbsp; .&nbsp; &nbsp; | 1&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; | 234&nbsp; &nbsp;.&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; |<br />:------------------+------------------+------------------:<br />| .&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; | .&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; | 1&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; |<br />| .&nbsp; &nbsp; &nbsp;1&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; | 2&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; |#34&nbsp; &nbsp; .&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; |<br />|#34&nbsp; &nbsp; 2&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; | .&nbsp; &nbsp; &nbsp;134&nbsp; &nbsp;.&nbsp; &nbsp; | .&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; #34&nbsp; &nbsp;|<br />:------------------+------------------+------------------:<br />| .&nbsp; &nbsp; #34&nbsp; &nbsp; .&nbsp; &nbsp; | .&nbsp; &nbsp; &nbsp;12&nbsp; &nbsp; 12&nbsp; &nbsp;|#34&nbsp; &nbsp; .&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; |<br />| 1234&nbsp; .&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; | 34&nbsp; &nbsp; .&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; | .&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; |<br />| 1234&nbsp; .&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; | 34&nbsp; &nbsp; .&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; | .&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; |<br />'------------------'------------------'------------------'</code></dd></dl>#-marked cells are a bivalue oddagon, ie. contra.<br /><br />Therefore r3c4=2:<br />singles: 1c4, 1r6 (in full quads)<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>.------------------.------------------.------------------.<br />| .&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; | .&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; | .&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; |<br />| .&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; | .&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; | .&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; |<br />|#34&nbsp; &nbsp; 134&nbsp; &nbsp;.&nbsp; &nbsp; | 2&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; |#34&nbsp; &nbsp; .&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; |<br />:------------------+------------------+------------------:<br />| .&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; | .&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; | 1&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; |<br />| .&nbsp; &nbsp; &nbsp;34&nbsp; &nbsp; .&nbsp; &nbsp; | 1&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; | 234&nbsp; &nbsp;.&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; |<br />| 1&nbsp; &nbsp; &nbsp;2&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; | .&nbsp; &nbsp; &nbsp;34&nbsp; &nbsp; .&nbsp; &nbsp; | .&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; &nbsp;34&nbsp; &nbsp;|<br />:------------------+------------------+------------------:<br />| .&nbsp; &nbsp; #34&nbsp; &nbsp; .&nbsp; &nbsp; | .&nbsp; &nbsp; &nbsp;12&nbsp; &nbsp; 12&nbsp; &nbsp;|#34&nbsp; &nbsp; .&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; |<br />|#234&nbsp; &nbsp;.&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; | 34&nbsp; &nbsp; .&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; | .&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; |<br />|#234&nbsp; &nbsp;.&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; | 34&nbsp; &nbsp; .&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; | .&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; &nbsp;.&nbsp; &nbsp; |<br />'------------------'------------------'------------------'</code></dd></dl>#-marked cells contain a 2 in b7 and a bivalue oddagon, ie. contra.<br /><br />The pattern is not 4-chromatic.<br /><br />Marek</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile324245">
+			<dt>
+				<a href="./member72132.html">marek stefanik</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 268</dd><dd><strong>Joined:</strong> 05 May 2021</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./chromatic-patterns-t39885-90.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p324260" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=324260" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./chromatic-patterns-t39885-90.html#p324260">Re: Chromatic Patterns</a></h3>
+			<p class="author"><a href="./post324260.html#p324260"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member2814.html">eleven</a></strong> &raquo; Sat Aug 27, 2022 9:01 pm </p>
+
+			
+
+			<div class="content">Nice.<br /><br />Interesting patterns, though i guess not relevant in solving real sudokus. But who knows, it woudn't be my first wrong sudoku guess <img src="./images/smilies/icon_e_wink.gif" alt=";)" title="Wink" /><br />The reason for my guess is, that you hardly will find a solution grid  with that (exocet reduced) pattern without a lot of extra candidates.</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile324260">
+			<dt>
+				<a href="./member2814.html">eleven</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 2814</dd><dd><strong>Joined:</strong> 10 February 2008</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./chromatic-patterns-t39885-90.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p324267" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=324267" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./chromatic-patterns-t39885-90.html#p324267">Re: Chromatic Patterns</a></h3>
+			<p class="author"><a href="./post324267.html#p324267"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member2659.html">denis_berthier</a></strong> &raquo; Sun Aug 28, 2022 3:54 am </p>
+
+			
+
+			<div class="content">.<br />I agree that such patterns are very unlikely to yield real sudoku puzzles.<br /><br />However, using SudoRules function &quot;solve-n-grids-after-first-p-from-k-digit-pattern-string-file&quot;, I've done some calculations that show notable differences between them. <br /><span style="font-weight: bold">In Ryokousha's above list of 30 4-digit patterns, 16 can be proved contradictory in the restricted version of T&amp;E(3) that relies only on the k-cells: 1 2 3 4 5 6 7 9 10 11 12 13 14 19 21 26</span><br />This <span style="font-style: italic">may</span> suggest that the rest would lead to potentially harder puzzles (if they had any puzzle at all - which remains the big question in all this thread).</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile324267">
+			<dt>
+				<a href="./member2659.html">denis_berthier</a>
+			</dt>
+
+			<dd>2010 Supporter</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 3317</dd><dd><strong>Joined:</strong> 19 June 2007</dd><dd><strong>Location:</strong> Paris</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="web-icon"><a href="http://denis-berthier.pagesperso-orange.fr" title="WWW: http://denis-berthier.pagesperso-orange.fr"><span>Website</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./chromatic-patterns-t39885-90.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<form id="viewtopic" method="post" action="./chromatic-patterns-t39885-90.html">
+
+	<fieldset class="display-options" style="margin-top: 0; ">
+		<a href="./chromatic-patterns-t39885-75.html" class="left-box left">Previous</a>
+		<label>Display posts from previous: <select name="st" id="st"><option value="0" selected="selected">All posts</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select></label>
+		<label>Sort by <select name="sk" id="sk"><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="s">Subject</option></select></label> <label><select name="sd" id="sd"><option value="a" selected="selected">Ascending</option><option value="d">Descending</option></select> <input type="submit" name="sort" value="Go" class="button2" /></label>
+		
+	</fieldset>
+
+	</form>
+	<hr />
+
+
+<div class="topic-actions">
+	<div class="buttons">
+	
+		<div class="reply-icon"><a href="./posting.php?mode=reply&amp;f=6&amp;t=39885" title="Post a reply"><span></span>Post a reply</a></div>
+	
+	</div>
+
+	
+		<div class="pagination">
+112 posts
+&bull; Page <strong>7</strong> of <strong>8</strong> &bull; <span><a href="chromatic-patterns-t39885.html">1</a><span class="page-sep">, </span><a href="chromatic-patterns-t39885-15.html">2</a><span class="page-sep">, </span><a href="chromatic-patterns-t39885-30.html">3</a><span class="page-sep">, </span><a href="chromatic-patterns-t39885-45.html">4</a><span class="page-sep">, </span><a href="chromatic-patterns-t39885-60.html">5</a><span class="page-sep">, </span><a href="chromatic-patterns-t39885-75.html">6</a><span class="page-sep">, </span><strong>7</strong><span class="page-sep">, </span><a href="chromatic-patterns-t39885-105.html">8</a></span>
+		</div>
+	
+</div>
+
+
+	<p></p><p><a href="./advanced-solving-techniques-f6.html" class="left-box left" accesskey="r">Return to Advanced solving techniques</a></p>
+
+	<form method="post" id="jumpbox" action="./viewforum.php" onsubmit="if(this.f.value == -1){return false;}">
+
+	
+		<fieldset class="jumpbox">
+	
+			<label for="f" accesskey="j">Jump to:</label>
+			<select name="f" id="f" onchange="if(this.options[this.selectedIndex].value != -1){ document.forms['jumpbox'].submit() }">
+			
+				<option value="-1">Select a forum</option>
+			<option value="-1">------------------</option>
+				<option value="9">News and announcements</option>
+			
+				<option value="10">&nbsp; &nbsp;About the New Sudoku Players' Forum</option>
+			
+				<option value="5">Sudoku: the puzzle</option>
+			
+				<option value="7">&nbsp; &nbsp;General</option>
+			
+				<option value="33">&nbsp; &nbsp;Puzzles</option>
+			
+				<option value="4">&nbsp; &nbsp;Help with puzzles and solving techniques</option>
+			
+				<option value="6" selected="selected">&nbsp; &nbsp;Advanced solving techniques</option>
+			
+				<option value="8">&nbsp; &nbsp;Interactive games</option>
+			
+				<option value="18">&nbsp; &nbsp;Software</option>
+			
+				<option value="16">Resources</option>
+			
+				<option value="32">&nbsp; &nbsp;Published puzzles</option>
+			
+				<option value="31">&nbsp; &nbsp;Books</option>
+			
+				<option value="17">&nbsp; &nbsp;On the web</option>
+			
+				<option value="11">Related puzzles</option>
+			
+				<option value="12">&nbsp; &nbsp;Sudoku variants</option>
+			
+				<option value="13">&nbsp; &nbsp;Kakuro</option>
+			
+				<option value="14">&nbsp; &nbsp;Other logic puzzles</option>
+			
+				<option value="15">&nbsp; &nbsp;Inventors' studio</option>
+			
+				<option value="19">Off-topic</option>
+			
+				<option value="20">&nbsp; &nbsp;Coffee bar</option>
+			
+				<option value="29">&nbsp; &nbsp;Forum questions and feedback</option>
+			
+			</select>
+			<input type="submit" value="Go" class="button2" />
+		</fieldset>
+	</form>
+
+</div>
+
+<div id="page-footer">
+
+	<div class="navbar">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<ul class="linklist">
+			<li class="icon-home"><a href="./" accesskey="h">Board index</a></li>
+				
+			<li class="rightside"><a href="./the-team.html">The team</a> &bull; <a href="./ucp.php?mode=delete_cookies">Delete all board cookies</a> &bull; All times are UTC </li>
+		</ul>
+		
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<div class="copyright">Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Group
+		<br /><br /><a href="http://www.phpbb-seo.com/" title="Search Engine Optimization"><img src="./images/phpbb-seo.png" alt="phpBB SEO"/></a>
+	</div>
+</div>
+
+</div>
+
+<div>
+	<a id="bottom" name="bottom" accesskey="z"></a>
+	
+</div>
+
+</body>
+</html>

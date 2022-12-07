@@ -1,0 +1,439 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-gb" xml:lang="en-gb">
+<head>
+<base href="./"/>
+<link rel="canonical" href="./shortcuts-to-solving-on-paper-t40421.html" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>Shortcuts to solving (on paper) : Help with puzzles and solving techniques</title>
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="content-language" content="en-gb" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="content-language" content="en" />
+<meta name="title" content="Shortcuts to solving (on paper) : Help with puzzles and solving techniques" />
+<meta name="description" content="Hi there! I'm fairly new to Sudoku, and have learned all the basics (hidden pairs, pointing pairs, box/line reduction, etc) and several more advanced techniques ..." />
+<meta name="keywords" content="shortcuts, hidden, singles, paper, eliminations, solving, pair, elimination, few, following, online, seems, such, start, single" />
+<meta name="category" content="general" />
+<meta name="robots" content="index,follow" />
+<meta name="distribution" content="global" />
+<meta name="resource-type" content="document" />
+<meta name="copyright" content="The New Sudoku Players Forum" />
+
+
+
+
+<!--
+	phpBB style name: prosilver
+	Based on style:   prosilver (this is the default phpBB3 style)
+	Original author:  Tom Beddard ( http://www.subBlue.com/ )
+	Modified by:
+-->
+
+<script type="text/javascript">
+// <![CDATA[
+	var jump_page = 'Enter the page number you wish to go to:';
+	var on_page = '1';
+	var per_page = '';
+	var base_url = '';
+	var style_cookie = 'phpBBstyle';
+	var style_cookie_settings = '; path=/; domain=forum.enjoysudoku.com';
+	var onload_functions = new Array();
+	var onunload_functions = new Array();
+	// www.phpBB-SEO.com SEO TOOLKIT BEGIN
+	var seo_delim_start = '-';
+	var seo_static_pagination = 'page';
+	var seo_ext_pagination = '.html';
+	var seo_external = true;
+	var seo_external_sub = false;
+	var seo_ext_classes = false;
+	var seo_hashfix = false;
+	// www.phpBB-SEO.com SEO TOOLKIT END
+
+	
+
+	/**
+	* Find a member
+	*/
+	function find_username(url)
+	{
+		popup(url, 760, 570, '_usersearch');
+		return false;
+	}
+
+	/**
+	* New function for handling multiple calls to window.onload and window.unload by pentapenguin
+	*/
+	window.onload = function()
+	{
+		for (var i = 0; i < onload_functions.length; i++)
+		{
+			eval(onload_functions[i]);
+		}
+	};
+
+	window.onunload = function()
+	{
+		for (var i = 0; i < onunload_functions.length; i++)
+		{
+			eval(onunload_functions[i]);
+		}
+	};
+
+// ]]>
+</script>
+<script type="text/javascript" src="./styles/prosilver/template/styleswitcher.js"></script>
+<script type="text/javascript" src="./styles/prosilver/template/forum_fn.js"></script>
+
+<link href="./styles/prosilver/theme/print.css" rel="stylesheet" type="text/css" media="print" title="printonly" />
+<link href="style.css" rel="stylesheet" type="text/css" media="screen, projection" />
+
+<link href="./styles/prosilver/theme/normal.css" rel="stylesheet" type="text/css" title="A" />
+<link href="./styles/prosilver/theme/medium.css" rel="alternate stylesheet" type="text/css" title="A+" />
+<link href="./styles/prosilver/theme/large.css" rel="alternate stylesheet" type="text/css" title="A++" />
+
+
+
+</head>
+
+<body id="phpbb" class="section-viewtopic ltr">
+
+<div id="wrap">
+	<a id="top" name="top" accesskey="t"></a>
+	<div id="page-header">
+		<div class="headerbar">
+			<div class="inner"><span class="corners-top"><span></span></span>
+
+			<div id="site-description">
+				<a href="./" title="Board index" id="logo"><img src="./styles/prosilver/imageset/site_logo.gif" width="52" height="52" alt="" title="" /></a>
+				<h1>The New Sudoku Players' Forum</h1>
+				<p>ARCHIVED by 1to9only</p>
+				<p class="skiplink"><a href="#start_here">Skip to content</a></p>
+			</div>
+
+		
+			<div id="search-box">
+				<form action="./search.php" method="get" id="search">
+				<fieldset>
+					<input name="keywords" id="keywords" type="text" maxlength="128" title="Search for keywords" class="inputbox search" value="Search…" onclick="if(this.value=='Search…')this.value='';" onblur="if(this.value=='')this.value='Search…';" />
+					<input class="button2" value="Search" type="submit" /><br />
+					<a href="./search.php" title="View the advanced search options">Advanced search</a> <input type="hidden" name="sid" value="00000000000000000000000000000000" />
+
+				</fieldset>
+				</form>
+			</div>
+		
+
+			<span class="corners-bottom"><span></span></span></div>
+		</div>
+
+		<div class="navbar">
+			<div class="inner"><span class="corners-top"><span></span></span>
+
+			<ul class="linklist navlinks">
+				<li class="icon-home"><a href="./" accesskey="h">Board index</a>  <strong>&#8249;</strong> <a href="./sudoku-the-puzzle-f5.html">Sudoku: the puzzle</a> <strong>&#8249;</strong> <a href="./help-with-puzzles-and-solving-techniques-f4.html">Help with puzzles and solving techniques</a></li>
+
+				<li class="rightside"><a href="#" onclick="fontsizeup(); return false;" onkeypress="return fontsizeup(event);" class="fontsize" title="Change font size">Change font size</a></li>
+
+				<li class="rightside"><a href="./viewtopic.php?f=4&amp;t=40421&amp;start=0&amp;view=print" title="Print view" accesskey="p" class="print">Print view</a></li>
+			</ul>
+
+			
+
+			<ul class="linklist rightside">
+				<li class="icon-faq"><a href="./faq.php" title="Frequently Asked Questions">FAQ</a></li>
+				<li class="icon-register"><a href="./ucp.php?mode=register">Register</a></li>
+					<li class="icon-logout"><a href="./ucp.php?mode=login" title="Login" accesskey="x">Login</a></li>
+				
+			</ul>
+
+			<span class="corners-bottom"><span></span></span></div>
+		</div>
+
+	</div>
+
+	<a name="start_here"></a>
+	<div id="page-body">
+		
+<h2><a href="./shortcuts-to-solving-on-paper-t40421.html">Shortcuts to solving (on paper)</a></h2>
+<!-- NOTE: remove the style="display: none" when you want to have the forum description on the topic body --><div style="display: none !important;">Post the puzzle or solving technique that's causing you trouble and someone will help<br /></div>
+
+<div class="topic-actions">
+
+	<div class="buttons">
+	
+		<div class="reply-icon"><a href="./posting.php?mode=reply&amp;f=4&amp;t=40421" title="Post a reply"><span></span>Post a reply</a></div>
+	
+	</div>
+
+	
+		<div class="search-box">
+			<form method="get" id="topic-search" action="./search.php">
+			<fieldset>
+				<input class="inputbox search tiny"  type="text" name="keywords" id="search_keywords" size="20" value="Search this topic…" onclick="if(this.value=='Search this topic…')this.value='';" onblur="if(this.value=='')this.value='Search this topic…';" />
+				<input class="button2" type="submit" value="Search" />
+				<input type="hidden" name="t" value="40421" />
+<input type="hidden" name="sf" value="msgonly" />
+<input type="hidden" name="sid" value="00000000000000000000000000000000" />
+
+			</fieldset>
+			</form>
+		</div>
+	
+		<div class="pagination">
+			3 posts
+			 &bull; Page <strong>1</strong> of <strong>1</strong>
+		</div>
+	
+
+</div>
+<div class="clear"></div>
+
+
+	<div id="p326665" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=4&amp;p=326665" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 class="first"><a href="./shortcuts-to-solving-on-paper-t40421.html#p326665">Shortcuts to solving (on paper)</a></h3>
+			<p class="author"><a href="./post326665.html#p326665"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member93427.html">Steerpike58</a></strong> &raquo; Fri Oct 07, 2022 5:32 pm </p>
+
+			
+
+			<div class="content">Hi there! I'm fairly new to Sudoku, and have learned all the basics (hidden pairs, pointing pairs, box/line reduction, etc) and several more advanced techniques such as x-wing, y-wing.  I'd say I'm happy with my progress, but SLOW!  <br /><br />My initial technique at the moment (on paper) is to write down as small 'notes' in the box all the candidates for each square - something all the online tools do for you in a flash.  But this takes time. Not only does it take time to do, but it ends up messing up the squares as you cross out 'found' items and becomes almost unreadable towards the end.  <br /><br />So one streamlining effort I've started is to do a 'first pass' looking for obvious naked singles, by looking at the board for 'well populated' existing numbers, and using those to quickly eliminate squares elsewhere on the board, and thus filling in those obvious candidates. I'm currently systematically going through all digits (1-9) and scanning the board for these eliminations.  Only after completing this process do I then start noting candidates and following all the other techniques. <br /><br />A slight variation on the above is to do the quick scan of the board, but not only fill in obvious 'singles', but also, note any obvious 'pairs' within a block.  So, for example, when scanning for the number '1', I may find a block that doesn't have an obvious unique '1' location, but - clearly only has 2 possible '1's, and I'm noting those down during this first pass.  My thinking is - it took time to do the first pass scan, so may as well capture what I find. Noting obvious 'pairs' within a block helps speed up early elimination because once you fill in a square (with something other than '1') that 'may have been' '1' but is not '1', then you can immediately determine the 'other' member of the pair in the block must be '1'. However, this has led to a few mistakes and I'm wondering if it's worth it. <br /><br />So does anyone have any 'speed up' tips?  I would note, my short-term memory is not great, so I can't rely on 'seeing' (remembering) things on the board too well!</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile326665">
+			<dt>
+				<a href="./member93427.html">Steerpike58</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 16</dd><dd><strong>Joined:</strong> 05 September 2022</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./shortcuts-to-solving-on-paper-t40421.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p326672" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=4&amp;p=326672" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./shortcuts-to-solving-on-paper-t40421.html#p326672">Re: Shortcuts to solving (on paper)</a></h3>
+			<p class="author"><a href="./post326672.html#p326672"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member4480.html">SteveG48</a></strong> &raquo; Fri Oct 07, 2022 7:24 pm </p>
+
+			
+
+			<div class="content">In addition to looking for looking for naked singles, look for hidden singles.</div>
+
+			<div id="sig326672" class="signature">Steve</div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile326672">
+			<dt>
+				<a href="./member4480.html"><img src="./download/4480_1386648004.gif" width="73" height="72" alt="User avatar" /></a><br />
+				<a href="./member4480.html">SteveG48</a>
+			</dt>
+
+			<dd>2019 Supporter</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 3298</dd><dd><strong>Joined:</strong> 08 November 2013</dd><dd><strong>Location:</strong> Orlando, Florida</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./shortcuts-to-solving-on-paper-t40421.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p327051" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=4&amp;p=327051" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./shortcuts-to-solving-on-paper-t40421.html#p327051">Shortcuts to solving (on paper)</a></h3>
+			<p class="author"><a href="./post327051.html#p327051"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member5072.html">Yogi</a></strong> &raquo; Wed Oct 12, 2022 9:22 pm </p>
+
+			
+
+			<div class="content">Hello!<br />I think most of us Sudoku solvers tend to move on to doing harder puzzles with devices which calculate the candidates, as we tire of writing and erasing them, but while you remain interested in doing some which are harder than those in newspapers and magazines, then here are a couple of ideas.<br /><br />Never heard anyone else suggest this: instead of writing candidates in cells, which by definition means most of what you write will NOT be true, make simple notes alongside the puzzle of what you KNOW to be true about the location of given candidates, in terms of placement in rows or columns.  A mark that may mean something like ‘I know that the 3 in this box lies in that row.’  Then you will not need to go on remembering that fact for the time being, but it may be helpful later.<br /><br />Also, if you can find the 2019 post on Single Digit Eliminations, you may find the Box Analysis method (which I prefer to do pictorially) to be a useful method of identifying which candidates may be useful in short-chain patterns like Kites, Skyscrapers and Turbot-fish generally (and which are not.)<br /><br />The earlier discussion about Pre-emptive Pairs, which turned out to be Naked Pairs to us, illustrates the recurring problem in the language of Sudoku.  You will find that mostly in this forum we tend to use the Eureka terms described in Sudopedia Mirror.  A simpler approach might be to watch the first few videos by Sudoku Swami in his Complete Course. He seems to use our terms. Interestingly, I’ve only just decided to watch his Pen &amp; Pencil videos.<br />Thanx for prompting me to do that!</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile327051">
+			<dt>
+				<a href="./member5072.html"><img src="./download/5072_1647727334.jpg" width="65" height="65" alt="User avatar" /></a><br />
+				<a href="./member5072.html">Yogi</a>
+			</dt>
+
+			<dd>2017 Supporter</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 260</dd><dd><strong>Joined:</strong> 05 December 2015</dd><dd><strong>Location:</strong> New Zealand</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./shortcuts-to-solving-on-paper-t40421.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<form id="viewtopic" method="post" action="./shortcuts-to-solving-on-paper-t40421.html">
+
+	<fieldset class="display-options" style="margin-top: 0; ">
+		
+		<label>Display posts from previous: <select name="st" id="st"><option value="0" selected="selected">All posts</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select></label>
+		<label>Sort by <select name="sk" id="sk"><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="s">Subject</option></select></label> <label><select name="sd" id="sd"><option value="a" selected="selected">Ascending</option><option value="d">Descending</option></select> <input type="submit" name="sort" value="Go" class="button2" /></label>
+		
+	</fieldset>
+
+	</form>
+	<hr />
+
+
+<div class="topic-actions">
+	<div class="buttons">
+	
+		<div class="reply-icon"><a href="./posting.php?mode=reply&amp;f=4&amp;t=40421" title="Post a reply"><span></span>Post a reply</a></div>
+	
+	</div>
+
+	
+		<div class="pagination">
+			3 posts
+			 &bull; Page <strong>1</strong> of <strong>1</strong>
+		</div>
+	
+</div>
+
+
+	<p></p><p><a href="./help-with-puzzles-and-solving-techniques-f4.html" class="left-box left" accesskey="r">Return to Help with puzzles and solving techniques</a></p>
+
+	<form method="post" id="jumpbox" action="./viewforum.php" onsubmit="if(this.f.value == -1){return false;}">
+
+	
+		<fieldset class="jumpbox">
+	
+			<label for="f" accesskey="j">Jump to:</label>
+			<select name="f" id="f" onchange="if(this.options[this.selectedIndex].value != -1){ document.forms['jumpbox'].submit() }">
+			
+				<option value="-1">Select a forum</option>
+			<option value="-1">------------------</option>
+				<option value="9">News and announcements</option>
+			
+				<option value="10">&nbsp; &nbsp;About the New Sudoku Players' Forum</option>
+			
+				<option value="5">Sudoku: the puzzle</option>
+			
+				<option value="7">&nbsp; &nbsp;General</option>
+			
+				<option value="33">&nbsp; &nbsp;Puzzles</option>
+			
+				<option value="4" selected="selected">&nbsp; &nbsp;Help with puzzles and solving techniques</option>
+			
+				<option value="6">&nbsp; &nbsp;Advanced solving techniques</option>
+			
+				<option value="8">&nbsp; &nbsp;Interactive games</option>
+			
+				<option value="18">&nbsp; &nbsp;Software</option>
+			
+				<option value="16">Resources</option>
+			
+				<option value="32">&nbsp; &nbsp;Published puzzles</option>
+			
+				<option value="31">&nbsp; &nbsp;Books</option>
+			
+				<option value="17">&nbsp; &nbsp;On the web</option>
+			
+				<option value="11">Related puzzles</option>
+			
+				<option value="12">&nbsp; &nbsp;Sudoku variants</option>
+			
+				<option value="13">&nbsp; &nbsp;Kakuro</option>
+			
+				<option value="14">&nbsp; &nbsp;Other logic puzzles</option>
+			
+				<option value="15">&nbsp; &nbsp;Inventors' studio</option>
+			
+				<option value="19">Off-topic</option>
+			
+				<option value="20">&nbsp; &nbsp;Coffee bar</option>
+			
+				<option value="29">&nbsp; &nbsp;Forum questions and feedback</option>
+			
+			</select>
+			<input type="submit" value="Go" class="button2" />
+		</fieldset>
+	</form>
+
+</div>
+
+<div id="page-footer">
+
+	<div class="navbar">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<ul class="linklist">
+			<li class="icon-home"><a href="./" accesskey="h">Board index</a></li>
+				
+			<li class="rightside"><a href="./the-team.html">The team</a> &bull; <a href="./ucp.php?mode=delete_cookies">Delete all board cookies</a> &bull; All times are UTC </li>
+		</ul>
+		
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<div class="copyright">Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Group
+		<br /><br /><a href="http://www.phpbb-seo.com/" title="Search Engine Optimization"><img src="./images/phpbb-seo.png" alt="phpBB SEO"/></a>
+	</div>
+</div>
+
+</div>
+
+<div>
+	<a id="bottom" name="bottom" accesskey="z"></a>
+	
+</div>
+
+</body>
+</html>

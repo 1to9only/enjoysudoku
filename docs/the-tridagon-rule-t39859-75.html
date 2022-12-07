@@ -1,0 +1,977 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-gb" xml:lang="en-gb">
+<head>
+<base href="./"/>
+<link rel="canonical" href="./the-tridagon-rule-t39859-75.html" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>The tridagon rule : Advanced solving techniques - Page 6</title>
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="content-language" content="en-gb" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="content-language" content="en" />
+<meta name="title" content="The tridagon rule : Advanced solving techniques - Page 6" />
+<meta name="description" content="Denis, I agree that we are not always speaking about the same things. No worries there. When I say pattern, I am not using it ..." />
+<meta name="keywords" content="single, least, such, seems, rule, tridagon, the, eliminations, play" />
+<meta name="category" content="general" />
+<meta name="robots" content="index,follow" />
+<meta name="distribution" content="global" />
+<meta name="resource-type" content="document" />
+<meta name="copyright" content="The New Sudoku Players Forum" />
+
+
+
+
+<!--
+	phpBB style name: prosilver
+	Based on style:   prosilver (this is the default phpBB3 style)
+	Original author:  Tom Beddard ( http://www.subBlue.com/ )
+	Modified by:
+-->
+
+<script type="text/javascript">
+// <![CDATA[
+	var jump_page = 'Enter the page number you wish to go to:';
+	var on_page = '6';
+	var per_page = '15';
+	var base_url = './the-tridagon-rule-t39859.html';
+	var style_cookie = 'phpBBstyle';
+	var style_cookie_settings = '; path=/; domain=forum.enjoysudoku.com';
+	var onload_functions = new Array();
+	var onunload_functions = new Array();
+	// www.phpBB-SEO.com SEO TOOLKIT BEGIN
+	var seo_delim_start = '-';
+	var seo_static_pagination = 'page';
+	var seo_ext_pagination = '.html';
+	var seo_external = true;
+	var seo_external_sub = false;
+	var seo_ext_classes = false;
+	var seo_hashfix = false;
+	// www.phpBB-SEO.com SEO TOOLKIT END
+
+	
+
+	/**
+	* Find a member
+	*/
+	function find_username(url)
+	{
+		popup(url, 760, 570, '_usersearch');
+		return false;
+	}
+
+	/**
+	* New function for handling multiple calls to window.onload and window.unload by pentapenguin
+	*/
+	window.onload = function()
+	{
+		for (var i = 0; i < onload_functions.length; i++)
+		{
+			eval(onload_functions[i]);
+		}
+	};
+
+	window.onunload = function()
+	{
+		for (var i = 0; i < onunload_functions.length; i++)
+		{
+			eval(onunload_functions[i]);
+		}
+	};
+
+// ]]>
+</script>
+<script type="text/javascript" src="./styles/prosilver/template/styleswitcher.js"></script>
+<script type="text/javascript" src="./styles/prosilver/template/forum_fn.js"></script>
+
+<link href="./styles/prosilver/theme/print.css" rel="stylesheet" type="text/css" media="print" title="printonly" />
+<link href="style.css" rel="stylesheet" type="text/css" media="screen, projection" />
+
+<link href="./styles/prosilver/theme/normal.css" rel="stylesheet" type="text/css" title="A" />
+<link href="./styles/prosilver/theme/medium.css" rel="alternate stylesheet" type="text/css" title="A+" />
+<link href="./styles/prosilver/theme/large.css" rel="alternate stylesheet" type="text/css" title="A++" />
+
+
+
+</head>
+
+<body id="phpbb" class="section-viewtopic ltr">
+
+<div id="wrap">
+	<a id="top" name="top" accesskey="t"></a>
+	<div id="page-header">
+		<div class="headerbar">
+			<div class="inner"><span class="corners-top"><span></span></span>
+
+			<div id="site-description">
+				<a href="./" title="Board index" id="logo"><img src="./styles/prosilver/imageset/site_logo.gif" width="52" height="52" alt="" title="" /></a>
+				<h1>The New Sudoku Players' Forum</h1>
+				<p>ARCHIVED by 1to9only</p>
+				<p class="skiplink"><a href="#start_here">Skip to content</a></p>
+			</div>
+
+		
+			<div id="search-box">
+				<form action="./search.php" method="get" id="search">
+				<fieldset>
+					<input name="keywords" id="keywords" type="text" maxlength="128" title="Search for keywords" class="inputbox search" value="Search…" onclick="if(this.value=='Search…')this.value='';" onblur="if(this.value=='')this.value='Search…';" />
+					<input class="button2" value="Search" type="submit" /><br />
+					<a href="./search.php" title="View the advanced search options">Advanced search</a> <input type="hidden" name="sid" value="00000000000000000000000000000000" />
+
+				</fieldset>
+				</form>
+			</div>
+		
+
+			<span class="corners-bottom"><span></span></span></div>
+		</div>
+
+		<div class="navbar">
+			<div class="inner"><span class="corners-top"><span></span></span>
+
+			<ul class="linklist navlinks">
+				<li class="icon-home"><a href="./" accesskey="h">Board index</a>  <strong>&#8249;</strong> <a href="./sudoku-the-puzzle-f5.html">Sudoku: the puzzle</a> <strong>&#8249;</strong> <a href="./advanced-solving-techniques-f6.html">Advanced solving techniques</a></li>
+
+				<li class="rightside"><a href="#" onclick="fontsizeup(); return false;" onkeypress="return fontsizeup(event);" class="fontsize" title="Change font size">Change font size</a></li>
+
+				<li class="rightside"><a href="./viewtopic.php?f=6&amp;t=39859&amp;start=75&amp;view=print" title="Print view" accesskey="p" class="print">Print view</a></li>
+			</ul>
+
+			
+
+			<ul class="linklist rightside">
+				<li class="icon-faq"><a href="./faq.php" title="Frequently Asked Questions">FAQ</a></li>
+				<li class="icon-register"><a href="./ucp.php?mode=register">Register</a></li>
+					<li class="icon-logout"><a href="./ucp.php?mode=login" title="Login" accesskey="x">Login</a></li>
+				
+			</ul>
+
+			<span class="corners-bottom"><span></span></span></div>
+		</div>
+
+	</div>
+
+	<a name="start_here"></a>
+	<div id="page-body">
+		
+<h2><a href="./the-tridagon-rule-t39859-75.html">The tridagon rule</a></h2>
+<!-- NOTE: remove the style="display: none" when you want to have the forum description on the topic body --><div style="display: none !important;">Advanced methods and approaches for solving Sudoku puzzles<br /></div>
+
+<div class="topic-actions">
+
+	<div class="buttons">
+	
+		<div class="reply-icon"><a href="./posting.php?mode=reply&amp;f=6&amp;t=39859" title="Post a reply"><span></span>Post a reply</a></div>
+	
+	</div>
+
+	
+		<div class="search-box">
+			<form method="get" id="topic-search" action="./search.php">
+			<fieldset>
+				<input class="inputbox search tiny"  type="text" name="keywords" id="search_keywords" size="20" value="Search this topic…" onclick="if(this.value=='Search this topic…')this.value='';" onblur="if(this.value=='')this.value='Search this topic…';" />
+				<input class="button2" type="submit" value="Search" />
+				<input type="hidden" name="t" value="39859" />
+<input type="hidden" name="sf" value="msgonly" />
+<input type="hidden" name="sid" value="00000000000000000000000000000000" />
+
+			</fieldset>
+			</form>
+		</div>
+	
+		<div class="pagination">
+110 posts
+&bull; Page <strong>6</strong> of <strong>8</strong> &bull; <span><a href="the-tridagon-rule-t39859.html">1</a><span class="page-sep">, </span><a href="the-tridagon-rule-t39859-15.html">2</a><span class="page-sep">, </span><a href="the-tridagon-rule-t39859-30.html">3</a><span class="page-sep">, </span><a href="the-tridagon-rule-t39859-45.html">4</a><span class="page-sep">, </span><a href="the-tridagon-rule-t39859-60.html">5</a><span class="page-sep">, </span><strong>6</strong><span class="page-sep">, </span><a href="the-tridagon-rule-t39859-90.html">7</a><span class="page-sep">, </span><a href="the-tridagon-rule-t39859-105.html">8</a></span>
+		</div>
+	
+
+</div>
+<div class="clear"></div>
+
+
+	<div id="p323082" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=323082" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 class="first"><a href="./the-tridagon-rule-t39859-75.html#p323082">Re: The tridagon rule</a></h3>
+			<p class="author"><a href="./post323082.html#p323082"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member65215.html">mith</a></strong> &raquo; Wed Jul 13, 2022 9:58 pm </p>
+
+			
+
+			<div class="content">Denis, I agree that we are not always speaking about the same things. No worries there.<br /><br />When I say pattern, I am not using it in the sense that you are - just in a more colloquial sense of &quot;something to be recognized and used&quot;. It would be more precise to say I'm talking about graphs, specifically those with the rc-cells as vertices. For my part, I am not so much concerned with the language of CSP or patterns as you've defined them; I'm concerned with human-findable logic.<br /><br />I understand that an OR relationship doesn't make a CSP-Variable... it does often make for a useful logical deduction, however. I don't currently have enough knowledge of CSP in general or CSP-Rules specifically to suggest a way to turn something like that into a pattern. I think we had the same issue initially with the replacement/relabel thing, where one can often use the logic of &quot;whatever digit is in r2c3 is also in r3c9, and then...&quot; rather than literally placing digits into cells. The CSP-Variables don't really support this kind of equivalence logic, at least directly... instead, the replacement is mapping from one domain (digits 1-9) to a different domain (the values in the cells of whatever house you're replacing into, whatever those happen to be) and then back. I don't see an analogue in the case of a &quot;guardian OR&quot;, though.</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile323082">
+			<dt>
+				<a href="./member65215.html">mith</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 854</dd><dd><strong>Joined:</strong> 14 July 2020</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./the-tridagon-rule-t39859-75.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p323089" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=323089" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./the-tridagon-rule-t39859-75.html#p323089">Re: The tridagon rule</a></h3>
+			<p class="author"><a href="./post323089.html#p323089"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member2659.html">denis_berthier</a></strong> &raquo; Thu Jul 14, 2022 5:36 am </p>
+
+			
+
+			<div class="content">.<br />The question is not human vs machine (generally a sign of having no rational argument when used in a discussion), but well-defined vs undefined. It's at a logic/abstract level where the difference between brains and CPUs is totally irrelevant.<br /><br />Mith, I understand your purpose is not to develop/use a formal version of any concept, but that's the best way to keep turning into circles.<br />Solving a puzzle with a pseudo-TO with 11 extra candidates by an <span style="font-style: italic">ad hoc</span> piece of reasoning is one thing (and I admit it may be fun for some); defining precise patterns and general rules that can do this on their own (with no one having to manually fill in logical gaps) is a totally different thing - and that's the thing I'm interested in. Of course, my approach is much more constrained and it will probably not take into account all the <span style="font-style: italic">ad hoc</span> possibilities. As I said before, this is exactly the same situation as with the precisely defined pattern of J-Exocets vs the largely undefined notion of an Exocet.<br />Note that I'm not saying that imprecise definitions don't have to play a role at the start of a study. Studying informal Exocets may lead to variants of J-Exocets. Similarly, studying cases of pseudo-TO that don't fit into the Tridagon rule or the Tridagon-Forcing-Whips (and it seems there are many of them) may lead to variants of them or to new rules.<br /><br />The basic resolution rules I've developed (whips, braids, g-whips, g-braids and all the special cases of them I've selected as worth considering) all share a property: they have no OR branching. This is absolutely essential in terms of complexity (be it for a human or a machine). [One could argue that using g-candidates is a form of OR-branching, but it is so controlled within the chains that it doesn't matter much.] Using an OR-relation is basically introducing OR-branching.<br /><br /> I've also (later) introduced Forcing-Whips (and I could obviously have defined Forcing-g-Whips, Forcing-Braids in similar ways...]. These patterns have one thing in common: they have OR-branching only at their start. This is also a restricted form of OR-branching, but it already comes with its own cost in additional complexity.<br />Obviously, these could be generalised to more than 2 candidates at the start (at the cost of still more complexity increase). And, obviously also, as shown by the Tridagon-Forcing-Whips, they can start from other OR relations than the bivalue ones. And, still obviously, both extensions could be considered together.<br /><br />What I don't have (and don't plan to have, because of complexity reasons) is OR-branching inside chain patterns, i.e. what I would call Dynamic-Forcing-Whips to paraphrase the Sudoku Explainer meaning of &quot;Dynamic&quot;. [Marek, is this what you were thinking about?]<br /><br />What I might consider adding is Generalised Forcing-T&amp;E based on pseudo-TO patterns; but:<br />- this will not provide a pattern-based solution (T&amp;E is not a resolution rule)<br />- this supposes some oracle provides the pseudo-TOs and their &quot;guardians&quot; as starting points, because I still can't see any computable pattern-based way of finding them. Mith, as your scripts seem to be able to do this, could you add this information (number and list of guardian candidates) to your min-expands database? If so, I can easily write the Generalised Forcing-T&amp;E procedure necessary to check if they lead to a solution (or to produce the resulting resolution state - a sukaku). The results could be interesting as a measure of the resolution potential of pseudo-TOs.<br />Note however that the more &quot;guardians&quot; there are, the more unlikely it is Forcing-T&amp;E based on them can do much: Forcing-T&amp;E means that all the branches have some assertion/elimination in common.</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile323089">
+			<dt>
+				<a href="./member2659.html">denis_berthier</a>
+			</dt>
+
+			<dd>2010 Supporter</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 3240</dd><dd><strong>Joined:</strong> 19 June 2007</dd><dd><strong>Location:</strong> Paris</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="web-icon"><a href="http://denis-berthier.pagesperso-orange.fr" title="WWW: http://denis-berthier.pagesperso-orange.fr"><span>Website</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./the-tridagon-rule-t39859-75.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p323095" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=323095" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./the-tridagon-rule-t39859-75.html#p323095">Re: The tridagon rule</a></h3>
+			<p class="author"><a href="./post323095.html#p323095"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member72132.html">marek stefanik</a></strong> &raquo; Thu Jul 14, 2022 1:08 pm </p>
+
+			
+
+			<div class="content"><blockquote><div><cite>denis_berthier wrote:</cite>What I don't have (and don't plan to have, because of complexity reasons) is OR-branching inside chain patterns, i.e. what I would call Dynamic-Forcing-Whips to paraphrase the Sudoku Explainer meaning of &quot;Dynamic&quot;. [Marek, is this what you were thinking about?]</div></blockquote>No, I had expected you to implement TO-Braids in a similar fashion to your S- and B-Braids, rather than TO-Forcing-Whips.<br /><br />To give an example – puzzle 7 from the original list of 246 expanded forms:<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>........1.....234...5..36.2....7..36....894....46......125...6.4.31..52.56....1..<br />.-----------------------.---------------------.-------------------.<br />| 23&nbsp; &nbsp; &nbsp; 23&nbsp; &nbsp; &nbsp;#6789&nbsp; | 4789&nbsp; &nbsp; 4569&nbsp; 45678 |#789&nbsp; &nbsp;5789&nbsp; &nbsp;1&nbsp; &nbsp; |<br />| 16789&nbsp; #789&nbsp; &nbsp; &nbsp;16789 | 789&nbsp; &nbsp; &nbsp;1569&nbsp; 2&nbsp; &nbsp; &nbsp;| 3&nbsp; &nbsp; &nbsp;4&nbsp; &nbsp; &nbsp;#5789 |<br />|#1789&nbsp; &nbsp; 4&nbsp; &nbsp; &nbsp; &nbsp;5&nbsp; &nbsp; &nbsp;| 789&nbsp; &nbsp; &nbsp;19&nbsp; &nbsp; 3&nbsp; &nbsp; &nbsp;| 6&nbsp; &nbsp; #789&nbsp; &nbsp; 2&nbsp; &nbsp; |<br />:-----------------------+---------------------+-------------------:<br />| 1289&nbsp; &nbsp; 2589&nbsp; &nbsp; 189&nbsp; &nbsp;| 24&nbsp; &nbsp; &nbsp; 7&nbsp; &nbsp; &nbsp;145&nbsp; &nbsp;| 289&nbsp; &nbsp;3&nbsp; &nbsp; &nbsp; 6&nbsp; &nbsp; |<br />| 12367&nbsp; &nbsp;2357&nbsp; &nbsp; 167&nbsp; &nbsp;| 23&nbsp; &nbsp; &nbsp; 8&nbsp; &nbsp; &nbsp;9&nbsp; &nbsp; &nbsp;| 4&nbsp; &nbsp; &nbsp;157&nbsp; &nbsp; 57&nbsp; &nbsp;|<br />| 123789&nbsp; 235789&nbsp; 4&nbsp; &nbsp; &nbsp;| 6&nbsp; &nbsp; &nbsp; &nbsp;235&nbsp; &nbsp;15&nbsp; &nbsp; | 2789&nbsp; 15789&nbsp; 5789 |<br />:-----------------------+---------------------+-------------------:<br />|#789&nbsp; &nbsp; &nbsp;1&nbsp; &nbsp; &nbsp; &nbsp;2&nbsp; &nbsp; &nbsp;| 5&nbsp; &nbsp; &nbsp; &nbsp;349&nbsp; &nbsp;478&nbsp; &nbsp;|#789&nbsp; &nbsp;6&nbsp; &nbsp; &nbsp; 34&nbsp; &nbsp;|<br />| 4&nbsp; &nbsp; &nbsp; #789&nbsp; &nbsp; &nbsp;3&nbsp; &nbsp; &nbsp;| 1&nbsp; &nbsp; &nbsp; &nbsp;69&nbsp; &nbsp; 678&nbsp; &nbsp;| 5&nbsp; &nbsp; &nbsp;2&nbsp; &nbsp; &nbsp;#789&nbsp; |<br />| 5&nbsp; &nbsp; &nbsp; &nbsp;6&nbsp; &nbsp; &nbsp; #789&nbsp; &nbsp;| 234789&nbsp; 2349&nbsp; 478&nbsp; &nbsp;| 1&nbsp; &nbsp; #789&nbsp; &nbsp; 34&nbsp; &nbsp;|<br />'-----------------------'---------------------'-------------------'</code></dd></dl>TO-braid[14]: n6c5{r2 r1} – n1c5{r2 r3} – {n1r3c1 [TO[12] label placeholder]} ==&gt; –5r2c5<br />Or maybe the (non-contradictory) 11-cell patterns defined at the beginning of this thread could also be used at an earlier stage of the chain:<br />TO-whip[14]: n6c5{r2 r1} – {n6r1c3 [TO[11] label placeholder]} – r3c1{n9 n1} – n1c5{r3 .} ==&gt; -5r2c5<br />(I hope that I notated it correctly, with the exception of the missing TO-labels.)<br /><br />This would avoid any OR-branching as well as the need to define &quot;potential TOs&quot; to start the OR-branching from.<br /><br />Marek</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile323095">
+			<dt>
+				<a href="./member72132.html">marek stefanik</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 263</dd><dd><strong>Joined:</strong> 05 May 2021</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./the-tridagon-rule-t39859-75.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p323097" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=323097" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./the-tridagon-rule-t39859-75.html#p323097">Re: The tridagon rule</a></h3>
+			<p class="author"><a href="./post323097.html#p323097"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member2659.html">denis_berthier</a></strong> &raquo; Thu Jul 14, 2022 2:10 pm </p>
+
+			
+
+			<div class="content"><blockquote><div><cite>marek stefanik wrote:</cite> I had expected you to implement TO-Braids in a similar fashion to your S- and B-Braids, rather than TO-Forcing-Whips.</div></blockquote><br />OK, I see what you mean - using a contextual TO instead of the final CSP contradiction in a whip. Your example is interesting.<br />But there's a complexity problem. Finding a real TO with 1 or 2 additional candidates is not very difficult. But having to consider all the contextual TOs at every step of every whip/braid is largely more computationally complex than having to consider all the potential Subsets.<br />As I said before, all this is meaningful only in the presence of an oracle saying that there is some possibility of a pseudo-TO. Otherwise, the return on investment for this kind of TO-chain is null.<br />Take any puzzle in ph2010 and tell me what you get by trying this.</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile323097">
+			<dt>
+				<a href="./member2659.html">denis_berthier</a>
+			</dt>
+
+			<dd>2010 Supporter</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 3240</dd><dd><strong>Joined:</strong> 19 June 2007</dd><dd><strong>Location:</strong> Paris</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="web-icon"><a href="http://denis-berthier.pagesperso-orange.fr" title="WWW: http://denis-berthier.pagesperso-orange.fr"><span>Website</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./the-tridagon-rule-t39859-75.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p323102" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=323102" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./the-tridagon-rule-t39859-75.html#p323102">Re: The tridagon rule</a></h3>
+			<p class="author"><a href="./post323102.html#p323102"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member65215.html">mith</a></strong> &raquo; Thu Jul 14, 2022 4:53 pm </p>
+
+			
+
+			<div class="content">Denis, this started with you invoking the &quot;real player&quot;. Any &quot;human vs. machine&quot; arguments are stemming from that.<br /><br />As for the well-defined vs. undefined thing, your definition of &quot;well-defined&quot; seems to be contingent on fitting into your pattern-based resolution rules (&quot;a pattern is well defined if...&quot;). It should be clear that I am not talking about patterns in the sense of CSP-Rules. Whether my &quot;Chromatic-Forcing-T&amp;E&quot; definition is a pattern in your sense or whether you are <span style="font-style: italic">interested</span> in it has no impact on it being well-defined or not. Nor whether there is a complexity problem for that matter - I'm making no claim as to whether it would be <span style="font-style: italic">feasible</span> to broadly look for OR-branching Forcing Chains based on arbitrary non-k-chromatic graphs of cells, obviously. But it is still well-defined as a piece of logic. (I <span style="font-style: italic">do</span> think it's feasible to broadly look for <span style="font-style: italic">trivalue oddagon</span> forcing chains, and again, this has already been implemented in YZF_Sudoku.)<br /><br />As for an &quot;oracle&quot;, I can certainly look into adding this in a usable way (right now the code is a bit of a mess, spitting out results for a narrow purpose). Of course, it will have to wait until I have a working computer!</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile323102">
+			<dt>
+				<a href="./member65215.html">mith</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 854</dd><dd><strong>Joined:</strong> 14 July 2020</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./the-tridagon-rule-t39859-75.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p323104" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=323104" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./the-tridagon-rule-t39859-75.html#p323104">Re: The tridagon rule</a></h3>
+			<p class="author"><a href="./post323104.html#p323104"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member72132.html">marek stefanik</a></strong> &raquo; Thu Jul 14, 2022 5:36 pm </p>
+
+			
+
+			<div class="content"><blockquote><div><cite>denis_berthier wrote:</cite>But there's a complexity problem. Finding a real TO with 1 or 2 additional candidates is not very difficult. But having to consider all the contextual TOs at every step of every whip/braid is largely more computationally complex than having to consider all the potential Subsets.</div></blockquote>Personally my main interest would be the effect of TOs on the puzzles' ratings (where they fit on the (TO, Bp)B scale, that being a placeholder rating for braids with TOs and braids[p] as rlcs).<br />I am curious if there is a puzzle in the database that remains outside T&amp;E(2) with TOs used.<br /><br />For any (TO, Bp)B rating, to determine whether a puzzle is in (TO, Bp)B:<br />1) Reach the state after all available (TO, Bp)B eliminations have been made (at the start no TOs have been identified, ie. all BpB eliminations).<br />1.1) If the puzzle is solved, it is.<br />2) Identify TOs from the dead ends of partial (TO-)braids for each candidate (or stop once you find a new one).<br />2.1) If none (new) has been found, it is not (you can keep the TOs and look for a solution in (TO, Bp+1)B).<br />3) Repeat from 1) with the identified TOs.<br /><br />For this problem there are many optimizations one can make.<br /><br />When using T&amp;E to simulate steps 1 and 2, they can be done at once, eliminating the candidates if they produce a contradiction in step 2 after the TO deductions.<br /><br />For puzzles solvable by TO-braids:<br />While you could try to find the path using the smallest patterns, a single class would be much more efficient.<br /><br />For puzzles not in BpB for any given BpB rating:<br />If a candidate C can be eliminated using the TO contradiction pattern, this pattern must be present at the dead end of the T&amp;E procedure starting with the placement of C (and the mutual dead end of partial braids with C as their target).<br />When identifying useful TOs, one can simply look at the dead end for each candidate (and ignore llcs of the partial braids of the candidates which have already been checked; in an attempt to eliminate these candidates only check for the TOs already found).<br />(If the 11-cell patterns are also used, we have to look at the dead ends of the TO-braids with the identified TOs.)<br />(Any candidate which can be eliminated using the TO[12] pattern without the TO[11] patterns can also be eliminated using the TO[11] patterns without the TO[12] pattern, but not vice versa.)<br /><br />This should limit the number of possible TOs to just a few, each of which occurs for some candidates (due to the process they were found).<br />Looking for the TOs might still take a relatively long time if there is none or you want to find all of them (say to find every possible TO-braid/the shortest one, which is one of the differences between human solvers and computer programs – no human solver would ever be required to do that).<br />A different way would be needed to find TOs for candidates which can be eliminated without them (not a problem when trying to determine a (TO, Bp)B rating).<br /><br /><blockquote><div><cite>denis_berthier wrote:</cite>As I said before, all this is meaningful only in the presence of an oracle saying that there is some possibility of a pseudo-TO. Otherwise, the return on investment for this kind of TO-chain is null.<br />Take any puzzle in ph2010 and tell me what you get by trying this.</div></blockquote>I might try it, the pattern is very constraining.<br /><br />Marek</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile323104">
+			<dt>
+				<a href="./member72132.html">marek stefanik</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 263</dd><dd><strong>Joined:</strong> 05 May 2021</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./the-tridagon-rule-t39859-75.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p323105" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=323105" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./the-tridagon-rule-t39859-75.html#p323105">Re: The tridagon rule</a></h3>
+			<p class="author"><a href="./post323105.html#p323105"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member2659.html">denis_berthier</a></strong> &raquo; Thu Jul 14, 2022 5:39 pm </p>
+
+			
+
+			<div class="content">.<br />&quot;well-defined&quot; means &quot;well defined&quot;, CSP-Rules doesn't have anything to do in this. The TO contradiction pattern is well-defined. Anything that has an unspecified number of additional candidates at unspecified places is not a well-defined pattern. With such broad pseudo-definitions, you can only define a pattern of cells in 4 blocks and <span style="font-style: italic"><span style="font-weight: bold">almost everything</span></span> based on it would be a TO pattern - i.e. 100,000s possible patterns of candidates. And the only &quot;piece of logic&quot; associated to this is, it allows a big OR conclusion, which itself doesn't allow anything precise.<br /><br /><blockquote><div><cite>mith wrote:</cite>I do think it's feasible to broadly look for trivalue oddagon forcing chains, and again, this has already been implemented in YZF_Sudoku.</div></blockquote><br />Nobody knows how YZF_Sudoku works, but its chains are obviously not pattern-based, and I've never seen any definition of any of the techniques it uses, so this software is of little interest when talking of pattern-based solutions. <br />As for the complexity of this implementation, there's an easy test: activate YZF trivalue oddagon forcing chains on the original ph2010 and tell me what you get.</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile323105">
+			<dt>
+				<a href="./member2659.html">denis_berthier</a>
+			</dt>
+
+			<dd>2010 Supporter</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 3240</dd><dd><strong>Joined:</strong> 19 June 2007</dd><dd><strong>Location:</strong> Paris</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="web-icon"><a href="http://denis-berthier.pagesperso-orange.fr" title="WWW: http://denis-berthier.pagesperso-orange.fr"><span>Website</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./the-tridagon-rule-t39859-75.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p323127" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=323127" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./the-tridagon-rule-t39859-75.html#p323127">Re: The tridagon rule</a></h3>
+			<p class="author"><a href="./post323127.html#p323127"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member65215.html">mith</a></strong> &raquo; Fri Jul 15, 2022 5:30 pm </p>
+
+			
+
+			<div class="content">You're badly overestimating the number of patterns actually possible here. Just for a quick check, I hacked something together to find all naively possible TO graphs and triples for those graphs, and ran it on all the ph2010 11.9s + Loki. Of the 489888 (9 choices of 4 boxes, 8 choices of parity, 3^4 choices of diagonal, 84 triples) possibilities, only 673 are viable in the worst case (eleven's .2.4...8.....8...68....71..2..5...9..95.......4..3.........1..7..28...4.....6.3..). This took on the order of 0.05 seconds per puzzle. (The lowest was Loki at 163; not surprising, the more givens there are the fewer viable options.)<br /><br />A rough outline of how this code works:<br /><br />1. Iterate over the choices of 4 boxes.<br />2. Iterate over the choices of parity (either 3 positive and 1 negative, or 1 positive and 3 negative; and then 4 choices for which box is the odd one out).<br />3. Choose a diagonal for the first box.<br />4. Starting with the full list of 84 triples, check which ones are viable for that diagonal. A triple is viable if there is a way to place the three digits of the triple in the three cells of the diagonal chosen. (If there is no way to place the triple on the diagonal, we can already eliminate this possibility - these three cells already can't be &quot;three colored&quot; with this triple, so knowing that the full pattern of cells isn't 3-colorable provides no new information.)<br />5. Choose a diagonal for the second box.<br />6. Starting with the list of triples viable for the first box, check which are viable for the second.<br />7. Repeat for the other boxes. If at any point there are no triples on the list, continue to the next choice of diagonal.<br /><br />None of the ph2010 11.9s have a pattern/triple combination with fewer than 13 guardian candidates, and likely after narrowing down with more checks the lower bound would be even higher. For a concrete example, here's a &quot;13 guardian candidate&quot; TO (boxes and cells are 0-index here):<br /><br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>.---------------------.--------------------.----------------------.<br />| 23467&nbsp; 24789&nbsp; 36789 | 46789&nbsp; 4567&nbsp; 45789 | 3689&nbsp; &nbsp; 36789&nbsp; 1&nbsp; &nbsp; &nbsp;|<br />| 167&nbsp; &nbsp; 1789&nbsp; &nbsp;16789 | 6789&nbsp; &nbsp;2&nbsp; &nbsp; &nbsp;3&nbsp; &nbsp; &nbsp;| 689&nbsp; &nbsp; &nbsp;4&nbsp; &nbsp; &nbsp; 5&nbsp; &nbsp; &nbsp;|<br />| 3467&nbsp; &nbsp;4789&nbsp; &nbsp;5&nbsp; &nbsp; &nbsp;| 1&nbsp; &nbsp; &nbsp; 467&nbsp; &nbsp;4789&nbsp; | 2&nbsp; &nbsp; &nbsp; &nbsp;36789&nbsp; 3689&nbsp; |<br />:---------------------+--------------------+----------------------:<br />| 347&nbsp; &nbsp; 479&nbsp; &nbsp; 2&nbsp; &nbsp; &nbsp;| 5&nbsp; &nbsp; &nbsp; 3467&nbsp; 478&nbsp; &nbsp;| 34689&nbsp; &nbsp;1&nbsp; &nbsp; &nbsp; 34689 |<br />| 1345&nbsp; &nbsp;6&nbsp; &nbsp; &nbsp; 139&nbsp; &nbsp;| 348&nbsp; &nbsp; 134&nbsp; &nbsp;2&nbsp; &nbsp; &nbsp;| 7&nbsp; &nbsp; &nbsp; &nbsp;3589&nbsp; &nbsp;3489&nbsp; |<br />| 8&nbsp; &nbsp; &nbsp; 1457&nbsp; &nbsp;137&nbsp; &nbsp;| 3467&nbsp; &nbsp;9&nbsp; &nbsp; &nbsp;147&nbsp; &nbsp;| 3456&nbsp; &nbsp; 2356&nbsp; &nbsp;2346&nbsp; |<br />:---------------------+--------------------+----------------------:<br />| 156&nbsp; &nbsp; 158&nbsp; &nbsp; 4&nbsp; &nbsp; &nbsp;| 2&nbsp; &nbsp; &nbsp; 135&nbsp; &nbsp;159&nbsp; &nbsp;| 135689&nbsp; 35689&nbsp; 7&nbsp; &nbsp; &nbsp;|<br />| 1257&nbsp; &nbsp;3&nbsp; &nbsp; &nbsp; 178&nbsp; &nbsp;| 479&nbsp; &nbsp; 1457&nbsp; 6&nbsp; &nbsp; &nbsp;| 14589&nbsp; &nbsp;2589&nbsp; &nbsp;2489&nbsp; |<br />| 9&nbsp; &nbsp; &nbsp; 1257&nbsp; &nbsp;167&nbsp; &nbsp;| 347&nbsp; &nbsp; 8&nbsp; &nbsp; &nbsp;1457&nbsp; | 13456&nbsp; &nbsp;2356&nbsp; &nbsp;2346&nbsp; |<br />'---------------------'--------------------'----------------------'<br />box 3 cells 0, 4, 8 possibles &#91;3, 4, 7&#93;, &#91;6&#93;, &#91;1, 3, 7&#93;<br />box 4 cells 2, 4, 6 possibles &#91;4, 7, 8&#93;, &#91;1, 3, 4&#93;, &#91;3, 4, 6, 7&#93;<br />box 6 cells 0, 4, 8 possibles &#91;1, 5, 6&#93;, &#91;3&#93;, &#91;1, 6, 7&#93;<br />box 7 cells 1, 5, 6 possibles &#91;1, 3, 5&#93;, &#91;6&#93;, &#91;3, 4, 7&#93;<br />triples &#91;&#91;3, 6, 7&#93;&#93; guardians &#91;13&#93;</code></dd></dl><br /><br />[edit]There was a typo resulting in a miscount of guardian candidates, this has been corrected above[/edit]<br /><br />This one fails checking possibilities for 7 in b78 - in both cases, 7 can only appear in the bottom row. This sort of check should be easy enough to add, though more complicated examples may exist.<br /><br />I suspect after adding checks like this, the number of viable patterns/triples to check would be in the single digits, if not zero, for the vast majority of puzzles, and that those viable combinations would have a huge number of guardian candidates (well beyond the point that it would be fruitful to check an OR-branched T&amp;E on them... but it *could* be done). Whereas there will be at least one viable combination for all known depth 3 puzzles, with at most about 12 guardian candidates (some of which, even with so many guardian candidates, will lead to a useful elimination/placement, even for a &quot;real player&quot;).</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile323127">
+			<dt>
+				<a href="./member65215.html">mith</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 854</dd><dd><strong>Joined:</strong> 14 July 2020</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./the-tridagon-rule-t39859-75.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p323150" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=323150" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./the-tridagon-rule-t39859-75.html#p323150">Re: The tridagon rule</a></h3>
+			<p class="author"><a href="./post323150.html#p323150"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member2659.html">denis_berthier</a></strong> &raquo; Sat Jul 16, 2022 4:38 am </p>
+
+			
+
+			<div class="content">.<br />Hi mith<br />Interesting. Your general TO conditions seem to be more restrictive than I thought.<br />These results make it look more interesting to check how far Forcing-T&amp;E based on these conditions would lead in the min-expands database.</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile323150">
+			<dt>
+				<a href="./member2659.html">denis_berthier</a>
+			</dt>
+
+			<dd>2010 Supporter</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 3240</dd><dd><strong>Joined:</strong> 19 June 2007</dd><dd><strong>Location:</strong> Paris</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="web-icon"><a href="http://denis-berthier.pagesperso-orange.fr" title="WWW: http://denis-berthier.pagesperso-orange.fr"><span>Website</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./the-tridagon-rule-t39859-75.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p323183" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=323183" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./the-tridagon-rule-t39859-75.html#p323183">Re: The tridagon rule</a></h3>
+			<p class="author"><a href="./post323183.html#p323183"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member65215.html">mith</a></strong> &raquo; Sat Jul 16, 2022 9:27 pm </p>
+
+			
+
+			<div class="content">So preliminary results with a rudimentary filter:<br /><br />For each graph/triple combination, check each box for valid placements of the triple within the chosen cells. Track any digit which is forced to a single cell in the box in this way. If two such forced digits see each other, filter this combination out.<br /><br />This is already a little stronger than the example given above. There, 7 could only appear in one cell of each of two boxes, and both were in the bottom row. Here, there can be cases where a digit placement is forced *by the other digits* in the triple, so rather than just considering two cells of the pattern we may be considering six (all three cells in both boxes).<br /><br />In theory, this can be extended further. For example, consider ........1....23.45..51..2....25...1..6...27..8...9......42....7.3...6...9...8.... (dobrichev 11.9). A possible TO/triple combination here is 467 in b1p267, b2p348, b4p159, b5p357.<br /><br />Under the naive check, this is valid - in each box, 467 can be placed in the three chosen cells in at least one order.<br />Under the new filter, this is still valid. In b45, the digit placement is forced (467b4p159, 746b5p357) but these do not clash. b12 placements are not forced for any of the digits.<br />However, now consider b12 in relation to the forced digits in the other boxes. b1p6 naively could contain 6 or 7, but b4p9 must contain 7 (if all cells were to be from 467), so b1p6 is forced to be 6. Continuing in this way, you eventually end up with 4 in both b1p2 and b2p3, and it breaks - but to do so, you have considered all 12 cells.<br /><br />These cases could be caught as well and filtered out - and I think if this were done it would filter all or almost all combinations - but when we're considering all 12 cells anyway to prove it's broken, I'm not sure that logically there is any meaningful difference in this and any other TO with a ton of guardians. It's just that we're proving directly that the triple can't fill all 12 cells, rather than proving it with graph colorability.<br /><br />(Something to consider is whether even some of the currently filtered cases - considering 6 cells in 2 boxes - may yield some logic using the &quot;guardians&quot; in those cells. Probably not anything that couldn't be found in a simpler way, but it's still a question.)<br /><br />Results in next posts.</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile323183">
+			<dt>
+				<a href="./member65215.html">mith</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 854</dd><dd><strong>Joined:</strong> 14 July 2020</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./the-tridagon-rule-t39859-75.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p323184" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=323184" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./the-tridagon-rule-t39859-75.html#p323184">Re: The tridagon rule</a></h3>
+			<p class="author"><a href="./post323184.html#p323184"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member65215.html">mith</a></strong> &raquo; Sat Jul 16, 2022 9:33 pm </p>
+
+			
+
+			<div class="content">For the first batch, I ran all the 11.7+ puzzles from ph2010. (These are taking a bit over a second per now with the additional filter and some other stuff I put in, but I'm sure it could be optimized. And this is on my beaten up work laptop, since my desktop is still out of action.)<br /><br /><div style="padding: 3px; background-color: #FFFFFF; border: 1px solid #d8d8d8; font-size: 1em;"><div style="border-bottom: 1px solid #CCCCCC; margin-bottom: 3px; font-size: 0.9em; font-weight: bold; display: block;"><span onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') {  this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerHTML = '<b>Hidden Text: </b><a href=\'#\' onclick=\'return false;\'>Hide</a>'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerHTML = '<b>Hidden Text: </b><a href=\'#\' onclick=\'return false;\'>Show</a>'; }" /><b>Hidden Text: </b><a href="#" onClick="return false;">Show</a></span></div><div class="quotecontent"><div style="display: none;"><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>159;310;15;30;98.7.....7.....6....6.5.....4...5.3...79..5......2...1..85..9......1...4.....3.2.;11.90;11.90;11.80;GP;champagne dry;1;22;<br />160;281;15;30;98.7.....6.....87...7.....5.4..3.5....65...9......2..1..86...5.....1.3.......4..2;11.90;11.90;11.60;GP;kz0;11523;23;<br />150;311;15;29;12..3....4....1.2...52..1..5..4..2......6..7......3..8.5....9....9.7..3......8..6;11.90;11.90;11.30;elev;second flush;2;23;<br />205;454;16;29;.......39.....1..5..3.5.8....8.9...6.7...2...1..4.......9.8..5..2....6..4..7.....;11.90;11.90;11.30;tax;Golden-Nugget;3;21;<br />234;439;14;30;.2.4...8.....8...68....71..2..5...9..95.......4..3.........1..7..28...4.....6.3..;11.90;11.90;9.90;elev;3;4;22;<br />111;297;15;26;........1....23.45..51..2....25...1..6...27..8...9......42....7.3...6...9...8....;11.90;11.90;9.90;dob;12_12_03;248078;23;<br />207;404;15;33;12.3.....4.5...6...7.....2.6..1..3....453.........8..9...45.1.........8......2..7;11.90;11.90;2.60;elev;1;5;22;<br />144;284;14;29;5.6...7...1.3.....8...5.9.....1...2.....8.6.7.....2.4.7...9...6.3...42....5......;11.90;1.20;1.20;OW;2015_08;1744614;22;<br />212;362;15;30;..3..6.8....1..2......7...4..9..8.6..3..4...1.7.2.....3....5.....5...6..98.....5.;11.90;1.20;1.20;elev;2;6;22;<br />116;384;17;28;.......12......345..3..46....2..1.3..7..6....8..9.......5..2..4.6..8....9..7.....;11.80;11.80;11.70;dob;12_12_03;248083;22;<br />239;456;17;30;1....6.8....7..1........5.6..9.4.....7.2...3.8....76..3....1..5.4.9.......2.7....;11.80;11.80;11.60;elev;16;8;22;<br />145;346;15;30;1.......9..67...2..8....4......75.3...5..2....6.3......9....8..6...4...1..25...6.;11.80;11.80;11.60;elev;15;7;22;<br />114;261;16;29;98.76....54.........7..59..4....75.....3...2.....1...6.9...87....4....1....2....3;11.80;11.80;11.50;GP;kz1a;15497;23;<br />193;338;16;27;.2...67..4...8......93........9..57..1...7..2......61.3...4..6...8.......6...5.2.;11.80;11.80;11.50;tarekdb;tarx0075;9;22;<br />193;384;17;28;98.7.....6...5......4..93..5......6..7..8......9..24....1.....4....9.1.......1.32;11.80;11.80;11.40;GP;H1;11;22;<br />97;366;14;25;2.......6.5..8..1...4...9...7.3.1......82.......7.5.3...9...4...8..1..5.6.......2;11.80;11.80;11.40;tax;tarek-ultra-0203;10;22;<br />280;531;17;30;1.......2..94...5..6....7.....89..4....3.6.....8.4.....2....1..7.......6..5.8..3.;11.80;11.80;11.20;tax;gsf-2007-05-24-003 64879;12;21;<br />280;497;18;31;6.......2.9.4...5...1...7...5..84.......2.......3.5.4.2.....6...3...9.8...7.....1;11.80;11.80;11.10;tax;coloin-04-10;13;21;<br />212;464;19;28;1.......2.9.4...5...6...7...5.3.4.......6........58.4...2...6...3...9.8.7.......1;11.80;11.80;10.80;tax;coloin-04-10;14;21;<br />196;329;12;28;...4...89..7..92......3...526...1.....19.....7.....1..5...9..4...6..29.....8....3;11.80;11.80;10.70;elev;17;15;23;<br />274;495;16;29;..1.....2.3...4.5.6...2.7.......5.....8.7.1...9.3.......7.6...8.4.....9.8.....2..;11.80;11.80;10.70;SSX;2019_3_5;2316170;21;<br />131;261;15;29;98.7.....7...6.9....5....4..9.3..8....2.....1.....4.5..3..7.6.....8...7......1..2;11.80;11.80;10.60;PAQ;2019_03_18;2320323;22;<br />244;359;16;28;........94....92......7..45..1.3.....7.6..9..8....7..2.3.7..8....6.1....9....5.2.;11.80;11.80;10.50;elev;18;16;23;<br />213;317;13;28;........1.....2.3...4.5.6....7.8.....1......96..4..7....85.....59...3.2.7...6.5..;11.80;11.80;10.50;dob;12_12_03;248027;22;<br />214;492;18;30;1.......2.3.4...5...6...7...5.9.4.......23......8...9...2...6...9...8.4.7.......1;11.80;11.80;10.40;Hp54;1;18;21;<br />194;433;12;30;1.......2.3.4...5...6...7...5.8.4.......29......3...9...7.....1.9...8.4.2.....6..;11.80;11.80;10.40;Hp54;4;17;21;<br />181;382;17;30;.2...1......6...3...9.8...7..5....78.3.....6.8...4.5....4.9.7...1.2.....9.......5;11.80;11.80;10.00;col;2015_08;1682984;22;<br />261;417;14;29;...4...8...7..92......3...526...1.....19......7....1..5......4..1.8....3..6..29..;11.80;11.80;9.90;elev;9;19;22;<br />279;423;16;31;.2.4..7....6.....17...3......5....6..4.2..9.......5..8..1..8....9..7.......92.3..;11.80;11.80;9.80;elev;10;20;21;<br />178;379;16;28;.......12.....3..4..2.4.5....4.5..2..6....7..8..9..4....7.1...5.3...8...9..6.....;11.80;11.80;9.40;dob;12_12_03;247933;22;<br />160;316;15;29;........1.....2.3...4.5.6.......1.2....3.7..8.6..9.7...598......76..5...4...7.5..;11.80;11.80;8.30;dob;12_12_17s;762567;23;<br />167;453;17;31;1.......9.5....2....87...4.2...3......48.5....8.6...7...6..4.5.........1....9.3..;11.80;11.80;7.90;elev;11;21;21;<br />242;432;17;30;..3.8....7..2......6...9.1.........3.....596..9.....54.1...45..8...3......27.....;11.80;11.80;3.40;tax;tarek071223170000-;23;21;<br />238;531;17;29;1.......6.5.7...8...3...4.....5.8.9.....3.....8.92....6.....3...7...5.2...4.....1;11.80;11.80;3.40;col;H1;24;21;<br />234;362;15;28;5.......9.2.1...7...8...3...4.6.........5.......2.7.1...3...8...6...4.2.9.......5;11.80;11.80;3.40;tax;m_b_metcalf;22;20;<br />160;331;15;29;........1..2..3.4..4..5.6......1.5.....6....78....4.3..8...9.2.2.37.....9...2....;11.80;11.80;3.40;dob;12_12_03;247946;22;<br />85;274;17;28;98.76....75....9....6......8...4..3..2......1..95..8....86..5......3...4.....1.2.;11.80;11.80;3.40;GP;KZ1C;23862;23;<br />312;521;17;33;98.7.....7.....9....2.95...47........3.4..7....6....1....84.3.......6..2.....2..1;11.80;11.80;2.60;col;2015_08;1682994;22;<br />110;313;11;27;98.7.....76..8......5......8..9..4....3....2......1..5...46.7......9.6.2.....2.34;11.80;11.80;2.60;PAQ;2019_05_01;2346393;23;<br />205;504;15;28;1......8......92....6.3...52....8.....5.7.....6.5....4..47...........91..3..6...7;11.80;11.80;2.60;elev;14;28;21;<br />242;403;17;30;..34...8.......1.37........2...9.......5..8...6...7.4...51....8.7...5...9...62.5.;11.80;11.80;2.60;elev;13;27;22;<br />158;516;17;31;98.7.....6..89......5..4...7...3.9....6...7....2....51.6..8.3.......1.4.........2;11.80;11.80;2.60;GP;H3;26;22;<br />347;547;14;31;........1.....2.3....14.5....3.....6.5.7..4..8.......2..6..8..5.4.51.....9..7.1..;11.80;11.80;2.60;dob;2012_11_10;225581;22;<br />169;569;13;30;98.7.....6..89......5..4...7...3.9....6...7....2....41.6..8.3.......1..5.......2.;11.80;11.80;2.60;GP;H2;25;22;<br />152;470;17;29;98.7.....6..89......1..4...7...3.9....6...7....2....51.6..8.3.......5.4.........2;11.80;11.80;2.60;col;2012_11_10;225580;22;<br />366;604;16;30;.....9.......8..76...7...85..5.....7.9.....5.1....23...1...4...34..9......681....;11.80;11.80;2.60;MITH;2020_10;3269469;22;<br />130;439;15;29;68.7.....3..89......1..4...7...3.9....6...7....2....51.6..8.3.......5.4.........2;11.80;1.50;1.50;col;2012_11_10;225578;22;<br />127;464;16;29;68.7.....3..89......5..4...7...3.9....6...7....2....51.6..8.3.......1.4.........2;11.80;1.50;1.50;col;2012_11_10;225579;22;<br />326;529;16;32;..12..3......4..5......6...2.....1.3.4.....6.1.7.....8.1.7......9..65...7..8..2..;11.80;1.50;1.50;MITH;2020_10;3268347;22;<br />134;275;14;29;5.6...7...1.3.....7...5.8.....1...2.....7.6.8.....214.8...9...6.3...4.....5......;11.80;1.20;1.20;OW;Lightsaber;1682979;22;<br />245;302;14;28;.......12.....3..4..1.4.5....2.6..5..7....6..8..9..4....4.1...5.3.8.....9....7...;11.80;1.20;1.20;dob;12_12_03;262544;22;<br />184;295;14;28;........1..2..3.4..5..6.7.......1.3....4....85...7.2....5.2.9...9.....8.76.9.....;11.80;1.20;1.20;DOB;13_01;768268;22;*<br />129;204;14;27;98.7.......6.5.4.........9.3..9..2...7..8...9..9..5.4.2..5....3..1.6..5......1...;11.80;1.20;1.20;GP;12_07;38140;23;<br />260;265;16;29;98.7..6....5.96........4.9.87..6.9....3.........8....246...87......7.4.........1.;11.80;1.20;1.20;PAQ;2018_11_28;2123940;23;<br />484;321;13;33;98.76.5..7..4..6....3..8...5..6..4......2...........1.4...7...9.5....7.....5...64;11.80;1.20;1.20;PAQ;2019_04_28;2345625;23;<br />484;321;13;33;98.76.5..7.54..6....3..8...5..6..4......2...........1.4...7..59...5...64......7..;11.80;1.20;1.20;PAQ;2019_04_28;2345626;24;<br />138;300;14;33;98.7.......7.6.........57..4...3..2..1...6..3...9..8..2......4..3......1..86..5..;11.80;1.20;1.20;GP;cy4;9253;22;<br />242;407;13;30;.2....78.4.......6.9..7..1....5....3.....1.......9.12..7..1.8..5....4.....67.3...;11.80;1.20;1.20;elev;7;29;22;<br />145;352;17;28;.....6.8....1..2...9..7...5..5.4...734...8...97.........9...6..7...3...4...2...1.;11.80;1.20;1.20;elev;5;30;22;<br />182;557;18;30;.....6..94...8.2.....7...1.2.9...8....4.3.9...6.....5.3.8.4.......5......7...1...;11.80;1.20;1.20;elev;4;31;21;<br />121;274;14;30;1....6.......8.2...9.7....5.7.3...5......16....4....73..59....48...2.....3.......;11.80;1.20;1.20;elev;L1;32;21;<br />175;382;14;30;..3..6.8....1......9..7...4...8..6..3...4...2.....5.1...2.9...37........94....5..;11.80;1.20;1.20;elev;6;33;21;<br />180;269;15;28;.2.4..7...5...9.3.6...7......5..8.9.7...2.....4.6..3.......1..85......1...1...9.3;11.80;1.20;1.20;elev;8;34;23;<br />243;517;16;30;........1.....2.3....45.6....1.7...2.8.6..7..67.........3..9...4..5..8..85.7.....;11.80;1.20;1.20;dob;12_12_17s;762565;22;<br />267;342;15;29;........1..2..3.4..3..5.6......6...7..8..2.3..7.1..5....9.2...3.8...9...4......9.;11.80;1.20;1.20;dob;12_12_03;248311;22;<br />216;395;16;29;.......12.....3..4..4.2.5....2.6...5.7....6..8..9.......6.1..5..9...8...3..7.6...;11.80;1.20;1.20;dob;12_12_03;247938;22;<br />249;311;14;30;.......12.....3..4..2.4.5....1....5..3.6.....7....8.....4.2...5.6.3..9..8....7...;11.80;1.20;1.20;dob;12_12_03;247926;21;<br />156;507;17;30;........1.....2.3...4.5.6...3.....72.4....8..6..8..9...7...1...4.56.....8..59....;11.80;1.20;1.20;dob;12_12_03;247964;22;<br />134;274;15;27;9..8..7...8..6......5....4.6...9.....3.7..9.......2..5.9..3.8....4.....1.....1.2.;11.80;1.20;1.20;GP;2012_04;32976;21;<br />129;204;14;27;98.7..6....5.4...........9.8..9...6..4..5...9..9..32..1.........7.1...8...8..2..3;11.80;1.20;1.20;GP;12_05;35497;23;<br />370;190;14;28;98.7..6..75.....8...6.......4..3......78...5......74....96...7...84..56......2..1;11.70;11.70;11.40;GP;14_04;1383016;24;<br />111;270;16;28;98.7.....76....9....5.9.....4..5..3...78..5.......2..1..65..8......3...4.....1.2.;11.70;11.70;11.30;GP;kz0;12412;23;<br />198;335;17;31;98.7.....7...6......5..87..5....69....43...6.....2...1.5...48.....6....3....1..2.;11.70;11.70;11.30;GP;kz0;12120;23;<br />217;396;15;28;98.7.....6.....9....5....7..4..3..2...85..4.......4..1..69..5......2...3.....1.4.;11.70;11.70;11.30;GP;H4;35;22;<br />176;356;15;29;98.7.....76....9....5......4...6..3...75..6.......2..1..86..5......1...2.....3.4.;11.70;11.70;11.30;GP;H5;36;22;<br />130;302;13;28;98.7..6..5...9..4...3..6..94.......3.2.6..8....8....5..7..81......2.........671..;11.70;11.70;11.20;GP;12_07;39917;24;<br />222;461;18;29;1.......2.9.4...5...6...7...5.3.4......96.........8.4...2...6...3...9.8.7.......1;11.70;11.70;11.20;tax;coloin-04-10;39;21;<br />223;427;16;32;1...5...9..7...2...69..3.4....8........91..7.9....5..83..5....1..2...6...4.......;11.70;11.70;11.20;elev;34;37;22;<br />205;488;16;28;1.......9.4...3.8...2...6...7..58.......2.......7.4.5...6...2...3.8...7.9.......1;11.70;11.70;11.20;tax;tarek-2803;38;21;<br />337;564;19;29;98.7.....7.6...8....5......8..4..6......5..3......2..1.7.6..9......1..2......3..5;11.70;11.70;11.20;GP;12_11;100058;21;<br />242;255;16;28;98.7..6..7..6..8....5.4....8..3..96..3...2...........31....6.7..781...9.......1..;11.70;11.70;10.90;PAQ;2018_11_26;2123933;24;<br />292;432;17;30;1.......2.3.4...5...6...7...5.8.3.......7.......95..8.7.....6...9...8.3...2.....1;11.70;11.70;10.80;tax;jpf-04/08;40;21;<br />395;596;18;29;..34..7.......9..2....1..5.2.........38...6..6.43.........2..9......5..1.6.8..3..;11.70;11.70;10.80;tarekdb;pearly6000-4268;41;21;<br />187;360;14;30;98.7.....6.....97...7.....54...3...9..86...5......21....68...9.....1.2.......4..3;11.70;11.70;10.70;GP;14_06;1416320;23;<br />271;634;18;29;..34..7.......9..2....1..5.27........38...6....43.........2..9......5..1.6.8..3..;11.70;11.70;10.70;tarekdb;pearly6000-3802;42;21;<br />248;355;15;29;98.7.....6.....7....7.5..8..4..3...2..6...5.......1.4...89..6......4..1......2..3;11.70;11.70;10.70;GP;H6;43;22;<br />195;339;14;28;........1..2..3.4..4..5.6.......7.8...43......1..9.5...9......63.78.....4....2.7.;11.70;11.70;10.70;MITH;2020_10;3265491;22;<br />141;205;15;28;98.76....75.........48..97.8..9..46.....3.........8..24....6.5..7.5..84.........1;11.70;11.70;10.60;GP;13_09;1091812;25;<br />158;305;15;28;98.7.....6.....7....7.5....5....4.3...89..5......2..1..3.....4...98..6......1...2;11.70;11.70;10.60;GP;H7;44;22;<br />241;437;16;29;..345........89......2..4...1......7..4.2.8..9......6...28..5..6......9..7......1;11.70;11.70;10.60;tarekdb;pearly6000-3112;45;21;<br />292;534;18;30;..34...8..........7....25..2..........49...1.9.....6.7.....5..6..9.1..3..8.34....;11.70;11.70;10.60;elev;L2;46;21;<br />163;305;16;27;.2...6......1...3...9.7...5..5....78.3.....1.8...4.5....4.9.8...6...2...9.......7;11.70;11.70;10.50;elev;H1;47;22;<br />245;633;16;29;98.7..6..7...8.....54..6...6...3.9....5....2......1..5.3..6.7.......2.1.........4;11.70;11.70;10.50;GP;2011_12;29132;22;<br />168;425;14;27;98.7.....7.6...9......5.....4.....3...78..5......2...1..85..6......1..2......3..4;11.70;11.70;10.50;GP;2012_04;33418;21;<br />202;270;15;28;98.76.5..7..8..9....5..9...5....84...3.4.........7..2.4...8.6....69....1.....6.5.;11.70;11.70;10.10;GP;13_12;1270042;25;<br />230;257;15;30;........1....12.3...13..4....35...4..6...78..9...2......82....4.7..9....2....65..;11.70;11.70;10.10;dob;12_12_17s;762563;23;<br />292;440;18;29;..3..6.8.4..7......9..3.....3.....15..5..18.........6.3..9..2...7..4......2..5..1;11.70;11.70;10.00;elev;L3;48;22;<br />225;358;13;31;........1.....234...5.6..78...3....2.5..8..9.6..9.1..4.78.......9....4..5...9..8.;11.70;11.70;10.00;dob;12_12_17s;762572;24;<br />105;330;16;27;98.7.....76..5......4..87..6....98.....3...2.........1.4...76.....2...57....1...3;11.70;11.70;9.90;GP;KZ1C;19768;23;<br />344;629;16;31;........1.....2.3....45.6....1..7....8..9....59..4.8....39....284....9..9...6....;11.70;11.70;9.80;dob;12_12_03;248048;22;<br />259;624;17;31;........1.....2.3....45.6....1.7..2..7.6.....84....7....3..9...4..5..8..58.7.....;11.70;11.70;9.80;dob;12_12_03;247991;22;<br />411;520;17;31;98.7.....6...5.8....4....3..7.6..9.......4..2.......1..6.8..5....1..2..3....6....;11.70;11.70;9.50;GP;2012_04;33117;21;<br />332;930;17;33;....5.7.....9.1.6.........52....8.16.......2..3....4.7.7..4......82.9...9.68.....;11.70;11.70;9.40;col;12_12;635332;22;<br />249;468;16;29;........1.....2.3...4.5.6.....2...7..7...4..28...9.5....5..69...1.3.....6.8.4....;11.70;11.70;9.40;MITH;2020_10;3266306;22;<br />338;614;15;32;........1.....2.3....45.6....1.7...2.7.6.....58....7....3..9...4..5..8..85.7.....;11.70;11.70;9.30;dob;12_12_03;247987;22;<br />338;592;16;32;........1.....2.3....45.6....1.7...2.7.6.....85....7....3..9...4..5..8..58.7.....;11.70;11.70;9.30;dob;12_12_03;247992;22;<br />309;638;18;31;........1.....2.3....45.6....1..7....8..4....45..9.8....39....284....9..9...6....;11.70;11.70;9.30;dob;12_12_03;248046;22;<br />282;661;16;31;........1.....2.3....45.6....1..7....8..4....54..9.8....39....285....9..9...6....;11.70;11.70;9.30;dob;12_12_03;248050;22;<br />306;625;17;31;........1.....2.3....45.6....1.7...2.7.6.....84....7....3..9...4..5..8..58.7.....;11.70;11.70;9.30;dob;12_12_03;247990;22;<br />219;248;13;26;98.76.5..7..5...9......9..859...6.8...4.....5...3.....46...7.5.....2.1.4.........;11.70;11.70;8.90;GP;13_12;1256070;24;<br />221;359;17;29;........1.....2.34..3.5.6.....6..7...7..8....9....1.4..8.5.....3.1....9.4....3..2;11.70;11.70;8.00;MITH;2020_10;3266003;22;<br />477;600;17;33;........1.......2...3..45......5.....6..374..8..1...9...4.7.6...76..5...9.......2;11.70;11.70;8.00;dob;12_12_03;248011;21;<br />194;323;14;28;98.7.....7...6.9....5..9.7.5....6.8...4.3.6.....2....1.5...7.4....6....3....1.2..;11.70;11.70;6.60;GP;KC40b;24410;24;<br />177;405;15;30;98.7.....6...9.5....4..3...7..9..6......7..42.....1....6.5..8....2.1...3.......1.;11.70;11.70;3.40;PAQ;2019_08_05_a;2487227;22;<br />362;548;15;32;...4....9....8.1...8..13........8..7.3..6.2....75......1...26....4.....59......7.;11.70;11.70;3.40;elev;L4;50;21;<br />272;446;19;29;1.......2..34...5..6....7.....85..9....3.6.....8.9.....2....1..7.......6..9.8..3.;11.70;11.70;3.40;tax;jpf-04/14/B4;51;21;<br />186;460;17;30;1.......2.3.4...5...6...7...5.8.4.......73......9...8.7.....6...4...8.9...2.....1;11.70;11.70;3.40;tax;jpf-04/14/01;52;21;<br />107;302;15;26;...4.67....67.9.......1......9.6.4..5......2..8......33......5...4.9.1...1...2..8;11.70;11.70;3.40;elev;H2;53;22;<br />220;425;17;28;...4...8...6..91......3...42....56...7..4..3...5........1..2...5.....9...8..6...7;11.70;11.70;3.40;elev;29;49;21;<br />151;432;14;32;98.7..6..5...9..4...3..2..92...3.....7.8..4.......5....6.....14...1...68......7..;11.70;11.70;3.40;GP;13_09;1115626;23;<br />156;310;15;27;........1.....234..13...25.....6..7...89......5...3..4..68......3...1..29...7....;11.70;11.70;3.40;dob;12_12_03;248081;22;<br />176;357;14;30;........1.....234...3...25...1..4..5.4..6.7..8..9.......4..1..3.6.7.....9...8....;11.70;11.70;3.40;dob;12_12_03;247981;22;<br />200;315;16;26;........1..1..2.3..4..5.6.....7......8..6.5..7....3.2...4.8..6..6.9.....5.8...9..;11.70;11.70;3.40;dob;12_12_03;247940;22;<br />174;506;17;29;1.......6.5.7...8...3...4.....2.8.9.....1.....8.95....6.....3...7...5.2...4.....1;11.70;11.70;3.40;OW;81006;33398;21;<br />215;445;16;29;........1.....2.3...4.5.6.7...2.8....7..6...59.........16...4...5..1.7..8..3.....;11.70;11.70;2.60;MITH;2020_10;3276414;21;<br />247;510;17;31;98.7.....7.....9....2.95...47........3.4..7....6....1....84.3.......6.5......2..1;11.70;11.70;2.60;col;2015_08;1682995;22;<br />217;588;16;30;98.7.....7..8..9....5.4....39....6...6.........2....31...3..76.....1...2.....5..4;11.70;11.70;2.60;col;12_12;635331;22;<br />270;493;17;31;98.7.....7.....9....6.95...47........3.4..7....2....1....84.3.......6.5......2..1;11.70;11.70;2.60;GP;13_09;1123016;22;*<br />170;266;15;29;98.7.....6.....7....7.85....4..5..3...69..5.......2..1..85..6......1...4.....3.2.;11.70;11.70;2.60;GP;kz0;11494;23;<br />223;302;15;29;1...56.....71.......9....1..4..6.3.......8..29..7...6......24..5..6...9.....3...8;11.70;11.70;2.60;elev;33;59;22;<br />217;471;19;31;..1...5...2.4...6.3....7....6.28........9..2.......4.65.....1...9.8...4...7.....3;11.70;11.70;2.60;col;H2;54;21;<br />229;493;17;30;1.......2..34...5..6....7......3..4....8.6.....954.....2....1..7.......6..5.9..8.;11.70;11.70;2.60;tax;jpf-04-10;60;21;<br />223;296;16;27;....56.8..5.7....3..8......2.....9...4.5....7....92.6.3.4.....15..1..4...1.....7.;11.70;11.70;2.60;elev;31;61;23;<br />226;541;16;31;12...6....5...92....8.3........7...3...8....49....15....4....7.56....9..........1;11.70;11.70;2.60;elev;L5;58;21;<br />222;656;16;32;98.7.....7..6..8....5.4....37....6...6.........2....31...3..98.....1...2.....5..4;11.70;11.70;2.60;GP;H8;57;22;<br />126;304;18;27;....56.8...71.....6.....4.......85...3......29...4..6..1.7.......2.....38...9..5.;11.70;11.70;2.60;elev;30;55;21;<br />277;355;16;30;...4....9....8.2..6....3.1..1...7...7..6..5...3.....7.3....5.2...29..8......2...4;11.70;11.70;2.60;elev;32;56;22;<br />115;259;15;26;98.76....75....6....6....9..4.5....3..5.7.......2.4.1...8.5.9.....1...4......3..2;11.70;11.70;2.60;GP;13_03;976033;24;<br />397;753;15;30;.....1..2....3..4....5..1.6..1..72...8......59......8...6..5...43..9....89.3.....;11.70;11.70;2.60;MITH;2020_10;3269482;22;<br />304;610;16;29;.....1..2....3..4....5..1.6..1..76...8......59......8...5..2...34..9....89.3.....;11.70;11.70;2.60;MITH;2020_10;3269484;22;<br />403;706;14;32;........1.....1..2...34..5...36......574.....8....2....46....7..7.5...6.9...6.1..;11.70;11.70;2.60;MITH;2020_10;3270807;22;<br />311;574;16;32;........1.....2.3....45.6....1..3....7..4.8..58..7......97....27...6....84....7..;11.70;11.70;2.60;dob;12_12_03;247995;22;<br />124;578;16;29;........1.....2.3....45.6....1....27..6...8...9..8.4....7..3...5..89....96.5.....;11.70;11.70;2.60;dob;12_12_03;247978;22;<br />132;587;16;30;........1.....2.3....45.6....1....72..6...8...9..8.4....7..3...5..89....96.5.....;11.70;11.70;2.60;dob;12_12_03;247979;22;<br />318;572;15;31;........1.....2.3....45.6....3..1....4.5..7..57.8.......9.8..2.75....8..8..6.....;11.70;11.70;2.60;dob;12_12_03;247988;22;<br />335;543;16;31;........1.....2.3....45.6....3..1....4.5..7..75.8.......9.8..2.57....8..8..6.....;11.70;11.70;2.60;dob;12_12_03;247993;22;<br />112;352;12;30;98.7.....76..8......5......8...6.4....3....2......1..5...94.7.....6..9.2.....2.43;11.70;11.70;2.60;PAQ;2018_12_25;2236463;23;<br />379;668;17;29;12.3.....34..1......5..6...2.....5...1.....2...7..8..9...5..6.7....3..4......79..;11.70;11.70;2.60;SSX;2020_02_29;3261240;22;<br />149;545;16;32;........1.....2.3....14.5....3.....6.5.7..8..9.......2.4.51.....7..8.1..1.6..9...;11.70;2.60;2.60;dob;12_12_03;247965;22;<br />135;434;15;29;98.7.....6..85......4..3...5..6..7....9...5....2....41.9..8.6.......1..3.......2.;11.70;1.50;1.50;GP;13_09;1115380;22;<br />400;386;14;34;98.76.5..4.53..6....2..9....5.6..3......4...........1..3..7..58...5...63......7..;11.70;1.20;1.20;PAQ;2019_08_05_a;2489141;24;<br />200;229;15;26;98.76.5..7..5...9...5...6..4.........3...27....897..6...728..5.......1..........2;11.70;1.20;1.20;GP;14_06;1417550;24;<br />196;177;15;27;98.76.5..7.4.......6.9..8..3......5..7.5..6......2...1.9..78.6....6.........597..;11.70;1.20;1.20;GP;12_12;545623;25;<br />426;160;15;29;................12..3.145.........4...16......5..371...35....8..749.....1...534..;11.70;1.20;1.20;MITH;2020_10;3301994;23;<br />508;230;15;30;........1.....2.....3.4.56....7.......4.......5..3.42..26.....8.35..9...4...2.35.;11.70;1.20;1.20;MITH;2020_10;3301956;22;<br />334;433;14;29;........1....23.4.....452....1.....6.3...6.2.6.7...8....8.5.....5...4...1..6....9;11.70;1.20;1.20;MITH;2020_10;3302991;22;<br />409;231;12;33;98.76....7....59...45.3.6..4....6....6.59.4....93.......4..35.....9...2.....1....;11.70;1.20;1.20;PAQ;2019_08_05_a;2488918;25;<br />114;266;12;28;98.7..6..75..4..8...3..8...6......92...2...76......1..1..9..7...4...3.....9.5....;11.70;1.20;1.20;GP;12_07;41789;24;<br />330;278;15;30;........1..2..3..4.5..6.27.....8.52.5..9.6...8.......6..76..4...6.....1.2...7.8..;11.70;1.20;1.20;MITH;2020_10;3273143;24;<br />109;291;14;26;..1.5.7..4....9....8.2.....2......4..9.8.......3.6.5.....5.16......7..13..6.....7;11.70;1.20;1.20;col;12_12;635330;22;<br />204;316;16;29;98.7.....6.....7....7.5.....9...4.3...85..9......2...1.2...1.4...9..56......3...2;11.70;1.20;1.20;GP;kz1a;14293;23;<br />154;295;16;29;1....67...5.7....3..8.....4.4.5..3......2..9........45.7.9...3.6...1......2..8...;11.70;1.20;1.20;elev;28;69;22;<br />230;438;16;29;..34....9.5...9.......2.1..2...7.....84........98....3.9.5....86......7.....1.6..;11.70;1.20;1.20;elev;21;62;21;<br />178;348;17;30;.2...6......18......8.3.4....49....3....4.8..5......7.7......2...13..9...6...5...;11.70;1.20;1.20;elev;23;63;21;<br />232;357;14;30;...4...8...7..92......3...526...1.....19.....7.....1..5......4...6..29..9..8....3;11.70;1.20;1.20;elev;20;64;22;<br />109;273;17;28;.2....7..4....9..3....1..6....3.5..88.......5.6....2...1..7....5..9.4.....98.....;11.70;1.20;1.20;elev;22;65;21;<br />226;354;13;31;.2.45....4....92....6.2............83...9.5...7...3.1.5..9..3...8......6..1....7.;11.70;1.20;1.20;elev;24;66;22;<br />199;389;15;28;1....6.8..5....2....9.....4.....86.33...7........1..7..4.9.....8....7.6...2...5..;11.70;1.20;1.20;elev;L6;67;21;<br />222;565;13;30;1.....7.9.57....3..8.7.....2...4......68......38....5......1..4....9...2...3..56.;11.70;1.20;1.20;elev;25;68;22;<br />182;285;16;30;...4....9.5...9.3.......1.52..8.......6.4.....1...53....42...7.8...67....7......3;11.70;1.20;1.20;elev;19;70;22;<br />150;233;16;27;1....6.8.4......36....7.5...4...1..3....2......97......3...8.6...25..9...1.......;11.70;1.20;1.20;elev;27;72;21;<br />193;541;13;30;1.....7.9.57....3..8.7.....2...4......68......38....5......1..2....9...4...3..56.;11.70;1.20;1.20;elev;26;71;22;<br />118;226;14;27;..5.69...67.8.....8.....5...4.....3...85..9......2...1..79..6......1..4......3..2;11.70;1.20;1.20;GP;13_11_gexo;1209207;22;*<br />240;283;12;31;98.7..6..5.46..7......8..4.6...9.....5...73....35....63..9..5....5..6..2.....1...;11.70;1.20;1.20;GP;12_12;545578;25;<br />256;282;12;31;98.7..6..5.46..7......8..4.7...9.....5...63....35....73..9..5....5..7..2.....1...;11.70;1.20;1.20;GP;12_12;545579;25;<br />410;228;12;33;98.76.5..7.5..9.8..4.5..7.98.7..53.....2..............5....3..731....8....4....3.;11.70;1.20;1.20;GP;2016_04_23;1835324;26;<br />196;177;15;27;98.76.5..7.4.......6.9..8..3......5..7.5..6......2...1.9...8.6...76.........597..;11.70;1.20;1.20;GP;13_02;846196;25;<br />173;201;14;26;98.7..6..7......5.....9....46...78.....86........4...3.9..7.4...426.......1..9..6;11.70;1.20;1.20;GP;13_03;974751;24;<br />173;201;14;26;98.7..6..7...9..5..4...6...6.59...3.....63.......5.2..3.7..9.6...9.....1....7....;11.70;1.20;1.20;PAQ;2018_12_06;2210331;24;<br />152;403;17;30;........1....23.....45...6......1....5.7...8.9...5...3.6.8..7...75....4.2.......9;11.70;1.20;1.20;MITH;2020_10;3267992;21;<br />164;300;16;30;12.3.....6...7..1...4..5...3.....4...6..2..3...8.....9...9....8.7..3..6......25..;11.70;1.20;1.20;SSX;2019_10;3260101;22;<br />286;553;17;31;........1.....2.3....45.6....3..1....4.5..7..57.8.......9.8...276....8..8..6.....;11.70;1.20;1.20;dob;12_12_03;247986;22;<br />181;562;18;33;........1.....2.3...4.5.6...3.....72.4....8..5..8..9...7...1...4.65.....8..69....;11.70;1.20;1.20;dob;12_12_03;247963;22;<br />155;337;16;28;........1.....2.3....14.5....3.....6.7...8..28..9..1...6...7...4..85....5...9.8..;11.70;1.20;1.20;dob;12_12_03;247966;22;<br />164;380;17;29;........1.....2.3....45.6....3.......4.6..7..7......28.5.94.....7..6.9..9.8..1...;11.70;1.20;1.20;dob;12_12_03;247967;22;<br />135;331;16;27;........1.....2.3...4.5.6.....3...2..6...1..78...9.4...4..6.9..5....9...9.87.....;11.70;1.20;1.20;dob;12_12_03;247971;22;<br />148;431;16;28;........1.....2.34..4.5.6....6.......7...3..28...7.9...1...7...5..8..4..6.8.9....;11.70;1.20;1.20;dob;12_12_03;247975;22;<br />185;247;15;30;........1..1..2..3.4..5..6...27..8...6..4..3.7....8.....5..4.9..9....3.44...9.6..;11.70;1.20;1.20;dob;12_12_03;247945;24;<br />176;520;15;29;........1.....2.3....45.6....1....7..4.5..8..68.9.......2..3...59.6.....8.....9..;11.70;1.20;1.20;dob;12_12_03;247982;21;<br />155;337;16;28;........1.....2.3....14.5....3.....6.7...8..28..9..1...68..7...4...5....5...9.8..;11.70;1.20;1.20;dob;12_12_03;247918;22;<br />255;417;15;30;........1.....1.2....34.5......6......7..8...36.4..9....2.....7.5..9.6..64..3....;11.70;1.20;1.20;dob;12_12_03;247985;21;<br />185;247;15;30;........1..1..2..3.4..5..6...27..84..6..4..3.7....8.....5..4.9..9....3..4...9.6..;11.70;1.20;1.20;dob;12_12_03;248025;24;<br />170;334;15;27;.......12.....3..4..4.1.5....1.6..2..7.3.....8..9...5...6.....5.9...86..3..7.....;11.70;1.20;1.20;dob;12_12_03;247935;22;<br />185;247;15;30;........1..1..2..3.4..5..6.....7.6....5..4.7..7....3.4..28..94..6..4..3.8....9...;11.70;1.20;1.20;dob;12_12_03;248026;24;<br />182;413;16;28;1.2..3....4.5.....6....12...7.....8.........93.9...1....6..29.....8....7....4..25;11.70;1.20;1.20;GP;ig193;225595;22;<br />240;283;12;31;........1..2..3....4..5.26...4....1..5....7..2...4.85...5.8.62..6.9.2...8..5....7;11.70;1.20;1.20;dob;12_12_03;225604;25;<br />256;282;12;31;........1..2..3....4..5.26...4...1...5.....7.2...4.58...5.8.62..6.9.2...8..5....7;11.70;1.20;1.20;dob;12_12_03;225605;25;<br />182;416;16;29;1.2..3....4.5.....6....21...7.....8.........93.9...2....6..19.....8....5....4..17;11.70;1.20;1.20;GP;ig193;225588;22;<br />261;260;16;28;98.7..6....7.5.9.........7.4....3.....95...8...69...5..2..1......82..56.........2;11.70;1.20;1.20;PAQ;2019_01_07;2236749;23;<br />177;221;16;28;98.7..6..7..6..8....5.4....8..3..96..3...2...........31....6.7...81...9......71..;11.70;1.20;1.20;PAQ;2018_12_25;2236577;24;<br />185;247;15;30;98.7..6..5..........4.9..3.2..8..9...5.........9.6...3.2.....14..1.4.3.....1.7.9.;11.70;1.20;1.20;GP;2012_04;33529;24;<br />374;544;14;31;98.7.....7.6...5......5....5..6..8...4...3.....7.9......89..6......2..1......4..3;11.70;1.20;1.20;GP;2012_04;33342;21;<br />148;259;14;27;98.7.......6.5.9......6....4......3..2......1..79..8..3.......2..85..6.......1.4.;11.70;1.20;1.20;GP;2012_04;33057;21;<br />312;478;17;29;98.7..6....5.4.........9...3....87....2.............54.6.9.7....3.8..9......2...1;11.70;1.20;1.20;GP;12_05;35013;21;<br />155;267;16;31;98.7..6..75..6..8...6......4.59...6...86..75.........4.3..2......95...7.........1;11.70;1.20;1.20;GP;12_05;35732;24;<br />201;384;14;29;98.......7..9..8....6.5.....4.....3...75..9.......2..1..86..5......1...4.....3.2.;11.70;1.20;1.20;GP;12_11;100053;21;<br />272;334;16;31;98.7..6..5..9..7......8..4.6..5..9.......3..........721.......6.9.1....7.5...91..;11.70;1.20;1.20;PAQ;2019_03_16;2317127;23;<br />252;592;15;31;98.7..6..7..8.........54...39........7.3..9....2....1....68.3.......5.4......3..2;11.70;1.20;1.20;PAQ;2019_03_16;2317633;22;</code></dd></dl></div></div></div><br /><br />The first column here is the number of combinations <span style="font-style: italic">after</span> the new filter. The second column is the number filtered out by the new filter (so the sum is the naively valid count). The next two numbers are the min/max guardian candidate counts for the valid combinations. The lowest guardian count of any combination in these 208 puzzles is 11. The highest valid combination count is 508.</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile323184">
+			<dt>
+				<a href="./member65215.html">mith</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 854</dd><dd><strong>Joined:</strong> 14 July 2020</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./the-tridagon-rule-t39859-75.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p323185" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=323185" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./the-tridagon-rule-t39859-75.html#p323185">Re: The tridagon rule</a></h3>
+			<p class="author"><a href="./post323185.html#p323185"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member65215.html">mith</a></strong> &raquo; Sat Jul 16, 2022 9:38 pm </p>
+
+			
+
+			<div class="content">For comparison, here are the first 188 min-expands (this should be all min-expands from the original batch of 972 puzzles; might be a little off, hard to check since I'm not on the desktop).<br /><br /><div style="padding: 3px; background-color: #FFFFFF; border: 1px solid #d8d8d8; font-size: 1em;"><div style="border-bottom: 1px solid #CCCCCC; margin-bottom: 3px; font-size: 0.9em; font-weight: bold; display: block;"><span onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') {  this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerHTML = '<b>Hidden Text: </b><a href=\'#\' onclick=\'return false;\'>Hide</a>'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerHTML = '<b>Hidden Text: </b><a href=\'#\' onclick=\'return false;\'>Show</a>'; }" /><b>Hidden Text: </b><a href="#" onClick="return false;">Show</a></span></div><div class="quotecontent"><div style="display: none;"><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>56;107;1;26;1.3.56....571.9...69.37......1.93..75.96.73.....51.......96..........4....5...86.;1;3<br />50;94;1;26;...4.678....18.2.6....72.14.15...6......41.....9..........68...7..2.48....271.46.;2;2<br />23;40;1;22;...4.6...4...89...68.37..4..68.479..73.......9.48.36..3.6....52....3..9.87....3..;3;105<br />19;37;1;20;...4.6...4...89...68.37..4..68.479..73.96....9.48.36..3......52....3..9.87....3..;3;7<br />46;56;2;25;...4.....4...89...68.37..4..68.479..73.96.4..9.48.36..3......52....3..9.87....3..;3;396<br />26;48;1;21;...45..89.....92.6..97.....2.1..786.......9.296...8.17.928..6.17.6.....881.......;4;10<br />35;58;1;24;...45...9.....92.6..97.....2.1..786..78...9.296...8.17.928..6.17.6......81.......;4;11<br />39;75;2;24;...45...9.....92.6..97.....2.1..786..78..19.296...8.17.928..6..7.6......81.......;4;12<br />18;50;2;23;...45..89.....92.6..97.....2.1..786......19.296...8.17.928..6..7.6.....881.......;4;459<br />162;158;1;31;1.3.56....5718....68.3.7.......38..7...5.1......67..31...865...5......4...6....9.;5;277<br />75;93;1;27;1.3.56....5718....68.3.7....61.38..7...5.1.....567..3....8.5...5.....64........9.;5;240<br />59;81;1;28;1.3.56....5718....68.3.7.....1.38..7...5.1.....567..3....865...5.....64...6....9.;5;220<br />162;167;1;31;......7894....9...6...7.......89..51....259.7...7.182........725.2...19...1...5.8;6;276<br />59;86;1;28;......7894....9...69..7.......89..51....259.7...7.182........725....719...1..25.8;6;221<br />78;94;2;27;1.3..67.9.57..9.3669...351..6584..............71.......1.9...75......3......6.9.1;7;258<br />25;35;1;24;1.3..67.9.57....3669...351..6584........9.....71.......16....75..9...36.....6.9.1;7;120<br />78;95;2;27;......7894....9...6...7.......89..51....259.7.....182........725.2...1.87.1..259.;8;257<br />155;149;1;31;...4.678....18.2.6....72.1424.....61......4.7.6....82.5..7...........1789....1...;9;275<br />68;96;1;27;...4.678....18.2.6....72.142....7.61......4.7.6..1482.5.17............789........;9;238<br />55;83;1;28;...4.678....18.2.6....72.142....7.61......4.7.6...482.5.17...........1789....1...;9;222<br />67;92;2;27;...4.678....18.2.6.....2.1424....86.......4.776...4.215..7...........1789....1...;10;259<br />18;37;1;25;...4.678....18.2.6....72.1424..1786.......4.776...4.215.17............789........;10;93<br />28;75;2;22;.2.4.678.....892.6...72...4.8.9.7...395.....7..1...........4.62...2.897....6..4..;11;232<br />53;102;1;30;1.....7.9......2..68.......2.183..5..356.1.2.86..25......5.2...51..683.....31....;12;571<br />19;43;1;22;1.....7.9......2..68.......2.183..5..356.1.2.86..25...31..685..5..3.2......51.3..;13;107<br />53;77;1;30;1.....7.9......2..86.......2.183..5.68..25....356.1.2....5.2...51..683.....31....;14;572<br />19;45;1;22;...4............36...2.7.1..94....6331..4.9.56.5.9.14.54.....9..369...519.15.....;15;104<br />19;42;1;22;1.3.56....571.9...69.37.....31......5.9.3...776..913.5.16.........91.46.......8..;16;109<br />57;101;1;30;1.3.56....5718....68.7.3.....8.35.17...8.1.....167...3...5.8..........9...6...52.;17;574<br />57;101;1;30;1.3.56....5718....68.7.3.....8.75.13...8.1.....163...7...5.8..........9...6...52.;18;575<br />19;44;1;22;12..56.89.5...92.6......15.2.1...96..65....2889....5.1....7..........81..1283....;19;113<br />47;104;2;24;1.....78.....89.........4..2.5.1..6..16..2...89..65.......219....269...59.15.8..2;20;712<br />29;88;2;24;......78....189..6......4..2.5.1..6..16..2...89..65.......219....269...59..5.86.2;20;517<br />33;54;1;27;1.....78.....89.........4..2.591.....168.2...89..65.......21.....269...59.15.86.2;20;690<br />42;89;2;25;......78....189..6......4..2.591..6..168.2...89..65.......21.....269...59..5.86.2;20;128<br />33;77;2;24;......78....189..6......4..2.591..6..168.2...89..65.......21.....269...5..15.86.2;20;129<br />33;60;2;24;1.....78....189.........4..2.591..6..168.2...89..65.......21.....269...5..15.86.2;20;677<br />38;58;2;23;1.....78.....89..6......4..2.591..6..168.2...89..65.......21.....269...5..15.86.2;20;678<br />75;100;3;26;..3..6...45.....6...6...1.....89.3....96.18......37.9.....18..771.96.....8.7.361.;21;246<br />35;77;2;26;..3..6...45.....6...6...1.....89.3....96.18......37.......189.771.96....98.7.361.;21;190<br />46;72;3;24;.2.4.678...71..2.........1...5...1.8..9...4.267..4.......7.48.17..2..64.....68.27;22;197<br />36;71;2;26;12..567.9.571.9......27.5.12.....3.8.1.....2......2.6....6.7....6.59.....9..21.5.;23;210<br />45;78;3;24;12.4.......7....36..9....54....41.63...26.51..1...54.25...246.1..1..3..5......3..;24;211<br />45;67;3;25;12.4.6.....7....3...9....54....41.63...26.51..1...54.25...24..1..16.3..5......3..;24;212<br />22;129;1;27;12..56..9.571.9...6.927....2.....8..7.1...34.............56....5.2.17.6....9.2...;25;273<br />9;86;1;22;12..56..9.571.9...6.927....2.....8..7.1...34....7..6.....56....5.2.17.....69.2...;25;181<br />10;66;2;19;12..56..9.571.9...6.92.....2.5...8.77.1...34.......6.....56....5.2.17.....69.2...;25;187<br />39;139;1;30;12..56..9.571.9...6.927....2...17.6....56.......9.2...5.2...8..7.1...34..........;26;274<br />11;62;2;19;12..56..9.571.9...6.92.....2.5.17......56......69.2...5.2...8.77.1...34.......6..;26;188<br />10;69;1;21;12..56..9.571.9...6.927....2.5.17......56......69.2...5.2...8..7.1...34....7..6..;26;98<br />12;64;1;23;12..56..9.571.9...6.927....2.5.17......56......69.2.....2...8.77.1...34....7..6..;26;99<br />38;137;1;30;1.3...7.9.57....3669....15..7.5.169........17...9.73.5...2.4....6.8.............3;27;599<br />6;41;2;18;1.3...7.9.57....3669....1...7.5.169........17.169.73.5...264....6.8..........5.63;27;65<br />7;35;1;22;1.3.5.7.9.57....3669....15..7.5..69........17.169.73.5...264....6.8..........5.63;27;345<br />30;132;1;27;..34......571.9............2...41.98...8.264....96.1.2.8.6.49.1.......24......86.;28;598<br />7;37;2;18;1.34.6....571.9.....8......2...41.98...8.264.8..96...2.8.6.49.1.....8.24......86.;28;66<br />11;107;2;19;...4.6...4...89...68.73.....76.4.9..3.8.97...94.6.8...........473.....1286....3.5;29;185<br />9;108;1;21;...4.6...4...89...68.73.....7634.9..3.8.97...94.6.8........3..473.....1286......5;29;95<br />11;103;1;23;...4.6...4...89...68.73.....7634.9..3.8.97...94.6.8........3..473.....128.....3.5;29;114<br />7;72;1;22;...4.6...4...89...68.73..4..7634.9..3.8.974..94.6.8...........473.....1286......5;29;51<br />10;85;1;22;..34......571.9.....8....1.2..96.1.8...8.264.....41.92...6.49.1.....8.24......86.;30;175<br />12;73;2;19;1.34.6....571.9.....8......2..96...8...8.264.....41.92...6.49.1.....8.24......86.;30;186<br />15;98;1;26;..34......571.9.....8......2..96.1.8...8.264.8...41.92.8.6.49.1.......24......86.;30;194<br />7;44;1;22;...4.6...4...89...68.73..4..7869.4..3.6.479..94.3.8...........473.....1286......5;31;52<br />9;38;2;18;...4.6...4...89...68.73..4..7869.4..3.6.479..94...8...........473.....1286....3.5;31;64<br />7;38;1;22;...4.6...4...89...68.73..4..7869.4..3.6.479..94.3.8........3..473.....128.....3.5;31;327<br />14;80;1;26;..34......571.9.....8......2...61.98...8.214.8..94.6.2.8.6.49.1.......24......86.;32;193<br />10;30;2;18;1.34.6....571.9.....8......2...61.98...8.2.4.8..94.6.2.8.6.49.1.....8.24......86.;32;67<br />13;66;3;24;12......9..6..9....89....46....936.553.....94...54.37...79.4.5.....75.6....36....;33;530<br />42;91;5;27;12......9.56..9....89....46.7..936.553.....94...5..37...79.4.......7..6...536....;33;971<br />18;70;4;23;12......9.56..9....89....46.7..936.553.....94...5..37...79.4.......75.....536....;33;972<br />62;81;1;27;...4.6.....7.89..6.8.37...4...69..47...8.739.....346.8..5.........9.3...9.2....63;34;244<br />26;100;4;27;...4.67....6....32.89.....5.9184......86.7.9167......4.6.9.8....1..74......16....;35;228<br />56;84;1;27;...4.678....18.2.6....72.14.15...46.....41.....9..........68...7..2.48....271.6..;36;245<br />26;115;2;24;.2.....894.6......78............539..3.92..51...3.12.8...5...1....89..23....13..5;37;266<br />21;109;3;21;.23....894.6......78............5.9....92..51...3.12.83..5...1....89..23....13..5;37;269<br />34;98;2;24;.2.....894.6......78............539..3.92..51...3.12.8...5...1....89..32....13..5;38;267<br />17;137;1;28;...4.678....18.2.6....72.14..8.1.6.7......12.7...2..483...4...........629.5......;39;278<br />24;92;2;28;....5.7.....18...696.......27....46.3.4....97.96..43.2.4936....6.2......73..4.6..;40;226<br />14;69;1;21;...4.6.8......9.237.8.1....2.13...5.......8.287...5.313.2....7858.....1..17.....5;41;183<br />30;86;4;26;...4.6.8......9.237.8.1....2.13...5....1.7..287...5.313.2.....858........17.....5;42;241<br />17;93;4;26;...4.67....6....32.89.....5.9864..71..18.7.9..7......4.6.9.8....1..74......16....;43;242<br />41;137;6;28;..34.6....5....1.27.92..........851........28......4.65.86....46.28.4.51..1..5...;44;272<br />19;67;4;26;..34.6....5....1.27.92..........851........28.....24.65.86..2.46..8.4.51..1.25...;44;179<br />22;90;4;27;.2..56......7..1.2.89..3.....7..1....4..9.8.7.98.7421...2...9.8..4....71......42.;45;243<br />24;102;2;24;....56......7..1.2.89..3...24..9.8.7.97..421...8.......1....9.8.7....42...4....71;46;271<br />24;108;3;22;....56......7.91.2.89..3...24..9.8...97..421...8.......1....9.8.7....42...4....71;46;948<br />32;146;2;28;....5.7.....18...669.......27....49.3.4....67.69..43.2.4639....73..4....9.2......;47;265<br />47;64;1;26;....56.....718..36..83.71.524.8.5.......61....7.............3.8.....3.17.3..1865.;48;231<br />29;148;1;30;...4.6...4.7.89..68..37....2........5.1.....3...94........946.7...7.839....63..48;49;279<br />25;98;1;25;12..56....57.8...66.8..7...........8.....194.....2.3.....67....87..12.5...15.8.2.;50;270<br />25;96;1;25;12..567.....1.9...6.927...5...71...4.6.....2.......3.8.925.....5.6.2....71..9....;51;268<br />25;102;2;23;1...567.....1.9...6.927...5...71...4.6.....27......3.8.925.....5.6.2....71..9....;51;837<br />29;108;3;24;1...567.9.....9.36...37..5........71.16...9.5.7....36.......5...8..93....42.15...;52;603<br />52;147;4;27;1...567.9.....9.36...37..5........71..6...9.5.7....36.......5..58..93....42.15...;52;604<br />20;112;1;24;1...567.9...1.9.36...37.15........71..6...9.5.7....36.......5...8..93....42.15...;52;594<br />15;77;1;24;....567.9...1.9.36...37.15........71.16...9.5.7...136.......5..58..93....42..5...;52;535<br />13;78;1;24;1...567.9...1.9.36...37.15........71.16...9.5.7...136.......5...8..93....42..5...;52;554<br />9;76;4;18;1...567.9.....9.366..37..5.....6..71....3.9.5.7....36.......5..58..93....42.15...;52;827<br />8;55;1;25;1...567.9...1.9.366..37.15.....6..71....3.9.5.7....36.......5...8..93....42.15...;52;806<br />10;57;1;24;1...567.9...1.9.366..37.15.....6..71....3.9.5.7...136.......5...8..93....42..5...;52;813<br />28;116;3;24;1.3.56....571.9...69.3..5.....53..97....6.......9.1.6537.....48.1......2...7.....;53;606<br />50;185;4;27;1.3.56....571.9...69.3..5.....53..97....6.......9.1.653......48.1......2...7...5.;53;608<br />19;139;1;24;1.3.56....571.9...69.37.5.....53..97....67......9.1.653......48.1......2...7.....;53;593<br />12;101;2;26;1.3.56....571.9...69.37.5...6153..97....6.......9...653......48........2...71....;53;834<br />11;110;4;24;1.3.56....571.9...69.3..5...6153..97....6.......9...653......48........2...71..5.;53;836<br />15;77;1;24;1.3.56....571.9...69.37.5.....53..9.....67...7..9.1.6537.....48.1......2.......5.;53;534<br />13;72;1;24;1.3.56....571.9...69.37.5.....53..9.....67...7..9.1.6537.....48.1......2...7.....;53;553<br />10;60;1;24;1.3.56....571.9...69.37.5...6153..9.....67...7..9.1.653......48........2...71....;53;816<br />31;101;3;24;1.3.....9.5.....3696..7.15......13.53..5.769........716....4...79.2.8.........9..;54;600<br />38;140;4;25;1.3.....9.5.....3696..7.15......13.53..5..69........716...94...79.2.8.........9..;54;601<br />29;106;3;24;1.3.....9.5.....3696..7.15......13.5...5.769........7163...4...79.2.8.........9..;54;605<br />48;182;4;27;1.3.....9.5.....3696..7.15......13.5...5..69........7163..94...79.2.8.........9..;54;607<br />18;102;1;24;1.3...7.9.57....3696..7.15......13.53..5..69........716....4...79.2.8.........9..;54;591<br />17;129;1;24;1.3...7.9.57....3696..7.15......13.5...5..69........7163...4...79.2.8.........9..;54;592<br />14;66;1;24;1.3...7.9.57....3696....15..7...13.5...5.769........7163..94....9.2.8.........9..;54;533<br />16;72;1;24;1.3...7.9.57....3696....15..7...13.53..5.769........716...94....9.2.8.........9..;54;536<br />14;62;3;20;1.3.5...9.......3696..7.15......13.53..5.769.5......716....4...79.2.8........59..;54;537<br />18;71;1;24;1.3...7.9.57....3696..7.15..7...13.53..5.769........716....4....9.2.8.........9..;54;547<br />13;59;1;24;1.3...7.9.57....3696..7.15..7...13.5...5.769........7163...4....9.2.8.........9..;54;552<br />10;78;1;26;1.3.5.7.9.57....3696..7.15......13.53.....69.5......716....4...79.2.8.........9..;54;825<br />13;71;1;25;1.3.5.7.9.57....3696..7.15..7...13.53.....69.5......716....4....9.2.8.........9..;54;829<br />41;111;3;26;...4.6.89....891...8.21.64.2.4...8.18.1...96.........43.762....5...9..........2..;55;602<br />15;59;2;22;...4.6.89....891.2.8..1.64.2.4...8.18.1.4296........243.76.....5...9......8...2..;55;500<br />7;57;1;21;...4.6.89....891.2.8.21.64.2.4...8.18.1.4296........243.762....5...9......8......;55;407<br />10;69;1;24;...4.6.89....891.2.8.21.64.2.49..8.18.1.4296........243.76.....5..............29.;55;788<br />28;46;2;21;...4.6.89....891.2.8..1.64.2.49..8.18.1.4296........2439.6.....5...9......8...29.;55;353<br />19;75;1;22;1.3.5.7.9.57....3669....15........7131...796..7....3.5.6.2.8........5...93...4...;56;509<br />16;94;1;23;1.3.5.7.9.57....3669..7.15..........31...796..7...13.5.6.2.8........5...93...4...;56;927<br />18;82;1;26;1.3.5.7.9.57....3669..7.15..........31...796..7...13.5.6.2.8............93.7.4...;56;935<br />13;74;1;22;1.3.5.7.9.57....3669....15........7131....96..7....3.5.6.2.8........56..93..64...;56;447<br />11;61;1;21;1.3.5.7.9.57....3669....15..........31...796..7...13.5.6.2.8........56..93..64...;56;657<br />9;51;1;22;1.3.5.7.9.57....3669....15........7131...796..7...13.5.6.2.8.........6..93...4...;56;804<br />34;122;1;26;......78.4..18..36..6.371.4.6..48.73....6.8.1......46...5......6.....31..12.73...;57;512<br />32;55;1;21;......78.4..18..36..6.371.4.6..48.73...76.8.1...3..46...5......6.....31..12.7....;57;446<br />43;107;1;26;......78.4..18..36..6.731.4.6..48.73....6.8.1......46...5......6.....31..12.37...;58;513<br />36;51;1;23;......78.4..18..36..6.7.1.4.6..48.73...76.8.1...3..46...5......6.....31..12.37...;58;462<br />42;70;1;25;.2..........1.9...86...7..........43.3.9.417..4....9.2....42.91..239.4.7...7.132.;59;713<br />14;71;1;23;.2........5.1.9...86...7..........43...9.417..4...39.2....42.91..239.4.7...7.132.;59;687<br />15;82;1;23;.2........5.1.9...86...7.............3.9.417..4...39.2....42.91..239.4.7..47.132.;59;930<br />32;67;1;24;.2....7....71.9...86...7..........43.3.9.417.......9.2....42.91..239.4.7..47.132.;59;466<br />13;60;1;21;.2....7...571.9...86...7.............3.9.417..4...39.2....42.91..239.4.7...7.132.;59;893<br />51;45;1;25;1.3.56....571.9...96.37.....19.673.5...51......59.3..7..1....62...69..........8..;60;505<br />60;36;1;25;1.3.56....571.9...96.73.....19.673.5...51......59.3..7...69..........8....1....62;61;506<br />29;69;1;26;1.3.56....571.9...96.37......1.673.5...51......59.3..7...691.....9...46.......8..;62;527<br />92;66;1;28;......78.4.7....368.6...5.42...3..........3589....5.......678.5...84..73...5.346.;63;576<br />11;49;3;24;12......9..6..9....89....46...39.6.553.....94....4537...79.4.5....57..6.....63...;64;531<br />24;72;4;27;12......9.56..9....89....46.7.39.6.553.....94....4537...79.4.......7..6...5.63...;64;969<br />13;57;3;23;12......9.56..9....89....46.7.39.6.553.....94....4537...79.4......57......5.63...;64;970<br />15;73;3;20;....56......7..12..89.3......4.1897..9........78.4.2...12...89...7...4.2.4.....17;65;595<br />8;52;1;22;.2..56......7...2..89.3......4.1897..9........78.4.2.1.12...89...7...4.2.4.....17;65;562<br />10;55;3;21;.2..56......78.12...9.3......4.1897..9........78.4.2...12...89...7...4.2.4.....17;65;947<br />38;146;3;26;..3....894.7...2...8.2............1.5.....9.29..6..85.....681...6.5.1..8.1.92.6.5;66;596<br />34;123;2;26;..3....894.7...2...8.2............1.5.....9.29.16..85.....681...6.5.1..8...92.6.5;66;597<br />40;93;1;23;1.3.56.....718....8..3.71...365.8.1751.7....37.8.........8..69.6.5.............4.;67;559<br />39;83;1;25;1.3.56.....718....8..3.7....365.8.1751.7....37.8.........8.569.6.5.............4.;67;708<br />36;90;1;23;12.4..7.94.....23........1429..........3....77..5.8...3.4.1..72.12.3.49.97.......;68;560<br />42;78;1;26;12.4..7.94..1..23........1429..........3.....7..5.8...3.4.1..72.12.3.49.97.......;68;710<br />67;47;1;25;12..56....571.9..66.927...52.....8.........6.71.....4.57..12.9....59....9..6.7...;69;610<br />47;40;1;24;......7.....189....9.....15.4.6.8..3....94....8931.6.4.649.1...8.1.63...93.84....;70;622<br />69;34;1;27;...4.6...4.7.89.368..37...429.....6...1.........9.3.......946.7...8.739....63..48;71;823<br />50;50;1;26;...4.6...4.7.89..68..37...429.....63..1.........9.3.......946.7...8.739....63..48;71;830<br />60;42;1;27;1.3.....9...18.....6..........74.8.1....2197....9.8.42...29.....72.14.98..48.7.2.;72;824<br />49;46;1;26;1.3....89...18.....6..........74.8.1....2197....9.8.42...29.....72.14.9...48.7.2.;72;831<br />39;35;1;25;1.3........7189....6..........74.8.1....2197.7..9.8.42...29.....72.14.98..48.7.2.;72;777<br />39;36;1;25;1.3....8...7189....6..........74.8.1....2197.7..9.8.42...29.....72.14.9...48.7.2.;72;792<br />70;31;1;25;12..56....571.9..66.927...52.....8.........6.71.....4.5..6.7.9....59....97..12...;73;693<br />52;40;1;26;12..56....571.9..66.927...52.....8.........6.71.....4....6.7.9....59....97..12.5.;73;706<br />42;26;1;25;12..56..9.571.9..66.927...52.....8......2..6.71.....425..6.7......59....97..12...;73;778<br />41;29;1;25;12..56..9.571.9..66.927...52.....8......2..6.71.....42...6.7......59....97..12.5.;73;797<br />26;53;1;22;.2..........1.9...86...7..........43.4.9.317..3...49.2....42.91..239.4.7...7.132.;74;686<br />15;96;1;23;.2........5.1.9...86...7.............4.9.317..3...49.2....42.91..239.4.7..47.132.;74;931<br />12;66;1;21;.2....7...571.9...86...7.............4.9.317..3...49.2....42.91..239.4.7...7.132.;74;894<br />9;50;1;20;.2....7...571.9...86...7..........43...9.317..3...49.2....42.91..239.4.7...7.132.;74;760<br />22;55;1;23;1.3.5.7.9.57....3669....15........7137....96..1...73.5.6.2.8........5...93...4...;75;688<br />19;56;1;24;1.3.5.7.9.57....3669....15........7137...196......73.5.6.2.8........5...93...4...;75;704<br />12;70;1;25;1.3.5.7.9.57....3669....15........7137...196......73.5.6.2.8.........6..93...4...;75;832<br />16;79;1;23;1.3.5.7.9.57....3669..7.15..........37...196..1...73.5.6.2.8........5...93...4...;75;928<br />18;68;1;26;1.3.5.7.9.57....3669..7.15..........37...196..1...73.5.6.2.8............93.7.4...;75;936<br />12;56;1;21;1.3.5.7.9.57....3669....15..........37...196..1...73.5.6.2.8........56..93..64...;75;658<br />18;67;2;23;1.3.5.7.9.57....3669....15........7137....96......73.5.6.2.8........56..93..64...;75;810<br />18;52;2;24;1.3.5.7.9.57....3669..7.15........7137....96......73.5.6.2.8........56..93...4...;75;910<br />55;84;1;25;1.3.56.....718....8..3.7....368...1751.7....37.8.........5.869.6.5.............4.;76;718<br />59;80;1;26;12.4..7.9...1..23........4129..........3.....7..5.8...3.1.4..72.42.3.19.97.......;77;719<br />47;19;1;24;......7.....189.....9....15.4.6.8..3....94....9831.6.4.649.1...8.1.63...93.84....;78;811<br />33;29;1;25;......7.....189....89....15.4.6.8..3....94....9.31.6.4.649.1...8.1.63...93.84....;78;817<br />41;19;1;25;......7.....189..6.......15.4.6.8..3....94....9831.6.4.649.1...8.1.63...93.84..6.;78;776<br />40;22;1;25;......7.....189..6.8.....15.4.6.8..3....94....9.31.6.4.649.1...8.1.63...93.84..6.;78;884</code></dd></dl></div></div></div><br /><br />Overall, there are fewer valid combinations - this isn't surprising, given the digit distribution of these grids. Only three hit triple digits (and all of those have a single-guardian TO available). The minimum guardian counts are of course way lower as well - a <span style="font-style: italic">max</span> of 6, barely half as much as the lowest from ph2010, and an average minimum below 2.</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile323185">
+			<dt>
+				<a href="./member65215.html">mith</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 854</dd><dd><strong>Joined:</strong> 14 July 2020</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./the-tridagon-rule-t39859-75.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p323229" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=323229" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./the-tridagon-rule-t39859-75.html#p323229">Re: The tridagon rule</a></h3>
+			<p class="author"><a href="./post323229.html#p323229"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member65215.html">mith</a></strong> &raquo; Mon Jul 18, 2022 2:16 pm </p>
+
+			
+
+			<div class="content">I took an expanded look at the min-expands, printing any combination with &lt;= 10 guardian candidates. A cap on the guardian candidate count reduces all of these to a single-digit number of combinations, always with the same triple of digits. This <span style="font-style: italic">suggests</span> it's only ever worthwhile to check the triple suggested by the digit distribution, though of course it's not proven that this triple will always be the best choice.<br /><br />There is also always a clear best option among these, corresponding to the choice of boxes based on where the triple digits appear as givens. Again not surprising, but not a proof that this must be the case.<br /><br />I wanted to highlight this puzzle:<br /><br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>..34.6....5....1.27.92..........851........28......4.65.86....46.28.4.51..1..5...<br />boxes &#91;4, 5, 7, 8&#93; cells &#91;&#91;0, 5, 7&#93;, &#91;2, 3, 7&#93;, &#91;2, 4, 6&#93;, &#91;1, 3, 8&#93;&#93; trips &#91;3, 7, 9&#93; guard 6<br />boxes &#91;4, 5, 7, 8&#93; cells &#91;&#91;1, 3, 8&#93;, &#91;2, 3, 7&#93;, &#91;2, 4, 6&#93;, &#91;1, 3, 8&#93;&#93; trips &#91;3, 7, 9&#93; guard 9<br />41;137;6;28;..34.6....5....1.27.92..........851........28......4.65.86....46.28.4.51..1..5...;44;272</code></dd></dl><br /><br />This was the puzzle in the batch with the highest minimum guardian count. According to the current script, this is an ambiguous case - we can choose either of two diagonals in box 5. However, on closer inspection this is not actually ambiguous, because one cell in the box is limited to the 379 triple. As mentioned previously, in such a case this cell *must* be included as part of the cell pattern - if such a cell exists off-diagonal, then the diagonal cells of course can never actually be filled with the triple, as it would leave nothing for the off-diagonal cell. I'll look at adding this filter to the code as well (I suspect it won't matter for the ph2010 puzzles, but will matter a great deal for the te3 puzzles).</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile323229">
+			<dt>
+				<a href="./member65215.html">mith</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 854</dd><dd><strong>Joined:</strong> 14 July 2020</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./the-tridagon-rule-t39859-75.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p323230" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=323230" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./the-tridagon-rule-t39859-75.html#p323230">Re: The tridagon rule</a></h3>
+			<p class="author"><a href="./post323230.html#p323230"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member54294.html">yzfwsf</a></strong> &raquo; Mon Jul 18, 2022 2:36 pm </p>
+
+			
+
+			<div class="content">Triplet Oddagon Forcing Chain: Each true guardian of Triplet Oddagon will all lead To: r7c6&lt;&gt;3,r7c6&lt;&gt;7,r7c6&lt;&gt;9<br />2r6c5 - 2r6c6 = 2r7c6<br />1r7c6<br />2r7c6<br />btte</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile323230">
+			<dt>
+				<a href="./member54294.html">yzfwsf</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 532</dd><dd><strong>Joined:</strong> 16 April 2019</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./the-tridagon-rule-t39859-75.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p323231" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=323231" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./the-tridagon-rule-t39859-75.html#p323231">Re: The tridagon rule</a></h3>
+			<p class="author"><a href="./post323231.html#p323231"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member65215.html">mith</a></strong> &raquo; Mon Jul 18, 2022 2:40 pm </p>
+
+			
+
+			<div class="content">Yeah, this stripped out a good number of &lt;= 10 guardian candidate combinations. There are still some true ambiguous cases - for example:<br /><br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>...4.6...4.7.89.368..37...429.....6...1.........9.3.......946.7...8.739....63..48<br />boxes &#91;0, 1, 6, 7&#93; cells &#91;&#91;0, 4, 8&#93;, &#91;1, 3, 8&#93;, &#91;0, 4, 8&#93;, &#91;0, 4, 8&#93;&#93; trips &#91;1, 2, 5&#93; guard 8<br />boxes &#91;0, 1, 6, 7&#93; cells &#91;&#91;0, 4, 8&#93;, &#91;1, 3, 8&#93;, &#91;1, 5, 6&#93;, &#91;0, 4, 8&#93;&#93; trips &#91;1, 2, 5&#93; guard 10<br />boxes &#91;0, 1, 6, 7&#93; cells &#91;&#91;0, 4, 8&#93;, &#91;1, 3, 8&#93;, &#91;2, 3, 7&#93;, &#91;0, 4, 8&#93;&#93; trips &#91;1, 2, 5&#93; guard 8<br />boxes &#91;0, 2, 6, 8&#93; cells &#91;&#91;0, 4, 8&#93;, &#91;2, 3, 7&#93;, &#91;0, 5, 7&#93;, &#91;1, 5, 6&#93;&#93; trips &#91;1, 2, 5&#93; guard 9<br />boxes &#91;0, 2, 6, 8&#93; cells &#91;&#91;0, 4, 8&#93;, &#91;2, 3, 7&#93;, &#91;1, 3, 8&#93;, &#91;1, 5, 6&#93;&#93; trips &#91;1, 2, 5&#93; guard 9<br />boxes &#91;1, 2, 4, 5&#93; cells &#91;&#91;1, 3, 8&#93;, &#91;2, 3, 7&#93;, &#91;2, 3, 7&#93;, &#91;0, 4, 8&#93;&#93; trips &#91;1, 2, 5&#93; guard 10<br />boxes &#91;1, 2, 7, 8&#93; cells &#91;&#91;1, 3, 8&#93;, &#91;2, 3, 7&#93;, &#91;0, 4, 8&#93;, &#91;1, 5, 6&#93;&#93; trips &#91;1, 2, 5&#93; guard 1<br />boxes &#91;4, 5, 7, 8&#93; cells &#91;&#91;0, 5, 7&#93;, &#91;0, 4, 8&#93;, &#91;0, 4, 8&#93;, &#91;1, 5, 6&#93;&#93; trips &#91;1, 2, 5&#93; guard 9<br />52;32;1;27;...4.6...4.7.89.368..37...429.....6...1.........9.3.......946.7...8.739....63..48;71;823</code></dd></dl><br /><br />Here, box 7 has no givens at all, and no cell is limited to only 125 - so any of the three diagonals with the correct parity can be used. (And actually all six diagonals are used, depending on the choice of other boxes. In the first case, boxes 2 and 8 have different parity, so boxes 1 and 7 need the same parity for a broken pattern; in the second, boxes 3 and 9 have the same parity, so boxes 1 and 7 need different parities. One choice is dropped here in the b1379 case because it has 11 guardian candidates.)<br /><br />(Of course, the clear best choice here is boxes 2389, placing a digit immediately.)</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile323231">
+			<dt>
+				<a href="./member65215.html">mith</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 854</dd><dd><strong>Joined:</strong> 14 July 2020</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./the-tridagon-rule-t39859-75.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<form id="viewtopic" method="post" action="./the-tridagon-rule-t39859-75.html">
+
+	<fieldset class="display-options" style="margin-top: 0; ">
+		<a href="./the-tridagon-rule-t39859-60.html" class="left-box left">Previous</a><a href="./the-tridagon-rule-t39859-90.html" class="right-box right">Next</a>
+		<label>Display posts from previous: <select name="st" id="st"><option value="0" selected="selected">All posts</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select></label>
+		<label>Sort by <select name="sk" id="sk"><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="s">Subject</option></select></label> <label><select name="sd" id="sd"><option value="a" selected="selected">Ascending</option><option value="d">Descending</option></select> <input type="submit" name="sort" value="Go" class="button2" /></label>
+		
+	</fieldset>
+
+	</form>
+	<hr />
+
+
+<div class="topic-actions">
+	<div class="buttons">
+	
+		<div class="reply-icon"><a href="./posting.php?mode=reply&amp;f=6&amp;t=39859" title="Post a reply"><span></span>Post a reply</a></div>
+	
+	</div>
+
+	
+		<div class="pagination">
+110 posts
+&bull; Page <strong>6</strong> of <strong>8</strong> &bull; <span><a href="the-tridagon-rule-t39859.html">1</a><span class="page-sep">, </span><a href="the-tridagon-rule-t39859-15.html">2</a><span class="page-sep">, </span><a href="the-tridagon-rule-t39859-30.html">3</a><span class="page-sep">, </span><a href="the-tridagon-rule-t39859-45.html">4</a><span class="page-sep">, </span><a href="the-tridagon-rule-t39859-60.html">5</a><span class="page-sep">, </span><strong>6</strong><span class="page-sep">, </span><a href="the-tridagon-rule-t39859-90.html">7</a><span class="page-sep">, </span><a href="the-tridagon-rule-t39859-105.html">8</a></span>
+		</div>
+	
+</div>
+
+
+	<p></p><p><a href="./advanced-solving-techniques-f6.html" class="left-box left" accesskey="r">Return to Advanced solving techniques</a></p>
+
+	<form method="post" id="jumpbox" action="./viewforum.php" onsubmit="if(this.f.value == -1){return false;}">
+
+	
+		<fieldset class="jumpbox">
+	
+			<label for="f" accesskey="j">Jump to:</label>
+			<select name="f" id="f" onchange="if(this.options[this.selectedIndex].value != -1){ document.forms['jumpbox'].submit() }">
+			
+				<option value="-1">Select a forum</option>
+			<option value="-1">------------------</option>
+				<option value="9">News and announcements</option>
+			
+				<option value="10">&nbsp; &nbsp;About the New Sudoku Players' Forum</option>
+			
+				<option value="5">Sudoku: the puzzle</option>
+			
+				<option value="7">&nbsp; &nbsp;General</option>
+			
+				<option value="33">&nbsp; &nbsp;Puzzles</option>
+			
+				<option value="4">&nbsp; &nbsp;Help with puzzles and solving techniques</option>
+			
+				<option value="6" selected="selected">&nbsp; &nbsp;Advanced solving techniques</option>
+			
+				<option value="8">&nbsp; &nbsp;Interactive games</option>
+			
+				<option value="18">&nbsp; &nbsp;Software</option>
+			
+				<option value="16">Resources</option>
+			
+				<option value="32">&nbsp; &nbsp;Published puzzles</option>
+			
+				<option value="31">&nbsp; &nbsp;Books</option>
+			
+				<option value="17">&nbsp; &nbsp;On the web</option>
+			
+				<option value="11">Related puzzles</option>
+			
+				<option value="12">&nbsp; &nbsp;Sudoku variants</option>
+			
+				<option value="13">&nbsp; &nbsp;Kakuro</option>
+			
+				<option value="14">&nbsp; &nbsp;Other logic puzzles</option>
+			
+				<option value="15">&nbsp; &nbsp;Inventors' studio</option>
+			
+				<option value="19">Off-topic</option>
+			
+				<option value="20">&nbsp; &nbsp;Coffee bar</option>
+			
+				<option value="29">&nbsp; &nbsp;Forum questions and feedback</option>
+			
+			</select>
+			<input type="submit" value="Go" class="button2" />
+		</fieldset>
+	</form>
+
+</div>
+
+<div id="page-footer">
+
+	<div class="navbar">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<ul class="linklist">
+			<li class="icon-home"><a href="./" accesskey="h">Board index</a></li>
+				
+			<li class="rightside"><a href="./the-team.html">The team</a> &bull; <a href="./ucp.php?mode=delete_cookies">Delete all board cookies</a> &bull; All times are UTC </li>
+		</ul>
+		
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<div class="copyright">Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Group
+		<br /><br /><a href="http://www.phpbb-seo.com/" title="Search Engine Optimization"><img src="./images/phpbb-seo.png" alt="phpBB SEO"/></a>
+	</div>
+</div>
+
+</div>
+
+<div>
+	<a id="bottom" name="bottom" accesskey="z"></a>
+	<img src="./cron.php?cron_type=tidy_cache" width="1" height="1" alt="cron" />
+</div>
+
+</body>
+</html>

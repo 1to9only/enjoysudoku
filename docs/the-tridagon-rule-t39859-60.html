@@ -1,0 +1,977 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-gb" xml:lang="en-gb">
+<head>
+<base href="./"/>
+<link rel="canonical" href="./the-tridagon-rule-t39859-60.html" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>The tridagon rule : Advanced solving techniques - Page 5</title>
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="content-language" content="en-gb" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="content-language" content="en" />
+<meta name="title" content="The tridagon rule : Advanced solving techniques - Page 5" />
+<meta name="description" content=". Now analysing mith's new database of 375,759 minimal puzzles not in T //forum enjoysudoku com/the-hardest-sudokus-new-thread-t6539-1299 html and the corresponding databases of 63,137 min-expands and ..." />
+<meta name="keywords" content="such, least, eliminations, singles, tridagon, single, rule, the, following, link, seems" />
+<meta name="category" content="general" />
+<meta name="robots" content="index,follow" />
+<meta name="distribution" content="global" />
+<meta name="resource-type" content="document" />
+<meta name="copyright" content="The New Sudoku Players Forum" />
+
+
+
+
+<!--
+	phpBB style name: prosilver
+	Based on style:   prosilver (this is the default phpBB3 style)
+	Original author:  Tom Beddard ( http://www.subBlue.com/ )
+	Modified by:
+-->
+
+<script type="text/javascript">
+// <![CDATA[
+	var jump_page = 'Enter the page number you wish to go to:';
+	var on_page = '5';
+	var per_page = '15';
+	var base_url = './the-tridagon-rule-t39859.html';
+	var style_cookie = 'phpBBstyle';
+	var style_cookie_settings = '; path=/; domain=forum.enjoysudoku.com';
+	var onload_functions = new Array();
+	var onunload_functions = new Array();
+	// www.phpBB-SEO.com SEO TOOLKIT BEGIN
+	var seo_delim_start = '-';
+	var seo_static_pagination = 'page';
+	var seo_ext_pagination = '.html';
+	var seo_external = true;
+	var seo_external_sub = false;
+	var seo_ext_classes = false;
+	var seo_hashfix = false;
+	// www.phpBB-SEO.com SEO TOOLKIT END
+
+	
+
+	/**
+	* Find a member
+	*/
+	function find_username(url)
+	{
+		popup(url, 760, 570, '_usersearch');
+		return false;
+	}
+
+	/**
+	* New function for handling multiple calls to window.onload and window.unload by pentapenguin
+	*/
+	window.onload = function()
+	{
+		for (var i = 0; i < onload_functions.length; i++)
+		{
+			eval(onload_functions[i]);
+		}
+	};
+
+	window.onunload = function()
+	{
+		for (var i = 0; i < onunload_functions.length; i++)
+		{
+			eval(onunload_functions[i]);
+		}
+	};
+
+// ]]>
+</script>
+<script type="text/javascript" src="./styles/prosilver/template/styleswitcher.js"></script>
+<script type="text/javascript" src="./styles/prosilver/template/forum_fn.js"></script>
+
+<link href="./styles/prosilver/theme/print.css" rel="stylesheet" type="text/css" media="print" title="printonly" />
+<link href="style.css" rel="stylesheet" type="text/css" media="screen, projection" />
+
+<link href="./styles/prosilver/theme/normal.css" rel="stylesheet" type="text/css" title="A" />
+<link href="./styles/prosilver/theme/medium.css" rel="alternate stylesheet" type="text/css" title="A+" />
+<link href="./styles/prosilver/theme/large.css" rel="alternate stylesheet" type="text/css" title="A++" />
+
+
+
+</head>
+
+<body id="phpbb" class="section-viewtopic ltr">
+
+<div id="wrap">
+	<a id="top" name="top" accesskey="t"></a>
+	<div id="page-header">
+		<div class="headerbar">
+			<div class="inner"><span class="corners-top"><span></span></span>
+
+			<div id="site-description">
+				<a href="./" title="Board index" id="logo"><img src="./styles/prosilver/imageset/site_logo.gif" width="52" height="52" alt="" title="" /></a>
+				<h1>The New Sudoku Players' Forum</h1>
+				<p>ARCHIVED by 1to9only</p>
+				<p class="skiplink"><a href="#start_here">Skip to content</a></p>
+			</div>
+
+		
+			<div id="search-box">
+				<form action="./search.php" method="get" id="search">
+				<fieldset>
+					<input name="keywords" id="keywords" type="text" maxlength="128" title="Search for keywords" class="inputbox search" value="Search…" onclick="if(this.value=='Search…')this.value='';" onblur="if(this.value=='')this.value='Search…';" />
+					<input class="button2" value="Search" type="submit" /><br />
+					<a href="./search.php" title="View the advanced search options">Advanced search</a> <input type="hidden" name="sid" value="00000000000000000000000000000000" />
+
+				</fieldset>
+				</form>
+			</div>
+		
+
+			<span class="corners-bottom"><span></span></span></div>
+		</div>
+
+		<div class="navbar">
+			<div class="inner"><span class="corners-top"><span></span></span>
+
+			<ul class="linklist navlinks">
+				<li class="icon-home"><a href="./" accesskey="h">Board index</a>  <strong>&#8249;</strong> <a href="./sudoku-the-puzzle-f5.html">Sudoku: the puzzle</a> <strong>&#8249;</strong> <a href="./advanced-solving-techniques-f6.html">Advanced solving techniques</a></li>
+
+				<li class="rightside"><a href="#" onclick="fontsizeup(); return false;" onkeypress="return fontsizeup(event);" class="fontsize" title="Change font size">Change font size</a></li>
+
+				<li class="rightside"><a href="./viewtopic.php?f=6&amp;t=39859&amp;start=60&amp;view=print" title="Print view" accesskey="p" class="print">Print view</a></li>
+			</ul>
+
+			
+
+			<ul class="linklist rightside">
+				<li class="icon-faq"><a href="./faq.php" title="Frequently Asked Questions">FAQ</a></li>
+				<li class="icon-register"><a href="./ucp.php?mode=register">Register</a></li>
+					<li class="icon-logout"><a href="./ucp.php?mode=login" title="Login" accesskey="x">Login</a></li>
+				
+			</ul>
+
+			<span class="corners-bottom"><span></span></span></div>
+		</div>
+
+	</div>
+
+	<a name="start_here"></a>
+	<div id="page-body">
+		
+<h2><a href="./the-tridagon-rule-t39859-60.html">The tridagon rule</a></h2>
+<!-- NOTE: remove the style="display: none" when you want to have the forum description on the topic body --><div style="display: none !important;">Advanced methods and approaches for solving Sudoku puzzles<br /></div>
+
+<div class="topic-actions">
+
+	<div class="buttons">
+	
+		<div class="reply-icon"><a href="./posting.php?mode=reply&amp;f=6&amp;t=39859" title="Post a reply"><span></span>Post a reply</a></div>
+	
+	</div>
+
+	
+		<div class="search-box">
+			<form method="get" id="topic-search" action="./search.php">
+			<fieldset>
+				<input class="inputbox search tiny"  type="text" name="keywords" id="search_keywords" size="20" value="Search this topic…" onclick="if(this.value=='Search this topic…')this.value='';" onblur="if(this.value=='')this.value='Search this topic…';" />
+				<input class="button2" type="submit" value="Search" />
+				<input type="hidden" name="t" value="39859" />
+<input type="hidden" name="sf" value="msgonly" />
+<input type="hidden" name="sid" value="00000000000000000000000000000000" />
+
+			</fieldset>
+			</form>
+		</div>
+	
+		<div class="pagination">
+110 posts
+&bull; Page <strong>5</strong> of <strong>8</strong> &bull; <span><a href="the-tridagon-rule-t39859.html">1</a><span class="page-sep">, </span><a href="the-tridagon-rule-t39859-15.html">2</a><span class="page-sep">, </span><a href="the-tridagon-rule-t39859-30.html">3</a><span class="page-sep">, </span><a href="the-tridagon-rule-t39859-45.html">4</a><span class="page-sep">, </span><strong>5</strong><span class="page-sep">, </span><a href="the-tridagon-rule-t39859-75.html">6</a><span class="page-sep">, </span><a href="the-tridagon-rule-t39859-90.html">7</a><span class="page-sep">, </span><a href="the-tridagon-rule-t39859-105.html">8</a></span>
+		</div>
+	
+
+</div>
+<div class="clear"></div>
+
+
+	<div id="p322618" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=322618" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 class="first"><a href="./the-tridagon-rule-t39859-60.html#p322618">Re: The tridagon rule</a></h3>
+			<p class="author"><a href="./post322618.html#p322618"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member2659.html">denis_berthier</a></strong> &raquo; Sat Jun 25, 2022 10:27 am </p>
+
+			
+
+			<div class="content">.<br />Now analysing mith's new database of 375,759 minimal puzzles not in T&amp;E(2):<br /><a href="./the-hardest-sudokus-new-thread-t6539-1299.html" class="postlink" rel="nofollow">./the-hardest-sudokus-new-thread-t6539-1299.html</a><br />and the corresponding databases of 63,137 min-expands and 15,606 max-expands:<br /><a href="./the-hardest-sudokus-new-thread-t6539-1304.html" class="postlink" rel="nofollow">./the-hardest-sudokus-new-thread-t6539-1304.html</a><br /><br /><span style="font-weight: bold">1) How many puzzles can be solved with only Subsets + FinnedFish + the tridagon rule defined in this thread:</span><br />(I consider this as the minimum meaningful set of rules to consider, because Subsets are often essential before the basic tridagon rule becomes available.<br />Conversely, more rules may be necessary before they appear, and this may increase the following numbers, but that's another point.)<br />- max-expands : 4,926 = 31.6%<br />- all the minimals : 75,286 = 20%<br />- min-expands : 8,196 = 13%<br />Of course, the percentages are decreasing, as the puzzles get harder in the mean.<br /><br /><span style="font-weight: bold">2) Puzzles having either the pattern of the tridagon rule (whether it is enough for reaching a solution or not) or a tridagon link; i.e. puzzles having a trivalue oddagon pattern with only 1 or 2 additional candidates (possibly after Subsets + FinnedFish):</span><br />- max-expands : 13,280 = 85.1 %<br />- min-expands : 38,551 = 61%</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile322618">
+			<dt>
+				<a href="./member2659.html">denis_berthier</a>
+			</dt>
+
+			<dd>2010 Supporter</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 3240</dd><dd><strong>Joined:</strong> 19 June 2007</dd><dd><strong>Location:</strong> Paris</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="web-icon"><a href="http://denis-berthier.pagesperso-orange.fr" title="WWW: http://denis-berthier.pagesperso-orange.fr"><span>Website</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./the-tridagon-rule-t39859-60.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p322670" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=322670" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./the-tridagon-rule-t39859-60.html#p322670">Re: The tridagon rule</a></h3>
+			<p class="author"><a href="./post322670.html#p322670"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member65215.html">mith</a></strong> &raquo; Mon Jun 27, 2022 11:01 pm </p>
+
+			
+
+			<div class="content">I'm currently running a check for guardian cell counts (after basics - subsets and locked candidates) on all min-expands. Some preliminary testing of this script gave counts as high as 9, for example:<br /><br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>........1..1..2.34..4.1325....2....5.5..34.1..6...5.2..453.6...7.6.....28.9....6.</code></dd></dl><br /><br />This particular grid reduces to a count of 3 after a short chain, like:<br /><br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>(9=2)r5c1 - (2=1)r7c1 - r46c1 = 1r4c2 =&gt; -9r4c2</code></dd></dl><br /><br />I'll be curious to see what the max is for the whole set, and which of these is the hardest to reduce.</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile322670">
+			<dt>
+				<a href="./member65215.html">mith</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 854</dd><dd><strong>Joined:</strong> 14 July 2020</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./the-tridagon-rule-t39859-60.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p322672" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=322672" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./the-tridagon-rule-t39859-60.html#p322672">Re: The tridagon rule</a></h3>
+			<p class="author"><a href="./post322672.html#p322672"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member65215.html">mith</a></strong> &raquo; Tue Jun 28, 2022 12:36 am </p>
+
+			
+
+			<div class="content">Here's the first grid I've seen where the pattern can't be uniquely determined:<br /><br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>.234..7..45.....2.7.82....4...963..7...817.5..87524....74..2..883...5..2.....83..</code></dd></dl><br /><br />Box 3's diagonal could be either r1c8/r2c9/r3c7 or r1c9/r2c7/r3c8. This holds even up to the first brute force step in YZF.</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile322672">
+			<dt>
+				<a href="./member65215.html">mith</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 854</dd><dd><strong>Joined:</strong> 14 July 2020</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./the-tridagon-rule-t39859-60.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p322673" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=322673" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./the-tridagon-rule-t39859-60.html#p322673">Re: The tridagon rule</a></h3>
+			<p class="author"><a href="./post322673.html#p322673"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member65215.html">mith</a></strong> &raquo; Tue Jun 28, 2022 12:55 am </p>
+
+			
+
+			<div class="content">And here's a max-expand with guardians in all boxes... I picked this particular one because the guardian candidates are all different, and none of the cells see each other:<br /><br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>.......12..1.2345..2451...6...36..4.4..2.5.616...4...3..7....3..89...1..54.1.2...</code></dd></dl></div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile322673">
+			<dt>
+				<a href="./member65215.html">mith</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 854</dd><dd><strong>Joined:</strong> 14 July 2020</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./the-tridagon-rule-t39859-60.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p322674" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=322674" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./the-tridagon-rule-t39859-60.html#p322674">Re: The tridagon rule</a></h3>
+			<p class="author"><a href="./post322674.html#p322674"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member65215.html">mith</a></strong> &raquo; Tue Jun 28, 2022 1:56 am </p>
+
+			
+
+			<div class="content">And another:<br /><br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>........1..2.13.4...15.6.32....523.4.2...4.56.4.36.2...67..5...23....16.8.96.....</code></dd></dl><br /><br />This one has no house with a 789 triple (other than box 7, where they are given), so it can't use the relabel trick.<br /><br />[edit]Not actually that hard to solve using TH, despite the 4 guardians:[/edit]<br /><br /><div style="padding: 3px; background-color: #FFFFFF; border: 1px solid #d8d8d8; font-size: 1em;"><div style="border-bottom: 1px solid #CCCCCC; margin-bottom: 3px; font-size: 0.9em; font-weight: bold; display: block;"><span onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') {  this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerHTML = '<b>Hidden Text: </b><a href=\'#\' onclick=\'return false;\'>Hide</a>'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerHTML = '<b>Hidden Text: </b><a href=\'#\' onclick=\'return false;\'>Show</a>'; }" /><b>Hidden Text: </b><a href="#" onClick="return false;">Show</a></span></div><div class="quotecontent"><div style="display: none;">x-wing 1r57c14 =&gt; -1r4c14, -1r6c1<br />5r9c2 = &#40;5-4&#41;r8c3 = r7c1 - r7c7 = 4r9c7 =&gt; -5r9c7<br />5b9c9 =&gt; -5r2c9<br />guardian 1r4c8 =&gt; guardian 1r6c6 =&gt; 1r7c4 =&gt; 4r7c1 =&gt; 4r1c3 =&gt; guardian 4r3c5; by TH, +4r3c5 bte</div></div></div></div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile322674">
+			<dt>
+				<a href="./member65215.html">mith</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 854</dd><dd><strong>Joined:</strong> 14 July 2020</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./the-tridagon-rule-t39859-60.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p322675" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=322675" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./the-tridagon-rule-t39859-60.html#p322675">Re: The tridagon rule</a></h3>
+			<p class="author"><a href="./post322675.html#p322675"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member54294.html">yzfwsf</a></strong> &raquo; Tue Jun 28, 2022 3:06 am </p>
+
+			
+
+			<div class="content"><blockquote><div><cite>mith wrote:</cite>And another:<br /><br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>........1..2.13.4...15.6.32....523.4.2...4.56.4.36.2...67..5...23....16.8.96.....</code></dd></dl><br /><br /></div></blockquote><br />No need for pre-basic steps, just one step to solve the puzzle.<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>Triplet Oddagon Forcing Chain: Each true guardian of Triplet Oddagon will all lead To: r1c13&lt;&gt;5,r1c13,r2c7,r4c1&lt;&gt;6,r12c1&lt;&gt;7,r1c3,r4c2&lt;&gt;8,r12c1&lt;&gt;9<br />4r3c5 - (4=57896)b1p24578<br />5r2c9 - 5r8c9 = (5-4)r8c3 = 4r7c1 - (4=57896)b1p24578<br />1r4c4 - 1r5c4 = 1r5c1 - (1=4)r7c1 - (4=57896)b1p24578<br />1r6c6 - (1=7894)r2458c4 - 4r8c3 = 4r7c1 - (4=57896)b1p24578<br />1r4c8 - 1r4c2 = 1r9c2 - (1=4)r7c1 - (4=57896)b1p24578</code></dd></dl></div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile322675">
+			<dt>
+				<a href="./member54294.html">yzfwsf</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 532</dd><dd><strong>Joined:</strong> 16 April 2019</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./the-tridagon-rule-t39859-60.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p322684" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=322684" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./the-tridagon-rule-t39859-60.html#p322684">Re: The tridagon rule</a></h3>
+			<p class="author"><a href="./post322684.html#p322684"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member65215.html">mith</a></strong> &raquo; Tue Jun 28, 2022 3:53 pm </p>
+
+			
+
+			<div class="content">Oh, I hadn't seen that you had added this to your software. Very cool <img src="./images/smilies/icon_e_smile.gif" alt=":)" title="Smile" /><br /><br />Finished finding triple cell counts for all the min-expands and max-expands. Here are the most complicated after basics by this metric.<br /><br />max-expands, 4 boxes, 5 triple cells (7 guardian cells):<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>........1..2..3....4156...2.......75...35.2.61.5...89...6.3542.25.4.....3.42.65..;187422&nbsp; ED=10.5/8.4/2.6<br />........1..2..3....4156...2.......75...35.2.61.5...89...4.3652.25.4.....3.62.54..;187423&nbsp; ED=10.5/8.4/2.6</code></dd></dl><br /><br />min-expands, 4 boxes, 2 triple cells (10 guardian cells):<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>........1..1..2.34..4.1325....2....5.5..34.1..6...5.2..453.6...7.6....4.839.....2;144441&nbsp; ED=10.9/7.1/6.6<br />........1..1..2.34..4.1325....2....5.5..34.1..6...5.2..453.....7.6......839....62;150580&nbsp; ED=10.9/7.1/6.6<br />........1..2..3....4.56...2.......75...35.2.61.5...89...6.354...5.4.....3.42.65..;194607&nbsp; ED=10.5/6.7/6.6<br />........1..2..3....4.56...2.......75...35.2.61.5...89...4.365...5.4.....3.62.54..;194608&nbsp; ED=10.5/6.7/6.6<br />.......12....345...67...348..9.....4.753...9.6...79....569......9..5.6..7.3.6....;295950&nbsp; ED=10.4/7.3/2.6<br />.......12....345...67...348..9.....4.563...9.7...69....759......9..5.7..6.3.7....;295951&nbsp; ED=10.4/7.3/2.6</code></dd></dl><br /><br />The middle min-expands are sub-puzzles of the max-expands (the two trees are transforms of one another, with 456 flipped in the bottom band). The other pairs of min-expands (again transforms) have max-expands with only two or three guardian cells.<br /><br />For the 10.4s, YZF isn't able to find a TOFC until after applying an AIC and a finned swordfish, but after that, oh boy:<br /><br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>Triplet Oddagon Forcing Chain: Each true guardian of Triplet Oddagon will all lead To: r1c12346,r457c5,r2c4&lt;&gt;8,r1c5&lt;&gt;9<br />3r4c2 - (3=124895)b1p234567 - (5=1298)b2p2789<br />4r5c1 - 4r5c5 = 4r7c5 - (4=12789)r14567c7 - (9=8)r1c5<br />4r6c3 - (4=12895)b1p34567 - (5=1298)b2p2789<br />6r5c6 - (6=13579)r56789c9 - 9r9c7 = 9r1c7 - (9=8)r1c5<br />4r6c4 - (4=12589)r9c24689 - 9r9c7 = 9r1c7 - (9=8)r1c5<br />5r6c4 - (5=12387)b6p14789 - (7=9)r1c7 - (9=8)r1c5<br />4r7c1 - (4=12789)r14567c7 - (9=8)r1c5<br />4r8c3 - (4=12895)b1p34567 - (5=1298)b2p2789<br />4r7c5 - (4=12789)r14567c7 - (9=8)r1c5<br />4r8c4 - (4=12589)r9c24689 - 9r9c7 = 9r1c7 - (9=8)r1c5<br />7r8c4 - (7=1289)r2c1234 - 9r2c9 = 9r1c7 - (9=8)r1c5</code></dd></dl></div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile322684">
+			<dt>
+				<a href="./member65215.html">mith</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 854</dd><dd><strong>Joined:</strong> 14 July 2020</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./the-tridagon-rule-t39859-60.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p322723" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=322723" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./the-tridagon-rule-t39859-60.html#p322723">Re: The tridagon rule</a></h3>
+			<p class="author"><a href="./post322723.html#p322723"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member65215.html">mith</a></strong> &raquo; Sat Jul 02, 2022 4:29 pm </p>
+
+			
+
+			<div class="content">I've found two (closely related) min-expands with guardians exactly corresponding to the TO 4-cycle:<br /><br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>........1..2..134...3.452.6...16.......2.3..523..5.....21....64.7.5.....89.4.....&nbsp; ED=11.0/10.5/2.6<br />........1..2..134...3.452.6...16.......3.2..523..5....3.1....647..5.....89.4.....&nbsp; ED=11.0/10.5/2.6</code></dd></dl><br /><br />YZF needs brute force for these (even with uniqueness enabled, and after a couple TOFC deductions). There are probably more; I am currently looking at puzzles with no full triples anywhere in the grid, so no relabeling available.</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile322723">
+			<dt>
+				<a href="./member65215.html">mith</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 854</dd><dd><strong>Joined:</strong> 14 July 2020</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./the-tridagon-rule-t39859-60.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p322994" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=322994" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./the-tridagon-rule-t39859-60.html#p322994">Re: The tridagon rule</a></h3>
+			<p class="author"><a href="./post322994.html#p322994"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member2659.html">denis_berthier</a></strong> &raquo; Sun Jul 10, 2022 5:17 am </p>
+
+			
+
+			<div class="content">.<br />This is not directly related to the Tridagon rule or to Tridagon Forcing Whips, but see here my global classification results related to the above database (in short: <span style="color: #0000FF"><span style="font-weight: bold">all the known 9x9 sudoku puzzles in T&amp;E(3) are indeed in T&amp;E(W2, 2) or less</span></span>):<br /><a href="./the-hardest-sudokus-new-thread-t6539-1321.html" class="postlink" rel="nofollow">./the-hardest-sudokus-new-thread-t6539-1321.html</a><br />These results are all the more surprising that the examples mentioned in the previous posts show that some puzzles in mith database are quite far from the Trivalue Oddagon contradictory pattern - and IMO totally impossible to find by a real player without the additional knowledge (what I call an oracle) that something related to this pattern has to be found.<br />.</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile322994">
+			<dt>
+				<a href="./member2659.html">denis_berthier</a>
+			</dt>
+
+			<dd>2010 Supporter</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 3240</dd><dd><strong>Joined:</strong> 19 June 2007</dd><dd><strong>Location:</strong> Paris</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="web-icon"><a href="http://denis-berthier.pagesperso-orange.fr" title="WWW: http://denis-berthier.pagesperso-orange.fr"><span>Website</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./the-tridagon-rule-t39859-60.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p323037" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=323037" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./the-tridagon-rule-t39859-60.html#p323037">Re: The tridagon rule</a></h3>
+			<p class="author"><a href="./post323037.html#p323037"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member65215.html">mith</a></strong> &raquo; Tue Jul 12, 2022 5:53 pm </p>
+
+			
+
+			<div class="content">I disagree with the notion that it would be impossible for a real player to find something related to the trivalue oddagon in these puzzles. All of these puzzles have two things in common:<br /><br />1. Exactly three digits appear at most once each in the puzzle. (Either all three appear once, or two appear once and the other not at all.)<br />2. Those three digits, if they appear at all, are found in the same box.<br /><br />These conditions are common to relabel/replacement (replacing the last word with &quot;house&quot;), which often also applies in these puzzles.<br /><br />If these conditions are met, we can then look for potential TO patterns by considering the four boxes which do not see the box specified in condition 2. Such patterns have further conditions in common:<br /><br />3. A TO pattern is always row- and column- spanning within each box.<br />4. A TO pattern always includes any cell which is limited to the three digits specified by condition 1.<br /><br />In the vast majority of the min-expands, these conditions are sufficient to identify a single impossible pattern of cells, and the guardians determined in this way can then be the target of analysis for forcing chains/nets. (In some cases, the pattern is ambiguous in a box - sometimes resulting in deductions for *each* possible pattern.)<br /><br />It's not so much that the puzzles are far from the TO pattern - the pattern exists in every single one of them - but rather that in some cases the number of guardian cells is so large as to be prohibitive in finding an elimination based on the pattern. That is, we can always make a deduction of the form &quot;at least one of these candidates is true&quot;, but such a deduction may not be useful in making progress in the puzzle.<br /><br />I'm hoping with further research to nail down some statistics on the following:<br /><br />a. How many of these puzzles can be solved via replacement with depth &lt; 3 (whether or not TO is useful)? (Denis, this may be something you are already set up to determine? In the case where one digit is entirely absent, the grid(s) after replacement will be sukaku, but we can still determine the depth of these.)<br />b. For puzzles with no replacement (so guardians in all four boxes) - or those where replacement does not reduce depth, if any - what depth of T&amp;E is sufficient for solving the puzzle after taking into account the TO pattern? It should be possible for any level of T&amp;E and set of techniques within that T&amp;E process to generate the pencilmark grid after assuming each guardian candidate in turn, and then compare the results for eliminations. (This is sort of a region-forcing generalization of T&amp;E, I guess?)</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile323037">
+			<dt>
+				<a href="./member65215.html">mith</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 854</dd><dd><strong>Joined:</strong> 14 July 2020</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./the-tridagon-rule-t39859-60.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p323052" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=323052" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./the-tridagon-rule-t39859-60.html#p323052">Re: The tridagon rule</a></h3>
+			<p class="author"><a href="./post323052.html#p323052"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member2659.html">denis_berthier</a></strong> &raquo; Wed Jul 13, 2022 3:49 am </p>
+
+			
+
+			<div class="content">.<br />Hi mith,<br />It seems we have the same situation as with exocets: a set of insufficient (and here not even necessary) conditions. Based on a vague and incomplete definition of exocets, David P. Bird has precisely defined a true resolution rule: J-Exocets.<br />The way you use the expression &quot;TO Pattern&quot; is ambiguous. For me, &quot;TO&quot; or &quot;Trivalue Oddagon&quot; means and only means the well defined contradictory pattern - with no &quot;guardians&quot; or whatever. As it is never present in a consistent puzzle, it will never be useful <span style="font-style: italic">per se</span>. It certainly doesn't not &quot;exist in every single one of them&quot; (TE3 puzzles). What possibly exists is an  imaginary pattern with additional candidates. <br />The abstract &quot;TO Pattern&quot; becomes useful when one can define resolution rules based on it. That's why I've started this thread with the definition  of the simplest such rule (and then added more complex rules) and I've given them specific names. And I've given pseudo-stats for each of these rules (more elaborated on the 972 database).<br />One could define more forcing rules in the same way, based on more than 2 &quot;guardians&quot;.<br /><br />But if a would-be &quot;rule&quot; is presented as: &quot;check some criteria and then try to prove a contradiction between some candidates&quot;, then for me it's merely not a resolution rule at all and I have no easy way to define it in SudoRules.<br /><br />a. I hadn't planned to check eleven's replacement technique on the full min-expands database. I have checked it on the 972 and the answer was positive. But if you're interested, I can launch these calculations. BTW, the grids after replacement are always sukakus - and replacement itself occurs in the resolution state after some rules have already been applied (typically Subsets), i.e. in sukaku grids.<br /><br />b. I've already shown that eleven's replacement can be understood as a very specific form of T&amp;E(3). So, a priori, any puzzle in T&amp;E(3) where replacement is applicable <span style="font-style: italic">could</span> be  reduced to T&amp;E(0 or 1); but this remains to be checked. What you describe at the end is Forcing-T&amp;E, which is of course totally possible on more than 2 candidates. However, what you propose as a possible starting point is ill-defined. What you consider as a potential TO Pattern could be almost anything.</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile323052">
+			<dt>
+				<a href="./member2659.html">denis_berthier</a>
+			</dt>
+
+			<dd>2010 Supporter</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 3240</dd><dd><strong>Joined:</strong> 19 June 2007</dd><dd><strong>Location:</strong> Paris</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="web-icon"><a href="http://denis-berthier.pagesperso-orange.fr" title="WWW: http://denis-berthier.pagesperso-orange.fr"><span>Website</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./the-tridagon-rule-t39859-60.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p323069" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=323069" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./the-tridagon-rule-t39859-60.html#p323069">Re: The tridagon rule</a></h3>
+			<p class="author"><a href="./post323069.html#p323069"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member72132.html">marek stefanik</a></strong> &raquo; Wed Jul 13, 2022 5:15 pm </p>
+
+			
+
+			<div class="content"><blockquote><div><cite>denis_berthier wrote:</cite>But if a would-be &quot;rule&quot; is presented as: &quot;check some criteria and then try to prove a contradiction between some candidates&quot;, then for me it's merely not a resolution rule at all and I have no easy way to define it in SudoRules.</div></blockquote>I agree with that. The way I had hoped you would introduce TOs to your theory was in the form of TO-Braids, which could contain the two 11-cell patterns defined at the beginning of this thread (with possible missing candidates of TO-digits) alongside CSP-variables.<br /><br />A possible &quot;more human-like&quot; approach would require a modification of the pencilmarking system used – special pencilmarks for TO-guardians, which could then be used in arbitrary patterns.<br />This makes the &quot;rule&quot; simple – a potential TO =&gt; pencilmark for guardians.<br />As you wrote, &quot;a potential TO&quot; has to be defined.<br />A set of 12 cells that could be restricted to TO-digits creating a TO without creating an obvious contradiction. But what does obvious mean?<br />A contradiction within one of the TO houses? A contradiction with singles?<br />An advantage of this approach is that it would allow for simple implementation of remote triples within one of the 11-cell patterns and the remote quadruple in these puzzles (emerges after eliminating 789r5c12 and 46r1c3 when assuming 23r7c12 and eventually leads to a contradiction with gB2 steps, later can also be used to eliminate 789r1c67):<br /><blockquote><div><cite>mith wrote:</cite><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>........1..2..134...3.452.6...16.......2.3..523..5.....21....64.7.5.....89.4.....&nbsp; ED=11.0/10.5/2.6<br />........1..2..134...3.452.6...16.......3.2..523..5....3.1....647..5.....89.4.....&nbsp; ED=11.0/10.5/2.6</code></dd></dl></div></blockquote><br /><br />Marek</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile323069">
+			<dt>
+				<a href="./member72132.html">marek stefanik</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 263</dd><dd><strong>Joined:</strong> 05 May 2021</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./the-tridagon-rule-t39859-60.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p323070" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=323070" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./the-tridagon-rule-t39859-60.html#p323070">Re: The tridagon rule</a></h3>
+			<p class="author"><a href="./post323070.html#p323070"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member65215.html">mith</a></strong> &raquo; Wed Jul 13, 2022 5:35 pm </p>
+
+			
+
+			<div class="content">You can indeed define some sort of Chromatic-Forcing-T&amp;E which is very broad:<br /><br />1. Given any pattern of cells which is not k-chromatic, and any k digits such that every cell in the pattern has at least one of these digits as a candidate: let the &quot;guardian candidates&quot; be all candidates in those cells which are not among the k digits specified. (Note: the restriction of every cell containing at least one of the k digits is to prevent the degenerate case of a trivial guardian cell. Not strictly necessary for the definition, but you're looking at a simple Cell Forcing or Forcing-T&amp;E analogue in this case.)<br />2. Trivially, at least one guardian candidate is true.<br />3. We can therefore eliminate any candidate such that, for all guardian candidates, the assumption of the guardian candidate true leads to the target candidate being false (under whatever resolution rules specified for T&amp;E). Likewise, we can assert any candidate such that, for all guardian candidates, the assumption of the guardian candidate true leads to the target candidate being true.<br /><br />Obviously, this is far too broad to be useful - there are too many potential patterns of cells to check, and for some patterns too many choices of k digits as well. But it is clearly well-defined as a resolution rule, with the last being an extension of your Forcing-T&amp;E and Forcing{3}-T&amp;E from bivalue or trivalue cells (rc-, rn-, cn-, or bn-) to a more general case of a set of candidates at least one of which must be true. (In fact, while we have so far really only considered rc-cells when discussing chromatic patterns, there's no particular reason to limit the definition in this way.)<br /><br />The TO pattern I'm discussing - specifically the impossible 12-cell 4-box row-/column-spanning 4-chromatic kind used in your tridagon and tridagon-links resolution rules - is not nearly so broad. <span style="font-weight: bold">Note:</span> When I say TO pattern here, I am not talking about the contradictory/impossible pattern of those 12-cells only containing 3 candidates; I am talking about the 4-chromatic pattern of 12-cells itself. Such patterns are obviously *always* present in sudoku grids, and in large numbers (5832 of them, if I've got my counting right). We could even just check all of these possible patterns (the majority of which could be skipped due to already containing givens - in this case, I believe something simpler is always available) and combinations of digits within them (again subject to the restriction that every cell in the pattern contains at least one of these digits). This may even be what YZF_Sudoku does in its implementation?<br /><br />However, here we can further motivate the choice of cells and digits by first considering the grid as a whole - if the first two conditions of my previous post are met, we have our choice of digits and boxes, and the remaining conditions further limit the cells of the pattern (there is an unwritten condition 5. here - that the pattern chosen has to be 4-chromatic; I've seen a handful of cases where the parity in one box is not forced directly by the pattern of givens, but must be chosen such that there is an odd number of boxes with each parity). Here, I am not defining a new resolution rule - the resolution rule remains the same as defined above. I am only narrowing down the choices of patterns and digits which merit further consideration. We don't necessarily have to narrow them down quite so far - it's certainly possible that there could be TO-Forcing-T&amp;E() eliminations in a grid not meeting condition 1 of the previous post, say - but the focus here is on the puzzles known to be in depth 3, all of which meet these conditions.<br /><br />Anyway, we are very far from my original comment, which had nothing to do with well-defined resolution rules, and instead was focused on real players. This is how I, as a real player, think about looking for TO patterns and TO-Forcing deductions. I happen to know in looking at this set of puzzles that such patterns are relevant, but having that &quot;oracle&quot; is not at all necessary for me (or others) to use them - much like MSLS/SET or Exocets, human players develop tools to identify where such techniques might be useful, and how to find them when they exist. In the case of MSLS/SET, it's recognizing a pattern of aligned given. For replacement/relabel, it's seeing a full house and givens/filled digits missing outside of that house. Here, it's digits missing outside of a box (specifically) which is not necessarily full.<br /><br />Whether you can code that human process into SudoRules, I don't know - but it's certainly possible to find these algorithmically (again refer to YZF_Sudoku's implementation; or my own scripts finding which puzzles have certain properties in terms of guardian counts and the like).</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile323070">
+			<dt>
+				<a href="./member65215.html">mith</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 854</dd><dd><strong>Joined:</strong> 14 July 2020</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./the-tridagon-rule-t39859-60.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p323071" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=323071" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./the-tridagon-rule-t39859-60.html#p323071">Re: The tridagon rule</a></h3>
+			<p class="author"><a href="./post323071.html#p323071"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member2659.html">denis_berthier</a></strong> &raquo; Wed Jul 13, 2022 6:35 pm </p>
+
+			
+
+			<div class="content">.<br />First, just a few points that may show we are not speaking of the same things. For me:<br />- having 11 (or any number of) candidates related by an OR relation doesn't make a CSP-Variable (2 or more of them can be True).<br />- a pattern is well defined if it can only be either present or absent in a resolution state. If you have to add conditions or processes to find it, it's not a pattern.<br />- I'm not interested in patterns that do not support any resolution rule.<br />- I'm not interested in algorithmic solutions of Sudoku; there's already a perfect one: DFS. I'm interested in 100% pattern-based solutions. I'm not saying that no one may have different interests.<br /><br />I agree that what I've defined as Tridagon-links and Tridagon-Forcing-Whips based on them could be extended to be based on more than two candidates. Defining Tridagon-k-Forcing-Whips would raise no technical problem (apart possibly a problem of computational complexity for a large number k of &quot;guardians&quot;).  However, the problem would remain of defining in a 100% pattern-based way these Tridagons-k-links for large k. None of the above suggestions provides a definition.</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile323071">
+			<dt>
+				<a href="./member2659.html">denis_berthier</a>
+			</dt>
+
+			<dd>2010 Supporter</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 3240</dd><dd><strong>Joined:</strong> 19 June 2007</dd><dd><strong>Location:</strong> Paris</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="web-icon"><a href="http://denis-berthier.pagesperso-orange.fr" title="WWW: http://denis-berthier.pagesperso-orange.fr"><span>Website</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./the-tridagon-rule-t39859-60.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p323073" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=323073" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./the-tridagon-rule-t39859-60.html#p323073">Re: The tridagon rule</a></h3>
+			<p class="author"><a href="./post323073.html#p323073"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member72132.html">marek stefanik</a></strong> &raquo; Wed Jul 13, 2022 8:25 pm </p>
+
+			
+
+			<div class="content">I am not sure which of these points are related to mith's post and which are related to mine.<br /><br /><blockquote><div><cite>denis_berthier wrote:</cite>having 11 (or any number of) candidates related by an OR relation doesn't make a CSP-Variable (2 or more of them can be True).</div></blockquote>I believe that this reacts to my description of TO-Braids. I admit that I had forgotten B2B notation for a moment.<br />Initially I expected you to implement TO-Braids, where the two 11-cell patterns (or just the 12-cell contradiction pattern, at the very end) would also be used as rlcs.<br /><br /><blockquote><div><cite>denis_berthier wrote:</cite>a pattern is well defined if it can only be either present or absent in a resolution state. If you have to add conditions or processes to find it, it's not a pattern.</div></blockquote>The conditions proposed by mith and me aren't necessary, they aim to filter out useless patterns.<br />There are a few things to be careful about&#058;<br />If the TO leads to a contradiction with singles, it doesn't change the T&amp;E depth and can be ignored, but only if only the contradictory pattern is used in the T&amp;E (it could always be substituted by said contradiction with singles; if the 11-cell patterns are used as well, it may reduce the depth in some cases). It might not be a suitable filter for some applications.<br /><blockquote><div><cite>mith wrote:</cite>When I say TO pattern here, I am not talking about the contradictory/impossible pattern of those 12-cells only containing 3 candidates; I am talking about the 4-chromatic pattern of 12-cells itself. Such patterns are obviously *always* present in sudoku grids, and in large numbers (5832 of them, if I've got my counting right). We could even just check all of these possible patterns (the majority of which could be skipped due to already containing givens - in this case, I believe something simpler is always available)...</div></blockquote>This might be true, depending on how one defines &quot;simpler&quot;, however I doubt that any of the TO-with-one-given patterns are checked for (unless we consider B2B simpler than TO).<br />(The number is correct, if we also take into account the 84 combinations of three digits, we are just short of half a milion.)<br /><br /><blockquote><div><cite>denis_berthier wrote:</cite>I'm not interested in patterns that do not support any resolution rule.</div></blockquote>This might react to my suggestion of extending the pencilmarking.<br />In that case adding such a pencilmark would mean progress in the resolution process much like an elimination of a candidate does – there is only a finite amount of these pencilmarks you could have (as there is a finite amount of TOs they could come from), therefore it wouldn't produce any convergence issues (unlike for example relabeling back and forth) – provided other rules would be capable of using these pencilmarks.<br /><br />Marek</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile323073">
+			<dt>
+				<a href="./member72132.html">marek stefanik</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 263</dd><dd><strong>Joined:</strong> 05 May 2021</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./the-tridagon-rule-t39859-60.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<form id="viewtopic" method="post" action="./the-tridagon-rule-t39859-60.html">
+
+	<fieldset class="display-options" style="margin-top: 0; ">
+		<a href="./the-tridagon-rule-t39859-45.html" class="left-box left">Previous</a><a href="./the-tridagon-rule-t39859-75.html" class="right-box right">Next</a>
+		<label>Display posts from previous: <select name="st" id="st"><option value="0" selected="selected">All posts</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select></label>
+		<label>Sort by <select name="sk" id="sk"><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="s">Subject</option></select></label> <label><select name="sd" id="sd"><option value="a" selected="selected">Ascending</option><option value="d">Descending</option></select> <input type="submit" name="sort" value="Go" class="button2" /></label>
+		
+	</fieldset>
+
+	</form>
+	<hr />
+
+
+<div class="topic-actions">
+	<div class="buttons">
+	
+		<div class="reply-icon"><a href="./posting.php?mode=reply&amp;f=6&amp;t=39859" title="Post a reply"><span></span>Post a reply</a></div>
+	
+	</div>
+
+	
+		<div class="pagination">
+110 posts
+&bull; Page <strong>5</strong> of <strong>8</strong> &bull; <span><a href="the-tridagon-rule-t39859.html">1</a><span class="page-sep">, </span><a href="the-tridagon-rule-t39859-15.html">2</a><span class="page-sep">, </span><a href="the-tridagon-rule-t39859-30.html">3</a><span class="page-sep">, </span><a href="the-tridagon-rule-t39859-45.html">4</a><span class="page-sep">, </span><strong>5</strong><span class="page-sep">, </span><a href="the-tridagon-rule-t39859-75.html">6</a><span class="page-sep">, </span><a href="the-tridagon-rule-t39859-90.html">7</a><span class="page-sep">, </span><a href="the-tridagon-rule-t39859-105.html">8</a></span>
+		</div>
+	
+</div>
+
+
+	<p></p><p><a href="./advanced-solving-techniques-f6.html" class="left-box left" accesskey="r">Return to Advanced solving techniques</a></p>
+
+	<form method="post" id="jumpbox" action="./viewforum.php" onsubmit="if(this.f.value == -1){return false;}">
+
+	
+		<fieldset class="jumpbox">
+	
+			<label for="f" accesskey="j">Jump to:</label>
+			<select name="f" id="f" onchange="if(this.options[this.selectedIndex].value != -1){ document.forms['jumpbox'].submit() }">
+			
+				<option value="-1">Select a forum</option>
+			<option value="-1">------------------</option>
+				<option value="9">News and announcements</option>
+			
+				<option value="10">&nbsp; &nbsp;About the New Sudoku Players' Forum</option>
+			
+				<option value="5">Sudoku: the puzzle</option>
+			
+				<option value="7">&nbsp; &nbsp;General</option>
+			
+				<option value="33">&nbsp; &nbsp;Puzzles</option>
+			
+				<option value="4">&nbsp; &nbsp;Help with puzzles and solving techniques</option>
+			
+				<option value="6" selected="selected">&nbsp; &nbsp;Advanced solving techniques</option>
+			
+				<option value="8">&nbsp; &nbsp;Interactive games</option>
+			
+				<option value="18">&nbsp; &nbsp;Software</option>
+			
+				<option value="16">Resources</option>
+			
+				<option value="32">&nbsp; &nbsp;Published puzzles</option>
+			
+				<option value="31">&nbsp; &nbsp;Books</option>
+			
+				<option value="17">&nbsp; &nbsp;On the web</option>
+			
+				<option value="11">Related puzzles</option>
+			
+				<option value="12">&nbsp; &nbsp;Sudoku variants</option>
+			
+				<option value="13">&nbsp; &nbsp;Kakuro</option>
+			
+				<option value="14">&nbsp; &nbsp;Other logic puzzles</option>
+			
+				<option value="15">&nbsp; &nbsp;Inventors' studio</option>
+			
+				<option value="19">Off-topic</option>
+			
+				<option value="20">&nbsp; &nbsp;Coffee bar</option>
+			
+				<option value="29">&nbsp; &nbsp;Forum questions and feedback</option>
+			
+			</select>
+			<input type="submit" value="Go" class="button2" />
+		</fieldset>
+	</form>
+
+</div>
+
+<div id="page-footer">
+
+	<div class="navbar">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<ul class="linklist">
+			<li class="icon-home"><a href="./" accesskey="h">Board index</a></li>
+				
+			<li class="rightside"><a href="./the-team.html">The team</a> &bull; <a href="./ucp.php?mode=delete_cookies">Delete all board cookies</a> &bull; All times are UTC </li>
+		</ul>
+		
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<div class="copyright">Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Group
+		<br /><br /><a href="http://www.phpbb-seo.com/" title="Search Engine Optimization"><img src="./images/phpbb-seo.png" alt="phpBB SEO"/></a>
+	</div>
+</div>
+
+</div>
+
+<div>
+	<a id="bottom" name="bottom" accesskey="z"></a>
+	<img src="./cron.php?cron_type=tidy_cache" width="1" height="1" alt="cron" />
+</div>
+
+</body>
+</html>

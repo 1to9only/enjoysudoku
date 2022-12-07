@@ -1,0 +1,979 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-gb" xml:lang="en-gb">
+<head>
+<base href="./"/>
+<link rel="canonical" href="./chromatic-patterns-t39885-60.html" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>Chromatic Patterns : Advanced solving techniques - Page 5</title>
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="content-language" content="en-gb" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="content-language" content="en" />
+<meta name="title" content="Chromatic Patterns : Advanced solving techniques - Page 5" />
+<meta name="description" content="Thanks Denis, it works fine now for me with reading from and writing to a file." />
+<meta name="keywords" content="made, chromatic, least, such, single, patterns, following, pair, singles, link, list" />
+<meta name="category" content="general" />
+<meta name="robots" content="index,follow" />
+<meta name="distribution" content="global" />
+<meta name="resource-type" content="document" />
+<meta name="copyright" content="The New Sudoku Players Forum" />
+
+
+
+
+<!--
+	phpBB style name: prosilver
+	Based on style:   prosilver (this is the default phpBB3 style)
+	Original author:  Tom Beddard ( http://www.subBlue.com/ )
+	Modified by:
+-->
+
+<script type="text/javascript">
+// <![CDATA[
+	var jump_page = 'Enter the page number you wish to go to:';
+	var on_page = '5';
+	var per_page = '15';
+	var base_url = './chromatic-patterns-t39885.html';
+	var style_cookie = 'phpBBstyle';
+	var style_cookie_settings = '; path=/; domain=forum.enjoysudoku.com';
+	var onload_functions = new Array();
+	var onunload_functions = new Array();
+	// www.phpBB-SEO.com SEO TOOLKIT BEGIN
+	var seo_delim_start = '-';
+	var seo_static_pagination = 'page';
+	var seo_ext_pagination = '.html';
+	var seo_external = true;
+	var seo_external_sub = false;
+	var seo_ext_classes = false;
+	var seo_hashfix = false;
+	// www.phpBB-SEO.com SEO TOOLKIT END
+
+	
+
+	/**
+	* Find a member
+	*/
+	function find_username(url)
+	{
+		popup(url, 760, 570, '_usersearch');
+		return false;
+	}
+
+	/**
+	* New function for handling multiple calls to window.onload and window.unload by pentapenguin
+	*/
+	window.onload = function()
+	{
+		for (var i = 0; i < onload_functions.length; i++)
+		{
+			eval(onload_functions[i]);
+		}
+	};
+
+	window.onunload = function()
+	{
+		for (var i = 0; i < onunload_functions.length; i++)
+		{
+			eval(onunload_functions[i]);
+		}
+	};
+
+// ]]>
+</script>
+<script type="text/javascript" src="./styles/prosilver/template/styleswitcher.js"></script>
+<script type="text/javascript" src="./styles/prosilver/template/forum_fn.js"></script>
+
+<link href="./styles/prosilver/theme/print.css" rel="stylesheet" type="text/css" media="print" title="printonly" />
+<link href="style.css" rel="stylesheet" type="text/css" media="screen, projection" />
+
+<link href="./styles/prosilver/theme/normal.css" rel="stylesheet" type="text/css" title="A" />
+<link href="./styles/prosilver/theme/medium.css" rel="alternate stylesheet" type="text/css" title="A+" />
+<link href="./styles/prosilver/theme/large.css" rel="alternate stylesheet" type="text/css" title="A++" />
+
+
+
+</head>
+
+<body id="phpbb" class="section-viewtopic ltr">
+
+<div id="wrap">
+	<a id="top" name="top" accesskey="t"></a>
+	<div id="page-header">
+		<div class="headerbar">
+			<div class="inner"><span class="corners-top"><span></span></span>
+
+			<div id="site-description">
+				<a href="./" title="Board index" id="logo"><img src="./styles/prosilver/imageset/site_logo.gif" width="52" height="52" alt="" title="" /></a>
+				<h1>The New Sudoku Players' Forum</h1>
+				<p>ARCHIVED by 1to9only</p>
+				<p class="skiplink"><a href="#start_here">Skip to content</a></p>
+			</div>
+
+		
+			<div id="search-box">
+				<form action="./search.php" method="get" id="search">
+				<fieldset>
+					<input name="keywords" id="keywords" type="text" maxlength="128" title="Search for keywords" class="inputbox search" value="Search…" onclick="if(this.value=='Search…')this.value='';" onblur="if(this.value=='')this.value='Search…';" />
+					<input class="button2" value="Search" type="submit" /><br />
+					<a href="./search.php" title="View the advanced search options">Advanced search</a> <input type="hidden" name="sid" value="00000000000000000000000000000000" />
+
+				</fieldset>
+				</form>
+			</div>
+		
+
+			<span class="corners-bottom"><span></span></span></div>
+		</div>
+
+		<div class="navbar">
+			<div class="inner"><span class="corners-top"><span></span></span>
+
+			<ul class="linklist navlinks">
+				<li class="icon-home"><a href="./" accesskey="h">Board index</a>  <strong>&#8249;</strong> <a href="./sudoku-the-puzzle-f5.html">Sudoku: the puzzle</a> <strong>&#8249;</strong> <a href="./advanced-solving-techniques-f6.html">Advanced solving techniques</a></li>
+
+				<li class="rightside"><a href="#" onclick="fontsizeup(); return false;" onkeypress="return fontsizeup(event);" class="fontsize" title="Change font size">Change font size</a></li>
+
+				<li class="rightside"><a href="./viewtopic.php?f=6&amp;t=39885&amp;start=60&amp;view=print" title="Print view" accesskey="p" class="print">Print view</a></li>
+			</ul>
+
+			
+
+			<ul class="linklist rightside">
+				<li class="icon-faq"><a href="./faq.php" title="Frequently Asked Questions">FAQ</a></li>
+				<li class="icon-register"><a href="./ucp.php?mode=register">Register</a></li>
+					<li class="icon-logout"><a href="./ucp.php?mode=login" title="Login" accesskey="x">Login</a></li>
+				
+			</ul>
+
+			<span class="corners-bottom"><span></span></span></div>
+		</div>
+
+	</div>
+
+	<a name="start_here"></a>
+	<div id="page-body">
+		
+<h2><a href="./chromatic-patterns-t39885-60.html">Chromatic Patterns</a></h2>
+<!-- NOTE: remove the style="display: none" when you want to have the forum description on the topic body --><div style="display: none !important;">Advanced methods and approaches for solving Sudoku puzzles<br /></div>
+
+<div class="topic-actions">
+
+	<div class="buttons">
+	
+		<div class="reply-icon"><a href="./posting.php?mode=reply&amp;f=6&amp;t=39885" title="Post a reply"><span></span>Post a reply</a></div>
+	
+	</div>
+
+	
+		<div class="search-box">
+			<form method="get" id="topic-search" action="./search.php">
+			<fieldset>
+				<input class="inputbox search tiny"  type="text" name="keywords" id="search_keywords" size="20" value="Search this topic…" onclick="if(this.value=='Search this topic…')this.value='';" onblur="if(this.value=='')this.value='Search this topic…';" />
+				<input class="button2" type="submit" value="Search" />
+				<input type="hidden" name="t" value="39885" />
+<input type="hidden" name="sf" value="msgonly" />
+<input type="hidden" name="sid" value="00000000000000000000000000000000" />
+
+			</fieldset>
+			</form>
+		</div>
+	
+		<div class="pagination">
+112 posts
+&bull; Page <strong>5</strong> of <strong>8</strong> &bull; <span><a href="chromatic-patterns-t39885.html">1</a><span class="page-sep">, </span><a href="chromatic-patterns-t39885-15.html">2</a><span class="page-sep">, </span><a href="chromatic-patterns-t39885-30.html">3</a><span class="page-sep">, </span><a href="chromatic-patterns-t39885-45.html">4</a><span class="page-sep">, </span><strong>5</strong><span class="page-sep">, </span><a href="chromatic-patterns-t39885-75.html">6</a><span class="page-sep">, </span><a href="chromatic-patterns-t39885-90.html">7</a><span class="page-sep">, </span><a href="chromatic-patterns-t39885-105.html">8</a></span>
+		</div>
+	
+
+</div>
+<div class="clear"></div>
+
+
+	<div id="p321034" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=321034" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 class="first"><a href="./chromatic-patterns-t39885-60.html#p321034">Re: Chromatic Patterns</a></h3>
+			<p class="author"><a href="./post321034.html#p321034"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member2814.html">eleven</a></strong> &raquo; Thu May 05, 2022 9:30 am </p>
+
+			
+
+			<div class="content">Thanks Denis, it works fine now for me with reading from and writing to a file.</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile321034">
+			<dt>
+				<a href="./member2814.html">eleven</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 2815</dd><dd><strong>Joined:</strong> 10 February 2008</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./chromatic-patterns-t39885-60.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p321037" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=321037" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./chromatic-patterns-t39885-60.html#p321037">Re: Chromatic Patterns</a></h3>
+			<p class="author"><a href="./post321037.html#p321037"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member65215.html">mith</a></strong> &raquo; Thu May 05, 2022 4:38 pm </p>
+
+			
+
+			<div class="content">I was able to construct a 9.9 (only depth 2) using the 15-cell pattern without too much effort. Here's a singles-expanded minimal of it:<br /><br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>..7.9.45..9....6.74.567..89...45.76.7.49.68.5....87.94...8...7.3..7.....27......8&nbsp; skfr_ER=10.1</code></dd></dl><br /><br />The particular form I used is such that it's also one cell away from a trivalue oddagon, but even providing the digit in the guardian cell doesn't collapse the 15-cell pattern. The 15-cell has two guardians (the original 9.9 only has one), but one can be eliminated pretty easily. Making the elimination reduces the puzzle to 8.3.<br /><br />I may do a bit of iterating on this to see if I can find a depth 3, but probably it would be more fruitful to just search the expanded database for this pattern vs. the 12-cell trivalue oddagon. (I'm not currently generating any puzzles, and the expanded database sits at 375103 puzzles. Still need to find time to get the solution-minlex scripts set up, and I'm letting SE rate the remaining puzzles - about 100k left - in the meantime.)</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile321037">
+			<dt>
+				<a href="./member65215.html">mith</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 861</dd><dd><strong>Joined:</strong> 14 July 2020</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./chromatic-patterns-t39885-60.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p321045" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=321045" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./chromatic-patterns-t39885-60.html#p321045">Re: Chromatic Patterns</a></h3>
+			<p class="author"><a href="./post321045.html#p321045"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member2659.html">denis_berthier</a></strong> &raquo; Fri May 06, 2022 3:10 am </p>
+
+			
+
+			<div class="content">.<br />Great example, mith: the two known T&amp;E(3) patterns in the same puzzle!</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile321045">
+			<dt>
+				<a href="./member2659.html">denis_berthier</a>
+			</dt>
+
+			<dd>2010 Supporter</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 3319</dd><dd><strong>Joined:</strong> 19 June 2007</dd><dd><strong>Location:</strong> Paris</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="web-icon"><a href="http://denis-berthier.pagesperso-orange.fr" title="WWW: http://denis-berthier.pagesperso-orange.fr"><span>Website</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./chromatic-patterns-t39885-60.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p321050" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=321050" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./chromatic-patterns-t39885-60.html#p321050">Re: Chromatic Patterns</a></h3>
+			<p class="author"><a href="./post321050.html#p321050"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member2659.html">denis_berthier</a></strong> &raquo; Fri May 06, 2022 8:41 am </p>
+
+			
+
+			<div class="content">.<br /><span style="font-weight: bold">eleven</span>,<br />I'm curious about CLIPS running on other versions of Unix: in your system, are you able to copy/paste the config file into CLIPS or do you have to batch it?<br />.</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile321050">
+			<dt>
+				<a href="./member2659.html">denis_berthier</a>
+			</dt>
+
+			<dd>2010 Supporter</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 3319</dd><dd><strong>Joined:</strong> 19 June 2007</dd><dd><strong>Location:</strong> Paris</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="web-icon"><a href="http://denis-berthier.pagesperso-orange.fr" title="WWW: http://denis-berthier.pagesperso-orange.fr"><span>Website</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./chromatic-patterns-t39885-60.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p321113" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=321113" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./chromatic-patterns-t39885-60.html#p321113">Re: Chromatic Patterns</a></h3>
+			<p class="author"><a href="./post321113.html#p321113"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member2814.html">eleven</a></strong> &raquo; Mon May 09, 2022 10:18 am </p>
+
+			
+
+			<div class="content">I only used the command line version. My notebook does not have enough memory to check harder techniques, so i stopped trying it.<br />But this one also looks quite hard.<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>&nbsp;.&nbsp; .&nbsp; . |&nbsp; .&nbsp; .&nbsp; X |&nbsp; .&nbsp; .&nbsp; X <br />&nbsp;.&nbsp; .&nbsp; . |&nbsp; .&nbsp; X&nbsp; . |&nbsp; .&nbsp; X&nbsp; . <br />&nbsp;.&nbsp; .&nbsp; X |&nbsp; .&nbsp; .&nbsp; X |&nbsp; .&nbsp; X&nbsp; . <br />-------------------------------<br />&nbsp;.&nbsp; .&nbsp; . |&nbsp; .&nbsp; X&nbsp; . |&nbsp; X&nbsp; .&nbsp; X <br />&nbsp;.&nbsp; .&nbsp; X |&nbsp; .&nbsp; .&nbsp; . |&nbsp; .&nbsp; X&nbsp; . <br />&nbsp;.&nbsp; X&nbsp; X |&nbsp; .&nbsp; X&nbsp; . |&nbsp; .&nbsp; .&nbsp; .&nbsp; &nbsp;<br /></code></dd></dl></div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile321113">
+			<dt>
+				<a href="./member2814.html">eleven</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 2815</dd><dd><strong>Joined:</strong> 10 February 2008</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./chromatic-patterns-t39885-60.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p321114" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=321114" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./chromatic-patterns-t39885-60.html#p321114">Re: Chromatic Patterns</a></h3>
+			<p class="author"><a href="./post321114.html#p321114"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member85484.html">ryokousha</a></strong> &raquo; Mon May 09, 2022 12:14 pm </p>
+
+			
+
+			<div class="content"><blockquote><div><cite>eleven wrote:</cite>I <br />But this one also looks quite hard.<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>&nbsp;.&nbsp; .&nbsp; . |&nbsp; .&nbsp; .&nbsp; X |&nbsp; .&nbsp; .&nbsp; X <br />&nbsp;.&nbsp; .&nbsp; . |&nbsp; .&nbsp; X&nbsp; . |&nbsp; .&nbsp; X&nbsp; . <br />&nbsp;.&nbsp; .&nbsp; X |&nbsp; .&nbsp; .&nbsp; X |&nbsp; .&nbsp; X&nbsp; . <br />-------------------------------<br />&nbsp;.&nbsp; .&nbsp; . |&nbsp; .&nbsp; X&nbsp; . |&nbsp; X&nbsp; .&nbsp; X <br />&nbsp;.&nbsp; .&nbsp; X |&nbsp; .&nbsp; .&nbsp; . |&nbsp; .&nbsp; X&nbsp; . <br />&nbsp;.&nbsp; X&nbsp; X |&nbsp; .&nbsp; X&nbsp; . |&nbsp; .&nbsp; .&nbsp; .&nbsp; &nbsp;<br /></code></dd></dl></div></blockquote><br />(assuming an empty band on top for numbering)<br />r7c5 = r8c8 = r4c9 = red<br />as guardian of oddagon (r6c6, r4c6, r5c5, r5c8, r6c8), r6c6 must also be red<br />r9c5 = r8c3 = green -&gt; r6c3 = r5c5 = yellow, which excludes yellow from c8</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile321114">
+			<dt>
+				<a href="./member85484.html">ryokousha</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 18</dd><dd><strong>Joined:</strong> 30 April 2022</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./chromatic-patterns-t39885-60.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p321117" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=321117" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./chromatic-patterns-t39885-60.html#p321117">Re: Chromatic Patterns</a></h3>
+			<p class="author"><a href="./post321117.html#p321117"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member2814.html">eleven</a></strong> &raquo; Mon May 09, 2022 1:45 pm </p>
+
+			
+
+			<div class="content">Yes, as soon as you have 2 cells in a minirow/col the pattern is simplified - different to TH and #37 (a morph here):<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>------------------------------<br />&nbsp; X&nbsp; .&nbsp; . | X&nbsp; .&nbsp; . | X&nbsp; .&nbsp; .&nbsp; <br />&nbsp; .&nbsp; X&nbsp; . | .&nbsp; X&nbsp; . | .&nbsp; X&nbsp; .&nbsp; <br />&nbsp; .&nbsp; .&nbsp; X | .&nbsp; .&nbsp; X | .&nbsp; .&nbsp; .&nbsp; <br />------------------------------<br />&nbsp; X&nbsp; .&nbsp; . | .&nbsp; .&nbsp; X | .&nbsp; .&nbsp; .&nbsp; <br />&nbsp; .&nbsp; .&nbsp; . | .&nbsp; X&nbsp; . | X&nbsp; .&nbsp; .&nbsp; <br />&nbsp; .&nbsp; .&nbsp; X | X&nbsp; .&nbsp; . | .&nbsp; X&nbsp; .&nbsp; <br />------------------------------<br /></code></dd></dl></div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile321117">
+			<dt>
+				<a href="./member2814.html">eleven</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 2815</dd><dd><strong>Joined:</strong> 10 February 2008</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./chromatic-patterns-t39885-60.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p321119" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=321119" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./chromatic-patterns-t39885-60.html#p321119">Re: Chromatic Patterns</a></h3>
+			<p class="author"><a href="./post321119.html#p321119"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member2814.html">eleven</a></strong> &raquo; Mon May 09, 2022 3:15 pm </p>
+
+			
+
+			<div class="content">This 15 cell pattern is not as easy to identify as the TH (exactly one rectangle).<br />Starting with a TH, a cell of the rectangle is missing (#). Two of the outside cells then must be on the rectangle lines (a, b in different columns).<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>&nbsp;.&nbsp; .&nbsp; . |&nbsp; .&nbsp; .&nbsp; X |&nbsp; .&nbsp; .&nbsp; A <br />&nbsp;.&nbsp; .&nbsp; b |&nbsp; #&nbsp; .&nbsp; . |&nbsp; .&nbsp; X&nbsp; .&nbsp; &nbsp;----<br />&nbsp;.&nbsp; c&nbsp; . |&nbsp; .&nbsp; X&nbsp; . |&nbsp; X&nbsp; .&nbsp; . <br />-------------------------------<br />&nbsp;.&nbsp; .&nbsp; - |&nbsp; .&nbsp; X&nbsp; . |&nbsp; .&nbsp; .&nbsp; B <br />&nbsp;.&nbsp; .&nbsp; x |&nbsp; .&nbsp; .&nbsp; X |&nbsp; X&nbsp; .&nbsp; . <br />&nbsp;.&nbsp; a&nbsp; . |&nbsp; X&nbsp; .&nbsp; . |&nbsp; .&nbsp; X&nbsp; .&nbsp; &nbsp;----</code></dd></dl><br /><br />But the other two are somewhat tricky.<br />If there is one in c, in the box with 3 cells A can be both b and c. Then the other digit must not be in the line with B.<br /><br />Same, if c is in the other cell:<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>&nbsp;.&nbsp; c&nbsp; . |&nbsp; .&nbsp; .&nbsp; X |&nbsp; .&nbsp; .&nbsp; X <br />&nbsp;.&nbsp; .&nbsp; b |&nbsp; #&nbsp; .&nbsp; . |&nbsp; .&nbsp; X&nbsp; .&nbsp; &nbsp;----<br />&nbsp;.&nbsp; .&nbsp; . |&nbsp; .&nbsp; X&nbsp; . |&nbsp; A&nbsp; .&nbsp; . <br />-------------------------------<br />&nbsp;.&nbsp; .&nbsp; x |&nbsp; .&nbsp; X&nbsp; . |&nbsp; .&nbsp; .&nbsp; X <br />&nbsp;.&nbsp; .&nbsp; - |&nbsp; .&nbsp; .&nbsp; X |&nbsp; B&nbsp; .&nbsp; . <br />&nbsp;.&nbsp; a&nbsp; . |&nbsp; X&nbsp; .&nbsp; . |&nbsp; .&nbsp; X&nbsp; .&nbsp; &nbsp;--</code></dd></dl>--</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile321119">
+			<dt>
+				<a href="./member2814.html">eleven</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 2815</dd><dd><strong>Joined:</strong> 10 February 2008</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./chromatic-patterns-t39885-60.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p321123" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=321123" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./chromatic-patterns-t39885-60.html#p321123">Re: Chromatic Patterns</a></h3>
+			<p class="author"><a href="./post321123.html#p321123"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member72132.html">marek stefanik</a></strong> &raquo; Mon May 09, 2022 7:27 pm </p>
+
+			
+
+			<div class="content">Haven't seen it mentioned anywhere, but TH with one guardian cell produces three remote triples:<br />Edit: Only if the guardian cell is part of the rectangle.<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>.--------------------.---------------------.------------------.<br />| 168&nbsp; &nbsp;12368&nbsp; 7&nbsp; &nbsp; &nbsp;|#123&nbsp; &nbsp;9&nbsp; &nbsp; &nbsp; 1238&nbsp; &nbsp;| 4&nbsp; &nbsp; &nbsp; 5&nbsp; &nbsp;#123&nbsp; |<br />| 18&nbsp; &nbsp; 9&nbsp; &nbsp; &nbsp; 1238&nbsp; | 1235&nbsp; 1234&nbsp; &nbsp;123458 | 6&nbsp; &nbsp; &nbsp;#123&nbsp; 7&nbsp; &nbsp; |<br />| 4&nbsp; &nbsp; &nbsp;123&nbsp; &nbsp; 5&nbsp; &nbsp; &nbsp;| 6&nbsp; &nbsp; &nbsp;7&nbsp; &nbsp; &nbsp;#123&nbsp; &nbsp; |#123&nbsp; &nbsp; 8&nbsp; &nbsp; 9&nbsp; &nbsp; |<br />:--------------------+---------------------+------------------:<br />| 189&nbsp; &nbsp;1238&nbsp; &nbsp;12389 | 4&nbsp; &nbsp; &nbsp;5&nbsp; &nbsp; &nbsp;#123&nbsp; &nbsp; | 7&nbsp; &nbsp; &nbsp; 6&nbsp; &nbsp;#123&nbsp; |<br />| 7&nbsp; &nbsp; &nbsp;123&nbsp; &nbsp; 4&nbsp; &nbsp; &nbsp;| 9&nbsp; &nbsp; #123&nbsp; &nbsp; 6&nbsp; &nbsp; &nbsp; | 8&nbsp; &nbsp; &nbsp;#123&nbsp; 5&nbsp; &nbsp; |<br />| 156&nbsp; &nbsp;12356&nbsp; 1236&nbsp; |#123&nbsp; &nbsp;8&nbsp; &nbsp; &nbsp; 7&nbsp; &nbsp; &nbsp; |#123&nbsp; &nbsp; 9&nbsp; &nbsp; 4&nbsp; &nbsp; |<br />:--------------------+---------------------+------------------:<br />| 1569&nbsp; 1456&nbsp; &nbsp;169&nbsp; &nbsp;| 8&nbsp; &nbsp; &nbsp;12346&nbsp; 123459 | 12359&nbsp; 7&nbsp; &nbsp; 1236 |<br />| 3&nbsp; &nbsp; &nbsp;14568&nbsp; 1689&nbsp; | 7&nbsp; &nbsp; &nbsp;1246&nbsp; &nbsp;12459&nbsp; | 1259&nbsp; &nbsp;124&nbsp; 126&nbsp; |<br />| 2&nbsp; &nbsp; &nbsp;7&nbsp; &nbsp; &nbsp; 169&nbsp; &nbsp;| 135&nbsp; &nbsp;1346&nbsp; &nbsp;13459&nbsp; | 1359&nbsp; &nbsp;134&nbsp; 8&nbsp; &nbsp; |<br />'--------------------'---------------------'------------------'</code></dd></dl>123b356 all have the same permutation parity.<br />Obviously b36 and b56 have different permutations. The same is true for b35, otherwise the remaining TH cells in b2 would have to contain the same digit.<br />Therefore each of b356 has a different permutation of the same parity, so each position can contain each digit only once, and must contain all three digits.<br />remote triples b356p3, b356p5, b356p7<br />Edit: With the missing cell being part of the rectangle, all such patterns are isomorphic.<br /><br />using the second one:<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>.--------------------.---------------------.------------------.<br />|c1–68&nbsp; 12368&nbsp; 7&nbsp; &nbsp; &nbsp;| 123&nbsp; &nbsp;9&nbsp; &nbsp; &nbsp; 1238&nbsp; &nbsp;| 4&nbsp; &nbsp; &nbsp; 5&nbsp; &nbsp; 123&nbsp; |<br />| 18&nbsp; &nbsp; 9&nbsp; &nbsp; &nbsp; 1238&nbsp; | 1235&nbsp; 1234&nbsp; &nbsp;123458 | 6&nbsp; &nbsp; a#1–23 7&nbsp; &nbsp; |<br />| 4&nbsp; &nbsp; &nbsp;123&nbsp; &nbsp; 5&nbsp; &nbsp; &nbsp;| 6&nbsp; &nbsp; &nbsp;7&nbsp; &nbsp; &nbsp; 123&nbsp; &nbsp; | 123&nbsp; &nbsp; 8&nbsp; &nbsp; 9&nbsp; &nbsp; |<br />:--------------------+---------------------+------------------:<br />| 189&nbsp; &nbsp;1238&nbsp; &nbsp;12389 | 4&nbsp; &nbsp; &nbsp;5&nbsp; &nbsp; &nbsp; 123&nbsp; &nbsp; | 7&nbsp; &nbsp; &nbsp; 6&nbsp; &nbsp; 123&nbsp; |<br />| 7&nbsp; &nbsp; b1–23&nbsp; &nbsp;4&nbsp; &nbsp; &nbsp;| 9&nbsp; &nbsp; #123&nbsp; &nbsp; 6&nbsp; &nbsp; &nbsp; | 8&nbsp; &nbsp; &nbsp;#123&nbsp; 5&nbsp; &nbsp; |<br />| 156&nbsp; &nbsp;12356&nbsp; 1236&nbsp; | 123&nbsp; &nbsp;8&nbsp; &nbsp; &nbsp; 7&nbsp; &nbsp; &nbsp; | 123&nbsp; &nbsp; 9&nbsp; &nbsp; 4&nbsp; &nbsp; |<br />:--------------------+---------------------+------------------:<br />| 1569&nbsp; 1456&nbsp; &nbsp;169&nbsp; &nbsp;| 8&nbsp; &nbsp; &nbsp;12346&nbsp; 123459 | 12359&nbsp; 7&nbsp; &nbsp; 1236 |<br />| 3&nbsp; &nbsp; &nbsp;14568&nbsp; 1689&nbsp; | 7&nbsp; &nbsp; &nbsp;1246&nbsp; &nbsp;12459&nbsp; | 1259&nbsp; &nbsp;124&nbsp; 126&nbsp; |<br />| 2&nbsp; &nbsp; &nbsp;7&nbsp; &nbsp; &nbsp; 169&nbsp; &nbsp;| 135&nbsp; &nbsp;1346&nbsp; &nbsp;13459&nbsp; | 1359&nbsp; &nbsp;134&nbsp; 8&nbsp; &nbsp; |<br />'--------------------'---------------------'------------------'</code></dd></dl>whichever digit appears in r2c8 is eliminated from r5c58 by the RT, hence forced into r5c2, and in b1 forced into r1c1 =&gt; –23r2c8, –23r5c2, –68r1c1; 6.6 skfr<br /><br />It makes for a simple way to prove the pattern:<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>------------------------------<br />&nbsp; A&nbsp; .&nbsp; . | A&nbsp; .&nbsp; . | a&nbsp; .&nbsp; . <br />&nbsp; .&nbsp; B&nbsp; . | .&nbsp; B&nbsp; . | .&nbsp; b&nbsp; . <br />&nbsp; .&nbsp; .&nbsp; X | .&nbsp; .&nbsp; X | .&nbsp; .&nbsp; . <br />------------------------------<br />&nbsp; X&nbsp; .&nbsp; . | .&nbsp; .&nbsp; X | .&nbsp; .&nbsp; . <br />&nbsp; .&nbsp; .&nbsp; . | . bB&nbsp; . | X&nbsp; .&nbsp; . <br />&nbsp; .&nbsp; .&nbsp; X |aA&nbsp; .&nbsp; . | .&nbsp; X&nbsp; . <br />------------------------------</code></dd></dl>[Edit]missing cell r5c2 is part of the rectangle (r25c25) =&gt; [/Edit] RTs A[r1c14, r6c4], B[r2c25, r5c5]<br />Let ab be the digits in b3p15, in that order. HSs aA, bB.<br />b6p48 must both contain the remaining digit, ie. contra.<br /><br />Marek</div>
+
+			
+				<div class="notice">Last edited by <a href="./member72132.html">marek stefanik</a> on Mon May 09, 2022 9:09 pm, edited 1 time in total.
+					
+				</div>
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile321123">
+			<dt>
+				<a href="./member72132.html">marek stefanik</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 268</dd><dd><strong>Joined:</strong> 05 May 2021</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./chromatic-patterns-t39885-60.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p321125" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=321125" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./chromatic-patterns-t39885-60.html#p321125">Re: Chromatic Patterns</a></h3>
+			<p class="author"><a href="./post321125.html#p321125"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member85484.html">ryokousha</a></strong> &raquo; Mon May 09, 2022 8:33 pm </p>
+
+			
+
+			<div class="content"><blockquote><div><cite>marek stefanik wrote:</cite>TH with one guardian cell produces three remote triples</div></blockquote><br />This does not have the expected remote triples? Maybe I misunderstood something regarding the morphs.<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>------------------------------<br />&nbsp; .&nbsp; .&nbsp; A | .&nbsp; .&nbsp; . | .&nbsp; .&nbsp; . <br />&nbsp; .&nbsp; B&nbsp; . | .&nbsp; A&nbsp; . | .&nbsp; .&nbsp; . <br />&nbsp; C&nbsp; .&nbsp; . | .&nbsp; .&nbsp; B | .&nbsp; .&nbsp; . <br />------------------------------<br />&nbsp; A&nbsp; .&nbsp; . | C&nbsp; .&nbsp; . | .&nbsp; .&nbsp; . <br />&nbsp; .&nbsp; C&nbsp; . | .&nbsp; B&nbsp; . | .&nbsp; .&nbsp; . <br />&nbsp; .&nbsp; .&nbsp; B | .&nbsp; .&nbsp; A | .&nbsp; .&nbsp; . <br />------------------------------</code></dd></dl><br /><br />But the following is true (TH-1 Lemma):<br />Any single missing cell in TH sees one digit by row, a different digit by column and the third digit by box.<br /><br />(proof omitted, it's not hard but interesting to think about)<br /><br />If found that helpful for certain things, for example here<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>---------------------------------<br />|&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;123 |&nbsp; &nbsp; &nbsp; 123&nbsp; &nbsp; &nbsp; |&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br />|&nbsp; &nbsp; &nbsp; 123&nbsp; &nbsp; &nbsp; |&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;123 |&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br />| 123&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| 123&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br />---------------------------------<br />| 123&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| 12&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br />|&nbsp; &nbsp; &nbsp; 12&nbsp; &nbsp; &nbsp; &nbsp;|&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br />|&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;123 |&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;12&nbsp; |&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br />---------------------------------</code></dd></dl><br />follows 3r1c5<br /><br />or here<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>---------------------------------<br />|&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;123 |&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;12&nbsp; |&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <br />|&nbsp; &nbsp; &nbsp; 123&nbsp; &nbsp; &nbsp; |&nbsp; &nbsp; &nbsp; 123&nbsp; &nbsp; &nbsp; |&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <br />| 123&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| 123&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <br />---------------------------------<br />|&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;123 | 124&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <br />|&nbsp; &nbsp; &nbsp; 123&nbsp; &nbsp; &nbsp; |&nbsp; &nbsp; &nbsp; 124&nbsp; &nbsp; &nbsp; |&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <br />| 12&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; |&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;124 |&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <br />---------------------------------<br /></code></dd></dl><br />follows -4r6c6</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile321125">
+			<dt>
+				<a href="./member85484.html">ryokousha</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 18</dd><dd><strong>Joined:</strong> 30 April 2022</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./chromatic-patterns-t39885-60.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p321126" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=321126" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./chromatic-patterns-t39885-60.html#p321126">Re: Chromatic Patterns</a></h3>
+			<p class="author"><a href="./post321126.html#p321126"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member72132.html">marek stefanik</a></strong> &raquo; Mon May 09, 2022 8:53 pm </p>
+
+			
+
+			<div class="content">Yes, I made a mistake. It only works if the guardian cell is part of the rectangle.<br />Thank you for catching it. I'll edit my previous post.<br /><br />Marek</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile321126">
+			<dt>
+				<a href="./member72132.html">marek stefanik</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 268</dd><dd><strong>Joined:</strong> 05 May 2021</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./chromatic-patterns-t39885-60.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p321136" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=321136" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./chromatic-patterns-t39885-60.html#p321136">Re: Chromatic Patterns</a></h3>
+			<p class="author"><a href="./post321136.html#p321136"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member2814.html">eleven</a></strong> &raquo; Tue May 10, 2022 1:47 pm </p>
+
+			
+
+			<div class="content">Nice observation with the remote triples.<br /><br />I have generated now 680 non equivalent 3-digit patterns in 6 boxes (10 cells: 31, 12: 38, 13: 290, 14: 159, 15: 102, 16: 10). This should be all, if i made no mistake.<br />I didn't see one more, which i would suspect to be as hard as the TH or the mentioned 15 cell pattern.<br /><br />Added: i have copied a zip file to my old google drive: <a href="https://drive.google.com/file/d/1QeHsljt2HfCSp_pUjrAMNteahlFEd13S/view?usp=sharing" class="postlink" rel="nofollow">here</a> (list). As patterns <a href="https://drive.google.com/file/d/1Yj4H2ygvvzJn6WrR5xUyMZnzwbvbntfq/view?usp=sharing" class="postlink" rel="nofollow">here</a> (wait a bit, until it is shown). [Edit: updated link to patterns (10 cells were missing)]</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile321136">
+			<dt>
+				<a href="./member2814.html">eleven</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 2815</dd><dd><strong>Joined:</strong> 10 February 2008</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./chromatic-patterns-t39885-60.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p321948" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=321948" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./chromatic-patterns-t39885-60.html#p321948">Re: Chromatic Patterns</a></h3>
+			<p class="author"><a href="./post321948.html#p321948"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member85484.html">ryokousha</a></strong> &raquo; Mon May 30, 2022 6:09 pm </p>
+
+			
+
+			<div class="content">I'm still exploring the topic in various directions, maybe there will be a bigger update in the future.<br />Until then, some interesting things that came up on the way:<br /><br />The trivalue oddagon / Thor's Hammer can, with help of extra constraints, be realized in rows, columns or even disjoint groups instead of boxes.<br />Here's a row version using both diagonals (Sudoku X):<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>------------------------------<br />&nbsp; .&nbsp; .&nbsp; X | X&nbsp; .&nbsp; . | X&nbsp; .&nbsp; .<br />&nbsp; .&nbsp; X&nbsp; . | .&nbsp; X&nbsp; . | .&nbsp; X&nbsp; .<br />&nbsp; .&nbsp; .&nbsp; . | .&nbsp; .&nbsp; . | .&nbsp; .&nbsp; .<br />------------------------------<br />&nbsp; .&nbsp; .&nbsp; . | .&nbsp; .&nbsp; . | .&nbsp; .&nbsp; .<br />&nbsp; .&nbsp; .&nbsp; . | .&nbsp; .&nbsp; . | .&nbsp; .&nbsp; .<br />&nbsp; .&nbsp; .&nbsp; . | .&nbsp; .&nbsp; . | .&nbsp; .&nbsp; .<br />------------------------------<br />&nbsp; .&nbsp; .&nbsp; . | .&nbsp; .&nbsp; . | .&nbsp; .&nbsp; .<br />&nbsp; .&nbsp; .&nbsp; X | X&nbsp; .&nbsp; . | X&nbsp; .&nbsp; .<br />&nbsp; X&nbsp; .&nbsp; . | .&nbsp; X&nbsp; . | .&nbsp; .&nbsp; X<br />------------------------------<br /></code></dd></dl><br />This is an anti-knight version using 5 columns instead of the 4 boxes:<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>------------------------------<br />&nbsp; X&nbsp; .&nbsp; . | .&nbsp; .&nbsp; . | .&nbsp; X&nbsp; .<br />&nbsp; .&nbsp; .&nbsp; . | X&nbsp; .&nbsp; X | .&nbsp; .&nbsp; .<br />&nbsp; .&nbsp; .&nbsp; X | .&nbsp; .&nbsp; . | .&nbsp; .&nbsp; .<br />------------------------------<br />&nbsp; .&nbsp; .&nbsp; X | .&nbsp; .&nbsp; . | .&nbsp; .&nbsp; .<br />&nbsp; .&nbsp; .&nbsp; . | X&nbsp; .&nbsp; X | .&nbsp; .&nbsp; .<br />&nbsp; X&nbsp; .&nbsp; . | .&nbsp; .&nbsp; . | .&nbsp; X&nbsp; .<br />------------------------------<br />&nbsp; X&nbsp; .&nbsp; . | .&nbsp; .&nbsp; . | .&nbsp; X&nbsp; .<br />&nbsp; .&nbsp; .&nbsp; . | .&nbsp; .&nbsp; X | .&nbsp; .&nbsp; .<br />&nbsp; .&nbsp; .&nbsp; X | X&nbsp; .&nbsp; . | .&nbsp; .&nbsp; .<br />------------------------------<br /></code></dd></dl><br />With diagonals or anti-knight, 3 row or column versions can be made. But these have an extra triangle and are therefore less complex to prove not 3-colorable.<br /><br />This is a version with 4 triangles in disjoint groups, marked A,B,C,D for better visibility:<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>------------------------------<br />&nbsp; A&nbsp; .&nbsp; . | .&nbsp; B&nbsp; . | .&nbsp; .&nbsp; .<br />&nbsp; .&nbsp; .&nbsp; D | .&nbsp; .&nbsp; . | .&nbsp; C&nbsp; .<br />&nbsp; .&nbsp; .&nbsp; . | .&nbsp; .&nbsp; . | .&nbsp; .&nbsp; .<br />------------------------------<br />&nbsp; .&nbsp; B&nbsp; . | .&nbsp; .&nbsp; . | A&nbsp; .&nbsp; .<br />&nbsp; .&nbsp; C&nbsp; . | .&nbsp; .&nbsp; . | .&nbsp; .&nbsp; D<br />&nbsp; .&nbsp; .&nbsp; . | .&nbsp; .&nbsp; . | .&nbsp; .&nbsp; .<br />------------------------------<br />&nbsp; A&nbsp; .&nbsp; . | .&nbsp; .&nbsp; . | .&nbsp; B&nbsp; .<br />&nbsp; .&nbsp; .&nbsp; D | .&nbsp; C&nbsp; . | .&nbsp; .&nbsp; .<br />&nbsp; .&nbsp; .&nbsp; . | .&nbsp; .&nbsp; . | .&nbsp; .&nbsp; .<br />------------------------------<br /></code></dd></dl><br /><br />Aside from Thor's Hammer here is a - maybe - promising pattern that just came up yesterday:<br />(classic)<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>------------------------------<br />&nbsp; .&nbsp; X&nbsp; . | X&nbsp; .&nbsp; . | X&nbsp; .&nbsp; .<br />&nbsp; X&nbsp; .&nbsp; . | .&nbsp; .&nbsp; . | .&nbsp; .&nbsp; .<br />&nbsp; .&nbsp; .&nbsp; . | .&nbsp; .&nbsp; . | .&nbsp; .&nbsp; .<br />------------------------------<br />&nbsp; X&nbsp; .&nbsp; . | .&nbsp; X&nbsp; . | X&nbsp; .&nbsp; .<br />&nbsp; .&nbsp; .&nbsp; . | X&nbsp; .&nbsp; . | .&nbsp; .&nbsp; .<br />&nbsp; .&nbsp; .&nbsp; . | .&nbsp; .&nbsp; . | .&nbsp; .&nbsp; .<br />------------------------------<br />&nbsp; X&nbsp; .&nbsp; . | X&nbsp; .&nbsp; . | .&nbsp; X&nbsp; .<br />&nbsp; .&nbsp; .&nbsp; . | .&nbsp; .&nbsp; . | X&nbsp; .&nbsp; .<br />&nbsp; .&nbsp; .&nbsp; . | .&nbsp; .&nbsp; . | .&nbsp; .&nbsp; .<br />------------------------------<br /></code></dd></dl><br />It is not completely trivial to prove, needing the use of graph symmetry or a bifurcation. Ultimately it relies on the combinatorial fact that any 3-coloring of a 6-cycle produces at least one opposing pair of edges with the same two colors. The 6-cycle in question being the single cells in b236478.</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile321948">
+			<dt>
+				<a href="./member85484.html">ryokousha</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 18</dd><dd><strong>Joined:</strong> 30 April 2022</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./chromatic-patterns-t39885-60.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p323938" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=323938" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./chromatic-patterns-t39885-60.html#p323938">Re: Chromatic Patterns</a></h3>
+			<p class="author"><a href="./post323938.html#p323938"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member85484.html">ryokousha</a></strong> &raquo; Thu Aug 18, 2022 10:07 am </p>
+
+			
+
+			<div class="content">Two interesting new patterns appeared while toying around:<br /><br />The first one I initially thought being in T&amp;E(3), but marek showed on the CTC discord that it is likely not. The proof is still quite symmetric and interesting:<br /><br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>------------------------------<br />&nbsp; .&nbsp; .&nbsp; . | .&nbsp; .&nbsp; . | .&nbsp; .&nbsp; .<br />&nbsp; .&nbsp; .&nbsp; . | .&nbsp; .&nbsp; . | .&nbsp; .&nbsp; .<br />&nbsp; .&nbsp; .&nbsp; X | .&nbsp; .&nbsp; X | .&nbsp; .&nbsp; X<br />------------------------------<br />&nbsp; .&nbsp; .&nbsp; X | .&nbsp; .&nbsp; . | X&nbsp; .&nbsp; .<br />&nbsp; .&nbsp; .&nbsp; . | .&nbsp; .&nbsp; . | .&nbsp; X&nbsp; .<br />&nbsp; .&nbsp; .&nbsp; . | .&nbsp; .&nbsp; . | .&nbsp; .&nbsp; X<br />------------------------------<br />&nbsp; .&nbsp; .&nbsp; . | X&nbsp; .&nbsp; . | .&nbsp; .&nbsp; X<br />&nbsp; .&nbsp; .&nbsp; X | .&nbsp; X&nbsp; . | .&nbsp; X&nbsp; .<br />&nbsp; .&nbsp; .&nbsp; . | .&nbsp; .&nbsp; X | X&nbsp; .&nbsp; .<br />------------------------------</code></dd></dl><br /><br /><div style="padding: 3px; background-color: #FFFFFF; border: 1px solid #d8d8d8; font-size: 1em;"><div style="border-bottom: 1px solid #CCCCCC; margin-bottom: 3px; font-size: 0.9em; font-weight: bold; display: block;"><span onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') {  this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerHTML = '<b>Hidden Text: </b><a href=\'#\' onclick=\'return false;\'>Hide</a>'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerHTML = '<b>Hidden Text: </b><a href=\'#\' onclick=\'return false;\'>Show</a>'; }" /><b>Hidden Text: </b><a href="#" onClick="return false;">Show</a></span></div><div class="quotecontent"><div style="display: none;">r8c3 has two possible arrangements in boxes 8 and 9 - either r9c6/r7c9 or r7c4/r9c7. The first one does not work as the value would be excluded from r3. The same argument can be made for r3c9, b6, b9 and c3 to show that r3c9 also goes in r9c7, so r8c3=r3c9. This quickly reveals a 9-loop bivalue oddagon.</div></div></div><br />(explanation thanks to marek and Youri on the discord)<br /><br />The second pattern is interesting because it is - as far as I can tell - the first nontrivial example having a 3-chromatic subgraph induced by the occupied cells, but is 4-chromatic considering the whole sudoku graph.<br /><br /><br />&quot;concerningly short sausage roll&quot; [Edit: typo corrected]<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>------------------------------<br />&nbsp; .&nbsp; X&nbsp; . | X&nbsp; .&nbsp; . | X&nbsp; .&nbsp; .<br />&nbsp; X&nbsp; .&nbsp; . | .&nbsp; X&nbsp; . | .&nbsp; X&nbsp; .<br />&nbsp; .&nbsp; .&nbsp; . | .&nbsp; .&nbsp; . | .&nbsp; .&nbsp; .<br />------------------------------<br />&nbsp; X&nbsp; .&nbsp; . | .&nbsp; .&nbsp; . | X&nbsp; .&nbsp; .<br />&nbsp; .&nbsp; X&nbsp; . | .&nbsp; .&nbsp; . | .&nbsp; X&nbsp; .<br />&nbsp; .&nbsp; .&nbsp; . | .&nbsp; .&nbsp; . | .&nbsp; .&nbsp; .<br />------------------------------<br />&nbsp; X&nbsp; .&nbsp; . | X&nbsp; .&nbsp; . | .&nbsp; X&nbsp; .<br />&nbsp; .&nbsp; X&nbsp; . | .&nbsp; X&nbsp; . | X&nbsp; .&nbsp; .<br />&nbsp; .&nbsp; .&nbsp; . | .&nbsp; .&nbsp; . | .&nbsp; .&nbsp; .<br />------------------------------<br /></code></dd></dl><br /><br /><div style="padding: 3px; background-color: #FFFFFF; border: 1px solid #d8d8d8; font-size: 1em;"><div style="border-bottom: 1px solid #CCCCCC; margin-bottom: 3px; font-size: 0.9em; font-weight: bold; display: block;"><span onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') {  this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerHTML = '<b>Hidden Text: </b><a href=\'#\' onclick=\'return false;\'>Hide</a>'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerHTML = '<b>Hidden Text: </b><a href=\'#\' onclick=\'return false;\'>Show</a>'; }" /><b>Hidden Text: </b><a href="#" onClick="return false;">Show</a></span></div><div class="quotecontent"><div style="display: none;">We color the digit pairs in the boxes with three colors - think of assigning each missing digit to a color. B2 and b8 have opposite permutation parities which means they must be the same color. The same holds for b4 and b6. Considering the possible colorings of b1379, the b2/b8 color and the b4/b6 color must be the same. This assigns two different values to r6c6.</div></div></div><br /><br />Marek gave an elegant explanation in more conventional terms on discord:<br /><br /><div style="padding: 3px; background-color: #FFFFFF; border: 1px solid #d8d8d8; font-size: 1em;"><div style="border-bottom: 1px solid #CCCCCC; margin-bottom: 3px; font-size: 0.9em; font-weight: bold; display: block;"><span onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') {  this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerHTML = '<b>Hidden Text: </b><a href=\'#\' onclick=\'return false;\'>Hide</a>'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerHTML = '<b>Hidden Text: </b><a href=\'#\' onclick=\'return false;\'>Show</a>'; }" /><b>Hidden Text: </b><a href="#" onClick="return false;">Show</a></span></div><div class="quotecontent"><div style="display: none;">16 cells with 3 digits =&gt; at least one digit must appear in all six columns<br />Either that digit appears in r1c4, r8c5, r4c7, and r5c2 or in r7c4, r2c5, r4c1, and r5c8.<br />WLOG &#40;diagonal symmetry&#41; let it be 1 in r1c4, r8c5, r4c7, and r5c2.<br />x-wing 1r27 \ c18<br />x-wing 23r18 \ c27<br />1 takes one diagonal of its x-wing, the other is forced to contain twice the same digit, eliminating it from r7c4, r2c5, r4c1, and r5c8<br />The remaining digit must therefore take all four of them.<br />Both 1 and that digit are then forced into r6c6 in b5, ie. contra.</div></div></div></div>
+
+			
+				<div class="notice">Last edited by <a href="./member85484.html">ryokousha</a> on Thu Aug 18, 2022 4:26 pm, edited 3 times in total.
+					
+				</div>
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile323938">
+			<dt>
+				<a href="./member85484.html">ryokousha</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 18</dd><dd><strong>Joined:</strong> 30 April 2022</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./chromatic-patterns-t39885-60.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p323940" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=323940" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./chromatic-patterns-t39885-60.html#p323940">Re: Chromatic Patterns</a></h3>
+			<p class="author"><a href="./post323940.html#p323940"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member2659.html">denis_berthier</a></strong> &raquo; Thu Aug 18, 2022 11:05 am </p>
+
+			
+
+			<div class="content">.<br />The first pattern can be proven contradictory in T&amp;E(3, BRT) but not in T&amp;E(2, BRT).<br />The second pattern can't be proven contradictory in T&amp;E(3, BRT).<br />Marek's proofs may prove that the patterns are contradictory; but they don't allow any conclusion about the T&amp;E-depth necessary for the proof.<br /><br />Do you have any real puzzle with any of these patterns?</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile323940">
+			<dt>
+				<a href="./member2659.html">denis_berthier</a>
+			</dt>
+
+			<dd>2010 Supporter</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 3319</dd><dd><strong>Joined:</strong> 19 June 2007</dd><dd><strong>Location:</strong> Paris</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="web-icon"><a href="http://denis-berthier.pagesperso-orange.fr" title="WWW: http://denis-berthier.pagesperso-orange.fr"><span>Website</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./chromatic-patterns-t39885-60.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<form id="viewtopic" method="post" action="./chromatic-patterns-t39885-60.html">
+
+	<fieldset class="display-options" style="margin-top: 0; ">
+		<a href="./chromatic-patterns-t39885-45.html" class="left-box left">Previous</a><a href="./chromatic-patterns-t39885-75.html" class="right-box right">Next</a>
+		<label>Display posts from previous: <select name="st" id="st"><option value="0" selected="selected">All posts</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select></label>
+		<label>Sort by <select name="sk" id="sk"><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="s">Subject</option></select></label> <label><select name="sd" id="sd"><option value="a" selected="selected">Ascending</option><option value="d">Descending</option></select> <input type="submit" name="sort" value="Go" class="button2" /></label>
+		
+	</fieldset>
+
+	</form>
+	<hr />
+
+
+<div class="topic-actions">
+	<div class="buttons">
+	
+		<div class="reply-icon"><a href="./posting.php?mode=reply&amp;f=6&amp;t=39885" title="Post a reply"><span></span>Post a reply</a></div>
+	
+	</div>
+
+	
+		<div class="pagination">
+112 posts
+&bull; Page <strong>5</strong> of <strong>8</strong> &bull; <span><a href="chromatic-patterns-t39885.html">1</a><span class="page-sep">, </span><a href="chromatic-patterns-t39885-15.html">2</a><span class="page-sep">, </span><a href="chromatic-patterns-t39885-30.html">3</a><span class="page-sep">, </span><a href="chromatic-patterns-t39885-45.html">4</a><span class="page-sep">, </span><strong>5</strong><span class="page-sep">, </span><a href="chromatic-patterns-t39885-75.html">6</a><span class="page-sep">, </span><a href="chromatic-patterns-t39885-90.html">7</a><span class="page-sep">, </span><a href="chromatic-patterns-t39885-105.html">8</a></span>
+		</div>
+	
+</div>
+
+
+	<p></p><p><a href="./advanced-solving-techniques-f6.html" class="left-box left" accesskey="r">Return to Advanced solving techniques</a></p>
+
+	<form method="post" id="jumpbox" action="./viewforum.php" onsubmit="if(this.f.value == -1){return false;}">
+
+	
+		<fieldset class="jumpbox">
+	
+			<label for="f" accesskey="j">Jump to:</label>
+			<select name="f" id="f" onchange="if(this.options[this.selectedIndex].value != -1){ document.forms['jumpbox'].submit() }">
+			
+				<option value="-1">Select a forum</option>
+			<option value="-1">------------------</option>
+				<option value="9">News and announcements</option>
+			
+				<option value="10">&nbsp; &nbsp;About the New Sudoku Players' Forum</option>
+			
+				<option value="5">Sudoku: the puzzle</option>
+			
+				<option value="7">&nbsp; &nbsp;General</option>
+			
+				<option value="33">&nbsp; &nbsp;Puzzles</option>
+			
+				<option value="4">&nbsp; &nbsp;Help with puzzles and solving techniques</option>
+			
+				<option value="6" selected="selected">&nbsp; &nbsp;Advanced solving techniques</option>
+			
+				<option value="8">&nbsp; &nbsp;Interactive games</option>
+			
+				<option value="18">&nbsp; &nbsp;Software</option>
+			
+				<option value="16">Resources</option>
+			
+				<option value="32">&nbsp; &nbsp;Published puzzles</option>
+			
+				<option value="31">&nbsp; &nbsp;Books</option>
+			
+				<option value="17">&nbsp; &nbsp;On the web</option>
+			
+				<option value="11">Related puzzles</option>
+			
+				<option value="12">&nbsp; &nbsp;Sudoku variants</option>
+			
+				<option value="13">&nbsp; &nbsp;Kakuro</option>
+			
+				<option value="14">&nbsp; &nbsp;Other logic puzzles</option>
+			
+				<option value="15">&nbsp; &nbsp;Inventors' studio</option>
+			
+				<option value="19">Off-topic</option>
+			
+				<option value="20">&nbsp; &nbsp;Coffee bar</option>
+			
+				<option value="29">&nbsp; &nbsp;Forum questions and feedback</option>
+			
+			</select>
+			<input type="submit" value="Go" class="button2" />
+		</fieldset>
+	</form>
+
+</div>
+
+<div id="page-footer">
+
+	<div class="navbar">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<ul class="linklist">
+			<li class="icon-home"><a href="./" accesskey="h">Board index</a></li>
+				
+			<li class="rightside"><a href="./the-team.html">The team</a> &bull; <a href="./ucp.php?mode=delete_cookies">Delete all board cookies</a> &bull; All times are UTC </li>
+		</ul>
+		
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<div class="copyright">Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Group
+		<br /><br /><a href="http://www.phpbb-seo.com/" title="Search Engine Optimization"><img src="./images/phpbb-seo.png" alt="phpBB SEO"/></a>
+	</div>
+</div>
+
+</div>
+
+<div>
+	<a id="bottom" name="bottom" accesskey="z"></a>
+	
+</div>
+
+</body>
+</html>

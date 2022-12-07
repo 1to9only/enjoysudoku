@@ -1,0 +1,1017 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-gb" xml:lang="en-gb">
+<head>
+<base href="./"/>
+<link rel="canonical" href="./the-tridagon-rule-t39859-15.html" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>The tridagon rule : Advanced solving techniques - Page 2</title>
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="content-language" content="en-gb" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="content-language" content="en" />
+<meta name="title" content="The tridagon rule : Advanced solving techniques - Page 2" />
+<meta name="description" content="xzccs, I didn't totally follow your argument, since your images are not loading for me. But playing around with this in the 4 box case, ..." />
+<meta name="keywords" content="such, link, single, least, rule, tridagon, the, eliminations" />
+<meta name="category" content="general" />
+<meta name="robots" content="index,follow" />
+<meta name="distribution" content="global" />
+<meta name="resource-type" content="document" />
+<meta name="copyright" content="The New Sudoku Players Forum" />
+
+
+
+
+<!--
+	phpBB style name: prosilver
+	Based on style:   prosilver (this is the default phpBB3 style)
+	Original author:  Tom Beddard ( http://www.subBlue.com/ )
+	Modified by:
+-->
+
+<script type="text/javascript">
+// <![CDATA[
+	var jump_page = 'Enter the page number you wish to go to:';
+	var on_page = '2';
+	var per_page = '15';
+	var base_url = './the-tridagon-rule-t39859.html';
+	var style_cookie = 'phpBBstyle';
+	var style_cookie_settings = '; path=/; domain=forum.enjoysudoku.com';
+	var onload_functions = new Array();
+	var onunload_functions = new Array();
+	// www.phpBB-SEO.com SEO TOOLKIT BEGIN
+	var seo_delim_start = '-';
+	var seo_static_pagination = 'page';
+	var seo_ext_pagination = '.html';
+	var seo_external = true;
+	var seo_external_sub = false;
+	var seo_ext_classes = false;
+	var seo_hashfix = false;
+	// www.phpBB-SEO.com SEO TOOLKIT END
+
+	
+
+	/**
+	* Find a member
+	*/
+	function find_username(url)
+	{
+		popup(url, 760, 570, '_usersearch');
+		return false;
+	}
+
+	/**
+	* New function for handling multiple calls to window.onload and window.unload by pentapenguin
+	*/
+	window.onload = function()
+	{
+		for (var i = 0; i < onload_functions.length; i++)
+		{
+			eval(onload_functions[i]);
+		}
+	};
+
+	window.onunload = function()
+	{
+		for (var i = 0; i < onunload_functions.length; i++)
+		{
+			eval(onunload_functions[i]);
+		}
+	};
+
+// ]]>
+</script>
+<script type="text/javascript" src="./styles/prosilver/template/styleswitcher.js"></script>
+<script type="text/javascript" src="./styles/prosilver/template/forum_fn.js"></script>
+
+<link href="./styles/prosilver/theme/print.css" rel="stylesheet" type="text/css" media="print" title="printonly" />
+<link href="style.css" rel="stylesheet" type="text/css" media="screen, projection" />
+
+<link href="./styles/prosilver/theme/normal.css" rel="stylesheet" type="text/css" title="A" />
+<link href="./styles/prosilver/theme/medium.css" rel="alternate stylesheet" type="text/css" title="A+" />
+<link href="./styles/prosilver/theme/large.css" rel="alternate stylesheet" type="text/css" title="A++" />
+
+
+
+</head>
+
+<body id="phpbb" class="section-viewtopic ltr">
+
+<div id="wrap">
+	<a id="top" name="top" accesskey="t"></a>
+	<div id="page-header">
+		<div class="headerbar">
+			<div class="inner"><span class="corners-top"><span></span></span>
+
+			<div id="site-description">
+				<a href="./" title="Board index" id="logo"><img src="./styles/prosilver/imageset/site_logo.gif" width="52" height="52" alt="" title="" /></a>
+				<h1>The New Sudoku Players' Forum</h1>
+				<p>ARCHIVED by 1to9only</p>
+				<p class="skiplink"><a href="#start_here">Skip to content</a></p>
+			</div>
+
+		
+			<div id="search-box">
+				<form action="./search.php" method="get" id="search">
+				<fieldset>
+					<input name="keywords" id="keywords" type="text" maxlength="128" title="Search for keywords" class="inputbox search" value="Search…" onclick="if(this.value=='Search…')this.value='';" onblur="if(this.value=='')this.value='Search…';" />
+					<input class="button2" value="Search" type="submit" /><br />
+					<a href="./search.php" title="View the advanced search options">Advanced search</a> <input type="hidden" name="sid" value="00000000000000000000000000000000" />
+
+				</fieldset>
+				</form>
+			</div>
+		
+
+			<span class="corners-bottom"><span></span></span></div>
+		</div>
+
+		<div class="navbar">
+			<div class="inner"><span class="corners-top"><span></span></span>
+
+			<ul class="linklist navlinks">
+				<li class="icon-home"><a href="./" accesskey="h">Board index</a>  <strong>&#8249;</strong> <a href="./sudoku-the-puzzle-f5.html">Sudoku: the puzzle</a> <strong>&#8249;</strong> <a href="./advanced-solving-techniques-f6.html">Advanced solving techniques</a></li>
+
+				<li class="rightside"><a href="#" onclick="fontsizeup(); return false;" onkeypress="return fontsizeup(event);" class="fontsize" title="Change font size">Change font size</a></li>
+
+				<li class="rightside"><a href="./viewtopic.php?f=6&amp;t=39859&amp;start=15&amp;view=print" title="Print view" accesskey="p" class="print">Print view</a></li>
+			</ul>
+
+			
+
+			<ul class="linklist rightside">
+				<li class="icon-faq"><a href="./faq.php" title="Frequently Asked Questions">FAQ</a></li>
+				<li class="icon-register"><a href="./ucp.php?mode=register">Register</a></li>
+					<li class="icon-logout"><a href="./ucp.php?mode=login" title="Login" accesskey="x">Login</a></li>
+				
+			</ul>
+
+			<span class="corners-bottom"><span></span></span></div>
+		</div>
+
+	</div>
+
+	<a name="start_here"></a>
+	<div id="page-body">
+		
+<h2><a href="./the-tridagon-rule-t39859-15.html">The tridagon rule</a></h2>
+<!-- NOTE: remove the style="display: none" when you want to have the forum description on the topic body --><div style="display: none !important;">Advanced methods and approaches for solving Sudoku puzzles<br /></div>
+
+<div class="topic-actions">
+
+	<div class="buttons">
+	
+		<div class="reply-icon"><a href="./posting.php?mode=reply&amp;f=6&amp;t=39859" title="Post a reply"><span></span>Post a reply</a></div>
+	
+	</div>
+
+	
+		<div class="search-box">
+			<form method="get" id="topic-search" action="./search.php">
+			<fieldset>
+				<input class="inputbox search tiny"  type="text" name="keywords" id="search_keywords" size="20" value="Search this topic…" onclick="if(this.value=='Search this topic…')this.value='';" onblur="if(this.value=='')this.value='Search this topic…';" />
+				<input class="button2" type="submit" value="Search" />
+				<input type="hidden" name="t" value="39859" />
+<input type="hidden" name="sf" value="msgonly" />
+<input type="hidden" name="sid" value="00000000000000000000000000000000" />
+
+			</fieldset>
+			</form>
+		</div>
+	
+		<div class="pagination">
+110 posts
+&bull; Page <strong>2</strong> of <strong>8</strong> &bull; <span><a href="the-tridagon-rule-t39859.html">1</a><span class="page-sep">, </span><strong>2</strong><span class="page-sep">, </span><a href="the-tridagon-rule-t39859-30.html">3</a><span class="page-sep">, </span><a href="the-tridagon-rule-t39859-45.html">4</a><span class="page-sep">, </span><a href="the-tridagon-rule-t39859-60.html">5</a><span class="page-sep">, </span><a href="the-tridagon-rule-t39859-75.html">6</a><span class="page-sep">, </span><a href="the-tridagon-rule-t39859-90.html">7</a><span class="page-sep">, </span><a href="the-tridagon-rule-t39859-105.html">8</a></span>
+		</div>
+	
+
+</div>
+<div class="clear"></div>
+
+
+	<div id="p318536" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=318536" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 class="first"><a href="./the-tridagon-rule-t39859-15.html#p318536">Re: The tridagon rule</a></h3>
+			<p class="author"><a href="./post318536.html#p318536"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member65215.html">mith</a></strong> &raquo; Tue Mar 15, 2022 8:00 pm </p>
+
+			
+
+			<div class="content">xzccs, I didn't totally follow your argument, since your images are not loading for me. But playing around with this in the 4 box case, I've come up with the following (which I assume is just a specific case of your proof):<br /><br />1. Considering only row- and column- links, there is exactly one rectangle in the pattern (4-loop), and the other cells form a bigger loop (8-loop).<br />2. Because we are limited to 3 digits, the 4-loop must have at least one case of a digit appearing twice, in diagonally opposite boxes. Let's call this digit A.<br />3. The other cells in those boxes are from the same two digits, say B and C.<br />4. There are four more cells in the other two boxes which are part of the 8-loop. Let's call these cells BB, BC, CB, and CC, based on how they are linked to the B and C cells in the original two boxes. (We know there is a unique cell for each case due to the 8-loop; if &quot;BB&quot; were two different cells, we would have a 4-loop.)<br />5. BB and CC must be in the same box; if they were in different boxes, the other 8-loop cell in the CC box must also see BB.<br />6. Likewise BC and CB must be in the same box. This a contradiction, since they would both need to contain A.</div>
+
+			
+				<div class="notice">Last edited by <a href="./member65215.html">mith</a> on Tue Mar 15, 2022 8:06 pm, edited 1 time in total.
+					
+				</div>
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile318536">
+			<dt>
+				<a href="./member65215.html">mith</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 803</dd><dd><strong>Joined:</strong> 14 July 2020</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./the-tridagon-rule-t39859-15.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p318537" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=318537" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./the-tridagon-rule-t39859-15.html#p318537">Re: The tridagon rule</a></h3>
+			<p class="author"><a href="./post318537.html#p318537"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member65215.html">mith</a></strong> &raquo; Tue Mar 15, 2022 8:04 pm </p>
+
+			
+
+			<div class="content"><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>.&nbsp; .&nbsp; B&nbsp; | BC .&nbsp; .<br />.&nbsp; A&nbsp; .&nbsp; | .&nbsp; r&nbsp; .<br />C&nbsp; .&nbsp; .&nbsp; | .&nbsp; .&nbsp; CB<br />---------+---------<br />CC .&nbsp; .&nbsp; | C&nbsp; .&nbsp; .<br />.&nbsp; r&nbsp; .&nbsp; | .&nbsp; A&nbsp; .<br />.&nbsp; .&nbsp; BB | .&nbsp; .&nbsp; B</code></dd></dl><br /><br />An illustration of one case. A in b1 and b5, r in b2 and b4 as the other cells in the 4-loop. b2 contains both BC and CB, #</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile318537">
+			<dt>
+				<a href="./member65215.html">mith</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 803</dd><dd><strong>Joined:</strong> 14 July 2020</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./the-tridagon-rule-t39859-15.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p318565" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=318565" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./the-tridagon-rule-t39859-15.html#p318565">Re: The tridagon rule</a></h3>
+			<p class="author"><a href="./post318565.html#p318565"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member81640.html">xzccs</a></strong> &raquo; Wed Mar 16, 2022 3:31 am </p>
+
+			
+
+			<div class="content">Sorry, I forgot to change the permission of my google drive. I think the image is available now <img src="./images/smilies/icon_e_biggrin.gif" alt=":D" title="Very Happy" /> .</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile318565">
+			<dt>
+				<a href="./member81640.html">xzccs</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 25</dd><dd><strong>Joined:</strong> 02 January 2022</dd><dd><strong>Location:</strong> Fiji</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="icq-icon"><a href="http://www.icq.com/people/344355388/" onclick="popup(this.href, 550, 320); return false;" title="ICQ"><span>ICQ</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./the-tridagon-rule-t39859-15.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p318581" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=318581" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./the-tridagon-rule-t39859-15.html#p318581">Re: The tridagon rule</a></h3>
+			<p class="author"><a href="./post318581.html#p318581"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member81640.html">xzccs</a></strong> &raquo; Wed Mar 16, 2022 7:05 am </p>
+
+			
+
+			<div class="content"><blockquote><div><cite>mith wrote:</cite>xzccs, I didn't totally follow your argument, since your images are not loading for me. But playing around with this in the 4 box case, I've come up with the following (which I assume is just a specific case of your proof):<br /><br />1. Considering only row- and column- links, there is exactly one rectangle in the pattern (4-loop), and the other cells form a bigger loop (8-loop).<br />2. Because we are limited to 3 digits, the 4-loop must have at least one case of a digit appearing twice, in diagonally opposite boxes. Let's call this digit A.<br />3. The other cells in those boxes are from the same two digits, say B and C.<br />4. There are four more cells in the other two boxes which are part of the 8-loop. Let's call these cells BB, BC, CB, and CC, based on how they are linked to the B and C cells in the original two boxes. (We know there is a unique cell for each case due to the 8-loop; if &quot;BB&quot; were two different cells, we would have a 4-loop.)<br />5. BB and CC must be in the same box; if they were in different boxes, the other 8-loop cell in the CC box must also see BB.<br />6. Likewise BC and CB must be in the same box. This a contradiction, since they would both need to contain A.</div></blockquote><br />That's right. It is a specific case. I've tried to prove it by that way before, but it's still a kind of enumeration. When fucusing more on the relationship between loops and within loops, I found this more general proof.</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile318581">
+			<dt>
+				<a href="./member81640.html">xzccs</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 25</dd><dd><strong>Joined:</strong> 02 January 2022</dd><dd><strong>Location:</strong> Fiji</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="icq-icon"><a href="http://www.icq.com/people/344355388/" onclick="popup(this.href, 550, 320); return false;" title="ICQ"><span>ICQ</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./the-tridagon-rule-t39859-15.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p318588" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=318588" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./the-tridagon-rule-t39859-15.html#p318588">Re: The tridagon rule</a></h3>
+			<p class="author"><a href="./post318588.html#p318588"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member2659.html">denis_berthier</a></strong> &raquo; Wed Mar 16, 2022 7:53 am </p>
+
+			
+
+			<div class="content">Hi xzccs<br />Welcome to this forum<br /><br />I'm not sure to understand all the details, but the main problem seems to be to find a real example. There may not be enough room on the 9x9 board for allowing such patterns.<br />Long ago, I tried something similar with the sk-loop: in theory, there's no obvious reason why it couldn't have a version in 6 blocks. But I couldn't properly place givens to create such a pattern.<br />An example would be very welcome.</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile318588">
+			<dt>
+				<a href="./member2659.html">denis_berthier</a>
+			</dt>
+
+			<dd>2010 Supporter</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 3204</dd><dd><strong>Joined:</strong> 19 June 2007</dd><dd><strong>Location:</strong> Paris</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="web-icon"><a href="http://denis-berthier.pagesperso-orange.fr" title="WWW: http://denis-berthier.pagesperso-orange.fr"><span>Website</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./the-tridagon-rule-t39859-15.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p318597" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=318597" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./the-tridagon-rule-t39859-15.html#p318597">Re: The tridagon rule</a></h3>
+			<p class="author"><a href="./post318597.html#p318597"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member81640.html">xzccs</a></strong> &raquo; Wed Mar 16, 2022 8:47 am </p>
+
+			
+
+			<div class="content"><blockquote><div><cite>denis_berthier wrote:</cite>Hi xzccs<br />Welcome to this forum<br /><br />I'm not sure to understand all the details, but the main problem seems to be to find a real example. There may not be enough room on the 9x9 board for allowing such patterns.<br />Long ago, I tried something similar with the sk-loop: in theory, there's no obvious reason why it couldn't have a version in 6 blocks. But I couldn't properly place givens to create such a pattern.<br />An example would be very welcome.</div></blockquote><br />Thanks. I just took 6 boxes for image. I think it's quite hard to find an useful example since there should be too many clues in 6 boxes case.</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile318597">
+			<dt>
+				<a href="./member81640.html">xzccs</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 25</dd><dd><strong>Joined:</strong> 02 January 2022</dd><dd><strong>Location:</strong> Fiji</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="icq-icon"><a href="http://www.icq.com/people/344355388/" onclick="popup(this.href, 550, 320); return false;" title="ICQ"><span>ICQ</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./the-tridagon-rule-t39859-15.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p318661" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=318661" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./the-tridagon-rule-t39859-15.html#p318661">Re: The tridagon rule</a></h3>
+			<p class="author"><a href="./post318661.html#p318661"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member65215.html">mith</a></strong> &raquo; Wed Mar 16, 2022 5:06 pm </p>
+
+			
+
+			<div class="content">It's pretty easy to demonstrate that a 6-box pattern in a 9x9 will always simplify to a 4-box pattern if there is only one guardian cell. Just as an example, let's consider the following parities in the boxes:<br /><br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>//.<br />/./<br />./\</code></dd></dl><br /><br />This is a broken pattern. Let's say there is a guardian cell in b9. Then there is no guardian cell in b124, and b5 is forced to have the same parity:<br /><br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>//.<br />///<br />./\</code></dd></dl><br /><br />But now we have a 4-box pattern in b5689.<br /><br />If there are multiple guardian cells, in &quot;opposing&quot; boxes (boxes which don't see each other and don't see a third box that is part of the 6-box pattern; b19, b26, b48 in this example), then it's perhaps possible the 6-box pattern isn't reducible to a 4-box pattern, but all the useful examples of the pattern seen so far have at most two guardian cells in either the same box or adjacent boxes. Maybe the weak link between the guardian candidates could still give something, I dunno.</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile318661">
+			<dt>
+				<a href="./member65215.html">mith</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 803</dd><dd><strong>Joined:</strong> 14 July 2020</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./the-tridagon-rule-t39859-15.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p318691" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=318691" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./the-tridagon-rule-t39859-15.html#p318691">Re: The tridagon rule</a></h3>
+			<p class="author"><a href="./post318691.html#p318691"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member2814.html">eleven</a></strong> &raquo; Thu Mar 17, 2022 12:43 am </p>
+
+			
+
+			<div class="content">In valid sudokus such 3-digit patterns in 6 boxes cannot exist, because 2 of the 3 digits must be givens and therefore would be missing in the pattern.</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile318691">
+			<dt>
+				<a href="./member2814.html">eleven</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 2802</dd><dd><strong>Joined:</strong> 10 February 2008</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./the-tridagon-rule-t39859-15.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p318916" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=318916" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./the-tridagon-rule-t39859-15.html#p318916">Re: The tridagon rule</a></h3>
+			<p class="author"><a href="./post318916.html#p318916"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member65215.html">mith</a></strong> &raquo; Mon Mar 21, 2022 7:24 pm </p>
+
+			
+
+			<div class="content"><blockquote><div><cite>eleven wrote:</cite>In valid sudokus such 3-digit patterns in 6 boxes cannot exist, because 2 of the 3 digits must be givens and therefore would be missing in the pattern.</div></blockquote><br /><br />Is it necessarily the case that having a single digit ruled out from a few cells of the pattern collapses it? (I know when looking at 4-box patterns it has been my experience that a given from the triple seeing into those boxes tends to collapse it to bivalue oddagons, but I haven't really thought about whether that will always happen.)</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile318916">
+			<dt>
+				<a href="./member65215.html">mith</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 803</dd><dd><strong>Joined:</strong> 14 July 2020</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./the-tridagon-rule-t39859-15.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p319060" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=319060" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./the-tridagon-rule-t39859-15.html#p319060">Re: The tridagon rule</a></h3>
+			<p class="author"><a href="./post319060.html#p319060"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member2659.html">denis_berthier</a></strong> &raquo; Fri Mar 25, 2022 10:48 am </p>
+
+			
+
+			<div class="content">.<br />Here is one more example (#2 in mith 246-list <a href="./the-hardest-sudokus-new-thread-t6539-1190.html" class="postlink" rel="nofollow">./the-hardest-sudokus-new-thread-t6539-1190.html</a>)<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>&nbsp; &nbsp; &nbsp;+-------+-------+-------+<br />&nbsp; &nbsp; &nbsp;! . . . ! . . . ! . . 1 ! <br />&nbsp; &nbsp; &nbsp;! . . . ! . . 2 ! . 3 . ! <br />&nbsp; &nbsp; &nbsp;! . . . ! . 4 . ! 5 6 . ! <br />&nbsp; &nbsp; &nbsp;+-------+-------+-------+<br />&nbsp; &nbsp; &nbsp;! . . . ! . . 7 ! . . . ! <br />&nbsp; &nbsp; &nbsp;! . . 4 ! 8 1 . ! 2 . . ! <br />&nbsp; &nbsp; &nbsp;! 1 9 . ! . 2 4 ! 8 . . ! <br />&nbsp; &nbsp; &nbsp;+-------+-------+-------+<br />&nbsp; &nbsp; &nbsp;! . 8 9 ! . . 1 ! . . 7 ! <br />&nbsp; &nbsp; &nbsp;! 4 2 . ! . 7 8 ! . . 9 ! <br />&nbsp; &nbsp; &nbsp;! 7 . 1 ! . 9 . ! . . . ! <br />&nbsp; &nbsp; &nbsp;+-------+-------+-------+<br />........1.....2.3.....4.56......7.....481.2..19..248...89..1..742..78..97.1.9....;28</code></dd></dl><br /><br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>Resolution state after Singles and whips&#91;1&#93;:<br />&nbsp; &nbsp;+----------------------+----------------------+----------------------+ <br />&nbsp; &nbsp;! 235689 34567&nbsp; 235678 ! 35679&nbsp; 3568&nbsp; &nbsp;3569&nbsp; &nbsp;! 479&nbsp; &nbsp; 2489&nbsp; &nbsp;1&nbsp; &nbsp; &nbsp; ! <br />&nbsp; &nbsp;! 5689&nbsp; &nbsp;14567&nbsp; 5678&nbsp; &nbsp;! 15679&nbsp; 568&nbsp; &nbsp; 2&nbsp; &nbsp; &nbsp; ! 479&nbsp; &nbsp; 3&nbsp; &nbsp; &nbsp; 48&nbsp; &nbsp; &nbsp;! <br />&nbsp; &nbsp;! 2389&nbsp; &nbsp;137&nbsp; &nbsp; 2378&nbsp; &nbsp;! 1379&nbsp; &nbsp;4&nbsp; &nbsp; &nbsp; 39&nbsp; &nbsp; &nbsp;! 5&nbsp; &nbsp; &nbsp; 6&nbsp; &nbsp; &nbsp; 28&nbsp; &nbsp; &nbsp;! <br />&nbsp; &nbsp;+----------------------+----------------------+----------------------+ <br />&nbsp; &nbsp;! 23568&nbsp; 356&nbsp; &nbsp; 23568&nbsp; ! 3569&nbsp; &nbsp;356&nbsp; &nbsp; 7&nbsp; &nbsp; &nbsp; ! 13469&nbsp; 1459&nbsp; &nbsp;3456&nbsp; &nbsp;! <br />&nbsp; &nbsp;! 356&nbsp; &nbsp; 3567&nbsp; &nbsp;4&nbsp; &nbsp; &nbsp; ! 8&nbsp; &nbsp; &nbsp; 1&nbsp; &nbsp; &nbsp; 3569&nbsp; &nbsp;! 2&nbsp; &nbsp; &nbsp; 579&nbsp; &nbsp; 356&nbsp; &nbsp; ! <br />&nbsp; &nbsp;! 1&nbsp; &nbsp; &nbsp; 9&nbsp; &nbsp; &nbsp; 3567&nbsp; &nbsp;! 356&nbsp; &nbsp; 2&nbsp; &nbsp; &nbsp; 4&nbsp; &nbsp; &nbsp; ! 8&nbsp; &nbsp; &nbsp; 57&nbsp; &nbsp; &nbsp;356&nbsp; &nbsp; ! <br />&nbsp; &nbsp;+----------------------+----------------------+----------------------+ <br />&nbsp; &nbsp;! 356&nbsp; &nbsp; 8&nbsp; &nbsp; &nbsp; 9&nbsp; &nbsp; &nbsp; ! 23456&nbsp; 356&nbsp; &nbsp; 1&nbsp; &nbsp; &nbsp; ! 346&nbsp; &nbsp; 245&nbsp; &nbsp; 7&nbsp; &nbsp; &nbsp; ! <br />&nbsp; &nbsp;! 4&nbsp; &nbsp; &nbsp; 2&nbsp; &nbsp; &nbsp; 356&nbsp; &nbsp; ! 356&nbsp; &nbsp; 7&nbsp; &nbsp; &nbsp; 8&nbsp; &nbsp; &nbsp; ! 136&nbsp; &nbsp; 15&nbsp; &nbsp; &nbsp;9&nbsp; &nbsp; &nbsp; ! <br />&nbsp; &nbsp;! 7&nbsp; &nbsp; &nbsp; 356&nbsp; &nbsp; 1&nbsp; &nbsp; &nbsp; ! 23456&nbsp; 9&nbsp; &nbsp; &nbsp; 356&nbsp; &nbsp; ! 346&nbsp; &nbsp; 2458&nbsp; &nbsp;234568 ! <br />&nbsp; &nbsp;+----------------------+----------------------+----------------------+ <br />196 candidates.</code></dd></dl><br /><br />When whips are enabled, a full solution is obtained after an application of the tridagon elimination rule:<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>hidden-pairs-in-a-column: c4{n2 n4}{r7 r9} ==&gt; r9c4≠6, r9c4≠5, r9c4≠3, r7c4≠6, r7c4≠5, r7c4≠3<br />hidden-pairs-in-a-row: r4{n2 n8}{c1 c3} ==&gt; r4c3≠6, r4c3≠5, r4c3≠3, r4c1≠6, r4c1≠5, r4c1≠3<br />t-whip&#91;4&#93;: c7n1{r4 r8} - r8c8{n1 n5} - r6c8{n5 n7} - r5c8{n7 .} ==&gt; r4c7≠9<br />whip&#91;1&#93;: b6n9{r5c8 .} ==&gt; r1c8≠9<br />hidden-pairs-in-a-block: b3{n7 n9}{r1c7 r2c7} ==&gt; r2c7≠4, r1c7≠4<br />t-whip&#91;5&#93;: r5n7{c2 c8} - c8n9{r5 r4} - r4n1{c8 c7} - r4n4{c7 c9} - r2n4{c9 .} ==&gt; r2c2≠7<br />t-whip&#91;5&#93;: r4n9{c4 c8} - r4n1{c8 c7} - r4n4{c7 c9} - r2n4{c9 c2} - r2n1{c2 .} ==&gt; r2c4≠9<br />t-whip&#91;6&#93;: r5n7{c2 c8} - c8n9{r5 r4} - r4n1{c8 c7} - r4n4{c7 c9} - r2n4{c9 c2} - c2n1{r2 .} ==&gt; r3c2≠7<br />t-whip&#91;6&#93;: r6n7{c8 c3} - r3n7{c3 c4} - r2n7{c4 c7} - r2n9{c7 c1} - r3n9{c1 c6} - r5n9{c6 .} ==&gt; r5c8≠7<br />hidden-single-in-a-block ==&gt; r6c8=7<br />hidden-single-in-a-block ==&gt; r5c2=7<br />whip&#91;4&#93;: b5n9{r4c4 r5c6} - r5c8{n9 n5} - r8n5{c8 c3} - r6n5{c3 .} ==&gt; r4c4≠5<br />whip&#91;11&#93;: b5n9{r4c4 r5c6} - r5c8{n9 n5} - b9n5{r7c8 r9c9} - c6n5{r9 r1} - c6n6{r1 r9} - b8n3{r9c6 r7c5} - c5n5{r7 r4} - c2n5{r4 r2} - r2n4{c2 c9} - c9n8{r2 r3} - c9n2{r3 .} ==&gt; r4c4≠3<br />tridagon type diag for digits 3, 5 and 6 in blocks: <br />&nbsp; &nbsp; &nbsp; &nbsp; b5, with cells: r5c6 (target cell), r4c5, r6c4<br />&nbsp; &nbsp; &nbsp; &nbsp; b4, with cells: r5c1, r4c2, r6c3<br />&nbsp; &nbsp; &nbsp; &nbsp; b8, with cells: r9c6, r7c5, r8c4<br />&nbsp; &nbsp; &nbsp; &nbsp; b7, with cells: r9c2, r7c1, r8c3<br />&nbsp;==&gt; r5c6≠3,5,6<br />stte</code></dd></dl><br /><br />If only Subsets and tridagons are activated, no tridagon appears, but there is a tridagon-link:<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>hidden-pairs-in-a-column: c4{n2 n4}{r7 r9} ==&gt; r9c4≠6, r9c4≠5, r9c4≠3, r7c4≠6, r7c4≠5, r7c4≠3<br />hidden-pairs-in-a-row: r4{n2 n8}{c1 c3} ==&gt; r4c3≠6, r4c3≠5, r4c3≠3, r4c1≠6, r4c1≠5, r4c1≠3<br />extended tridagon for digits 3, 5 and 6 in blocks:<br />&nbsp; &nbsp; &nbsp; &nbsp; b4, with cells: r6c3 (link cell), r5c1, r4c2<br />&nbsp; &nbsp; &nbsp; &nbsp; b5, with cells: r6c4, r5c6 (link cell), r4c5<br />&nbsp; &nbsp; &nbsp; &nbsp; b7, with cells: r8c3, r7c1, r9c2<br />&nbsp; &nbsp; &nbsp; &nbsp; b8, with cells: r8c4, r7c5, r9c6<br />&nbsp;==&gt; tridagon-link(n7r6c3, n9r5c6)</code></dd></dl><br />With no other rule, nothing more can be deduced.<br />However, as mentioned by others in the &quot;hardest&quot; thread the tridagon link can be combined with chains in order to produce some eliminations.<br />I'll deal later with this situation.<br />What I wanted to show here is only an interesting case (IMO) where previous eliminations allow to reach a situation where the mere elimination rule applies.</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile319060">
+			<dt>
+				<a href="./member2659.html">denis_berthier</a>
+			</dt>
+
+			<dd>2010 Supporter</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 3204</dd><dd><strong>Joined:</strong> 19 June 2007</dd><dd><strong>Location:</strong> Paris</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="web-icon"><a href="http://denis-berthier.pagesperso-orange.fr" title="WWW: http://denis-berthier.pagesperso-orange.fr"><span>Website</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./the-tridagon-rule-t39859-15.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p319107" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=319107" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./the-tridagon-rule-t39859-15.html#p319107">Re: The tridagon rule</a></h3>
+			<p class="author"><a href="./post319107.html#p319107"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member2659.html">denis_berthier</a></strong> &raquo; Sat Mar 26, 2022 5:48 am </p>
+
+			
+
+			<div class="content">.<br /><span style="font-weight: bold">TRIDAGON LINKS</span><br /><br />The first post of  this thread was about <br />- making explicit a full resolution rule (i.e. a rule that allows immediate eliminations) based on the impossible &quot;trivalue-oddagon&quot; pattern <br />- and formulating it in a way that can easily be transcribed into a logical formula or any implementation. <br />Notice that this modest approach has led to consider the rule as an elimination one (rather than an assertion one) and to raise a previous restriction on the target cell: it may contain more than one additional candidate.<br /><br />Other applications of the impossibility pattern are known. Again, the goal of this post is not to review all of them, but only <span style="font-weight: bold"><span style="color: #0000FF">the simplest case, where two and only two different cells of the impossible pattern have one and only one additional candidate. In this case, the conclusion is that one of the additional candidates must be True</span></span> - which doesn't define a resolution rule in and of itself, but <span style="font-weight: bold"><span style="color: #0000FF">can be used to build new types of</span> <span style="color: #8000FF">Forcing Chains</span></span>.<br />Based on the analysis of the first post, it is easy to see that there are the following cases (and only them).<br /><br />By the same isomorphisms as before, we can always suppose one of the two additional candidates is in r1c1 and that the pattern of cells is as in the first post: <br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code># . . | + . .<br />. + . | . + .<br />. . + | . . +<br />-------------<br />+ . . | x x x<br />. + . | x x x<br />. . + | x x x<br /></code></dd></dl><br />with the same conditions on the pattern in the third block:<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>. . +&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; . + .&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; + . . <br />. + .&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; + . .&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; . . +<br />+ . .&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; . . +&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; . + .</code></dd></dl><br />(where, at this point, the last two patterns are equivalent under r2/r3, c2/c3, and r5/r6 permutations).<br /><br /><br />Now, the question is: where can the second candidate be?<br /><br />First case: in the same block. Only one possible place modulo isomorphisms:<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code># . . | + . .<br />. # . | . + .<br />. . + | . . +<br />-------------<br />+ . . | x x x<br />. + . | x x x<br />. . + | x x x<br /></code></dd></dl><br /><br />Second case: in a different block but the same band. Only two possible places modulo isomorphisms:<br />same row:<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code># . . | # . .<br />. + . | . + .<br />. . + | . . +<br />-------------<br />+ . . | x x x<br />. + . | x x x<br />. . + | x x x<br /></code></dd></dl><br /><br />different row:<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code># . . | + . .<br />. + . | . # .<br />. . + | . . +<br />-------------<br />+ . . | x x x<br />. + . | x x x<br />. . + | x x x<br /></code></dd></dl><br /><br /><br />Third case: in a different block but the same stack. Only two possible places modulo isomorphisms (deduced from the previous two by row/column symmetry)<br /><br /><br />Fourth case: in opposite blocks. It can be almost anywhere in the 4th block (which must still satisfy one of the three patterns found in the first post).<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code># . . | + . .<br />. + . | . + .<br />. . + | . . +<br />-------------<br />+ . . | x x x<br />. + . | x x x<br />. . + | x x x<br /></code></dd></dl><br /><br />Notice that the above four cases are possible and have real examples.<br />.</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile319107">
+			<dt>
+				<a href="./member2659.html">denis_berthier</a>
+			</dt>
+
+			<dd>2010 Supporter</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 3204</dd><dd><strong>Joined:</strong> 19 June 2007</dd><dd><strong>Location:</strong> Paris</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="web-icon"><a href="http://denis-berthier.pagesperso-orange.fr" title="WWW: http://denis-berthier.pagesperso-orange.fr"><span>Website</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./the-tridagon-rule-t39859-15.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p319319" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=319319" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./the-tridagon-rule-t39859-15.html#p319319">Re: The tridagon rule</a></h3>
+			<p class="author"><a href="./post319319.html#p319319"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member2659.html">denis_berthier</a></strong> &raquo; Mon Mar 28, 2022 6:46 am </p>
+
+			
+
+			<div class="content">.<br />As an appetiser for more formal definitions of Tridagon-Forcing-Whips, here is a solution of puzzle #39 in mith's list of 246 puzzles not in T&amp;E(2) (<a href="./the-hardest-sudokus-new-thread-t6539-1190.html)" class="postlink" rel="nofollow">./the-hardest-sudokus-new-thread-t6539-1190.html)</a>, for which I've already given some analyses in the next posts of the same thread.<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>&nbsp; &nbsp; &nbsp;+-------+-------+-------+<br />&nbsp; &nbsp; &nbsp;! . . . ! . . . ! . . 1 ! <br />&nbsp; &nbsp; &nbsp;! . . . ! . . 2 ! 3 4 . ! <br />&nbsp; &nbsp; &nbsp;! . . 5 ! . 1 3 ! 6 . 2 ! <br />&nbsp; &nbsp; &nbsp;+-------+-------+-------+<br />&nbsp; &nbsp; &nbsp;! . . . ! . 7 . ! . 3 6 ! <br />&nbsp; &nbsp; &nbsp;! . . . ! . 8 9 ! 4 . . ! <br />&nbsp; &nbsp; &nbsp;! . . 4 ! 6 . . ! . . . ! <br />&nbsp; &nbsp; &nbsp;+-------+-------+-------+<br />&nbsp; &nbsp; &nbsp;! . 1 2 ! 5 . . ! . 6 . ! <br />&nbsp; &nbsp; &nbsp;! 4 . 3 ! 1 . . ! 5 2 . ! <br />&nbsp; &nbsp; &nbsp;! 5 6 . ! . . . ! 1 . . ! <br />&nbsp; &nbsp; &nbsp;+-------+-------+-------+<br />........1.....234...5.136.2....7..36....894....46......125...6.4.31..52.56....1..;29</code></dd></dl><br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>Resolution state after Singles and whips&#91;1&#93;:<br />&nbsp; &nbsp;+----------------------+----------------------+----------------------+<br />&nbsp; &nbsp;! 236789 234789 6789&nbsp; &nbsp;! 4789&nbsp; &nbsp;4569&nbsp; &nbsp;45678&nbsp; ! 789&nbsp; &nbsp; 5789&nbsp; &nbsp;1&nbsp; &nbsp; &nbsp; !<br />&nbsp; &nbsp;! 16789&nbsp; 789&nbsp; &nbsp; 16789&nbsp; ! 789&nbsp; &nbsp; 569&nbsp; &nbsp; 2&nbsp; &nbsp; &nbsp; ! 3&nbsp; &nbsp; &nbsp; 4&nbsp; &nbsp; &nbsp; 5789&nbsp; &nbsp;!<br />&nbsp; &nbsp;! 789&nbsp; &nbsp; 4789&nbsp; &nbsp;5&nbsp; &nbsp; &nbsp; ! 4789&nbsp; &nbsp;1&nbsp; &nbsp; &nbsp; 3&nbsp; &nbsp; &nbsp; ! 6&nbsp; &nbsp; &nbsp; 789&nbsp; &nbsp; 2&nbsp; &nbsp; &nbsp; !<br />&nbsp; &nbsp;+----------------------+----------------------+----------------------+<br />&nbsp; &nbsp;! 1289&nbsp; &nbsp;2589&nbsp; &nbsp;189&nbsp; &nbsp; ! 24&nbsp; &nbsp; &nbsp;7&nbsp; &nbsp; &nbsp; 145&nbsp; &nbsp; ! 289&nbsp; &nbsp; 3&nbsp; &nbsp; &nbsp; 6&nbsp; &nbsp; &nbsp; !<br />&nbsp; &nbsp;! 12367&nbsp; 2357&nbsp; &nbsp;167&nbsp; &nbsp; ! 23&nbsp; &nbsp; &nbsp;8&nbsp; &nbsp; &nbsp; 9&nbsp; &nbsp; &nbsp; ! 4&nbsp; &nbsp; &nbsp; 157&nbsp; &nbsp; 57&nbsp; &nbsp; &nbsp;!<br />&nbsp; &nbsp;! 123789 235789 4&nbsp; &nbsp; &nbsp; ! 6&nbsp; &nbsp; &nbsp; 235&nbsp; &nbsp; 15&nbsp; &nbsp; &nbsp;! 2789&nbsp; &nbsp;15789&nbsp; 5789&nbsp; &nbsp;!<br />&nbsp; &nbsp;+----------------------+----------------------+----------------------+<br />&nbsp; &nbsp;! 789&nbsp; &nbsp; 1&nbsp; &nbsp; &nbsp; 2&nbsp; &nbsp; &nbsp; ! 5&nbsp; &nbsp; &nbsp; 349&nbsp; &nbsp; 478&nbsp; &nbsp; ! 789&nbsp; &nbsp; 6&nbsp; &nbsp; &nbsp; 34789&nbsp; !<br />&nbsp; &nbsp;! 4&nbsp; &nbsp; &nbsp; 789&nbsp; &nbsp; 3&nbsp; &nbsp; &nbsp; ! 1&nbsp; &nbsp; &nbsp; 69&nbsp; &nbsp; &nbsp;678&nbsp; &nbsp; ! 5&nbsp; &nbsp; &nbsp; 2&nbsp; &nbsp; &nbsp; 789&nbsp; &nbsp; !<br />&nbsp; &nbsp;! 5&nbsp; &nbsp; &nbsp; 6&nbsp; &nbsp; &nbsp; 789&nbsp; &nbsp; ! 234789 2349&nbsp; &nbsp;478&nbsp; &nbsp; ! 1&nbsp; &nbsp; &nbsp; 789&nbsp; &nbsp; 34789&nbsp; !<br />&nbsp; &nbsp;+----------------------+----------------------+----------------------+<br />193 candidates.</code></dd></dl><br />Here, only Subsets, whips[≤12] and Tridagon-Forcing-Whips are activated.<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>hidden-pairs-in-a-column: c9{n3 n4}{r7 r9} ==&gt; r9c9≠9, r9c9≠8, r9c9≠7, r7c9≠9, r7c9≠8, r7c9≠7<br />hidden-pairs-in-a-row: r1{n2 n3}{c1 c2} ==&gt; r1c2≠9, r1c2≠8, r1c2≠7, r1c2≠4, r1c1≠9, r1c1≠8, r1c1≠7, r1c1≠6<br />hidden-single-in-a-block ==&gt; r3c2=4<br />z-chain&#91;4&#93;: r6c6{n5 n1} - c8n1{r6 r5} - c8n5{r5 r6} - c5n5{r6 .} ==&gt; r1c6≠5<br />whip&#91;1&#93;: c6n5{r6 .} ==&gt; r6c5≠5<br />naked-pairs-in-a-block: b5{r5c4 r6c5}{n2 n3} ==&gt; r4c4≠2<br />naked-single ==&gt; r4c4=4<br />hidden-pairs-in-a-column: c4{n2 n3}{r5 r9} ==&gt; r9c4≠9, r9c4≠8, r9c4≠7<br />whip&#91;1&#93;: b8n7{r9c6 .} ==&gt; r1c6≠7<br />whip&#91;1&#93;: b8n8{r9c6 .} ==&gt; r1c6≠8<br />whip&#91;1&#93;: b8n9{r9c5 .} ==&gt; r1c5≠9, r2c5≠9<br />whip&#91;6&#93;: r2n1{c1 c3} - b1n6{r2c3 r1c3} - r5c3{n6 n7} - r5c9{n7 n5} - r2n5{c9 c5} - r2n6{c5 .} ==&gt; r2c1≠7<br />whip&#91;6&#93;: r2n1{c1 c3} - b1n6{r2c3 r1c3} - r5c3{n6 n7} - r5c9{n7 n5} - r2n5{c9 c5} - r2n6{c5 .} ==&gt; r2c1≠8<br />whip&#91;6&#93;: r2n1{c1 c3} - b1n6{r2c3 r1c3} - r5c3{n6 n7} - r5c9{n7 n5} - r2n5{c9 c5} - r2n6{c5 .} ==&gt; r2c1≠9<br />whip&#91;6&#93;: r5c9{n5 n7} - r5c8{n7 n1} - r5c3{n1 n6} - c1n6{r5 r2} - r2c5{n6 n5} - c9n5{r2 .} ==&gt; r6c8≠5<br />whip&#91;8&#93;: r2n1{c3 c1} - b1n6{r2c1 r1c3} - c6n6{r1 r8} - c5n6{r8 r2} - r2n5{c5 c9} - r5c9{n5 n7} - c3n7{r5 r9} - r8n7{c2 .} ==&gt; r2c3≠8<br />whip&#91;8&#93;: r2n1{c3 c1} - b1n6{r2c1 r1c3} - c6n6{r1 r8} - c5n6{r8 r2} - r2n5{c5 c9} - r5c9{n5 n7} - c3n7{r5 r9} - r8n7{c2 .} ==&gt; r2c3≠9<br />whip&#91;11&#93;: b3n5{r1c8 r2c9} - r2c5{n5 n6} - r8c5{n6 n9} - c9n9{r8 r6} - c9n8{r6 r8} - b9n7{r8c9 r7c7} - c7n9{r7 r1} - r1c4{n9 n8} - r2n8{c4 c2} - b1n9{r2c2 r3c1} - r7n9{c1 .} ==&gt; r1c8≠7<br /><br />extended tridagon for digits 7, 8 and 9 in blocks:<br />&nbsp; &nbsp; &nbsp; &nbsp; b3, with cells: r2c9 (link cell), r1c7, r3c8<br />&nbsp; &nbsp; &nbsp; &nbsp; b1, with cells: r2c2, r1c3 (link cell), r3c1<br />&nbsp; &nbsp; &nbsp; &nbsp; b9, with cells: r8c9, r7c7, r9c8<br />&nbsp; &nbsp; &nbsp; &nbsp; b7, with cells: r8c2, r7c1, r9c3<br />&nbsp;==&gt; tridagon-link&#91;12&#93;(n5r2c9, n6r1c3)<br /><br />tridagon-forcing-whip-elim&#91;13&#93; based on tridagon-link(n6r1c3, n5r2c9)<br />....for n6r1c3: -<br />....for n5r2c9: partial-whip&#91;1&#93;: c5n5{r2 r1} -<br />&nbsp;==&gt; r1c5≠6, r2c3≠6<br /><br />biv-chain&#91;3&#93;: r2c3{n7 n1} - r2c1{n1 n6} - b4n6{r5c1 r5c3} ==&gt; r5c3≠7<br />biv-chain&#91;3&#93;: r5c3{n1 n6} - c1n6{r5 r2} - b1n1{r2c1 r2c3} ==&gt; r4c3≠1<br /><br />tridagon-forcing-whip-elim&#91;13&#93; based on tridagon-link(n5r2c9, n6r1c3)<br />....for n5r2c9: -<br />....for n6r1c3: partial-whip&#91;1&#93;: r2n6{c1 c5} -<br />&nbsp;==&gt; r2c5≠5<br />stte</code></dd></dl><br /><br />Two very short chains (partial-whips[1]) are enough to allow eliminations based on the tridagon link. (Notice that the Tridagon-link is available at the start and part of the whips appearing before it in this path may not be necessary to solve the puzzle.)<br />I planned to post a second example showing the use of longer partial-whips, but I have no time right now.</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile319319">
+			<dt>
+				<a href="./member2659.html">denis_berthier</a>
+			</dt>
+
+			<dd>2010 Supporter</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 3204</dd><dd><strong>Joined:</strong> 19 June 2007</dd><dd><strong>Location:</strong> Paris</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="web-icon"><a href="http://denis-berthier.pagesperso-orange.fr" title="WWW: http://denis-berthier.pagesperso-orange.fr"><span>Website</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./the-tridagon-rule-t39859-15.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p319404" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=319404" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./the-tridagon-rule-t39859-15.html#p319404">Re: The tridagon rule</a></h3>
+			<p class="author"><a href="./post319404.html#p319404"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member3590.html">pjb</a></strong> &raquo; Tue Mar 29, 2022 2:00 am </p>
+
+			
+
+			<div class="content">denis_berthier wrote:<br /><blockquote class="uncited"><div>Here is one more example (#2 in mith 246-list the-hardest-sudokus-new-thread-t6539-1190.html)<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>&nbsp; &nbsp; &nbsp;+-------+-------+-------+<br />&nbsp; &nbsp; &nbsp;! . . . ! . . . ! . . 1 !<br />&nbsp; &nbsp; &nbsp;! . . . ! . . 2 ! . 3 . !<br />&nbsp; &nbsp; &nbsp;! . . . ! . 4 . ! 5 6 . !<br />&nbsp; &nbsp; &nbsp;+-------+-------+-------+<br />&nbsp; &nbsp; &nbsp;! . . . ! . . 7 ! . . . !<br />&nbsp; &nbsp; &nbsp;! . . 4 ! 8 1 . ! 2 . . !<br />&nbsp; &nbsp; &nbsp;! 1 9 . ! . 2 4 ! 8 . . !<br />&nbsp; &nbsp; &nbsp;+-------+-------+-------+<br />&nbsp; &nbsp; &nbsp;! . 8 9 ! . . 1 ! . . 7 !<br />&nbsp; &nbsp; &nbsp;! 4 2 . ! . 7 8 ! . . 9 !<br />&nbsp; &nbsp; &nbsp;! 7 . 1 ! . 9 . ! . . . !<br />&nbsp; &nbsp; &nbsp;+-------+-------+-------+<br />........1.....2.3.....4.56......7.....481.2..19..248...89..1..742..78..97.1.9....;28</code></dd></dl><br /></div></blockquote><br /><br />This actually solves in a single step after basics:<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>&nbsp;235689&nbsp; 34567&nbsp; &nbsp;235678 | 35679&nbsp; 3568&nbsp; &nbsp;3569&nbsp; &nbsp;| 479&nbsp; &nbsp; 2489&nbsp; &nbsp;1&nbsp; &nbsp; &nbsp; <br />&nbsp;5689&nbsp; &nbsp; 14567&nbsp; &nbsp;5678&nbsp; &nbsp;| 15679&nbsp; 568&nbsp; &nbsp; 2&nbsp; &nbsp; &nbsp; | 479&nbsp; &nbsp; 3&nbsp; &nbsp; &nbsp; 48&nbsp; &nbsp; &nbsp;<br />&nbsp;2389&nbsp; &nbsp; 137&nbsp; &nbsp; &nbsp;2378&nbsp; &nbsp;| 1379&nbsp; &nbsp;4&nbsp; &nbsp; &nbsp; 39&nbsp; &nbsp; &nbsp;| 5&nbsp; &nbsp; &nbsp; 6&nbsp; &nbsp; &nbsp; 28&nbsp; &nbsp; &nbsp;<br />------------------------+----------------------+---------------------<br />&nbsp;28&nbsp; &nbsp; &nbsp;*356&nbsp; &nbsp; &nbsp;28&nbsp; &nbsp; &nbsp;| 3569&nbsp; *356&nbsp; &nbsp; 7&nbsp; &nbsp; &nbsp; | 13469&nbsp; 1459&nbsp; &nbsp;3456&nbsp; &nbsp;<br />*356&nbsp; &nbsp; &nbsp;3567C&nbsp; &nbsp;4&nbsp; &nbsp; &nbsp; | 8&nbsp; &nbsp; &nbsp; 1&nbsp; &nbsp; &nbsp;*356+9A | 2&nbsp; &nbsp; &nbsp; 57-9D&nbsp; 356&nbsp; &nbsp; <br />&nbsp;1&nbsp; &nbsp; &nbsp; &nbsp;9&nbsp; &nbsp; &nbsp; *356+7B |*356&nbsp; &nbsp; 2&nbsp; &nbsp; &nbsp; 4&nbsp; &nbsp; &nbsp; | 8&nbsp; &nbsp; &nbsp; 57&nbsp; &nbsp; &nbsp;356&nbsp; &nbsp; <br />------------------------+----------------------+---------------------<br />*356&nbsp; &nbsp; &nbsp;8&nbsp; &nbsp; &nbsp; &nbsp;9&nbsp; &nbsp; &nbsp; | 24&nbsp; &nbsp; *356&nbsp; &nbsp; 1&nbsp; &nbsp; &nbsp; | 346&nbsp; &nbsp; 245&nbsp; &nbsp; 7&nbsp; &nbsp; &nbsp; <br />&nbsp;4&nbsp; &nbsp; &nbsp; &nbsp;2&nbsp; &nbsp; &nbsp; *356&nbsp; &nbsp; |*356&nbsp; &nbsp; 7&nbsp; &nbsp; &nbsp; 8&nbsp; &nbsp; &nbsp; | 136&nbsp; &nbsp; 15&nbsp; &nbsp; &nbsp;9&nbsp; &nbsp; &nbsp; <br />&nbsp;7&nbsp; &nbsp; &nbsp; *356&nbsp; &nbsp; &nbsp;1&nbsp; &nbsp; &nbsp; | 24&nbsp; &nbsp; &nbsp;9&nbsp; &nbsp; &nbsp;*356&nbsp; &nbsp; | 346&nbsp; &nbsp; 2458&nbsp; &nbsp;234568 <br /></code></dd></dl><br /><br />(9)r5c6 = (7)r6c3 - (7)r5c2 = (7-9)r5c8 =&gt; -9 r5c8; btte<br /><br />Phil</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile319404">
+			<dt>
+				<a href="./member3590.html">pjb</a>
+			</dt>
+
+			<dd>2014 Supporter</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 2440</dd><dd><strong>Joined:</strong> 11 September 2011</dd><dd><strong>Location:</strong> Sydney, Australia</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="web-icon"><a href="http://www.philsfolly.net.au" title="WWW: http://www.philsfolly.net.au"><span>Website</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./the-tridagon-rule-t39859-15.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p319407" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=319407" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./the-tridagon-rule-t39859-15.html#p319407">Re: The tridagon rule</a></h3>
+			<p class="author"><a href="./post319407.html#p319407"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member2659.html">denis_berthier</a></strong> &raquo; Tue Mar 29, 2022 4:10 am </p>
+
+			
+
+			<div class="content">.<br />Hi pjb<br />It depends on which order you apply the rules.</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile319407">
+			<dt>
+				<a href="./member2659.html">denis_berthier</a>
+			</dt>
+
+			<dd>2010 Supporter</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 3204</dd><dd><strong>Joined:</strong> 19 June 2007</dd><dd><strong>Location:</strong> Paris</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="web-icon"><a href="http://denis-berthier.pagesperso-orange.fr" title="WWW: http://denis-berthier.pagesperso-orange.fr"><span>Website</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./the-tridagon-rule-t39859-15.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p319408" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=319408" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./the-tridagon-rule-t39859-15.html#p319408">Re: The tridagon rule</a></h3>
+			<p class="author"><a href="./post319408.html#p319408"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member2659.html">denis_berthier</a></strong> &raquo; Tue Mar 29, 2022 4:24 am </p>
+
+			
+
+			<div class="content">.<br />Here is now the promised example using longer partial-whips.<br />It's #217 in the same list as above:<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>+-------+-------+-------+<br />! . . . ! . . . ! . . 1 !<br />! . . . ! . . 1 ! 2 3 . !<br />! . . 1 ! . 2 4 ! 5 . 6 !<br />+-------+-------+-------+<br />! . . 3 ! . . . ! 6 . . !<br />! . 6 . ! . 5 2 ! . . . !<br />! 7 . 8 ! . . 6 ! . . . !<br />+-------+-------+-------+<br />! . 1 . ! . 6 5 ! 4 . 3 !<br />! . 3 . ! 2 4 . ! 1 5 . !<br />! . 4 . ! 1 . 3 ! . 6 2 !<br />+-------+-------+-------+<br />........1.....123...1.245.6..3...6...6..52...7.8..6....1..654.3.3.24.15..4.1.3.62;32<br />SER = 11.6</code></dd></dl><br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>Resolution state after Singles and whips&#91;1&#93;:<br />&nbsp; &nbsp;+----------------------+----------------------+----------------------+<br />&nbsp; &nbsp;! 234569 25789&nbsp; 24569&nbsp; ! 356789 3789&nbsp; &nbsp;789&nbsp; &nbsp; ! 789&nbsp; &nbsp; 4789&nbsp; &nbsp;1&nbsp; &nbsp; &nbsp; !<br />&nbsp; &nbsp;! 4569&nbsp; &nbsp;5789&nbsp; &nbsp;4569&nbsp; &nbsp;! 56789&nbsp; 789&nbsp; &nbsp; 1&nbsp; &nbsp; &nbsp; ! 2&nbsp; &nbsp; &nbsp; 3&nbsp; &nbsp; &nbsp; 4789&nbsp; &nbsp;!<br />&nbsp; &nbsp;! 39&nbsp; &nbsp; &nbsp;789&nbsp; &nbsp; 1&nbsp; &nbsp; &nbsp; ! 3789&nbsp; &nbsp;2&nbsp; &nbsp; &nbsp; 4&nbsp; &nbsp; &nbsp; ! 5&nbsp; &nbsp; &nbsp; 789&nbsp; &nbsp; 6&nbsp; &nbsp; &nbsp; !<br />&nbsp; &nbsp;+----------------------+----------------------+----------------------+<br />&nbsp; &nbsp;! 12459&nbsp; 259&nbsp; &nbsp; 3&nbsp; &nbsp; &nbsp; ! 4789&nbsp; &nbsp;1789&nbsp; &nbsp;789&nbsp; &nbsp; ! 6&nbsp; &nbsp; &nbsp; 124789 45789&nbsp; !<br />&nbsp; &nbsp;! 149&nbsp; &nbsp; 6&nbsp; &nbsp; &nbsp; 49&nbsp; &nbsp; &nbsp;! 34789&nbsp; 5&nbsp; &nbsp; &nbsp; 2&nbsp; &nbsp; &nbsp; ! 3789&nbsp; &nbsp;14789&nbsp; 4789&nbsp; &nbsp;!<br />&nbsp; &nbsp;! 7&nbsp; &nbsp; &nbsp; 259&nbsp; &nbsp; 8&nbsp; &nbsp; &nbsp; ! 349&nbsp; &nbsp; 139&nbsp; &nbsp; 6&nbsp; &nbsp; &nbsp; ! 39&nbsp; &nbsp; &nbsp;1249&nbsp; &nbsp;459&nbsp; &nbsp; !<br />&nbsp; &nbsp;+----------------------+----------------------+----------------------+<br />&nbsp; &nbsp;! 289&nbsp; &nbsp; 1&nbsp; &nbsp; &nbsp; 279&nbsp; &nbsp; ! 789&nbsp; &nbsp; 6&nbsp; &nbsp; &nbsp; 5&nbsp; &nbsp; &nbsp; ! 4&nbsp; &nbsp; &nbsp; 789&nbsp; &nbsp; 3&nbsp; &nbsp; &nbsp; !<br />&nbsp; &nbsp;! 689&nbsp; &nbsp; 3&nbsp; &nbsp; &nbsp; 679&nbsp; &nbsp; ! 2&nbsp; &nbsp; &nbsp; 4&nbsp; &nbsp; &nbsp; 789&nbsp; &nbsp; ! 1&nbsp; &nbsp; &nbsp; 5&nbsp; &nbsp; &nbsp; 789&nbsp; &nbsp; !<br />&nbsp; &nbsp;! 589&nbsp; &nbsp; 4&nbsp; &nbsp; &nbsp; 579&nbsp; &nbsp; ! 1&nbsp; &nbsp; &nbsp; 789&nbsp; &nbsp; 3&nbsp; &nbsp; &nbsp; ! 789&nbsp; &nbsp; 6&nbsp; &nbsp; &nbsp; 2&nbsp; &nbsp; &nbsp; !<br />&nbsp; &nbsp;+----------------------+----------------------+----------------------+<br />179 candidates.</code></dd></dl><br />Here also, a trigon-link is available at the start, but let's so as previously and apply it only at its place in the complexity hierarchy.<br /><span style="font-size: 150%; line-height: 116%;"><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>hidden-pairs-in-a-column: c4{n5 n6}{r1 r2} ==&gt; r2c4≠9, r2c4≠8, r2c4≠7, r1c4≠9, r1c4≠8, r1c4≠7, r1c4≠3<br />whip&#91;7&#93;: b4n4{r5c3 r4c1} - r1n4{c1 c3} - c3n2{r1 r7} - c1n2{r7 r1} - r1n6{c1 c4} - r1n5{c4 c2} - b4n5{r4c2 .} ==&gt; r5c8≠4<br />whip&#91;11&#93;: c5n3{r1 r6} - r6c7{n3 n9} - r6c4{n9 n4} - c4n3{r6 r3} - r3c1{n3 n9} - r9n9{c1 c3} - b4n9{r5c3 r4c2} - r2n9{c2 c9} - r6c9{n9 n5} - r4n5{c9 c1} - r9n5{c1 .} ==&gt; r1c5≠9<br /><br />extended tridagon for digits 7, 8 and 9 in blocks:<br />&nbsp; &nbsp; &nbsp; &nbsp; b2, with cells: r3c4 (link cell), r2c5, r1c6<br />&nbsp; &nbsp; &nbsp; &nbsp; b3, with cells: r3c8, r2c9 (link cell), r1c7<br />&nbsp; &nbsp; &nbsp; &nbsp; b8, with cells: r7c4, r9c5, r8c6<br />&nbsp; &nbsp; &nbsp; &nbsp; b9, with cells: r7c8, r9c7, r8c9<br />&nbsp;==&gt; tridagon-link&#91;12&#93;(n3r3c4, n4r2c9)<br /><br />whip&#91;12&#93;: c5n3{r1 r6} - r6n1{c5 c8} - r6n2{c8 c2} - r6n5{c2 c9} - r6n4{c9 c4} - c4n3{r6 r3} - r3c1{n3 n9} - c2n9{r3 r4} - r4n5{c2 c1} - r9c1{n5 n8} - c7n8{r9 r5} - r5n3{c7 .} ==&gt; r1c5≠8<br /><br />tridagon-forcing-whip-elim&#91;15&#93; based on tridagon-link(n4r2c9, n3r3c4)<br />....for n4r2c9: -<br />....for n3r3c4: partial-whip&#91;3&#93;: r5n3{c4 c7} - r6c7{n3 n9} - r6c4{n9 n4} -<br />&nbsp;==&gt; r6c9≠4<br /><br />t-whip&#91;5&#93;: r6n4{c4 c8} - c8n2{r6 r4} - c8n1{r4 r5} - c1n1{r5 r4} - r4n4{c1 .} ==&gt; r5c4≠4<br />t-whip&#91;6&#93;: r5n7{c9 c4} - r5n3{c4 c7} - r6c7{n3 n9} - r6c9{n9 n5} - r6c2{n5 n2} - c8n2{r6 .} ==&gt; r4c8≠7<br />t-whip&#91;6&#93;: r5n8{c9 c4} - r5n3{c4 c7} - r6c7{n3 n9} - r6c9{n9 n5} - r6c2{n5 n2} - c8n2{r6 .} ==&gt; r4c8≠8<br />whip&#91;6&#93;: c8n2{r4 r6} - r6n1{c8 c5} - r4n1{c5 c1} - r4n2{c1 c2} - r4n5{c2 c9} - r6c9{n5 .} ==&gt; r4c8≠9<br /><br />tridagon-forcing-whip-elim&#91;17&#93; based on tridagon-link(n4r2c9, n3r3c4)<br />....for n4r2c9: -<br />....for n3r3c4: partial-whip&#91;5&#93;: r5n3{c4 c7} - r6n3{c7 c5} - r1c5{n3 n7} - c7n7{r1 r9} - c7n8{r9 r1} -<br />&nbsp;==&gt; r2c9≠8<br /><br />tridagon-forcing-whip-elim&#91;19&#93; based on tridagon-link(n4r2c9, n3r3c4)<br />....for n4r2c9: -<br />....for n3r3c4: partial-whip&#91;7&#93;: r5n3{c4 c7} - r6n3{c7 c5} - r1c5{n3 n7} - c7n7{r1 r9} - c7n8{r9 r1} - r3n8{c8 c2} - c2n7{r3 r2} -<br />&nbsp;==&gt; r2c9≠7</code></dd></dl></span><br /><div style="padding: 3px; background-color: #FFFFFF; border: 1px solid #d8d8d8; font-size: 1em;"><div style="border-bottom: 1px solid #CCCCCC; margin-bottom: 3px; font-size: 0.9em; font-weight: bold; display: block;"><span onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') {  this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerHTML = '<b>The end of the path is in W9 and has nothing noticeable: </b><a href=\'#\' onclick=\'return false;\'>Hide</a>'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerHTML = '<b>The end of the path is in W9 and has nothing noticeable: </b><a href=\'#\' onclick=\'return false;\'>Show</a>'; }" /><b>The end of the path is in W9 and has nothing noticeable: </b><a href="#" onClick="return false;">Show</a></span></div><div class="quotecontent"><div style="display: none;">hidden-pairs-in-a-row: r2{n7 n8}{c2 c5} ==&gt; r2c5≠9, r2c2≠9, r2c2≠5<br />whip[5]: r2n4{c3 c9} - r5n4{c9 c1} - r5c3{n4 n9} - r2n9{c3 c1} - b7n9{r7c1 .} ==&gt; r1c3≠4<br />whip[9]: c8n2{r6 r4} - c8n1{r4 r5} - c1n1{r5 r4} - r4n4{c1 c4} - c9n4{r4 r2} - c3n4{r2 r5} - r5c1{n4 n9} - r2n9{c1 c3} - b7n9{r7c3 .} ==&gt; r6c8≠4<br />hidden-single-in-a-row ==&gt; r6c4=4<br />t-whip[6]: r2c9{n9 n4} - c3n4{r2 r5} - r4n4{c1 c8} - c8n2{r4 r6} - c8n1{r6 r5} - r5c1{n1 .} ==&gt; r5c9≠9, r2c1≠9<br />whip[5]: r2n9{c9 c3} - r3c1{n9 n3} - c4n3{r3 r5} - b5n9{r5c4 r6c5} - c2n9{r6 .} ==&gt; r4c9≠9<br />whip[5]: r2n9{c9 c3} - r3c1{n9 n3} - c4n3{r3 r5} - r5n9{c4 c1} - b7n9{r7c1 .} ==&gt; r6c9≠9<br />naked-single ==&gt; r6c9=5<br />t-whip[5]: c8n2{r4 r6} - r6c2{n2 n9} - r5c3{n9 n4} - r5c1{n4 n1} - c8n1{r5 .} ==&gt; r4c8≠4<br />singles ==&gt; r1c8=4, r2c9=9<br />t-whip[6]: r5n3{c4 c7} - r6n3{c7 c5} - r1c5{n3 n7} - c7n7{r1 r9} - r8c9{n7 n8} - b6n8{r4c9 .} ==&gt; r5c4≠8<br />whip[1]: r5n8{c9 .} ==&gt; r4c9≠8<br />t-whip[7]: r4c9{n4 n7} - r5n7{c9 c4} - c4n3{r5 r3} - r3c1{n3 n9} - b2n9{r3c4 r1c6} - r8n9{c6 c3} - r5c3{n9 .} ==&gt; r5c9≠4, r4c1≠4<br />hidden-single-in-a-row ==&gt; r4c9=4<br />whip[1]: b6n7{r5c9 .} ==&gt; r5c4≠7<br />whip[8]: r5c4{n9 n3} - c7n3{r5 r6} - c5n3{r6 r1} - c1n3{r1 r3} - r3n9{c1 c2} - r6n9{c2 c8} - b9n9{r7c8 r9c7} - c5n9{r9 .} ==&gt; r4c4≠9<br />whip[7]: r4c4{n8 n7} - r7c4{n7 n9} - b2n9{r3c4 r1c6} - c6n7{r1 r8} - r8c9{n7 n8} - r7c8{n8 n7} - r3c8{n7 .} ==&gt; r3c4≠8<br />biv-chain[3]: r2c2{n7 n8} - r3n8{c2 c8} - b3n7{r3c8 r1c7} ==&gt; r1c2≠7<br />whip[7]: r5c4{n9 n3} - r3c4{n3 n7} - r3c8{n7 n8} - r7c8{n8 n7} - r8c9{n7 n8} - b8n8{r8c6 r9c5} - r2c5{n8 .} ==&gt; r7c4≠9<br />naked-pairs-in-a-column: c4{r4 r7}{n7 n8} ==&gt; r3c4≠7<br />naked-pairs-in-a-row: r3{c1 c4}{n3 n9} ==&gt; r3c2≠9<br />naked-pairs-in-a-block: b1{r2c2 r3c2}{n7 n8} ==&gt; r1c2≠8<br />z-chain[4]: b8n9{r8c6 r9c5} - b9n9{r9c7 r7c8} - b9n8{r7c8 r9c7} - r1n8{c7 .} ==&gt; r8c6≠8<br />biv-chain[3]: b3n8{r3c8 r1c7} - c6n8{r1 r4} - c4n8{r4 r7} ==&gt; r7c8≠8<br />biv-chain[3]: r5c9{n7 n8} - b9n8{r8c9 r9c7} - r1c7{n8 n7} ==&gt; r5c7≠7<br />z-chain[2]: c7n7{r9 r1} - b2n7{r1c6 .} ==&gt; r9c5≠7<br />biv-chain[3]: r7n8{c1 c4} - r9c5{n8 n9} - b9n9{r9c7 r7c8} ==&gt; r7c1≠9<br />biv-chain[3]: b9n8{r8c9 r9c7} - r9c5{n8 n9} - r8c6{n9 n7} ==&gt; r8c9≠7<br />singles ==&gt; r8c9=8, r5c9=7<br />biv-chain[3]: r9c7{n7 n9} - b8n9{r9c5 r8c6} - r8n7{c6 c3} ==&gt; r9c3≠7<br />stte</div></div></div><br /><br />In this example, we have <span style="font-weight: bold">3 different eliminations based on the same tridagon link, but using partial-whips of lengths 3, 5 and 7.</span><br />Same remark as before: some of the whips before these may be unnecessary.<br />I'm working on  a functionality that provides the choice of giving some priority to exotic patterns such as tridagons.</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile319408">
+			<dt>
+				<a href="./member2659.html">denis_berthier</a>
+			</dt>
+
+			<dd>2010 Supporter</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 3204</dd><dd><strong>Joined:</strong> 19 June 2007</dd><dd><strong>Location:</strong> Paris</dd>
+			<dd>
+				<ul class="profile-icons">
+					<li class="web-icon"><a href="http://denis-berthier.pagesperso-orange.fr" title="WWW: http://denis-berthier.pagesperso-orange.fr"><span>Website</span></a></li>
+				</ul>
+			</dd>
+		
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./the-tridagon-rule-t39859-15.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<form id="viewtopic" method="post" action="./the-tridagon-rule-t39859-15.html">
+
+	<fieldset class="display-options" style="margin-top: 0; ">
+		<a href="./the-tridagon-rule-t39859.html" class="left-box left">Previous</a><a href="./the-tridagon-rule-t39859-30.html" class="right-box right">Next</a>
+		<label>Display posts from previous: <select name="st" id="st"><option value="0" selected="selected">All posts</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select></label>
+		<label>Sort by <select name="sk" id="sk"><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="s">Subject</option></select></label> <label><select name="sd" id="sd"><option value="a" selected="selected">Ascending</option><option value="d">Descending</option></select> <input type="submit" name="sort" value="Go" class="button2" /></label>
+		
+	</fieldset>
+
+	</form>
+	<hr />
+
+
+<div class="topic-actions">
+	<div class="buttons">
+	
+		<div class="reply-icon"><a href="./posting.php?mode=reply&amp;f=6&amp;t=39859" title="Post a reply"><span></span>Post a reply</a></div>
+	
+	</div>
+
+	
+		<div class="pagination">
+110 posts
+&bull; Page <strong>2</strong> of <strong>8</strong> &bull; <span><a href="the-tridagon-rule-t39859.html">1</a><span class="page-sep">, </span><strong>2</strong><span class="page-sep">, </span><a href="the-tridagon-rule-t39859-30.html">3</a><span class="page-sep">, </span><a href="the-tridagon-rule-t39859-45.html">4</a><span class="page-sep">, </span><a href="the-tridagon-rule-t39859-60.html">5</a><span class="page-sep">, </span><a href="the-tridagon-rule-t39859-75.html">6</a><span class="page-sep">, </span><a href="the-tridagon-rule-t39859-90.html">7</a><span class="page-sep">, </span><a href="the-tridagon-rule-t39859-105.html">8</a></span>
+		</div>
+	
+</div>
+
+
+	<p></p><p><a href="./advanced-solving-techniques-f6.html" class="left-box left" accesskey="r">Return to Advanced solving techniques</a></p>
+
+	<form method="post" id="jumpbox" action="./viewforum.php" onsubmit="if(this.f.value == -1){return false;}">
+
+	
+		<fieldset class="jumpbox">
+	
+			<label for="f" accesskey="j">Jump to:</label>
+			<select name="f" id="f" onchange="if(this.options[this.selectedIndex].value != -1){ document.forms['jumpbox'].submit() }">
+			
+				<option value="-1">Select a forum</option>
+			<option value="-1">------------------</option>
+				<option value="9">News and announcements</option>
+			
+				<option value="10">&nbsp; &nbsp;About the New Sudoku Players' Forum</option>
+			
+				<option value="5">Sudoku: the puzzle</option>
+			
+				<option value="7">&nbsp; &nbsp;General</option>
+			
+				<option value="33">&nbsp; &nbsp;Puzzles</option>
+			
+				<option value="4">&nbsp; &nbsp;Help with puzzles and solving techniques</option>
+			
+				<option value="6" selected="selected">&nbsp; &nbsp;Advanced solving techniques</option>
+			
+				<option value="8">&nbsp; &nbsp;Interactive games</option>
+			
+				<option value="18">&nbsp; &nbsp;Software</option>
+			
+				<option value="16">Resources</option>
+			
+				<option value="32">&nbsp; &nbsp;Published puzzles</option>
+			
+				<option value="31">&nbsp; &nbsp;Books</option>
+			
+				<option value="17">&nbsp; &nbsp;On the web</option>
+			
+				<option value="11">Related puzzles</option>
+			
+				<option value="12">&nbsp; &nbsp;Sudoku variants</option>
+			
+				<option value="13">&nbsp; &nbsp;Kakuro</option>
+			
+				<option value="14">&nbsp; &nbsp;Other logic puzzles</option>
+			
+				<option value="15">&nbsp; &nbsp;Inventors' studio</option>
+			
+				<option value="19">Off-topic</option>
+			
+				<option value="20">&nbsp; &nbsp;Coffee bar</option>
+			
+				<option value="29">&nbsp; &nbsp;Forum questions and feedback</option>
+			
+			</select>
+			<input type="submit" value="Go" class="button2" />
+		</fieldset>
+	</form>
+
+</div>
+
+<div id="page-footer">
+
+	<div class="navbar">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<ul class="linklist">
+			<li class="icon-home"><a href="./" accesskey="h">Board index</a></li>
+				
+			<li class="rightside"><a href="./the-team.html">The team</a> &bull; <a href="./ucp.php?mode=delete_cookies">Delete all board cookies</a> &bull; All times are UTC </li>
+		</ul>
+		
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<div class="copyright">Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Group
+		<br /><br /><a href="http://www.phpbb-seo.com/" title="Search Engine Optimization"><img src="./images/phpbb-seo.png" alt="phpBB SEO"/></a>
+	</div>
+</div>
+
+</div>
+
+<div>
+	<a id="bottom" name="bottom" accesskey="z"></a>
+	
+</div>
+
+</body>
+</html>

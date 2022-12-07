@@ -1,0 +1,971 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-gb" xml:lang="en-gb">
+<head>
+<base href="./"/>
+<link rel="canonical" href="./investigation-of-one-crossing-free-patterns-t30977.html" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>Investigation of one-crossing-free patterns : General</title>
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="content-language" content="en-gb" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="content-language" content="en" />
+<meta name="title" content="Investigation of one-crossing-free patterns : General" />
+<meta name="description" content="Hi, people! I've wrote a program which performs exhaustive search for any pattern of certain type, i.e. for patterns having map A, B, C, D, ..." />
+<meta name="keywords" content="such, clue, link, patterns, free, investigation, one, crossing, least" />
+<meta name="category" content="general" />
+<meta name="robots" content="index,follow" />
+<meta name="distribution" content="global" />
+<meta name="resource-type" content="document" />
+<meta name="copyright" content="The New Sudoku Players Forum" />
+
+
+
+
+<!--
+	phpBB style name: prosilver
+	Based on style:   prosilver (this is the default phpBB3 style)
+	Original author:  Tom Beddard ( http://www.subBlue.com/ )
+	Modified by:
+-->
+
+<script type="text/javascript">
+// <![CDATA[
+	var jump_page = 'Enter the page number you wish to go to:';
+	var on_page = '1';
+	var per_page = '15';
+	var base_url = './investigation-of-one-crossing-free-patterns-t30977.html';
+	var style_cookie = 'phpBBstyle';
+	var style_cookie_settings = '; path=/; domain=forum.enjoysudoku.com';
+	var onload_functions = new Array();
+	var onunload_functions = new Array();
+	// www.phpBB-SEO.com SEO TOOLKIT BEGIN
+	var seo_delim_start = '-';
+	var seo_static_pagination = 'page';
+	var seo_ext_pagination = '.html';
+	var seo_external = true;
+	var seo_external_sub = false;
+	var seo_ext_classes = false;
+	var seo_hashfix = false;
+	// www.phpBB-SEO.com SEO TOOLKIT END
+
+	
+
+	/**
+	* Find a member
+	*/
+	function find_username(url)
+	{
+		popup(url, 760, 570, '_usersearch');
+		return false;
+	}
+
+	/**
+	* New function for handling multiple calls to window.onload and window.unload by pentapenguin
+	*/
+	window.onload = function()
+	{
+		for (var i = 0; i < onload_functions.length; i++)
+		{
+			eval(onload_functions[i]);
+		}
+	};
+
+	window.onunload = function()
+	{
+		for (var i = 0; i < onunload_functions.length; i++)
+		{
+			eval(onunload_functions[i]);
+		}
+	};
+
+// ]]>
+</script>
+<script type="text/javascript" src="./styles/prosilver/template/styleswitcher.js"></script>
+<script type="text/javascript" src="./styles/prosilver/template/forum_fn.js"></script>
+
+<link href="./styles/prosilver/theme/print.css" rel="stylesheet" type="text/css" media="print" title="printonly" />
+<link href="style.css" rel="stylesheet" type="text/css" media="screen, projection" />
+
+<link href="./styles/prosilver/theme/normal.css" rel="stylesheet" type="text/css" title="A" />
+<link href="./styles/prosilver/theme/medium.css" rel="alternate stylesheet" type="text/css" title="A+" />
+<link href="./styles/prosilver/theme/large.css" rel="alternate stylesheet" type="text/css" title="A++" />
+
+
+
+</head>
+
+<body id="phpbb" class="section-viewtopic ltr">
+
+<div id="wrap">
+	<a id="top" name="top" accesskey="t"></a>
+	<div id="page-header">
+		<div class="headerbar">
+			<div class="inner"><span class="corners-top"><span></span></span>
+
+			<div id="site-description">
+				<a href="./" title="Board index" id="logo"><img src="./styles/prosilver/imageset/site_logo.gif" width="52" height="52" alt="" title="" /></a>
+				<h1>The New Sudoku Players' Forum</h1>
+				<p>ARCHIVED by 1to9only</p>
+				<p class="skiplink"><a href="#start_here">Skip to content</a></p>
+			</div>
+
+		
+			<div id="search-box">
+				<form action="./search.php" method="get" id="search">
+				<fieldset>
+					<input name="keywords" id="keywords" type="text" maxlength="128" title="Search for keywords" class="inputbox search" value="Search…" onclick="if(this.value=='Search…')this.value='';" onblur="if(this.value=='')this.value='Search…';" />
+					<input class="button2" value="Search" type="submit" /><br />
+					<a href="./search.php" title="View the advanced search options">Advanced search</a> <input type="hidden" name="sid" value="00000000000000000000000000000000" />
+
+				</fieldset>
+				</form>
+			</div>
+		
+
+			<span class="corners-bottom"><span></span></span></div>
+		</div>
+
+		<div class="navbar">
+			<div class="inner"><span class="corners-top"><span></span></span>
+
+			<ul class="linklist navlinks">
+				<li class="icon-home"><a href="./" accesskey="h">Board index</a>  <strong>&#8249;</strong> <a href="./sudoku-the-puzzle-f5.html">Sudoku: the puzzle</a> <strong>&#8249;</strong> <a href="./general-f7.html">General</a></li>
+
+				<li class="rightside"><a href="#" onclick="fontsizeup(); return false;" onkeypress="return fontsizeup(event);" class="fontsize" title="Change font size">Change font size</a></li>
+
+				<li class="rightside"><a href="./viewtopic.php?f=7&amp;t=30977&amp;start=0&amp;view=print" title="Print view" accesskey="p" class="print">Print view</a></li>
+			</ul>
+
+			
+
+			<ul class="linklist rightside">
+				<li class="icon-faq"><a href="./faq.php" title="Frequently Asked Questions">FAQ</a></li>
+				<li class="icon-register"><a href="./ucp.php?mode=register">Register</a></li>
+					<li class="icon-logout"><a href="./ucp.php?mode=login" title="Login" accesskey="x">Login</a></li>
+				
+			</ul>
+
+			<span class="corners-bottom"><span></span></span></div>
+		</div>
+
+	</div>
+
+	<a name="start_here"></a>
+	<div id="page-body">
+		
+<h2><a href="./investigation-of-one-crossing-free-patterns-t30977.html">Investigation of one-crossing-free patterns</a></h2>
+<!-- NOTE: remove the style="display: none" when you want to have the forum description on the topic body --><div style="display: none !important;">Everything about Sudoku that doesn't fit in one of the other sections<br /></div>
+
+<div class="topic-actions">
+
+	<div class="buttons">
+	
+		<div class="reply-icon"><a href="./posting.php?mode=reply&amp;f=7&amp;t=30977" title="Post a reply"><span></span>Post a reply</a></div>
+	
+	</div>
+
+	
+		<div class="search-box">
+			<form method="get" id="topic-search" action="./search.php">
+			<fieldset>
+				<input class="inputbox search tiny"  type="text" name="keywords" id="search_keywords" size="20" value="Search this topic…" onclick="if(this.value=='Search this topic…')this.value='';" onblur="if(this.value=='')this.value='Search this topic…';" />
+				<input class="button2" type="submit" value="Search" />
+				<input type="hidden" name="t" value="30977" />
+<input type="hidden" name="sf" value="msgonly" />
+<input type="hidden" name="sid" value="00000000000000000000000000000000" />
+
+			</fieldset>
+			</form>
+		</div>
+	
+		<div class="pagination">
+83 posts
+&bull; Page <strong>1</strong> of <strong>6</strong> &bull; <span><strong>1</strong><span class="page-sep">, </span><a href="investigation-of-one-crossing-free-patterns-t30977-15.html">2</a><span class="page-sep">, </span><a href="investigation-of-one-crossing-free-patterns-t30977-30.html">3</a><span class="page-sep">, </span><a href="investigation-of-one-crossing-free-patterns-t30977-45.html">4</a><span class="page-sep">, </span><a href="investigation-of-one-crossing-free-patterns-t30977-60.html">5</a><span class="page-sep">, </span><a href="investigation-of-one-crossing-free-patterns-t30977-75.html">6</a></span>
+		</div>
+	
+
+</div>
+<div class="clear"></div>
+
+
+	<div id="p224594" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=7&amp;p=224594" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 class="first"><a href="./investigation-of-one-crossing-free-patterns-t30977.html#p224594">Investigation of one-crossing-free patterns</a></h3>
+			<p class="author"><a href="./post224594.html#p224594"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member3125.html">Serg</a></strong> &raquo; Thu Feb 14, 2013 9:13 am </p>
+
+			
+
+			<div class="content">Hi, people!<br />I've wrote a program which performs exhaustive search for any pattern of certain type, i.e. for patterns having map<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>A B C<br />D 9 9<br />E 9 9<br /></code></dd></dl><br />A, B, C, D, E, F - arbitrary digits in the range 0-9. In other words, I consider patterns having exactly 9 clues in B5, B6, B8, B9 boxes and arbitrary number of clues in remaining boxes (B1, B2, B3, B4, B7).<br /><br />Though this program is intermediate result of my work only (I am planning to write a program searching <span style="font-style: italic">any</span> given pattern for valid puzzles), I decided to test it in one-crossing-free patterns investigation. I think searching results can be interesting to sudoku people. &quot;Crossing&quot; is combination of one band and one stack. For example, set of boxes B1, B2, B3, B4, B7 is crossing. Conceptually this investigation follows my previous <a href="./investigation-of-one-band-free-patterns-t30199.html" class="postlink" rel="nofollow">Investigation of one-band-free patterns</a>. Previously I fixed 6 boxes and changed 3 (&quot;free&quot;) boxes. Now I'll try to fix 4 boxes only and keep 5 boxes free. I think, such investigation results can be used during 16/17/18-clue patterns exhaustive search projects.<br /><br />Here is an example of pattern with free crossing - my favorite Magic Pattern:<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>+-----+-----+-----+<br />|. . .|. . x|. . x|<br />|. . .|. . x|. . x|<br />|. . x|. . x|. . x|<br />+-----+-----+-----+<br />|. . .|x x x|x x x|<br />|. . .|x x x|x x x|<br />|x x x|x x x|x x x|<br />+-----+-----+-----+<br />|. . .|x x x|x x x|<br />|. . .|x x x|x x x|<br />|x x x|x x x|x x x|<br />+-----+-----+-----+<br /></code></dd></dl><br /><br />Let's consider first patterns having 4 empty boxes (maximal possible empty boxes for valid puzzles). The only possible map (having 1 free crossing) for valid puzzles is<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>A 0 0<br />0 9 9<br />0 9 9<br /></code></dd></dl><br />Let's consider all possible configurations of filled cells in the box B1, denoted by letter &quot;A&quot;. There are 36 essentially different box patterns (rows/columns permutations are allowed, but transposing isn't allowed).<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;. . .<br />0 filled cells&nbsp; &nbsp;. . .<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;. . .<br /><br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;. . .<br />1 filled cells&nbsp; &nbsp;. . .<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;. . x<br /><br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;. . .&nbsp; &nbsp;. . .&nbsp; &nbsp;. . .<br />2 filled cells&nbsp; &nbsp;. . x&nbsp; &nbsp;. . .&nbsp; &nbsp;. . x<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;. x .&nbsp; &nbsp;. x x&nbsp; &nbsp;. . x<br /><br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;. . .&nbsp; &nbsp;. . .&nbsp; &nbsp;. . x&nbsp; &nbsp;. . .&nbsp; &nbsp;. . x&nbsp; &nbsp;. . x<br />3 filled cells&nbsp; &nbsp;. . x&nbsp; &nbsp;. . .&nbsp; &nbsp;. . x&nbsp; &nbsp;. . x&nbsp; &nbsp;. . x&nbsp; &nbsp;. x .<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;. x x&nbsp; &nbsp;x x x&nbsp; &nbsp;. . x&nbsp; &nbsp;x x .&nbsp; &nbsp;. x .&nbsp; &nbsp;x . .<br /><br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;. . x&nbsp; &nbsp;. . .&nbsp; &nbsp;. . x&nbsp; &nbsp;. . .&nbsp; &nbsp;. . x&nbsp; &nbsp;. . .&nbsp; &nbsp;. . x<br />4 filled cells&nbsp; &nbsp;. . x&nbsp; &nbsp;. . x&nbsp; &nbsp;. . x&nbsp; &nbsp;. x x&nbsp; &nbsp;. x .&nbsp; &nbsp;. x x&nbsp; &nbsp;. x .<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;x x .&nbsp; &nbsp;x x x&nbsp; &nbsp;. x x&nbsp; &nbsp;x . x&nbsp; &nbsp;. x x&nbsp; &nbsp;. x x&nbsp; &nbsp;x . x<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;*************************************<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;. . x&nbsp; &nbsp;. . .&nbsp; &nbsp;. . x * . . x&nbsp; &nbsp;. . x&nbsp; &nbsp;. . x&nbsp; &nbsp;. . x<br />5 filled cells&nbsp; &nbsp;. . x&nbsp; &nbsp;. x x&nbsp; &nbsp;. x x * . x x&nbsp; &nbsp;. x .&nbsp; &nbsp;x x .&nbsp; &nbsp;. x x<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;x x x&nbsp; &nbsp;x x x&nbsp; &nbsp;. x x * x . x&nbsp; &nbsp;x x x&nbsp; &nbsp;x x .&nbsp; &nbsp;x x .<br />****************************************<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;. . x&nbsp; &nbsp;. . .&nbsp; &nbsp;. x x&nbsp; &nbsp;. x x&nbsp; &nbsp;. . x&nbsp; &nbsp;. x x<br />6 filled cells&nbsp; &nbsp;. x x&nbsp; &nbsp;x x x&nbsp; &nbsp;. x x&nbsp; &nbsp;. x x&nbsp; &nbsp;x x .&nbsp; &nbsp;x . x<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;x x x&nbsp; &nbsp;x x x&nbsp; &nbsp;. x x&nbsp; &nbsp;x . x&nbsp; &nbsp;x x x&nbsp; &nbsp;x x .<br /><br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;. x x&nbsp; &nbsp;. . x&nbsp; &nbsp;. x x<br />7 filled cells&nbsp; &nbsp;x . x&nbsp; &nbsp;x x x&nbsp; &nbsp;. x x<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;x x x&nbsp; &nbsp;x x x&nbsp; &nbsp;x x x<br /><br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;. x x<br />8 filled cells&nbsp; &nbsp;x x x<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;x x x<br /><br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;x x x<br />9 filled cells&nbsp; &nbsp;x x x<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;x x x<br /></code></dd></dl><br />It turns out, B1 box patterns placed upper asterisk line have no valid puzzles, but B1 box patterns placed lower asterisk line have valid puzzles.<br />In other words, there are following requirements to B1 box configuration if we want a pattern<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>A 0 0<br />0 9 9<br />0 9 9<br /></code></dd></dl><br />could have valid puzzles:<br />1. B1 box must contain not less than 5 clues.<br />2. Patterns posted below (containing 5 clues each in B1) have no valid puzzles.<br />3. If B1 box contains 6 or more clues, pattern has valid puzzles.<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>Patterns having no valid puzzles:<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;P1&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;P2&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;P3<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp; &nbsp; +-----+-----+-----+&nbsp; &nbsp; &nbsp; &nbsp; +-----+-----+-----+<br />|. . x|. . .|. . .|&nbsp; &nbsp; &nbsp; &nbsp; |. . .|. . .|. . .|&nbsp; &nbsp; &nbsp; &nbsp; |. . x|. . .|. . .|<br />|. . x|. . .|. . .|&nbsp; &nbsp; &nbsp; &nbsp; |. x x|. . .|. . .|&nbsp; &nbsp; &nbsp; &nbsp; |. x x|. . .|. . .|<br />|x x x|. . .|. . .|&nbsp; &nbsp; &nbsp; &nbsp; |x x x|. . .|. . .|&nbsp; &nbsp; &nbsp; &nbsp; |. x x|. . .|. . .|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp; &nbsp; +-----+-----+-----+&nbsp; &nbsp; &nbsp; &nbsp; +-----+-----+-----+<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp; &nbsp; |. . .|x x x|x x x|&nbsp; &nbsp; &nbsp; &nbsp; |. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp; &nbsp; |. . .|x x x|x x x|&nbsp; &nbsp; &nbsp; &nbsp; |. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp; &nbsp; |. . .|x x x|x x x|&nbsp; &nbsp; &nbsp; &nbsp; |. . .|x x x|x x x|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp; &nbsp; +-----+-----+-----+&nbsp; &nbsp; &nbsp; &nbsp; +-----+-----+-----+<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp; &nbsp; |. . .|x x x|x x x|&nbsp; &nbsp; &nbsp; &nbsp; |. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp; &nbsp; |. . .|x x x|x x x|&nbsp; &nbsp; &nbsp; &nbsp; |. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp; &nbsp; |. . .|x x x|x x x|&nbsp; &nbsp; &nbsp; &nbsp; |. . .|x x x|x x x|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp; &nbsp; +-----+-----+-----+&nbsp; &nbsp; &nbsp; &nbsp; +-----+-----+-----+<br /></code></dd></dl><br />You can see patterns P2 and P3 are isomorphic.<br /><br />Above result can be formulated in another form. If any pattern can be morphed to subset of following patterns, the pattern has no valid puzzles.<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>Patterns having no valid puzzles:<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;P1&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;P2&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;P4<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp; &nbsp; +-----+-----+-----+&nbsp; &nbsp; &nbsp; &nbsp; +-----+-----+-----+<br />|. . x|. . .|. . .|&nbsp; &nbsp; &nbsp; &nbsp; |. . .|. . .|. . .|&nbsp; &nbsp; &nbsp; &nbsp; |. . x|. . .|. . .|<br />|. . x|. . .|. . .|&nbsp; &nbsp; &nbsp; &nbsp; |. x x|. . .|. . .|&nbsp; &nbsp; &nbsp; &nbsp; |. x .|. . .|. . .|<br />|x x x|. . .|. . .|&nbsp; &nbsp; &nbsp; &nbsp; |x x x|. . .|. . .|&nbsp; &nbsp; &nbsp; &nbsp; |x . x|. . .|. . .|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp; &nbsp; +-----+-----+-----+&nbsp; &nbsp; &nbsp; &nbsp; +-----+-----+-----+<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp; &nbsp; |. . .|x x x|x x x|&nbsp; &nbsp; &nbsp; &nbsp; |. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp; &nbsp; |. . .|x x x|x x x|&nbsp; &nbsp; &nbsp; &nbsp; |. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp; &nbsp; |. . .|x x x|x x x|&nbsp; &nbsp; &nbsp; &nbsp; |. . .|x x x|x x x|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp; &nbsp; +-----+-----+-----+&nbsp; &nbsp; &nbsp; &nbsp; +-----+-----+-----+<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp; &nbsp; |. . .|x x x|x x x|&nbsp; &nbsp; &nbsp; &nbsp; |. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp; &nbsp; |. . .|x x x|x x x|&nbsp; &nbsp; &nbsp; &nbsp; |. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp; &nbsp; |. . .|x x x|x x x|&nbsp; &nbsp; &nbsp; &nbsp; |. . .|x x x|x x x|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp; &nbsp; +-----+-----+-----+&nbsp; &nbsp; &nbsp; &nbsp; +-----+-----+-----+<br /></code></dd></dl><br /><br />Continuation follows ...<br /><br />Serg</div>
+
+			
+				<div class="notice">Last edited by <a href="./member3125.html">Serg</a> on Thu Feb 14, 2013 5:24 pm, edited 1 time in total.
+					
+				</div>
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile224594">
+			<dt>
+				<a href="./member3125.html">Serg</a>
+			</dt>
+
+			<dd>2018 Supporter</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 785</dd><dd><strong>Joined:</strong> 01 June 2010</dd><dd><strong>Location:</strong> Russia</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./investigation-of-one-crossing-free-patterns-t30977.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p224596" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=7&amp;p=224596" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./investigation-of-one-crossing-free-patterns-t30977.html#p224596">Re: Investigation of one-crossing-free patterns</a></h3>
+			<p class="author"><a href="./post224596.html#p224596"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member2226.html">m_b_metcalf</a></strong> &raquo; Thu Feb 14, 2013 10:22 am </p>
+
+			
+
+			<div class="content">Serg,<br />   This happily confirms a result we obtained <a href="./minimum-number-of-clues-in-middle-su-doku-of-a-samurai-t5724.html" class="postlink" rel="nofollow">here</a> (and modified <a href="http://www.setbb.com/sudoku/viewtopic.php?t=1891&amp;mforum=sudoku" class="postlink" rel="nofollow">here</a>).<br /><br />Regards,<br /><br />Mike Metcalf</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile224596">
+			<dt>
+				<a href="./member2226.html"><img src="./download/2226_1275053065.jpg" width="80" height="60" alt="User avatar" /></a><br />
+				<a href="./member2226.html">m_b_metcalf</a>
+			</dt>
+
+			<dd>2017 Supporter</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 13137</dd><dd><strong>Joined:</strong> 15 May 2006</dd><dd><strong>Location:</strong> Berlin</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./investigation-of-one-crossing-free-patterns-t30977.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p224597" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=7&amp;p=224597" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./investigation-of-one-crossing-free-patterns-t30977.html#p224597">Re: Investigation of one-crossing-free patterns</a></h3>
+			<p class="author"><a href="./post224597.html#p224597"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member3125.html">Serg</a></strong> &raquo; Thu Feb 14, 2013 10:46 am </p>
+
+			
+
+			<div class="content">Hi, Mike!<br /><blockquote><div><cite>m_b_metcalf wrote:</cite>This happily confirms a result we obtained <a href="./minimum-number-of-clues-in-middle-su-doku-of-a-samurai-t5724.html" class="postlink" rel="nofollow">here</a> (and modified <a href="http://www.setbb.com/sudoku/viewtopic.php?t=1891&amp;mforum=sudoku" class="postlink" rel="nofollow">here</a>).<br /></div></blockquote><br />Thank you for your links (I can't see the last link because of setbb.com &quot;country restrictions&quot;). Did you do exhaustive search? (I did.)<br />I am glad to see confirmation of my result. (Published above my data is just starting point for my investigation.)<br /><br />Serg</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile224597">
+			<dt>
+				<a href="./member3125.html">Serg</a>
+			</dt>
+
+			<dd>2018 Supporter</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 785</dd><dd><strong>Joined:</strong> 01 June 2010</dd><dd><strong>Location:</strong> Russia</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./investigation-of-one-crossing-free-patterns-t30977.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p224598" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=7&amp;p=224598" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./investigation-of-one-crossing-free-patterns-t30977.html#p224598">Re: Investigation of one-crossing-free patterns</a></h3>
+			<p class="author"><a href="./post224598.html#p224598"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member2226.html">m_b_metcalf</a></strong> &raquo; Thu Feb 14, 2013 11:01 am </p>
+
+			
+
+			<div class="content"><blockquote><div><cite>Serg wrote:</cite>Did you do exhaustive search? (I did.)<br /></div></blockquote><br />No, that's why I'm glad to see our empirical result confirmed.<br /><br />Regards,<br /><br />Mike Metcalf<br /><br />P.S. The second link merely shows a minimal version of the puzzle.</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile224598">
+			<dt>
+				<a href="./member2226.html"><img src="./download/2226_1275053065.jpg" width="80" height="60" alt="User avatar" /></a><br />
+				<a href="./member2226.html">m_b_metcalf</a>
+			</dt>
+
+			<dd>2017 Supporter</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 13137</dd><dd><strong>Joined:</strong> 15 May 2006</dd><dd><strong>Location:</strong> Berlin</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./investigation-of-one-crossing-free-patterns-t30977.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p224605" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=7&amp;p=224605" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./investigation-of-one-crossing-free-patterns-t30977.html#p224605">Re: Investigation of one-crossing-free patterns</a></h3>
+			<p class="author"><a href="./post224605.html#p224605"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member135.html">coloin</a></strong> &raquo; Thu Feb 14, 2013 6:51 pm </p>
+
+			
+
+			<div class="content">well it might be useful in excluding patterns in these <a href="./9plus12-game-t30108.html" class="postlink" rel="nofollow">puzzles</a><br /><br />good luck with furthur proofs !<br /><br />just to confirm<br />this pattern doesnt have puzzles ?<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>+-----+-----+-----+<br />|. . .|. . x|. . x|<br />|. . .|. . x|. . x|<br />|. . x|. . x|. . x|<br />+-----+-----+-----+<br />|. . .|x x x|x x x|<br />|. . .|x x x|x x x|<br />|x x x|x x x|x x x|<br />+-----+-----+-----+<br />|. . .|x x x|x x x|<br />|. . .|x x x|x x x|<br />|x x x|x x x|x x x|<br />+-----+-----+-----+ </code></dd></dl><br />and also ...... you don't explain why transposing [i assume reflection about a diagonal] isn't allowed<br /><br />C</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile224605">
+			<dt>
+				<a href="./member135.html">coloin</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 2186</dd><dd><strong>Joined:</strong> 05 May 2005</dd><dd><strong>Location:</strong> Tenerife</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./investigation-of-one-crossing-free-patterns-t30977.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p224617" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=7&amp;p=224617" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./investigation-of-one-crossing-free-patterns-t30977.html#p224617">Re: Investigation of one-crossing-free patterns</a></h3>
+			<p class="author"><a href="./post224617.html#p224617"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member3125.html">Serg</a></strong> &raquo; Fri Feb 15, 2013 7:51 am </p>
+
+			
+
+			<div class="content">Hi, <span style="font-weight: bold">coloin</span>!<br /><blockquote><div><cite>coloin wrote:</cite>well it might be useful in excluding patterns in these <a href="./9plus12-game-t30108.html" class="postlink" rel="nofollow">puzzles</a><br />good luck with furthur proofs !<br /></div></blockquote><br />Thanks. Yes, published <span style="font-style: italic">exclusive</span> patterns having no valid puzzles can be used to reduce search space for 9plus12 game. But their exclusive potential is not high. I hope to go further to patterns having less empty boxes - they can be more useful. I have a dream to find another Magic Pattern which is extremely useful in excluding invalid patterns (patterns having no valid puzzles).<br /><blockquote><div><cite>coloin wrote:</cite>just to confirm<br />this pattern doesnt have puzzles ?<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>+-----+-----+-----+<br />|. . .|. . x|. . x|<br />|. . .|. . x|. . x|<br />|. . x|. . x|. . x|<br />+-----+-----+-----+<br />|. . .|x x x|x x x|<br />|. . .|x x x|x x x|<br />|x x x|x x x|x x x|<br />+-----+-----+-----+<br />|. . .|x x x|x x x|<br />|. . .|x x x|x x x|<br />|x x x|x x x|x x x|<br />+-----+-----+-----+ </code></dd></dl></div></blockquote><br />This is Magic Pattern. Its more common view is posted below.<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>+-----+-----+-----+<br />|x x x|x x x|x x x|<br />|x x x|. . .|x x x|<br />|x x x|. . .|x x x|<br />+-----+-----+-----+<br />|x . .|. . .|. . x|<br />|x . .|. x .|. . x|<br />|x . .|. . .|. . x|<br />+-----+-----+-----+<br />|x x x|. . .|x x x|<br />|x x x|. . .|x x x|<br />|x x x|x x x|x x x|<br />+-----+-----+-----+<br /></code></dd></dl><br />It was discussed in 2007 (see thread <a href="./ask-for-some-patterns-that-they-don-t-have-puzzles-t5384-30.html" class="postlink" rel="nofollow">Ask for some patterns that they don't have puzzles</a>). <span style="font-weight: bold">Red Ed</span> proved, that this pattern has no valid puzzles. I checked this pattern by my program (to cross-check it) - this pattern really has no valid puzzles (1 hour CPU burning).<br /><blockquote><div><cite>coloin wrote:</cite>and also ...... you don't explain why transposing [i assume reflection about a diagonal] isn't allowed</div></blockquote><br />I mean possible clue configuration  in alone box. When pattern has no diagonal symmetry, we should consider 36 possible box configurations, but when a pattern has diagonal symmetry, we can shorten number of box configuration to 26 (by exclusion symmetric configurations) for diagonal boxes B1, B5, B9. &quot;36 possible box configurations&quot; classification is more universal, so it can be used when boxes' transposing is permitted and when it doesn't permitted.<br /><br />Serg</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile224617">
+			<dt>
+				<a href="./member3125.html">Serg</a>
+			</dt>
+
+			<dd>2018 Supporter</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 785</dd><dd><strong>Joined:</strong> 01 June 2010</dd><dd><strong>Location:</strong> Russia</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./investigation-of-one-crossing-free-patterns-t30977.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p224636" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=7&amp;p=224636" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./investigation-of-one-crossing-free-patterns-t30977.html#p224636">Re: Investigation of one-crossing-free patterns</a></h3>
+			<p class="author"><a href="./post224636.html#p224636"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member3125.html">Serg</a></strong> &raquo; Fri Feb 15, 2013 10:51 pm </p>
+
+			
+
+			<div class="content">Hi, all!<br />We considered the case when 4 boxes of the crossing are empty, and only 1 box of the crossing contains clues. Now let's consider more complicated case - 2 boxes contain clues and 3 boxes are empty. There exist 3 essentially different types of patterns having 3 empty boxes in the crossing B1+B2+B3+B4+B7 (here are their maps):<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>&nbsp; M1&nbsp; &nbsp; &nbsp; &nbsp; M2&nbsp; &nbsp; &nbsp; &nbsp; M3<br /><br />A B 0&nbsp; &nbsp; &nbsp;0 A B&nbsp; &nbsp; &nbsp;0 0 A<br />0 9 9&nbsp; &nbsp; &nbsp;0 9 9&nbsp; &nbsp; &nbsp;0 9 9<br />0 9 9&nbsp; &nbsp; &nbsp;0 9 9&nbsp; &nbsp; &nbsp;B 9 9<br /></code></dd></dl><br />(A &gt; 0, B &gt; 0). You can see that patterns with maps M2 and M3 have no valid puzzles for arbitrary A&amp;B values. So, we should consider M1 map only (B3, B4, B7 boxes are empty, B1 and B2 boxes contain clues).<br /><br />Let's start with B = 1, i.e. consider map<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>&nbsp; M1<br /><br />A 1 0<br />0 9 9<br />0 9 9<br /></code></dd></dl><br />B1 box can have 36 possible configurations (more precisely - 35, because A &gt; 0). Let's build &quot;validity diagram&quot; for this map containing 36 cells - one cell per possible B1 box configuration. I'll mark proper cell by &quot;+&quot;, if all resulting patterns have valid puzzles, by &quot;-&quot;,  if all resulting patterns have no valid puzzles, by &quot;?&quot;, if it is unknown - do  resulting patterns have valid puzzles or no, by &quot;*&quot;, if some resulting patterns have valid puzzles, but others have no  valid puzzles (mixed validity).<br />Starting position is (left digits denote numbers of clues in B1 box):<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>0&nbsp; ?<br />1&nbsp; ?<br />2&nbsp; ???<br />3&nbsp; ??????<br />4&nbsp; ???????<br />5&nbsp; ???????<br />6&nbsp; ??????<br />7&nbsp; ???<br />8&nbsp; ?<br />9&nbsp; ?<br /></code></dd></dl><br />If B1 box contains clues configuration<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>. . x<br />. . x<br />x x x<br /></code></dd></dl><br />resulting pattern has no valid puzzles, because it is subset of the pattern<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>+-----+-----+-----+<br />|. . x|x x x|x x x|<br />|. . x|x x x|x x x|<br />|x x x|x x x|x x x|<br />+-----+-----+-----+<br />|. . .|x x x|x x x|<br />|. . .|x x x|x x x|<br />|. . .|x x x|x x x|<br />+-----+-----+-----+<br />|. . .|x x x|x x x|<br />|. . .|x x x|x x x|<br />|. . .|x x x|x x x|<br />+-----+-----+-----+<br /></code></dd></dl><br />having no valid puzzles (see thread <a href="./investigation-of-one-band-free-patterns-t30199.html" class="postlink" rel="nofollow">Investigation of one-band-free patterns</a>). So, we can mark by &quot;-&quot; cells of &quot;validity diagram&quot;, corresponding to clues-in-the-box configurations which are subset of considered 5-clue configuration. For example, clues-in-the-box configuration<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>. . .<br />. . x<br />x x x<br /></code></dd></dl><br />is subset of<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>. . x<br />. . x<br />x x x<br /></code></dd></dl><br />configuration, hence second cell in the row &quot;4&quot; (see my first post in this thread) must be marked by &quot;-&quot;. Accounting for all possible subsets considered 5-clue configuration, we'll come to this validity diagram:<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>0&nbsp; -<br />1&nbsp; -<br />2&nbsp; ---<br />3&nbsp; -----?<br />4&nbsp; ---????<br />5&nbsp; -??????<br />6&nbsp; ??????<br />7&nbsp; ???<br />8&nbsp; ?<br />9&nbsp; ?<br /></code></dd></dl><br />If a pattern having crossing with 4 empty boxes has valid puzzles, that pattern will have valid puzzles too when we'll add 1 clue in any empty box. So, we can mark by &quot;+&quot; validity diagram cells, corresponding to 4-empty-boxes patterns, having valid puzzles. For example, pattern<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;P5<br />+-----+-----+-----+<br />|. . x|. . .|. . .|<br />|. x x|. . .|. . .|<br />|x x x|. . .|. . .|<br />+-----+-----+-----+<br />|. . .|x x x|x x x|<br />|. . .|x x x|x x x|<br />|. . .|x x x|x x x|<br />+-----+-----+-----+<br />|. . .|x x x|x x x|<br />|. . .|x x x|x x x|<br />|. . .|x x x|x x x|<br />+-----+-----+-----+<br /></code></dd></dl><br />has valid puzzles, hence patterns<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;P6&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; P7&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; P8<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br />|. . x|. . .|. . .|&nbsp; &nbsp; &nbsp;|. . x|. . .|. . .|&nbsp; &nbsp; &nbsp;|. . x|. . x|. . .|<br />|. x x|. . .|. . .|&nbsp; &nbsp; &nbsp;|. x x|. . x|. . .|&nbsp; &nbsp; &nbsp;|. x x|. . .|. . .|<br />|x x x|. . x|. . .|&nbsp; &nbsp; &nbsp;|x x x|. . .|. . .|&nbsp; &nbsp; &nbsp;|x x x|. . .|. . .|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br /></code></dd></dl><br />will have valid puzzles too. So, we should mark by &quot;+&quot; validity diagram cells lying under asterisk line (see my first post in this thread). Validity diagram will look like this<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>0&nbsp; -<br />1&nbsp; -<br />2&nbsp; ---<br />3&nbsp; -----?<br />4&nbsp; ---????<br />5&nbsp; -??++++<br />6&nbsp; ++++++<br />7&nbsp; +++<br />8&nbsp; +<br />9&nbsp; +<br /></code></dd></dl><br />We can mark by &quot;-&quot; last cell in &quot;3&quot; row, because pattern<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>+-----+-----+-----+<br />|. . x|x x x|x x x|<br />|. x .|x x x|x x x|<br />|x . .|x x x|x x x|<br />+-----+-----+-----+<br />|. . .|x x x|x x x|<br />|. . .|x x x|x x x|<br />|. . .|x x x|x x x|<br />+-----+-----+-----+<br />|. . .|x x x|x x x|<br />|. . .|x x x|x x x|<br />|. . .|x x x|x x x|<br />+-----+-----+-----+<br /></code></dd></dl><br />has no valid puzzles (see thread <a href="./investigation-of-one-band-free-patterns-t30199.html" class="postlink" rel="nofollow">Investigation of one-band-free patterns</a>).<br />Validity diagram:<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>0&nbsp; -<br />1&nbsp; -<br />2&nbsp; ---<br />3&nbsp; ------<br />4&nbsp; ---????<br />5&nbsp; -??++++<br />6&nbsp; ++++++<br />7&nbsp; +++<br />8&nbsp; +<br />9&nbsp; +<br /></code></dd></dl><br />Now we should investigate remaining patterns, having 5 clues in B1 box.<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;P9&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; P10&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;P11<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br />|. . .|. . .|. . .|&nbsp; &nbsp; &nbsp;|. . .|. . .|. . .|&nbsp; &nbsp; &nbsp;|. . .|. . x|. . .|<br />|. x x|. . .|. . .|&nbsp; &nbsp; &nbsp;|. x x|. . x|. . .|&nbsp; &nbsp; &nbsp;|. x x|. . .|. . .|<br />|x x x|. . x|. . .|&nbsp; &nbsp; &nbsp;|x x x|. . .|. . .|&nbsp; &nbsp; &nbsp;|x x x|. . .|. . .|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br /><br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;P12&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;P13<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br />|. . x|. . .|. . .|&nbsp; &nbsp; &nbsp;|. . x|. . x|. . .|<br />|. x x|. . .|. . .|&nbsp; &nbsp; &nbsp;|. x x|. . .|. . .|<br />|. x x|. . x|. . .|&nbsp; &nbsp; &nbsp;|. x x|. . .|. . .|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br /></code></dd></dl><br />Continuation follows ...<br /><br />Serg</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile224636">
+			<dt>
+				<a href="./member3125.html">Serg</a>
+			</dt>
+
+			<dd>2018 Supporter</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 785</dd><dd><strong>Joined:</strong> 01 June 2010</dd><dd><strong>Location:</strong> Russia</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./investigation-of-one-crossing-free-patterns-t30977.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p224659" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=7&amp;p=224659" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./investigation-of-one-crossing-free-patterns-t30977.html#p224659">Re: Investigation of one-crossing-free patterns</a></h3>
+			<p class="author"><a href="./post224659.html#p224659"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member3125.html">Serg</a></strong> &raquo; Sat Feb 16, 2013 12:04 pm </p>
+
+			
+
+			<div class="content">Hi!<br />I continue.<br />It turns out, pattern P9 has no valid puzzles.<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;P9<br />+-----+-----+-----+<br />|. . .|. . .|. . .|<br />|. x x|. . .|. . .|<br />|x x x|. . x|. . .|<br />+-----+-----+-----+<br />|. . .|x x x|x x x|<br />|. . .|x x x|x x x|<br />|. . .|x x x|x x x|<br />+-----+-----+-----+<br />|. . .|x x x|x x x|<br />|. . .|x x x|x x x|<br />|. . .|x x x|x x x|<br />+-----+-----+-----+<br /></code></dd></dl><br />Patterns P10 and P11 have valid puzzles. Patterns P12 and P13 have valid puzzles too. Here are examples.<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>.........<br />.58..9...<br />976......<br />...365789<br />...892164<br />...147325<br />...924678<br />...583912<br />...671453<br /><br />.....9...<br />.87......<br />956......<br />...536879<br />...297146<br />...841532<br />...984627<br />...723951<br />...165483<br /><br />..9......<br />.85......<br />.76..1...<br />...156897<br />...489263<br />...723514<br />...672458<br />...518932<br />...934671<br /><br />..7..9...<br />.86......<br />.95......<br />...165789<br />...497326<br />...823145<br />...584962<br />...932571<br />...716834<br /></code></dd></dl><br />So, 2nd cell in &quot;5&quot; row of validity diagram must be marked by &quot;*&quot; (mixed configuration) and 3rd cell in &quot;5&quot; row of validity diagram must be marked by &quot;+&quot;.<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>0&nbsp; -<br />1&nbsp; -<br />2&nbsp; ---<br />3&nbsp; ------<br />4&nbsp; ---????<br />5&nbsp; -*+++++<br />6&nbsp; ++++++<br />7&nbsp; +++<br />8&nbsp; +<br />9&nbsp; +<br /></code></dd></dl><br />Now we should investigate remaining patterns, having 4 clues in B1 box.<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;P14&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;P15<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br />|. . .|. . .|. . .|&nbsp; &nbsp; &nbsp;|. . .|. . x|. . .|<br />|. x x|. . .|. . .|&nbsp; &nbsp; &nbsp;|. x x|. . .|. . .|<br />|x . x|. . x|. . .|&nbsp; &nbsp; &nbsp;|x . x|. . .|. . .|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br /><br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;P16&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;P17<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br />|. . .|. . .|. . .|&nbsp; &nbsp; &nbsp;|. . .|. . x|. . .|<br />|. x x|. . .|. . .|&nbsp; &nbsp; &nbsp;|. x x|. . .|. . .|<br />|. x x|. . x|. . .|&nbsp; &nbsp; &nbsp;|. x x|. . .|. . .|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br /><br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;P18&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;P19&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;P20<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br />|. . x|. . .|. . .|&nbsp; &nbsp; &nbsp;|. . x|. . .|. . .|&nbsp; &nbsp; &nbsp;|. . x|. . x|. . .|<br />|. x .|. . .|. . .|&nbsp; &nbsp; &nbsp;|. x .|. . x|. . .|&nbsp; &nbsp; &nbsp;|. x .|. . .|. . .|<br />|x . x|. . x|. . .|&nbsp; &nbsp; &nbsp;|x . x|. . .|. . .|&nbsp; &nbsp; &nbsp;|x . x|. . .|. . .|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br /><br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;P21&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;P22<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br />|. . x|. . .|. . .|&nbsp; &nbsp; &nbsp;|. . x|. . x|. . .|<br />|. x .|. . .|. . .|&nbsp; &nbsp; &nbsp;|. x .|. . .|. . .|<br />|. x x|. . x|. . .|&nbsp; &nbsp; &nbsp;|. x x|. . .|. . .|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br /></code></dd></dl><br />It turns out, that patterns P14-P17 have no valid puzzles, patterns P18-P22 have valid puzzles.<br />Here are examples.<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>..9......<br />.8.......<br />7.6..9...<br />...154698<br />...896327<br />...732145<br />...568931<br />...473862<br />...921574<br /><br />..8......<br />.7...9...<br />9.6......<br />...154687<br />...826539<br />...937412<br />...492871<br />...781365<br />...563924<br /><br />..7..9...<br />.8.......<br />9.6......<br />...154897<br />...697243<br />...823165<br />...976452<br />...531978<br />...482631<br /><br />..9......<br />.8.......<br />.76..9...<br />...416897<br />...798235<br />...253614<br />...961378<br />...834562<br />...572941<br /><br />..8..9...<br />.7.......<br />.69......<br />...134786<br />...578249<br />...692351<br />...827693<br />...915824<br />...463175<br /></code></dd></dl><br />Now we can finish validity diagram markup.<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>0&nbsp; -<br />1&nbsp; -<br />2&nbsp; ---<br />3&nbsp; ------<br />4&nbsp; ----+-+<br />5&nbsp; -*+++++<br />6&nbsp; ++++++<br />7&nbsp; +++<br />8&nbsp; +<br />9&nbsp; +<br /></code></dd></dl><br />So, investigation of patterns<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>&nbsp; M1<br /><br />A 1 0<br />0 9 9<br />0 9 9<br /></code></dd></dl><br />is finished. Patterns of such type have no valid puzzles if they can be morphed to subset of the following patterns. Otherwise they have valid puzzles.<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br />|. . x|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . x|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|. . .|. . .|<br />|. . x|x x x|x x x|&nbsp; &nbsp; &nbsp;|. x .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. x x|. . .|. . .|<br />|x x x|x x x|x x x|&nbsp; &nbsp; &nbsp;|x . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|x x x|. . x|. . .|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br /><br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br />|. . .|. . x|. . .|&nbsp; &nbsp; &nbsp;|. . .|. . x|. . .|<br />|. x x|. . .|. . .|&nbsp; &nbsp; &nbsp;|. x x|. . .|. . .|<br />|x . x|. . .|. . .|&nbsp; &nbsp; &nbsp;|. x x|. . .|. . .|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br /></code></dd></dl><br /><br />Continuation follows ...<br /><br />Serg<br /><br />[Edited. I found a &quot;gap&quot; in my post - 2 possible configurations were not considered (patterns P21 and P22).]</div>
+
+			
+				<div class="notice">Last edited by <a href="./member3125.html">Serg</a> on Tue Feb 19, 2013 11:33 am, edited 2 times in total.
+					
+				</div>
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile224659">
+			<dt>
+				<a href="./member3125.html">Serg</a>
+			</dt>
+
+			<dd>2018 Supporter</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 785</dd><dd><strong>Joined:</strong> 01 June 2010</dd><dd><strong>Location:</strong> Russia</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./investigation-of-one-crossing-free-patterns-t30977.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p224677" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=7&amp;p=224677" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./investigation-of-one-crossing-free-patterns-t30977.html#p224677">Re: Investigation of one-crossing-free patterns</a></h3>
+			<p class="author"><a href="./post224677.html#p224677"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member3125.html">Serg</a></strong> &raquo; Sat Feb 16, 2013 10:10 pm </p>
+
+			
+
+			<div class="content">Hi!<br />Further I'll describe my investigation more briefly.<br />Using described above technique for finding patterns having no valid puzzles for map<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>A 1 0<br />0 9 9<br />0 9 9<br /></code></dd></dl><br />we shall come to ultimate validity diagram<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>0&nbsp; -<br />1&nbsp; -<br />2&nbsp; ---<br />3&nbsp; ------<br />4&nbsp; ---++++<br />5&nbsp; -++++++<br />6&nbsp; ++++++<br />7&nbsp; +++<br />8&nbsp; +<br />9&nbsp; +<br /></code></dd></dl><br />It will be observed when we'll consider map<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>A 4 0<br />0 9 9<br />0 9 9<br /></code></dd></dl><br />Investigation of patterns having 3 empty boxes in a crossing, i.e. patterns having map<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>A B 0<br />0 9 9<br />0 9 9<br /></code></dd></dl><br />is finished. Patterns of such type have no valid puzzles if they can be morphed to subset of the following patterns. Otherwise they have valid puzzles.<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br />|. . x|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . x|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|. . .|. . .|<br />|. . x|x x x|x x x|&nbsp; &nbsp; &nbsp;|. x .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. x x|. . .|. . .|<br />|x x x|x x x|x x x|&nbsp; &nbsp; &nbsp;|x . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|x x x|x x x|. . .|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br /><br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br />|. . .|. . x|. . .|&nbsp; &nbsp; &nbsp;|. . .|. . x|. . .|<br />|. x x|. . x|. . .|&nbsp; &nbsp; &nbsp;|. x x|. . x|. . .|<br />|x . x|. . x|. . .|&nbsp; &nbsp; &nbsp;|. x x|. . x|. . .|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br /></code></dd></dl><br /><br />Continuation follows ...<br /><br />Serg</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile224677">
+			<dt>
+				<a href="./member3125.html">Serg</a>
+			</dt>
+
+			<dd>2018 Supporter</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 785</dd><dd><strong>Joined:</strong> 01 June 2010</dd><dd><strong>Location:</strong> Russia</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./investigation-of-one-crossing-free-patterns-t30977.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p224685" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=7&amp;p=224685" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./investigation-of-one-crossing-free-patterns-t30977.html#p224685">Re: Investigation of one-crossing-free patterns</a></h3>
+			<p class="author"><a href="./post224685.html#p224685"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member3125.html">Serg</a></strong> &raquo; Sun Feb 17, 2013 8:08 am </p>
+
+			
+
+			<div class="content">Hi!<br />It's time to study crossings having 2 empty boxes only.<br />There are 3 essentially different variants of placing remaining (non-empty) boxes denoted by A, B, C:<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>&nbsp; V1&nbsp; &nbsp; &nbsp; &nbsp; V2&nbsp; &nbsp; &nbsp; &nbsp; V3<br /><br />A B C&nbsp; &nbsp; &nbsp;A B 0&nbsp; &nbsp; &nbsp;0 0 A<br />0 9 9&nbsp; &nbsp; &nbsp;C 9 9&nbsp; &nbsp; &nbsp;B 9 9<br />0 9 9&nbsp; &nbsp; &nbsp;0 9 9&nbsp; &nbsp; &nbsp;C 9 9<br /></code></dd></dl><br />Let's consider variant V1 first.<br />Because stack B147 contains 2 empty boxes, we can start with position just after finish of map<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>A 1 0<br />0 9 9<br />0 9 9<br /></code></dd></dl><br />analysis. So, we have validity diagram<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>0&nbsp; -<br />1&nbsp; -<br />2&nbsp; ---<br />3&nbsp; ------<br />4&nbsp; ----+-+<br />5&nbsp; -*+++++<br />6&nbsp; ++++++<br />7&nbsp; +++<br />8&nbsp; +<br />9&nbsp; +<br /></code></dd></dl><br />and collection of patterns having no valid puzzles<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br />|. . x|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . x|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|. . .|. . .|<br />|. . x|x x x|x x x|&nbsp; &nbsp; &nbsp;|. x .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. x x|. . .|. . .|<br />|x x x|x x x|x x x|&nbsp; &nbsp; &nbsp;|x . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|x x x|. . x|. . .|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br /><br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br />|. . .|. . x|. . .|&nbsp; &nbsp; &nbsp;|. . .|. . x|. . .|<br />|. x x|. . .|. . .|&nbsp; &nbsp; &nbsp;|. x x|. . .|. . .|<br />|x . x|. . .|. . .|&nbsp; &nbsp; &nbsp;|. x x|. . .|. . .|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br /></code></dd></dl><br />at starting point. Let's consider simplest possible map<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>A 1 1<br />0 9 9<br />0 9 9<br /></code></dd></dl><br />We should add 1 clue to empty B3 box and check following patterns for having valid puzzles (other possible combinations definitely have valid puzzles):<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;P23&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;P24&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;P25<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br />|. . .|. . .|. . .|&nbsp; &nbsp; &nbsp;|. . .|. . .|. . .|&nbsp; &nbsp; &nbsp;|. . .|. . x|. . x|<br />|. x x|. . .|. . .|&nbsp; &nbsp; &nbsp;|. x x|. . .|. . .|&nbsp; &nbsp; &nbsp;|. x x|. . .|. . .|<br />|x x x|. . x|. . x|&nbsp; &nbsp; &nbsp;|x . x|. . x|. . x|&nbsp; &nbsp; &nbsp;|x . x|. . .|. . .|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br /><br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;P26&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;P27&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;P28<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br />|. . .|. . .|. . .|&nbsp; &nbsp; &nbsp;|. . .|. . .|. . x|&nbsp; &nbsp; &nbsp;|. . .|. . .|. . .|<br />|. x x|. . .|. . x|&nbsp; &nbsp; &nbsp;|. x x|. . .|. . .|&nbsp; &nbsp; &nbsp;|. x x|. . .|. . .|<br />|x . x|. . x|. . .|&nbsp; &nbsp; &nbsp;|x . x|. . x|. . .|&nbsp; &nbsp; &nbsp;|. x x|. . x|. . x|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br /><br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;P29&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;P30&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;P31<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br />|. . .|. . x|. . x|&nbsp; &nbsp; &nbsp;|. . .|. . .|. . .|&nbsp; &nbsp; &nbsp;|. . .|. . .|. . x|<br />|. x x|. . .|. . .|&nbsp; &nbsp; &nbsp;|. x x|. . .|. . x|&nbsp; &nbsp; &nbsp;|. x x|. . .|. . .|<br />|. x x|. . .|. . .|&nbsp; &nbsp; &nbsp;|. x x|. . x|. . .|&nbsp; &nbsp; &nbsp;|. x x|. . x|. . .|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br /></code></dd></dl><br /><br />Continuation follows ...<br /><br />Serg<br /><br />[Edited. I corrected an error in validity diagram.]</div>
+
+			
+				<div class="notice">Last edited by <a href="./member3125.html">Serg</a> on Tue Feb 19, 2013 11:34 am, edited 2 times in total.
+					
+				</div>
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile224685">
+			<dt>
+				<a href="./member3125.html">Serg</a>
+			</dt>
+
+			<dd>2018 Supporter</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 785</dd><dd><strong>Joined:</strong> 01 June 2010</dd><dd><strong>Location:</strong> Russia</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./investigation-of-one-crossing-free-patterns-t30977.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p224699" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=7&amp;p=224699" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./investigation-of-one-crossing-free-patterns-t30977.html#p224699">Re: Investigation of one-crossing-free patterns</a></h3>
+			<p class="author"><a href="./post224699.html#p224699"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member3125.html">Serg</a></strong> &raquo; Sun Feb 17, 2013 4:57 pm </p>
+
+			
+
+			<div class="content">Hi!<br />I continue.<br />It turns out, pattern P23 has no valid puzzles.<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;P23<br />+-----+-----+-----+<br />|. . .|. . .|. . .|<br />|. x x|. . .|. . .|<br />|x x x|. . x|. . x|<br />+-----+-----+-----+<br />|. . .|x x x|x x x|<br />|. . .|x x x|x x x|<br />|. . .|x x x|x x x|<br />+-----+-----+-----+<br />|. . .|x x x|x x x|<br />|. . .|x x x|x x x|<br />|. . .|x x x|x x x|<br />+-----+-----+-----+<br /></code></dd></dl><br />Patterns P24 and P28 have no valid puzzles too, because they are subsets of the pattern P23. Remaining patterns (P25-P27 and P29-P31) have valid puzzles. Here are examples.<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>.....9..7<br />.87......<br />9.6......<br />...536789<br />...297416<br />...841253<br />...764928<br />...923571<br />...185634<br /><br />.........<br />.96.....5<br />8.7..3...<br />...365789<br />...187426<br />...924351<br />...672948<br />...831572<br />...549613<br /><br />........7<br />.96......<br />8.7..3...<br />...365789<br />...187426<br />...924315<br />...642978<br />...871532<br />...539641<br /><br />.....9..7<br />.87......<br />.69......<br />...536789<br />...197254<br />...284613<br />...745928<br />...863471<br />...921536<br /><br />.........<br />.69.....5<br />.87..3...<br />...365789<br />...179452<br />...824613<br />...542978<br />...687341<br />...931526<br /><br />........7<br />.69......<br />.87..3...<br />...365789<br />...179425<br />...824631<br />...587942<br />...641378<br />...932516<br /></code></dd></dl><br />So, we have such validity diagram.<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>0&nbsp; -<br />1&nbsp; -<br />2&nbsp; ---<br />3&nbsp; ------<br />4&nbsp; ---*+*+<br />5&nbsp; -*+++++<br />6&nbsp; ++++++<br />7&nbsp; +++<br />8&nbsp; +<br />9&nbsp; +<br /></code></dd></dl><br />We should increase number of clues in B2, B3 boxes till configurations marked by &quot;*&quot; in validity diagram posted above will be changed by &quot;+&quot;. If we want preserve property &quot;no valid puzzles&quot; after clues addition, clues cannot be placed in r1/r2 rows, because we'll come to patterns definetly having valid puzzles.<br /><br />It turns out, pattern P32 has no valid puzzles.<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;P32<br />+-----+-----+-----+<br />|. . .|. . .|. . .|<br />|. x x|. . .|. . .|<br />|x x x|x x x|x x x|<br />+-----+-----+-----+<br />|. . .|x x x|x x x|<br />|. . .|x x x|x x x|<br />|. . .|x x x|x x x|<br />+-----+-----+-----+<br />|. . .|x x x|x x x|<br />|. . .|x x x|x x x|<br />|. . .|x x x|x x x|<br />+-----+-----+-----+<br /></code></dd></dl><br />This is ultimate configuration. Futher adding a clue to B2/B3 boxes will produce patterns having valid puzzles.<br /><br />So, investigation of variant<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>&nbsp; V1<br /><br />A B C<br />0 9 9<br />0 9 9<br /></code></dd></dl><br />(A &gt; 0, B &gt; 0, C &gt; 0) is finished. Patterns of such type have no valid puzzles if they can be morphed to subset of the following patterns. Otherwise they have valid puzzles.<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br />|. . x|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . x|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|. . .|. . .|<br />|. . x|x x x|x x x|&nbsp; &nbsp; &nbsp;|. x .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. x x|. . .|. . .|<br />|x x x|x x x|x x x|&nbsp; &nbsp; &nbsp;|x . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|x x x|x x x|x x x|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br /></code></dd></dl><br /><br />Continuation follows ...<br /><br />Serg<br /><br />[Edited. I corrected a typo.]</div>
+
+			
+				<div class="notice">Last edited by <a href="./member3125.html">Serg</a> on Fri Feb 22, 2013 3:26 pm, edited 2 times in total.
+					
+				</div>
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile224699">
+			<dt>
+				<a href="./member3125.html">Serg</a>
+			</dt>
+
+			<dd>2018 Supporter</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 785</dd><dd><strong>Joined:</strong> 01 June 2010</dd><dd><strong>Location:</strong> Russia</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./investigation-of-one-crossing-free-patterns-t30977.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p224767" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=7&amp;p=224767" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./investigation-of-one-crossing-free-patterns-t30977.html#p224767">Re: Investigation of one-crossing-free patterns</a></h3>
+			<p class="author"><a href="./post224767.html#p224767"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member3125.html">Serg</a></strong> &raquo; Tue Feb 19, 2013 8:43 am </p>
+
+			
+
+			<div class="content">Hi!<br />It's time to consider variant 2 of arranging 3 non-empty boxes in a crossing:<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>&nbsp; V2<br /><br />A B 0<br />C 9 9<br />0 9 9<br /></code></dd></dl><br />A good starting point will be family of patterns having maps<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>A 1 0<br />0 9 9<br />0 9 9<br /></code></dd></dl><br />If a pattern of this family has valid puzzles, the patterns having maps<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>A X 0<br />Y 9 9<br />0 9 9<br /></code></dd></dl><br />(X &gt; 0, Y &gt; 0) will have valid puzzles too.<br />Family of patterns<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>A 1 0<br />0 9 9<br />0 9 9<br /></code></dd></dl><br />has such validity diagram (see one of my previous posts):<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>0&nbsp; -<br />1&nbsp; -<br />2&nbsp; ---<br />3&nbsp; ------<br />4&nbsp; ----+-+<br />5&nbsp; -*+++++<br />6&nbsp; ++++++<br />7&nbsp; +++<br />8&nbsp; +<br />9&nbsp; +<br /></code></dd></dl><br />So, we are starting with such diagram (possible configurations of B1 box).<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;. . .<br />0 filled cells&nbsp; &nbsp;. . .<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;. . .<br /><br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;. . .<br />1 filled cells&nbsp; &nbsp;. . .<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;x . .<br /><br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;. . .&nbsp; &nbsp;. . .&nbsp; &nbsp;. . .<br />2 filled cells&nbsp; &nbsp;. . x&nbsp; &nbsp;. . .&nbsp; &nbsp;. . x<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;. x .&nbsp; &nbsp;. x x&nbsp; &nbsp;. . x<br /><br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;. . .&nbsp; &nbsp;. . .&nbsp; &nbsp;. . x&nbsp; &nbsp;. . .&nbsp; &nbsp;. . x&nbsp; &nbsp;. . x<br />3 filled cells&nbsp; &nbsp;. . x&nbsp; &nbsp;. . .&nbsp; &nbsp;. . x&nbsp; &nbsp;. . x&nbsp; &nbsp;. . x&nbsp; &nbsp;. x .<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;. x x&nbsp; &nbsp;x x x&nbsp; &nbsp;. . x&nbsp; &nbsp;x x .&nbsp; &nbsp;. x .&nbsp; &nbsp;x . .<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;*********&nbsp; &nbsp; &nbsp; &nbsp;***********<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;. . x&nbsp; &nbsp;. . .&nbsp; &nbsp;. . x&nbsp; &nbsp;. . . * . . x * . . . * . . x<br />4 filled cells&nbsp; &nbsp;. . x&nbsp; &nbsp;. . x&nbsp; &nbsp;. . x&nbsp; &nbsp;. x x * . x . * . x x * . x .<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;x x .&nbsp; &nbsp;x x x&nbsp; &nbsp;. x x&nbsp; &nbsp;x . x * . x x * . x x * x . x<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;*****************&nbsp; &nbsp; &nbsp; &nbsp;*********<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;. . x&nbsp; &nbsp;. . . * . . x&nbsp; &nbsp;. . x&nbsp; &nbsp;. . x&nbsp; &nbsp;. . x&nbsp; &nbsp;. . x<br />5 filled cells&nbsp; &nbsp;. . x&nbsp; &nbsp;. x x * . x x&nbsp; &nbsp;. x x&nbsp; &nbsp;. x .&nbsp; &nbsp;x x .&nbsp; &nbsp;. x x<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;x x x&nbsp; &nbsp;x x x * . x x&nbsp; &nbsp;x . x&nbsp; &nbsp;x x x&nbsp; &nbsp;x x .&nbsp; &nbsp;x x .<br />********************************<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;. . x&nbsp; &nbsp;. . .&nbsp; &nbsp;. x x&nbsp; &nbsp;. x x&nbsp; &nbsp;. . x&nbsp; &nbsp;. x x<br />6 filled cells&nbsp; &nbsp;. x x&nbsp; &nbsp;x x x&nbsp; &nbsp;. x x&nbsp; &nbsp;. x x&nbsp; &nbsp;x x .&nbsp; &nbsp;x . x<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;x x x&nbsp; &nbsp;x x x&nbsp; &nbsp;. x x&nbsp; &nbsp;x . x&nbsp; &nbsp;x x x&nbsp; &nbsp;x x .<br /><br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;. x x&nbsp; &nbsp;. . x&nbsp; &nbsp;. x x<br />7 filled cells&nbsp; &nbsp;x . x&nbsp; &nbsp;x x x&nbsp; &nbsp;. x x<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;x x x&nbsp; &nbsp;x x x&nbsp; &nbsp;x x x<br /><br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;. x x<br />8 filled cells&nbsp; &nbsp;x x x<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;x x x<br /><br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;x x x<br />9 filled cells&nbsp; &nbsp;x x x<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;x x x<br /></code></dd></dl><br />If B1 box configuration is placed under asterisk line, pattern has valid puzzles, but if it is placed above asterisk line, we don't know has pattern valid puzzles or no. Starting validity diagram:<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>0&nbsp; ?<br />1&nbsp; ?<br />2&nbsp; ???<br />3&nbsp; ??????<br />4&nbsp; ????+?+<br />5&nbsp; ??+++++<br />6&nbsp; ++++++<br />7&nbsp; +++<br />8&nbsp; +<br />9&nbsp; +<br /></code></dd></dl><br />Let's begin with simplest map:<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>A 1 0<br />1 9 9<br />0 9 9<br /></code></dd></dl><br />In this case we can state that if B1 box configuration is marked by &quot;+&quot; in validity diagram, its &quot;conjugate&quot; (transposed) configuration must be marked by &quot;+&quot; too. So, we have such validity diagram (2 additional configurations are marked by &quot;+&quot;):<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>0&nbsp; ?<br />1&nbsp; ?<br />2&nbsp; ???<br />3&nbsp; ??????<br />4&nbsp; ???++?+<br />5&nbsp; ?++++++<br />6&nbsp; ++++++<br />7&nbsp; +++<br />8&nbsp; +<br />9&nbsp; +<br /></code></dd></dl><br /><br />Continuation follows ...<br /><br />Serg</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile224767">
+			<dt>
+				<a href="./member3125.html">Serg</a>
+			</dt>
+
+			<dd>2018 Supporter</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 785</dd><dd><strong>Joined:</strong> 01 June 2010</dd><dd><strong>Location:</strong> Russia</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./investigation-of-one-crossing-free-patterns-t30977.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p224852" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=7&amp;p=224852" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./investigation-of-one-crossing-free-patterns-t30977.html#p224852">Re: Investigation of one-crossing-free patterns</a></h3>
+			<p class="author"><a href="./post224852.html#p224852"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member3125.html">Serg</a></strong> &raquo; Thu Feb 21, 2013 7:02 am </p>
+
+			
+
+			<div class="content">Well, I continue.<br />I am studying patterns having maps<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>A B 0<br />C 9 9<br />0 9 9<br /></code></dd></dl><br />(A &gt; 0, B &gt; 0, C &gt; 0). There exists only one variant of B1 box filling by 5 (or more) clues to get a pattern having no valid puzzles (see my previous post):<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>. . x<br />. . x<br />x x x<br /></code></dd></dl><br />Let's consider this case in more details. If B=1 and C=1, then there will be 3 essentially different variants of such patterns:<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;P33&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;P34&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;P35<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br />|. . x|. . .|. . .|&nbsp; &nbsp; &nbsp;|. . x|. . .|. . .|&nbsp; &nbsp; &nbsp;|. . x|. . .|. . .|<br />|. . x|. . .|. . .|&nbsp; &nbsp; &nbsp;|. . x|. . .|. . .|&nbsp; &nbsp; &nbsp;|. . x|. . x|. . .|<br />|x x x|. . x|. . .|&nbsp; &nbsp; &nbsp;|x x x|. . x|. . .|&nbsp; &nbsp; &nbsp;|x x x|. . .|. . .|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . x|x x x|x x x|&nbsp; &nbsp; &nbsp;|. x .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. x .|x x x|x x x|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br /></code></dd></dl><br />It turns out, that pattern P33 has no valid puzzles, but patterns P34 and P35 have valid puzzles. So, if we'll consider general case with B &gt; 1 and C &gt; 1, we'll see that patterns have valid puzzles when B2 box contains clues in r1/r2 rows OR B4 box contains clues in c1/c2 columns. Patterns can have no valid puzzles when B2 box contains clues in r3 row only AND B4 box contains clues in c3 column only. It turns out, that next pattern has no valid puzzles.<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;P36<br />+-----+-----+-----+<br />|. . x|. . .|. . .|<br />|. . x|. . .|. . .|<br />|x x x|x x x|. . .|<br />+-----+-----+-----+<br />|. . x|x x x|x x x|<br />|. . x|x x x|x x x|<br />|. . x|x x x|x x x|<br />+-----+-----+-----+<br />|. . .|x x x|x x x|<br />|. . .|x x x|x x x|<br />|. . .|x x x|x x x|<br />+-----+-----+-----+<br /></code></dd></dl><br />So, when B1 box contains clue configuration<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>. . x<br />. . x<br />x x x<br /></code></dd></dl><br />patterns will have no valid puzzles if they can be morphed to P36 pattern subset, otherwise they will have valid patterns. <br />(Patterns having maps<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>A B 0<br />C 9 9<br />0 9 9<br /></code></dd></dl><br />are considered now.)<br /><br />Continuation follows ...<br /><br />Serg<br /><br />[Edited. I corrected a typo.]</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile224852">
+			<dt>
+				<a href="./member3125.html">Serg</a>
+			</dt>
+
+			<dd>2018 Supporter</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 785</dd><dd><strong>Joined:</strong> 01 June 2010</dd><dd><strong>Location:</strong> Russia</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./investigation-of-one-crossing-free-patterns-t30977.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p224866" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=7&amp;p=224866" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./investigation-of-one-crossing-free-patterns-t30977.html#p224866">Re: Investigation of one-crossing-free patterns</a></h3>
+			<p class="author"><a href="./post224866.html#p224866"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member3125.html">Serg</a></strong> &raquo; Fri Feb 22, 2013 7:29 am </p>
+
+			
+
+			<div class="content">Hi, I continue.<br />I am studying patterns having maps<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>A B 0<br />C 9 9<br />0 9 9<br /></code></dd></dl><br />(A &gt; 0, B &gt; 0, C &gt; 0). Now it's time to study patterns having 4 clues in B1 box. Let's start with B1 box configuration<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>. . x<br />. . x<br />x x .<br /></code></dd></dl>If B=1 and C=1, then there will be 3 essentially different variants of such patterns:<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;P37&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;P38&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;P39<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br />|. . x|. . .|. . .|&nbsp; &nbsp; &nbsp;|. . x|. . .|. . .|&nbsp; &nbsp; &nbsp;|. . x|. . .|. . .|<br />|. . x|. . .|. . .|&nbsp; &nbsp; &nbsp;|. . x|. . .|. . .|&nbsp; &nbsp; &nbsp;|. . x|. . x|. . .|<br />|x x .|. . x|. . .|&nbsp; &nbsp; &nbsp;|x x .|. . x|. . .|&nbsp; &nbsp; &nbsp;|x x .|. . .|. . .|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . x|x x x|x x x|&nbsp; &nbsp; &nbsp;|. x .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. x .|x x x|x x x|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br /></code></dd></dl><br />Pattern P37 has no valid puzzles, because it is subset of P36 pattern (see previous post). Search shows the patterns P38 and P39 have valid puzzles. So, if we'll consider general case with B &gt; 1 and C &gt; 1, we'll see that patterns have valid puzzles when B2 box contains clues in r1/r2 rows OR B4 box contains clues in c1/c2 columns. Patterns can have no valid puzzles when B2 box contains clues in r3 row only AND B4 box contains clues in r3 column only. Ultimate pattern<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;P40<br />+-----+-----+-----+<br />|. . x|. . .|. . .|<br />|. . x|. . .|. . .|<br />|x x .|x x x|. . .|<br />+-----+-----+-----+<br />|. . x|x x x|x x x|<br />|. . x|x x x|x x x|<br />|. . x|x x x|x x x|<br />+-----+-----+-----+<br />|. . .|x x x|x x x|<br />|. . .|x x x|x x x|<br />|. . .|x x x|x x x|<br />+-----+-----+-----+<br /></code></dd></dl><br />is subset of P36 pattern, so it has no valid puzzles. Therefore B1 box configuration considered cannot add something new to general case (patterns having maps<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>A B 0<br />C 9 9<br />0 9 9<br /></code></dd></dl><br />A &gt; 0, B &gt; 0, C &gt; 0).<br /><br />Continuation follows ...<br /><br />Serg</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile224866">
+			<dt>
+				<a href="./member3125.html">Serg</a>
+			</dt>
+
+			<dd>2018 Supporter</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 785</dd><dd><strong>Joined:</strong> 01 June 2010</dd><dd><strong>Location:</strong> Russia</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./investigation-of-one-crossing-free-patterns-t30977.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p224875" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=7&amp;p=224875" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./investigation-of-one-crossing-free-patterns-t30977.html#p224875">Re: Investigation of one-crossing-free patterns</a></h3>
+			<p class="author"><a href="./post224875.html#p224875"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member3125.html">Serg</a></strong> &raquo; Fri Feb 22, 2013 11:07 pm </p>
+
+			
+
+			<div class="content">Hi, I continue.<br />I'll study patterns having next 4-clue configuration in B1 box.<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>. . .<br />. . x<br />x x x<br /></code></dd></dl>There are 6 essentially different variants of such patterns, having 1 clue in B2 and B4 boxes:<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;P41&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;P42&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;P43<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br />|. . .|. . .|. . .|&nbsp; &nbsp; &nbsp;|. . .|. . .|. . .|&nbsp; &nbsp; &nbsp;|. . .|. . .|. . .|<br />|. . x|. . .|. . .|&nbsp; &nbsp; &nbsp;|. . x|. . .|. . .|&nbsp; &nbsp; &nbsp;|. . x|. . x|. . .|<br />|x x x|. . x|. . .|&nbsp; &nbsp; &nbsp;|x x x|. . x|. . .|&nbsp; &nbsp; &nbsp;|x x x|. . .|. . .|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . x|x x x|x x x|&nbsp; &nbsp; &nbsp;|. x .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . x|x x x|x x x|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br /><br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;P44&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;P45&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;P46<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br />|. . .|. . .|. . .|&nbsp; &nbsp; &nbsp;|. . .|. . x|. . .|&nbsp; &nbsp; &nbsp;|. . .|. . x|. . .|<br />|. . x|. . x|. . .|&nbsp; &nbsp; &nbsp;|. . x|. . .|. . .|&nbsp; &nbsp; &nbsp;|. . x|. . .|. . .|<br />|x x x|. . .|. . .|&nbsp; &nbsp; &nbsp;|x x x|. . .|. . .|&nbsp; &nbsp; &nbsp;|x x x|. . .|. . .|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. x .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . x|x x x|x x x|&nbsp; &nbsp; &nbsp;|. x .|x x x|x x x|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br /></code></dd></dl>Pattern P41 has no valid puzzles, because it is subset of P36 pattern (see previous posts). Search shows the pattern P42 has no valid puzzles too, but patterns P43-P46 have valid puzzles. BTW, pattern P42 is the search duration champion - it took my program almost 4 hours to do exhaustive search for this pattern. Next 2 patterns<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;P47&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;P48<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br />|. . .|. . .|. . .|&nbsp; &nbsp; &nbsp;|. . .|. . .|. . .|<br />|. . x|. . .|. . .|&nbsp; &nbsp; &nbsp;|. . x|. . .|. . .|<br />|x x x|. . x|. . .|&nbsp; &nbsp; &nbsp;|x x x|. . x|. . .|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . x|x x x|x x x|&nbsp; &nbsp; &nbsp;|. x .|x x x|x x x|<br />|. x .|x x x|x x x|&nbsp; &nbsp; &nbsp;|x . .|x x x|x x x|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br /></code></dd></dl>have valid puzzles, so if B4 box has at least 2 clues located in different rows AND different columns, pattern has valid puzzles. Hence B4 box must contain all its clues in the same row only or in the same column only if we want a pattern would have no valid puzzles. This idea is right - patterns<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;P49&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;P50<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br />|. . .|. . .|. . .|&nbsp; &nbsp; &nbsp;|. . .|. . .|. . .|<br />|. . x|. . .|. . .|&nbsp; &nbsp; &nbsp;|. . x|. . .|. . .|<br />|x x x|. . x|. . .|&nbsp; &nbsp; &nbsp;|x x x|. . x|. . .|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br />|. . x|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . x|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . x|x x x|x x x|&nbsp; &nbsp; &nbsp;|x x x|x x x|x x x|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br /></code></dd></dl>have no valid puzzles. If we add 1 clue to B4 box in these patterns (to the arbitrary free cell), they will have valid puzzles.<br />But 3rd possible pattern<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;P51<br />+-----+-----+-----+<br />|. . .|. . .|. . .|<br />|. . x|. . .|. . .|<br />|x x x|. . x|. . .|<br />+-----+-----+-----+<br />|. x .|x x x|x x x|<br />|. x .|x x x|x x x|<br />|. x .|x x x|x x x|<br />+-----+-----+-----+<br />|. . .|x x x|x x x|<br />|. . .|x x x|x x x|<br />|. . .|x x x|x x x|<br />+-----+-----+-----+<br /></code></dd></dl>has valid  puzzles.<br /><br />If B2 box contains clues in r1/r2 rows, pattern has valid puzzles. So, next patterns have no valid puzzles with maximal number of clues in B2/B4 boxes:<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;P52&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;P53<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br />|. . .|. . .|. . .|&nbsp; &nbsp; &nbsp;|. . .|. . .|. . .|<br />|. . x|. . .|. . .|&nbsp; &nbsp; &nbsp;|. . x|. . .|. . .|<br />|x x x|x x x|. . .|&nbsp; &nbsp; &nbsp;|x x x|x x x|. . .|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br />|. . x|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . x|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . x|x x x|x x x|&nbsp; &nbsp; &nbsp;|x x x|x x x|x x x|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />|. . .|x x x|x x x|&nbsp; &nbsp; &nbsp;|. . .|x x x|x x x|<br />+-----+-----+-----+&nbsp; &nbsp; &nbsp;+-----+-----+-----+<br /></code></dd></dl>P52 pattern is subset of P36 pattern, so it is not interesting. But P53 is new pattern having no valid puzzles in general case (when maps are<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>A B 0<br />C 9 9<br />0 9 9<br /></code></dd></dl>A &gt; 0, B &gt; 0, C &gt; 0).<br /><br />Continuation follows ...<br /><br />Serg<br /><br />[Edited. I missed a pattern (P51) - corrected.]</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile224875">
+			<dt>
+				<a href="./member3125.html">Serg</a>
+			</dt>
+
+			<dd>2018 Supporter</dd>
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 785</dd><dd><strong>Joined:</strong> 01 June 2010</dd><dd><strong>Location:</strong> Russia</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./investigation-of-one-crossing-free-patterns-t30977.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<form id="viewtopic" method="post" action="./investigation-of-one-crossing-free-patterns-t30977.html">
+
+	<fieldset class="display-options" style="margin-top: 0; ">
+		<a href="./investigation-of-one-crossing-free-patterns-t30977-15.html" class="right-box right">Next</a>
+		<label>Display posts from previous: <select name="st" id="st"><option value="0" selected="selected">All posts</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select></label>
+		<label>Sort by <select name="sk" id="sk"><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="s">Subject</option></select></label> <label><select name="sd" id="sd"><option value="a" selected="selected">Ascending</option><option value="d">Descending</option></select> <input type="submit" name="sort" value="Go" class="button2" /></label>
+		
+	</fieldset>
+
+	</form>
+	<hr />
+
+
+<div class="topic-actions">
+	<div class="buttons">
+	
+		<div class="reply-icon"><a href="./posting.php?mode=reply&amp;f=7&amp;t=30977" title="Post a reply"><span></span>Post a reply</a></div>
+	
+	</div>
+
+	
+		<div class="pagination">
+83 posts
+&bull; Page <strong>1</strong> of <strong>6</strong> &bull; <span><strong>1</strong><span class="page-sep">, </span><a href="investigation-of-one-crossing-free-patterns-t30977-15.html">2</a><span class="page-sep">, </span><a href="investigation-of-one-crossing-free-patterns-t30977-30.html">3</a><span class="page-sep">, </span><a href="investigation-of-one-crossing-free-patterns-t30977-45.html">4</a><span class="page-sep">, </span><a href="investigation-of-one-crossing-free-patterns-t30977-60.html">5</a><span class="page-sep">, </span><a href="investigation-of-one-crossing-free-patterns-t30977-75.html">6</a></span>
+		</div>
+	
+</div>
+
+
+	<p></p><p><a href="./general-f7.html" class="left-box left" accesskey="r">Return to General</a></p>
+
+	<form method="post" id="jumpbox" action="./viewforum.php" onsubmit="if(this.f.value == -1){return false;}">
+
+	
+		<fieldset class="jumpbox">
+	
+			<label for="f" accesskey="j">Jump to:</label>
+			<select name="f" id="f" onchange="if(this.options[this.selectedIndex].value != -1){ document.forms['jumpbox'].submit() }">
+			
+				<option value="-1">Select a forum</option>
+			<option value="-1">------------------</option>
+				<option value="9">News and announcements</option>
+			
+				<option value="10">&nbsp; &nbsp;About the New Sudoku Players' Forum</option>
+			
+				<option value="5">Sudoku: the puzzle</option>
+			
+				<option value="7" selected="selected">&nbsp; &nbsp;General</option>
+			
+				<option value="33">&nbsp; &nbsp;Puzzles</option>
+			
+				<option value="4">&nbsp; &nbsp;Help with puzzles and solving techniques</option>
+			
+				<option value="6">&nbsp; &nbsp;Advanced solving techniques</option>
+			
+				<option value="8">&nbsp; &nbsp;Interactive games</option>
+			
+				<option value="18">&nbsp; &nbsp;Software</option>
+			
+				<option value="16">Resources</option>
+			
+				<option value="32">&nbsp; &nbsp;Published puzzles</option>
+			
+				<option value="31">&nbsp; &nbsp;Books</option>
+			
+				<option value="17">&nbsp; &nbsp;On the web</option>
+			
+				<option value="11">Related puzzles</option>
+			
+				<option value="12">&nbsp; &nbsp;Sudoku variants</option>
+			
+				<option value="13">&nbsp; &nbsp;Kakuro</option>
+			
+				<option value="14">&nbsp; &nbsp;Other logic puzzles</option>
+			
+				<option value="15">&nbsp; &nbsp;Inventors' studio</option>
+			
+				<option value="19">Off-topic</option>
+			
+				<option value="20">&nbsp; &nbsp;Coffee bar</option>
+			
+				<option value="29">&nbsp; &nbsp;Forum questions and feedback</option>
+			
+			</select>
+			<input type="submit" value="Go" class="button2" />
+		</fieldset>
+	</form>
+
+</div>
+
+<div id="page-footer">
+
+	<div class="navbar">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<ul class="linklist">
+			<li class="icon-home"><a href="./" accesskey="h">Board index</a></li>
+				
+			<li class="rightside"><a href="./the-team.html">The team</a> &bull; <a href="./ucp.php?mode=delete_cookies">Delete all board cookies</a> &bull; All times are UTC </li>
+		</ul>
+		
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<div class="copyright">Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Group
+		<br /><br /><a href="http://www.phpbb-seo.com/" title="Search Engine Optimization"><img src="./images/phpbb-seo.png" alt="phpBB SEO"/></a>
+	</div>
+</div>
+
+</div>
+
+<div>
+	<a id="bottom" name="bottom" accesskey="z"></a>
+	
+</div>
+
+</body>
+</html>

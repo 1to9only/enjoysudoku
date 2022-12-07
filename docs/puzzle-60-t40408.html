@@ -1,0 +1,436 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-gb" xml:lang="en-gb">
+<head>
+<base href="./"/>
+<link rel="canonical" href="./puzzle-60-t40408.html" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>Puzzle 60 : Puzzles</title>
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="content-language" content="en-gb" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="content-language" content="en" />
+<meta name="title" content="Puzzle 60 : Puzzles" />
+<meta name="keywords" content="puzzle, forcing, interesting, elimination, step" />
+<meta name="category" content="general" />
+<meta name="robots" content="index,follow" />
+<meta name="distribution" content="global" />
+<meta name="resource-type" content="document" />
+<meta name="copyright" content="The New Sudoku Players Forum" />
+
+
+
+
+<!--
+	phpBB style name: prosilver
+	Based on style:   prosilver (this is the default phpBB3 style)
+	Original author:  Tom Beddard ( http://www.subBlue.com/ )
+	Modified by:
+-->
+
+<script type="text/javascript">
+// <![CDATA[
+	var jump_page = 'Enter the page number you wish to go to:';
+	var on_page = '1';
+	var per_page = '';
+	var base_url = '';
+	var style_cookie = 'phpBBstyle';
+	var style_cookie_settings = '; path=/; domain=forum.enjoysudoku.com';
+	var onload_functions = new Array();
+	var onunload_functions = new Array();
+	// www.phpBB-SEO.com SEO TOOLKIT BEGIN
+	var seo_delim_start = '-';
+	var seo_static_pagination = 'page';
+	var seo_ext_pagination = '.html';
+	var seo_external = true;
+	var seo_external_sub = false;
+	var seo_ext_classes = false;
+	var seo_hashfix = false;
+	// www.phpBB-SEO.com SEO TOOLKIT END
+
+	
+
+	/**
+	* Find a member
+	*/
+	function find_username(url)
+	{
+		popup(url, 760, 570, '_usersearch');
+		return false;
+	}
+
+	/**
+	* New function for handling multiple calls to window.onload and window.unload by pentapenguin
+	*/
+	window.onload = function()
+	{
+		for (var i = 0; i < onload_functions.length; i++)
+		{
+			eval(onload_functions[i]);
+		}
+	};
+
+	window.onunload = function()
+	{
+		for (var i = 0; i < onunload_functions.length; i++)
+		{
+			eval(onunload_functions[i]);
+		}
+	};
+
+// ]]>
+</script>
+<script type="text/javascript" src="./styles/prosilver/template/styleswitcher.js"></script>
+<script type="text/javascript" src="./styles/prosilver/template/forum_fn.js"></script>
+
+<link href="./styles/prosilver/theme/print.css" rel="stylesheet" type="text/css" media="print" title="printonly" />
+<link href="style.css" rel="stylesheet" type="text/css" media="screen, projection" />
+
+<link href="./styles/prosilver/theme/normal.css" rel="stylesheet" type="text/css" title="A" />
+<link href="./styles/prosilver/theme/medium.css" rel="alternate stylesheet" type="text/css" title="A+" />
+<link href="./styles/prosilver/theme/large.css" rel="alternate stylesheet" type="text/css" title="A++" />
+
+
+
+</head>
+
+<body id="phpbb" class="section-viewtopic ltr">
+
+<div id="wrap">
+	<a id="top" name="top" accesskey="t"></a>
+	<div id="page-header">
+		<div class="headerbar">
+			<div class="inner"><span class="corners-top"><span></span></span>
+
+			<div id="site-description">
+				<a href="./" title="Board index" id="logo"><img src="./styles/prosilver/imageset/site_logo.gif" width="52" height="52" alt="" title="" /></a>
+				<h1>The New Sudoku Players' Forum</h1>
+				<p>ARCHIVED by 1to9only</p>
+				<p class="skiplink"><a href="#start_here">Skip to content</a></p>
+			</div>
+
+		
+			<div id="search-box">
+				<form action="./search.php" method="get" id="search">
+				<fieldset>
+					<input name="keywords" id="keywords" type="text" maxlength="128" title="Search for keywords" class="inputbox search" value="Search…" onclick="if(this.value=='Search…')this.value='';" onblur="if(this.value=='')this.value='Search…';" />
+					<input class="button2" value="Search" type="submit" /><br />
+					<a href="./search.php" title="View the advanced search options">Advanced search</a> <input type="hidden" name="sid" value="00000000000000000000000000000000" />
+
+				</fieldset>
+				</form>
+			</div>
+		
+
+			<span class="corners-bottom"><span></span></span></div>
+		</div>
+
+		<div class="navbar">
+			<div class="inner"><span class="corners-top"><span></span></span>
+
+			<ul class="linklist navlinks">
+				<li class="icon-home"><a href="./" accesskey="h">Board index</a>  <strong>&#8249;</strong> <a href="./sudoku-the-puzzle-f5.html">Sudoku: the puzzle</a> <strong>&#8249;</strong> <a href="./puzzles-f33.html">Puzzles</a></li>
+
+				<li class="rightside"><a href="#" onclick="fontsizeup(); return false;" onkeypress="return fontsizeup(event);" class="fontsize" title="Change font size">Change font size</a></li>
+
+				<li class="rightside"><a href="./viewtopic.php?f=33&amp;t=40408&amp;start=0&amp;view=print" title="Print view" accesskey="p" class="print">Print view</a></li>
+			</ul>
+
+			
+
+			<ul class="linklist rightside">
+				<li class="icon-faq"><a href="./faq.php" title="Frequently Asked Questions">FAQ</a></li>
+				<li class="icon-register"><a href="./ucp.php?mode=register">Register</a></li>
+					<li class="icon-logout"><a href="./ucp.php?mode=login" title="Login" accesskey="x">Login</a></li>
+				
+			</ul>
+
+			<span class="corners-bottom"><span></span></span></div>
+		</div>
+
+	</div>
+
+	<a name="start_here"></a>
+	<div id="page-body">
+		
+<h2><a href="./puzzle-60-t40408.html">Puzzle 60</a></h2>
+<!-- NOTE: remove the style="display: none" when you want to have the forum description on the topic body --><div style="display: none !important;">Post puzzles for others to solve here.<br /></div>
+
+<div class="topic-actions">
+
+	<div class="buttons">
+	
+		<div class="reply-icon"><a href="./posting.php?mode=reply&amp;f=33&amp;t=40408" title="Post a reply"><span></span>Post a reply</a></div>
+	
+	</div>
+
+	
+		<div class="search-box">
+			<form method="get" id="topic-search" action="./search.php">
+			<fieldset>
+				<input class="inputbox search tiny"  type="text" name="keywords" id="search_keywords" size="20" value="Search this topic…" onclick="if(this.value=='Search this topic…')this.value='';" onblur="if(this.value=='')this.value='Search this topic…';" />
+				<input class="button2" type="submit" value="Search" />
+				<input type="hidden" name="t" value="40408" />
+<input type="hidden" name="sf" value="msgonly" />
+<input type="hidden" name="sid" value="00000000000000000000000000000000" />
+
+			</fieldset>
+			</form>
+		</div>
+	
+		<div class="pagination">
+			3 posts
+			 &bull; Page <strong>1</strong> of <strong>1</strong>
+		</div>
+	
+
+</div>
+<div class="clear"></div>
+
+
+	<div id="p326081" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=33&amp;p=326081" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 class="first"><a href="./puzzle-60-t40408.html#p326081">Puzzle 60</a></h3>
+			<p class="author"><a href="./post326081.html#p326081"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member73131.html">P.O.</a></strong> &raquo; Sun Oct 02, 2022 10:07 am </p>
+
+			
+
+			<div class="content"><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>1 . 5&nbsp; &nbsp;. . .&nbsp; &nbsp;. . 2<br />. 4 .&nbsp; &nbsp;. . .&nbsp; &nbsp;. . .<br />8 . 9&nbsp; &nbsp;7 . .&nbsp; &nbsp;. . .<br />. . .&nbsp; &nbsp;. . 5&nbsp; &nbsp;1 . .<br />. 6 .&nbsp; &nbsp;. 8 .&nbsp; &nbsp;. 4 .<br />7 . .&nbsp; &nbsp;3 . .&nbsp; &nbsp;. . 9<br />2 . .&nbsp; &nbsp;1 . .&nbsp; &nbsp;. . 5<br />. 7 .&nbsp; &nbsp;. 4 .&nbsp; &nbsp;. 8 .<br />. . .&nbsp; &nbsp;. . 9&nbsp; &nbsp;3 . .<br /><br />1.5.....2.4.......8.97..........51...6..8..4.7..3....92..1....5.7..4..8......93..<br /><br />( n3r1c2&nbsp; &nbsp;n6r2c1&nbsp; &nbsp;n2r3c2&nbsp; &nbsp;n7r2c3 )<br /><br />PAIR COL: ((4 2 4) (8 9)) ((7 2 7) (8 9))&nbsp; <br />(((6 2 4) (1 5 8)) ((9 2 7) (1 5 8)))<br /><br />1&nbsp; &nbsp; &nbsp; 3&nbsp; &nbsp; &nbsp; 5&nbsp; &nbsp; &nbsp; 4689&nbsp; &nbsp;69&nbsp; &nbsp; &nbsp;468&nbsp; &nbsp; 46789&nbsp; 679&nbsp; &nbsp; 2&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br />6&nbsp; &nbsp; &nbsp; 4&nbsp; &nbsp; &nbsp; 7&nbsp; &nbsp; &nbsp; 2589&nbsp; &nbsp;12359&nbsp; 1238&nbsp; &nbsp;589&nbsp; &nbsp; 1359&nbsp; &nbsp;138&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br />8&nbsp; &nbsp; &nbsp; 2&nbsp; &nbsp; &nbsp; 9&nbsp; &nbsp; &nbsp; 7&nbsp; &nbsp; &nbsp; 1356&nbsp; &nbsp;1346&nbsp; &nbsp;456&nbsp; &nbsp; 1356&nbsp; &nbsp;1346&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <br />349&nbsp; &nbsp; 89&nbsp; &nbsp; &nbsp;2348&nbsp; &nbsp;2469&nbsp; &nbsp;2679&nbsp; &nbsp;5&nbsp; &nbsp; &nbsp; 1&nbsp; &nbsp; &nbsp; 2367&nbsp; &nbsp;3678&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <br />359&nbsp; &nbsp; 6&nbsp; &nbsp; &nbsp; 123&nbsp; &nbsp; 29&nbsp; &nbsp; &nbsp;8&nbsp; &nbsp; &nbsp; 127&nbsp; &nbsp; 257&nbsp; &nbsp; 4&nbsp; &nbsp; &nbsp; 37&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <br />7&nbsp; &nbsp; &nbsp; 15&nbsp; &nbsp; &nbsp;1248&nbsp; &nbsp;3&nbsp; &nbsp; &nbsp; 126&nbsp; &nbsp; 1246&nbsp; &nbsp;2568&nbsp; &nbsp;256&nbsp; &nbsp; 9&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br />2&nbsp; &nbsp; &nbsp; 89&nbsp; &nbsp; &nbsp;3468&nbsp; &nbsp;1&nbsp; &nbsp; &nbsp; 367&nbsp; &nbsp; 3678&nbsp; &nbsp;4679&nbsp; &nbsp;679&nbsp; &nbsp; 5&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br />359&nbsp; &nbsp; 7&nbsp; &nbsp; &nbsp; 136&nbsp; &nbsp; 256&nbsp; &nbsp; 4&nbsp; &nbsp; &nbsp; 236&nbsp; &nbsp; 269&nbsp; &nbsp; 8&nbsp; &nbsp; &nbsp; 16&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <br />45&nbsp; &nbsp; &nbsp;15&nbsp; &nbsp; &nbsp;1468&nbsp; &nbsp;2568&nbsp; &nbsp;2567&nbsp; &nbsp;9&nbsp; &nbsp; &nbsp; 3&nbsp; &nbsp; &nbsp; 1267&nbsp; &nbsp;1467&nbsp; &nbsp; &nbsp; &nbsp;<br /></code></dd></dl></div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile326081">
+			<dt>
+				<a href="./member73131.html">P.O.</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 380</dd><dd><strong>Joined:</strong> 07 June 2021</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./puzzle-60-t40408.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p326208" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=33&amp;p=326208" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./puzzle-60-t40408.html#p326208">Re: Puzzle 60</a></h3>
+			<p class="author"><a href="./post326208.html#p326208"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member5311.html">Cenoman</a></strong> &raquo; Mon Oct 03, 2022 3:09 pm </p>
+
+			
+
+			<div class="content"><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>&nbsp;+--------------------+------------------------+------------------------+<br />&nbsp;|&nbsp; 1&nbsp; &nbsp; &nbsp;3&nbsp; &nbsp; 5&nbsp; &nbsp; &nbsp; |&nbsp; 4689&nbsp; &nbsp;69&nbsp; &nbsp; &nbsp; 468&nbsp; &nbsp; |&nbsp; 46789&nbsp; &nbsp;679&nbsp; &nbsp; 2&nbsp; &nbsp; &nbsp; | <br />&nbsp;|&nbsp; 6&nbsp; &nbsp; &nbsp;4&nbsp; &nbsp; 7&nbsp; &nbsp; &nbsp; |&nbsp; 2589&nbsp; &nbsp;12359&nbsp; &nbsp;1238&nbsp; &nbsp;|&nbsp; 589&nbsp; &nbsp; &nbsp;1359&nbsp; &nbsp;138&nbsp; &nbsp; | <br />&nbsp;|&nbsp; 8&nbsp; &nbsp; &nbsp;2&nbsp; &nbsp; 9&nbsp; &nbsp; &nbsp; |&nbsp; 7&nbsp; &nbsp; &nbsp; 1356&nbsp; &nbsp; 1346&nbsp; &nbsp;|&nbsp; 456&nbsp; &nbsp; &nbsp;1356&nbsp; &nbsp;1346&nbsp; &nbsp;| <br />&nbsp;+--------------------+------------------------+------------------------+<br />&nbsp;|&nbsp; 349&nbsp; C89&nbsp; &nbsp;2348&nbsp; &nbsp;|&nbsp; 2469&nbsp; &nbsp;2679&nbsp; &nbsp; 5&nbsp; &nbsp; &nbsp; |&nbsp; 1&nbsp; &nbsp; &nbsp; &nbsp;2367&nbsp; B3678&nbsp; &nbsp;| <br />&nbsp;| b35-9&nbsp; 6&nbsp; &nbsp; 123&nbsp; &nbsp; |&nbsp; 29&nbsp; &nbsp; &nbsp;8&nbsp; &nbsp; &nbsp; &nbsp;127&nbsp; &nbsp; | a257&nbsp; &nbsp; &nbsp;4&nbsp; &nbsp; &nbsp; 37&nbsp; &nbsp; &nbsp;| <br />&nbsp;|&nbsp; 7&nbsp; &nbsp; &nbsp;15&nbsp; &nbsp;1248&nbsp; &nbsp;|&nbsp; 3&nbsp; &nbsp; &nbsp; 126&nbsp; &nbsp; &nbsp;1246&nbsp; &nbsp;| A2568&nbsp; &nbsp; 256&nbsp; &nbsp; 9&nbsp; &nbsp; &nbsp; | <br />&nbsp;+--------------------+------------------------+------------------------+<br />&nbsp;|&nbsp; 2&nbsp; &nbsp; D89&nbsp; &nbsp;3468&nbsp; &nbsp;|&nbsp; 1&nbsp; &nbsp; &nbsp; 367&nbsp; &nbsp; &nbsp;3678&nbsp; &nbsp;|&nbsp; 4679&nbsp; &nbsp; 679&nbsp; &nbsp; 5&nbsp; &nbsp; &nbsp; | <br />&nbsp;|zE39-5&nbsp; 7&nbsp; &nbsp; 136&nbsp; &nbsp; |&nbsp; 256&nbsp; &nbsp; 4&nbsp; &nbsp; &nbsp; &nbsp;236&nbsp; &nbsp; | y269&nbsp; &nbsp; &nbsp;8&nbsp; &nbsp; &nbsp; 16&nbsp; &nbsp; &nbsp;| <br />&nbsp;|&nbsp; 45&nbsp; &nbsp; 15&nbsp; &nbsp;1468&nbsp; &nbsp;|&nbsp; 2568&nbsp; &nbsp;2567&nbsp; &nbsp; 9&nbsp; &nbsp; &nbsp; |&nbsp; 3&nbsp; &nbsp; &nbsp; &nbsp;1267&nbsp; &nbsp;1467&nbsp; &nbsp;| <br />&nbsp;+--------------------+------------------------+------------------------+</code></dd></dl><br />1. Kraken column (2)r568c7<br />(2-5)r5c7 = (5)r5c1<br />(2-8)r6c7 = r4c9 - (8=9)r4c2 - r7c2 = (9)r8c1<br />(2-9)r8c7 = (9)r8c1<br /> =&gt;-5r8c1, -9 r5c1<br /><br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>&nbsp;+--------------------+------------------------+------------------------+<br />&nbsp;|&nbsp; 1&nbsp; &nbsp; &nbsp;3&nbsp; &nbsp; 5&nbsp; &nbsp; &nbsp; |&nbsp; 4689&nbsp; &nbsp;69&nbsp; &nbsp; &nbsp; 468&nbsp; &nbsp; |&nbsp; 46789&nbsp; &nbsp;679&nbsp; &nbsp; 2&nbsp; &nbsp; &nbsp; | <br />&nbsp;|&nbsp; 6&nbsp; &nbsp; &nbsp;4&nbsp; &nbsp; 7&nbsp; &nbsp; &nbsp; |&nbsp; 2589&nbsp; &nbsp;12359&nbsp; &nbsp;1238&nbsp; &nbsp;|&nbsp; 589&nbsp; &nbsp; &nbsp;1359&nbsp; &nbsp;138&nbsp; &nbsp; | <br />&nbsp;|&nbsp; 8&nbsp; &nbsp; &nbsp;2&nbsp; &nbsp; 9&nbsp; &nbsp; &nbsp; |&nbsp; 7&nbsp; &nbsp; &nbsp; 1356&nbsp; &nbsp; 1346&nbsp; &nbsp;|&nbsp; 456&nbsp; &nbsp; &nbsp;1356&nbsp; &nbsp;1346&nbsp; &nbsp;| <br />&nbsp;+--------------------+------------------------+------------------------+<br />&nbsp;|&nbsp; 349&nbsp; &nbsp;89&nbsp; &nbsp;2348&nbsp; &nbsp;|&nbsp; 2469&nbsp; &nbsp;2679&nbsp; &nbsp; 5&nbsp; &nbsp; &nbsp; |&nbsp; 1&nbsp; &nbsp; &nbsp; &nbsp;2367&nbsp; &nbsp;3678&nbsp; &nbsp;| <br />&nbsp;| b35&nbsp; &nbsp; 6&nbsp; &nbsp;d123&nbsp; &nbsp; |&nbsp; 29&nbsp; &nbsp; &nbsp;8&nbsp; &nbsp; &nbsp; e127&nbsp; &nbsp; |&nbsp; 257&nbsp; &nbsp; &nbsp;4&nbsp; &nbsp; &nbsp; 37&nbsp; &nbsp; &nbsp;| <br />&nbsp;|&nbsp; 7&nbsp; &nbsp; c15&nbsp; &nbsp;1248&nbsp; &nbsp;|&nbsp; 3&nbsp; &nbsp; &nbsp; 126&nbsp; &nbsp; &nbsp;1246&nbsp; &nbsp;|&nbsp; 2568&nbsp; &nbsp; 256&nbsp; &nbsp; 9&nbsp; &nbsp; &nbsp; | <br />&nbsp;+--------------------+------------------------+------------------------+<br />&nbsp;|&nbsp; 2&nbsp; &nbsp; a89&nbsp; &nbsp;3468&nbsp; &nbsp;|&nbsp; 1&nbsp; &nbsp; &nbsp; 367&nbsp; &nbsp; f367-8&nbsp; |&nbsp; 4679&nbsp; &nbsp; 679&nbsp; &nbsp; 5&nbsp; &nbsp; &nbsp; | <br />&nbsp;| b39&nbsp; &nbsp; 7&nbsp; &nbsp; 136&nbsp; &nbsp; |&nbsp; 256&nbsp; &nbsp; 4&nbsp; &nbsp; &nbsp; &nbsp;236&nbsp; &nbsp; |&nbsp; 269&nbsp; &nbsp; &nbsp;8&nbsp; &nbsp; &nbsp; 16&nbsp; &nbsp; &nbsp;| <br />&nbsp;|&nbsp; 45&nbsp; &nbsp; 15&nbsp; &nbsp;1468&nbsp; &nbsp;|&nbsp; 2568&nbsp; &nbsp;2567&nbsp; &nbsp; 9&nbsp; &nbsp; &nbsp; |&nbsp; 3&nbsp; &nbsp; &nbsp; &nbsp;1267&nbsp; &nbsp;1467&nbsp; &nbsp;| <br />&nbsp;+--------------------+------------------------+------------------------+</code></dd></dl><br />2. (8=9)r7c2 - (9=35)r58c1 - (5=1)r6c2 - r5c3 = (1-7)r5c6 = (7)r7c6 =&gt; -8 r7c6; lcls, 4 placements<br /><br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>&nbsp;+--------------------+---------------------+------------------------+<br />&nbsp;|&nbsp; 1&nbsp; &nbsp; &nbsp;3&nbsp; &nbsp; 5&nbsp; &nbsp; &nbsp; |Aa46&nbsp; &nbsp;69&nbsp; &nbsp; &nbsp;468&nbsp; &nbsp; | F46789&nbsp; &nbsp;679&nbsp; &nbsp; 2&nbsp; &nbsp; &nbsp; | <br />&nbsp;|&nbsp; 6&nbsp; &nbsp; &nbsp;4&nbsp; &nbsp; 7&nbsp; &nbsp; &nbsp; |&nbsp; 2&nbsp; &nbsp; 1359&nbsp; &nbsp;138&nbsp; &nbsp; |&nbsp; 589&nbsp; &nbsp; &nbsp;1359&nbsp; &nbsp;138&nbsp; &nbsp; | <br />&nbsp;|&nbsp; 8&nbsp; &nbsp; &nbsp;2&nbsp; &nbsp; 9&nbsp; &nbsp; &nbsp; |&nbsp; 7&nbsp; &nbsp; 1356&nbsp; &nbsp;1346&nbsp; &nbsp;|&nbsp; 456&nbsp; &nbsp; &nbsp;1356&nbsp; &nbsp;1346&nbsp; &nbsp;| <br />&nbsp;+--------------------+---------------------+------------------------+<br />&nbsp;|&nbsp; 349&nbsp; &nbsp;89&nbsp; &nbsp;2348&nbsp; &nbsp;|Bb46&nbsp; &nbsp;267&nbsp; &nbsp; 5&nbsp; &nbsp; &nbsp; |&nbsp; 1&nbsp; &nbsp; &nbsp; &nbsp;2367&nbsp; &nbsp;3678&nbsp; &nbsp;| <br />&nbsp;|&nbsp; 35&nbsp; &nbsp; 6&nbsp; &nbsp; 123&nbsp; &nbsp; |&nbsp; 9&nbsp; &nbsp; 8&nbsp; &nbsp; &nbsp; 127&nbsp; &nbsp; |&nbsp; 257&nbsp; &nbsp; &nbsp;4&nbsp; &nbsp; &nbsp; 37&nbsp; &nbsp; &nbsp;| <br />&nbsp;|&nbsp; 7&nbsp; &nbsp; &nbsp;15 Dd1248&nbsp; &nbsp;|&nbsp; 3&nbsp; &nbsp; 126&nbsp; Cc1246&nbsp; &nbsp;| E2568&nbsp; &nbsp; 256&nbsp; &nbsp; 9&nbsp; &nbsp; &nbsp; | <br />&nbsp;+--------------------+---------------------+------------------------+<br />&nbsp;|&nbsp; 2&nbsp; &nbsp; &nbsp;89&nbsp; e3468&nbsp; &nbsp;|&nbsp; 1&nbsp; &nbsp; 367&nbsp; &nbsp; 367&nbsp; &nbsp; | f4679&nbsp; &nbsp; 679&nbsp; &nbsp; 5&nbsp; &nbsp; &nbsp; | <br />&nbsp;|&nbsp; 39&nbsp; &nbsp; 7&nbsp; &nbsp; 136&nbsp; &nbsp; |&nbsp; 5&nbsp; &nbsp; 4&nbsp; &nbsp; &nbsp; 236&nbsp; &nbsp; |&nbsp; 269&nbsp; &nbsp; &nbsp;8&nbsp; &nbsp; &nbsp; 16&nbsp; &nbsp; &nbsp;| <br />&nbsp;|&nbsp; 45&nbsp; &nbsp; 15&nbsp; &nbsp;146&nbsp; &nbsp; |&nbsp; 8&nbsp; &nbsp; 267&nbsp; &nbsp; 9&nbsp; &nbsp; &nbsp; |&nbsp; 3&nbsp; &nbsp; &nbsp; &nbsp;1267&nbsp; &nbsp;1467&nbsp; &nbsp;| <br />&nbsp;+--------------------+---------------------+------------------------+</code></dd></dl><br />3. X-Chain: (4)r1c4 = r4c4 - r6c6 = r6c3 - r7c3 = r7c7 =&gt; -4 r1c7<br />4. (4)r1c4 = r4c4 - r6c6 = (4-8)r6c3 = r6c7 - r1c7 = (8)r1c6 =&gt; -4 r1c6; three placements<br /><br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>&nbsp;+--------------------+--------------------+-----------------------+<br />&nbsp;|&nbsp; 1&nbsp; &nbsp; &nbsp;3&nbsp; &nbsp; 5&nbsp; &nbsp; &nbsp; |&nbsp; 4&nbsp; &nbsp; 69&nbsp; &nbsp; &nbsp;68&nbsp; &nbsp; |&nbsp; 6789&nbsp; &nbsp;679&nbsp; &nbsp; 2&nbsp; &nbsp; &nbsp; | <br />&nbsp;|&nbsp; 6&nbsp; &nbsp; &nbsp;4&nbsp; &nbsp; 7&nbsp; &nbsp; &nbsp; |&nbsp; 2&nbsp; &nbsp; 1359&nbsp; &nbsp;138&nbsp; &nbsp;|&nbsp; 589&nbsp; &nbsp; 1359&nbsp; &nbsp;138&nbsp; &nbsp; | <br />&nbsp;|&nbsp; 8&nbsp; &nbsp; &nbsp;2&nbsp; &nbsp; 9&nbsp; &nbsp; &nbsp; |&nbsp; 7&nbsp; &nbsp; 1356&nbsp; &nbsp;136&nbsp; &nbsp;|&nbsp; 456&nbsp; &nbsp; 1356&nbsp; &nbsp;1346&nbsp; &nbsp;| <br />&nbsp;+--------------------+--------------------+-----------------------+<br />&nbsp;|&nbsp; 349&nbsp; &nbsp;89&nbsp; &nbsp;2348&nbsp; &nbsp;|&nbsp; 6&nbsp; &nbsp; 27&nbsp; &nbsp; &nbsp;5&nbsp; &nbsp; &nbsp;|&nbsp; 1&nbsp; &nbsp; &nbsp; 237&nbsp; &nbsp; 378&nbsp; &nbsp; | <br />&nbsp;|&nbsp; 35&nbsp; &nbsp; 6&nbsp; &nbsp;c123&nbsp; &nbsp; |&nbsp; 9&nbsp; &nbsp; 8&nbsp; &nbsp; &nbsp;d127&nbsp; &nbsp;|&nbsp; 257&nbsp; &nbsp; 4&nbsp; &nbsp; &nbsp; 37&nbsp; &nbsp; &nbsp;| <br />&nbsp;|&nbsp; 7&nbsp; &nbsp; &nbsp;15&nbsp; &nbsp;128&nbsp; &nbsp; |&nbsp; 3&nbsp; &nbsp; 12&nbsp; &nbsp; &nbsp;4&nbsp; &nbsp; &nbsp;|&nbsp; 2568&nbsp; &nbsp;256&nbsp; &nbsp; 9&nbsp; &nbsp; &nbsp; | <br />&nbsp;+--------------------+--------------------+-----------------------+<br />&nbsp;|&nbsp; 2&nbsp; &nbsp; &nbsp;89&nbsp; &nbsp;3468&nbsp; &nbsp;|&nbsp; 1&nbsp; &nbsp; 367&nbsp; &nbsp; 367&nbsp; &nbsp;|&nbsp; 4679&nbsp; &nbsp;679&nbsp; &nbsp; 5&nbsp; &nbsp; &nbsp; | <br />&nbsp;|&nbsp; 39&nbsp; &nbsp; 7&nbsp; &nbsp;b136&nbsp; &nbsp; |&nbsp; 5&nbsp; &nbsp; 4&nbsp; &nbsp; &nbsp;e236&nbsp; &nbsp;|&nbsp; 269&nbsp; &nbsp; 8&nbsp; &nbsp; &nbsp;a16&nbsp; &nbsp; &nbsp;| <br />&nbsp;|&nbsp; 45&nbsp; &nbsp; 15&nbsp; &nbsp;146&nbsp; &nbsp; |&nbsp; 8&nbsp; &nbsp;f267&nbsp; &nbsp; 9&nbsp; &nbsp; &nbsp;|&nbsp; 3&nbsp; &nbsp; &nbsp;g267-1&nbsp; 1467&nbsp; &nbsp;| <br />&nbsp;+--------------------+--------------------+-----------------------+</code></dd></dl><br />5. (1)r8c9 = r8c3 - r5c3 = (1-2)r5c6 = r8c6 - r9c5 = (2)r9c8 =&gt; -1 r9c8; lclste</div>
+
+			<div id="sig326208" class="signature">Cenoman</div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile326208">
+			<dt>
+				<a href="./member5311.html">Cenoman</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 1986</dd><dd><strong>Joined:</strong> 21 November 2016</dd><dd><strong>Location:</strong> Paris, France</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./puzzle-60-t40408.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p326227" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=33&amp;p=326227" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./puzzle-60-t40408.html#p326227">Re: Puzzle 60</a></h3>
+			<p class="author"><a href="./post326227.html#p326227"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member73131.html">P.O.</a></strong> &raquo; Mon Oct 03, 2022 5:52 pm </p>
+
+			
+
+			<div class="content">thank you for your answer, i hesitated to post this puzzle, it is certainly not easy to solve manually but i like its pattern with the repetition of 149 and 385; <br />@Cenoman: your first step with the elimination of two different candidates in two separate cells is interesting, i don't remember having done the same with a forcing chain. <br />my solution:<br /><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>c9n4{r3 r9} - c1n4{r9 r4} - c4n4{r4 r1} =&gt; r1c7 r3c6 &lt;&gt; 4<br /><br />r1n4{c4 c6} - r6n4{c6 c3} - r6n8{c3 c7} - r1n8{c7 c4} =&gt; r1c4 &lt;&gt; 6,9<br /><br />7r5c679 =&gt; r5c7 &lt;&gt; 2<br />&nbsp;r5c6=7 - r5n1{c7 c3} - r6c2{n1 n5} - r5n5{c1 c7}<br />&nbsp;r5c7=7<br />&nbsp;r5c9=7 - b5n7{r5c6 r4c5} - r9n7{c5 c8} - b9n2{r9c8 r8c7}<br />&nbsp;<br />138r2c9 =&gt; r6c7 &lt;&gt; 2<br />&nbsp;r2c9=1 - b9n1{r89c9 r9c8} - b9n2{r9c8 r8c7}<br />&nbsp;r2c9=3 - r5c9{n3 n7} - b5n7{r5c6 r4c5} - r9n7{c5 c8} - b9n2{r9c8 r8c7}<br />&nbsp;r2c9=8 - b6n8{r4c9 r6c7}<br /></code></dd></dl><br />bte:<br /><div style="padding: 3px; background-color: #FFFFFF; border: 1px solid #d8d8d8; font-size: 1em;"><div style="border-bottom: 1px solid #CCCCCC; margin-bottom: 3px; font-size: 0.9em; font-weight: bold; display: block;"><span onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') {  this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = ''; this.innerHTML = '<b>Hidden Text: </b><a href=\'#\' onclick=\'return false;\'>Hide</a>'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.innerHTML = '<b>Hidden Text: </b><a href=\'#\' onclick=\'return false;\'>Show</a>'; }" /><b>Hidden Text: </b><a href="#" onClick="return false;">Show</a></span></div><div class="quotecontent"><div style="display: none;"><dl class="codebox"><dt>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></dt><dd><code>&#40; n2r8c7&nbsp; &nbsp;n9r8c1&nbsp; &nbsp;n8r7c2&nbsp; &nbsp;n9r4c2&nbsp; &nbsp;n5r8c4&nbsp; &nbsp;n8r9c4&nbsp; &nbsp;n9r5c4 <br />&nbsp; n4r1c4&nbsp; &nbsp;n2r2c4&nbsp; &nbsp;n6r4c4&nbsp; &nbsp;n2r9c5&nbsp; &nbsp;n4r6c6&nbsp; &nbsp;n7r4c5&nbsp; &nbsp;n1r6c5 <br />&nbsp; n2r5c6&nbsp; &nbsp;n5r6c2&nbsp; &nbsp;n1r9c2&nbsp; &nbsp;n3r5c1&nbsp; &nbsp;n1r5c3&nbsp; &nbsp;n7r5c9&nbsp; &nbsp;n4r4c1 <br />&nbsp; n5r5c7&nbsp; &nbsp;n5r9c1&nbsp; &nbsp;n1r8c9&nbsp; &nbsp;n7r9c8&nbsp; &nbsp;n7r7c6&nbsp; &nbsp;n7r1c7&nbsp; &nbsp;n8r1c6 &#41;<br /><br />PAIR COL: &#40;&#40;1 8 3&#41; &#40;6 9&#41;&#41; &#40;&#40;7 8 9&#41; &#40;6 9&#41;&#41;&nbsp; <br />&#40;&#40;&#40;2 8 3&#41; &#40;1 3 5 9&#41;&#41; &#40;&#40;3 8 3&#41; &#40;1 3 5 6&#41;&#41; &#40;&#40;6 8 6&#41; &#40;2 6&#41;&#41;&#41;<br /><br />&#40; n2r6c8&nbsp; &nbsp;n3r4c8&nbsp; &nbsp;n8r4c9&nbsp; &nbsp;n8r6c3&nbsp; &nbsp;n6r6c7&nbsp; &nbsp;n3r2c9&nbsp; &nbsp;n4r3c7 <br />&nbsp; n6r3c9&nbsp; &nbsp;n2r4c3&nbsp; &nbsp;n9r7c7&nbsp; &nbsp;n6r7c8&nbsp; &nbsp;n4r9c9&nbsp; &nbsp;n9r1c8&nbsp; &nbsp;n1r2c6 <br />&nbsp; n8r2c7&nbsp; &nbsp;n5r2c8&nbsp; &nbsp;n3r3c6&nbsp; &nbsp;n1r3c8&nbsp; &nbsp;n3r7c5&nbsp; &nbsp;n6r8c6&nbsp; &nbsp;n6r9c3 <br />&nbsp; n6r1c5&nbsp; &nbsp;n9r2c5&nbsp; &nbsp;n5r3c5&nbsp; &nbsp;n4r7c3&nbsp; &nbsp;n3r8c3 &#41; <br /></code></dd></dl></div></div></div></div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile326227">
+			<dt>
+				<a href="./member73131.html">P.O.</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 380</dd><dd><strong>Joined:</strong> 07 June 2021</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./puzzle-60-t40408.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<form id="viewtopic" method="post" action="./puzzle-60-t40408.html">
+
+	<fieldset class="display-options" style="margin-top: 0; ">
+		
+		<label>Display posts from previous: <select name="st" id="st"><option value="0" selected="selected">All posts</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select></label>
+		<label>Sort by <select name="sk" id="sk"><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="s">Subject</option></select></label> <label><select name="sd" id="sd"><option value="a" selected="selected">Ascending</option><option value="d">Descending</option></select> <input type="submit" name="sort" value="Go" class="button2" /></label>
+		
+	</fieldset>
+
+	</form>
+	<hr />
+
+
+<div class="topic-actions">
+	<div class="buttons">
+	
+		<div class="reply-icon"><a href="./posting.php?mode=reply&amp;f=33&amp;t=40408" title="Post a reply"><span></span>Post a reply</a></div>
+	
+	</div>
+
+	
+		<div class="pagination">
+			3 posts
+			 &bull; Page <strong>1</strong> of <strong>1</strong>
+		</div>
+	
+</div>
+
+
+	<p></p><p><a href="./puzzles-f33.html" class="left-box left" accesskey="r">Return to Puzzles</a></p>
+
+	<form method="post" id="jumpbox" action="./viewforum.php" onsubmit="if(this.f.value == -1){return false;}">
+
+	
+		<fieldset class="jumpbox">
+	
+			<label for="f" accesskey="j">Jump to:</label>
+			<select name="f" id="f" onchange="if(this.options[this.selectedIndex].value != -1){ document.forms['jumpbox'].submit() }">
+			
+				<option value="-1">Select a forum</option>
+			<option value="-1">------------------</option>
+				<option value="9">News and announcements</option>
+			
+				<option value="10">&nbsp; &nbsp;About the New Sudoku Players' Forum</option>
+			
+				<option value="5">Sudoku: the puzzle</option>
+			
+				<option value="7">&nbsp; &nbsp;General</option>
+			
+				<option value="33" selected="selected">&nbsp; &nbsp;Puzzles</option>
+			
+				<option value="4">&nbsp; &nbsp;Help with puzzles and solving techniques</option>
+			
+				<option value="6">&nbsp; &nbsp;Advanced solving techniques</option>
+			
+				<option value="8">&nbsp; &nbsp;Interactive games</option>
+			
+				<option value="18">&nbsp; &nbsp;Software</option>
+			
+				<option value="16">Resources</option>
+			
+				<option value="32">&nbsp; &nbsp;Published puzzles</option>
+			
+				<option value="31">&nbsp; &nbsp;Books</option>
+			
+				<option value="17">&nbsp; &nbsp;On the web</option>
+			
+				<option value="11">Related puzzles</option>
+			
+				<option value="12">&nbsp; &nbsp;Sudoku variants</option>
+			
+				<option value="13">&nbsp; &nbsp;Kakuro</option>
+			
+				<option value="14">&nbsp; &nbsp;Other logic puzzles</option>
+			
+				<option value="15">&nbsp; &nbsp;Inventors' studio</option>
+			
+				<option value="19">Off-topic</option>
+			
+				<option value="20">&nbsp; &nbsp;Coffee bar</option>
+			
+				<option value="29">&nbsp; &nbsp;Forum questions and feedback</option>
+			
+			</select>
+			<input type="submit" value="Go" class="button2" />
+		</fieldset>
+	</form>
+
+</div>
+
+<div id="page-footer">
+
+	<div class="navbar">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<ul class="linklist">
+			<li class="icon-home"><a href="./" accesskey="h">Board index</a></li>
+				
+			<li class="rightside"><a href="./the-team.html">The team</a> &bull; <a href="./ucp.php?mode=delete_cookies">Delete all board cookies</a> &bull; All times are UTC </li>
+		</ul>
+		
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<div class="copyright">Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Group
+		<br /><br /><a href="http://www.phpbb-seo.com/" title="Search Engine Optimization"><img src="./images/phpbb-seo.png" alt="phpBB SEO"/></a>
+	</div>
+</div>
+
+</div>
+
+<div>
+	<a id="bottom" name="bottom" accesskey="z"></a>
+	<img src="./cron.php?cron_type=tidy_cache" width="1" height="1" alt="cron" />
+</div>
+
+</body>
+</html>

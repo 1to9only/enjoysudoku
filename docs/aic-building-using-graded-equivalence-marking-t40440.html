@@ -1,0 +1,569 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-gb" xml:lang="en-gb">
+<head>
+<base href="./"/>
+<link rel="canonical" href="./aic-building-using-graded-equivalence-marking-t40440.html" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>AIC building using Graded Equivalence Marking : Advanced solving techniques</title>
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="content-language" content="en-gb" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="content-language" content="en" />
+<meta name="title" content="AIC building using Graded Equivalence Marking : Advanced solving techniques" />
+<meta name="description" content="I'm learning this fantastic coloring technique, and using it to learn how to find AICs more consistently. I understand how to build chains whenever a ..." />
+<meta name="keywords" content="links, aic, eliminations, understand, marking, building, using, graded, equivalence, few, technique, such, link, least, list" />
+<meta name="category" content="general" />
+<meta name="robots" content="index,follow" />
+<meta name="distribution" content="global" />
+<meta name="resource-type" content="document" />
+<meta name="copyright" content="The New Sudoku Players Forum" />
+
+
+
+
+<!--
+	phpBB style name: prosilver
+	Based on style:   prosilver (this is the default phpBB3 style)
+	Original author:  Tom Beddard ( http://www.subBlue.com/ )
+	Modified by:
+-->
+
+<script type="text/javascript">
+// <![CDATA[
+	var jump_page = 'Enter the page number you wish to go to:';
+	var on_page = '1';
+	var per_page = '';
+	var base_url = '';
+	var style_cookie = 'phpBBstyle';
+	var style_cookie_settings = '; path=/; domain=forum.enjoysudoku.com';
+	var onload_functions = new Array();
+	var onunload_functions = new Array();
+	// www.phpBB-SEO.com SEO TOOLKIT BEGIN
+	var seo_delim_start = '-';
+	var seo_static_pagination = 'page';
+	var seo_ext_pagination = '.html';
+	var seo_external = true;
+	var seo_external_sub = false;
+	var seo_ext_classes = false;
+	var seo_hashfix = false;
+	// www.phpBB-SEO.com SEO TOOLKIT END
+
+	
+
+	/**
+	* Find a member
+	*/
+	function find_username(url)
+	{
+		popup(url, 760, 570, '_usersearch');
+		return false;
+	}
+
+	/**
+	* New function for handling multiple calls to window.onload and window.unload by pentapenguin
+	*/
+	window.onload = function()
+	{
+		for (var i = 0; i < onload_functions.length; i++)
+		{
+			eval(onload_functions[i]);
+		}
+	};
+
+	window.onunload = function()
+	{
+		for (var i = 0; i < onunload_functions.length; i++)
+		{
+			eval(onunload_functions[i]);
+		}
+	};
+
+// ]]>
+</script>
+<script type="text/javascript" src="./styles/prosilver/template/styleswitcher.js"></script>
+<script type="text/javascript" src="./styles/prosilver/template/forum_fn.js"></script>
+
+<link href="./styles/prosilver/theme/print.css" rel="stylesheet" type="text/css" media="print" title="printonly" />
+<link href="style.css" rel="stylesheet" type="text/css" media="screen, projection" />
+
+<link href="./styles/prosilver/theme/normal.css" rel="stylesheet" type="text/css" title="A" />
+<link href="./styles/prosilver/theme/medium.css" rel="alternate stylesheet" type="text/css" title="A+" />
+<link href="./styles/prosilver/theme/large.css" rel="alternate stylesheet" type="text/css" title="A++" />
+
+
+
+</head>
+
+<body id="phpbb" class="section-viewtopic ltr">
+
+<div id="wrap">
+	<a id="top" name="top" accesskey="t"></a>
+	<div id="page-header">
+		<div class="headerbar">
+			<div class="inner"><span class="corners-top"><span></span></span>
+
+			<div id="site-description">
+				<a href="./" title="Board index" id="logo"><img src="./styles/prosilver/imageset/site_logo.gif" width="52" height="52" alt="" title="" /></a>
+				<h1>The New Sudoku Players' Forum</h1>
+				<p>ARCHIVED by 1to9only</p>
+				<p class="skiplink"><a href="#start_here">Skip to content</a></p>
+			</div>
+
+		
+			<div id="search-box">
+				<form action="./search.php" method="get" id="search">
+				<fieldset>
+					<input name="keywords" id="keywords" type="text" maxlength="128" title="Search for keywords" class="inputbox search" value="Search…" onclick="if(this.value=='Search…')this.value='';" onblur="if(this.value=='')this.value='Search…';" />
+					<input class="button2" value="Search" type="submit" /><br />
+					<a href="./search.php" title="View the advanced search options">Advanced search</a> <input type="hidden" name="sid" value="00000000000000000000000000000000" />
+
+				</fieldset>
+				</form>
+			</div>
+		
+
+			<span class="corners-bottom"><span></span></span></div>
+		</div>
+
+		<div class="navbar">
+			<div class="inner"><span class="corners-top"><span></span></span>
+
+			<ul class="linklist navlinks">
+				<li class="icon-home"><a href="./" accesskey="h">Board index</a>  <strong>&#8249;</strong> <a href="./sudoku-the-puzzle-f5.html">Sudoku: the puzzle</a> <strong>&#8249;</strong> <a href="./advanced-solving-techniques-f6.html">Advanced solving techniques</a></li>
+
+				<li class="rightside"><a href="#" onclick="fontsizeup(); return false;" onkeypress="return fontsizeup(event);" class="fontsize" title="Change font size">Change font size</a></li>
+
+				<li class="rightside"><a href="./viewtopic.php?f=6&amp;t=40440&amp;start=0&amp;view=print" title="Print view" accesskey="p" class="print">Print view</a></li>
+			</ul>
+
+			
+
+			<ul class="linklist rightside">
+				<li class="icon-faq"><a href="./faq.php" title="Frequently Asked Questions">FAQ</a></li>
+				<li class="icon-register"><a href="./ucp.php?mode=register">Register</a></li>
+					<li class="icon-logout"><a href="./ucp.php?mode=login" title="Login" accesskey="x">Login</a></li>
+				
+			</ul>
+
+			<span class="corners-bottom"><span></span></span></div>
+		</div>
+
+	</div>
+
+	<a name="start_here"></a>
+	<div id="page-body">
+		
+<h2><a href="./aic-building-using-graded-equivalence-marking-t40440.html">AIC building using Graded Equivalence Marking</a></h2>
+<!-- NOTE: remove the style="display: none" when you want to have the forum description on the topic body --><div style="display: none !important;">Advanced methods and approaches for solving Sudoku puzzles<br /></div>
+
+<div class="topic-actions">
+
+	<div class="buttons">
+	
+		<div class="reply-icon"><a href="./posting.php?mode=reply&amp;f=6&amp;t=40440" title="Post a reply"><span></span>Post a reply</a></div>
+	
+	</div>
+
+	
+		<div class="search-box">
+			<form method="get" id="topic-search" action="./search.php">
+			<fieldset>
+				<input class="inputbox search tiny"  type="text" name="keywords" id="search_keywords" size="20" value="Search this topic…" onclick="if(this.value=='Search this topic…')this.value='';" onblur="if(this.value=='')this.value='Search this topic…';" />
+				<input class="button2" type="submit" value="Search" />
+				<input type="hidden" name="t" value="40440" />
+<input type="hidden" name="sf" value="msgonly" />
+<input type="hidden" name="sid" value="00000000000000000000000000000000" />
+
+			</fieldset>
+			</form>
+		</div>
+	
+		<div class="pagination">
+			6 posts
+			 &bull; Page <strong>1</strong> of <strong>1</strong>
+		</div>
+	
+
+</div>
+<div class="clear"></div>
+
+
+	<div id="p327244" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=327244" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 class="first"><a href="./aic-building-using-graded-equivalence-marking-t40440.html#p327244">AIC building using Graded Equivalence Marking</a></h3>
+			<p class="author"><a href="./post327244.html#p327244"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member95574.html">swolar</a></strong> &raquo; Sun Oct 16, 2022 3:46 am </p>
+
+			
+
+			<div class="content">I'm learning this fantastic coloring technique, and using it to learn how to find AICs more consistently. I understand how to build chains whenever a candidate gets marked by opposite sub par marks quite well. <br /><br />Now, I realized that it is possible to build a loop when coming across a super mark that sees a par mark that then gets promoted. I am wondering, is it is possible to build chains for all of the other promotion rules? And if so, how does one go about doing so? Is it also possible to build AICs whenever we come across a contradiction as well?<br /><br />I understand that I can let the GEM make the eliminations for me, but I'd like to use it to keep learning more about AIC building. It also feels more rewarding to do so  <img src="./images/smilies/icon_e_biggrin.gif" alt=":D" title="Very Happy" /> .</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile327244">
+			<dt>
+				<a href="./member95574.html">swolar</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 3</dd><dd><strong>Joined:</strong> 02 October 2022</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./aic-building-using-graded-equivalence-marking-t40440.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p327350" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=327350" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./aic-building-using-graded-equivalence-marking-t40440.html#p327350">Re: AIC building using Graded Equivalence Marking</a></h3>
+			<p class="author"><a href="./post327350.html#p327350"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member2491.html">StrmCkr</a></strong> &raquo; Wed Oct 19, 2022 2:31 am </p>
+
+			
+
+			<div class="content"><a href="./alternating-inference-chains-t3865.html" class="postlink" rel="nofollow">AIC</a><br /><br /><a href="./post265734.html#p265734" class="postlink" rel="nofollow">strong links</a></div>
+
+			<div id="sig327350" class="signature">Some do, some teach, the rest look it up.<br /><a href="./stormdoku-t32977.html" class="postlink" rel="nofollow">stormdoku</a></div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile327350">
+			<dt>
+				<a href="./member2491.html"><img src="./download/2491_1274596818.jpg" width="89" height="93" alt="User avatar" /></a><br />
+				<a href="./member2491.html">StrmCkr</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 1310</dd><dd><strong>Joined:</strong> 05 September 2006</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./aic-building-using-graded-equivalence-marking-t40440.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p327721" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=327721" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./aic-building-using-graded-equivalence-marking-t40440.html#p327721">Re: AIC building using Graded Equivalence Marking</a></h3>
+			<p class="author"><a href="./post327721.html#p327721"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member95574.html">swolar</a></strong> &raquo; Sun Oct 23, 2022 9:58 pm </p>
+
+			
+
+			<div class="content">Thanks for the links, but I understand AICs and their logic well enough. Maybe I didn't explain what I was looking for clearly.<br /><br />I want a tool that helps me analyze a puzzle and find chains more consistently. <br />I was looking at GEM for its ability to do so, but I am not clear on how I can construct chains after using some of its promotion rules. Particularly, the rule that allows you to promote the last unmarked candidate in a house when all the others are already sub-marked with the same parity.</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile327721">
+			<dt>
+				<a href="./member95574.html">swolar</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 3</dd><dd><strong>Joined:</strong> 02 October 2022</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./aic-building-using-graded-equivalence-marking-t40440.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p327734" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=327734" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./aic-building-using-graded-equivalence-marking-t40440.html#p327734">Re: AIC building using Graded Equivalence Marking</a></h3>
+			<p class="author"><a href="./post327734.html#p327734"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member2491.html">StrmCkr</a></strong> &raquo; Mon Oct 24, 2022 8:35 am </p>
+
+			
+
+			<div class="content">What your asking for is a program that pre generates all the node connections from each starting point <br />Elimination code walks the list. <br />... <br /><br />Gem is a manual version of tree walking strong links. With visual indicates for the branch connection points. <br /> <br />there is no on/off for subdigits in a cell technically from an aic. Perspective its a collection of nodes that's is both ( truth&amp; fasle) at each node. <br />... <br />Very few on here use gem markups let alone code it as dosent change what code already does as it makes it more cluttered. <br /> At least in my point of view. <br /><br />Download hodoku:<br /> In the preference and setting tabs change find <br />1 elimination per chain uncheck the box<br />Change the depth search functions to max <br /> Then use the find all <br />  Hodoku is mostly coded with niceloops logic (which are still. Aics with more clutter) <br /><br />That should help teach how to spot them more frequently.</div>
+
+			<div id="sig327734" class="signature">Some do, some teach, the rest look it up.<br /><a href="./stormdoku-t32977.html" class="postlink" rel="nofollow">stormdoku</a></div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile327734">
+			<dt>
+				<a href="./member2491.html"><img src="./download/2491_1274596818.jpg" width="89" height="93" alt="User avatar" /></a><br />
+				<a href="./member2491.html">StrmCkr</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 1310</dd><dd><strong>Joined:</strong> 05 September 2006</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./aic-building-using-graded-equivalence-marking-t40440.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p327757" class="post bg2">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=327757" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./aic-building-using-graded-equivalence-marking-t40440.html#p327757">Re: AIC building using Graded Equivalence Marking</a></h3>
+			<p class="author"><a href="./post327757.html#p327757"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member95574.html">swolar</a></strong> &raquo; Mon Oct 24, 2022 5:51 pm </p>
+
+			
+
+			<div class="content">Thank you for the reply.<br />I didn't explain myself clearly again. By &quot;tool&quot; I didn't mean a software or program, but rather a technique that I can use when solving a puzzle to help me analyze it. I am aware that more advanced players can find chains without such techniques, but that is because through experience they have developed their own intuition or heuristics of how to find them. And I wanted to use Graded Equivalence Marking (or some technique like it), to find that intuition for myself.<br /><br />Using the &quot;find all moves&quot; on hodoku has certainly helped me before, but I still have trouble finding chains that jump around all over the place.</div>
+
+			
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile327757">
+			<dt>
+				<a href="./member95574.html">swolar</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 3</dd><dd><strong>Joined:</strong> 02 October 2022</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./aic-building-using-graded-equivalence-marking-t40440.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<div id="p327778" class="post bg1">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<div class="postbody">
+			
+				<ul class="profile-icons">
+					<li class="quote-icon"><a href="./posting.php?mode=quote&amp;f=6&amp;p=327778" title="Reply with quote"><span>Reply with quote</span></a></li>
+				</ul>
+			
+
+			<h3 ><a href="./aic-building-using-graded-equivalence-marking-t40440.html#p327778">Re: AIC building using Graded Equivalence Marking</a></h3>
+			<p class="author"><a href="./post327778.html#p327778"><img src="./styles/prosilver/imageset/icon_post_target.gif" width="11" height="9" alt="Post" title="Post" /></a>by <strong><a href="./member2491.html">StrmCkr</a></strong> &raquo; Tue Oct 25, 2022 2:48 am </p>
+
+			
+
+			<div class="content"><img src="./images/smilies/icon_e_biggrin.gif" alt=":D" title="Very Happy" /> Honestly it's not from tools like gem   which add extra ticks and crosses to points where chain end. Or change to next didigt should be considered. <br /><br />knowing how they are constructed that we follow around the grid..<br /><br />Sector by sector connecting same digit<br />sector to cell for digit swap.<br /><br />This ends up being many dead ends or ineffective chains. <br /><br />For me chain buikding works like this <br /><br />Use the digit highlight button.. <br /> Look for any 1 sector that makes a strong link. Mark these cells with a colour. <br /><br /> Toogle through the next 8 digits and see if their is another. <br />  Strong link overtop either or both endpoints...  Mark the cells. <br />Repeat. If the cells can't be linked for a new digit add the same digit to it if it can. <br />If not end the chain search <br />   Apply the rules of AIC for eliminations. <br /><br /> Chains that are beyond 3 strong links and 2 weak links which is 3 sectors at most <br />  Take a very long time to find and  they aren't fast unless your lucky. <br /><br /> Some people do apply this searching method as bfs and instead of marking all cells uses as both true or false.. <br /> they use forcing methods to follow the what if around..</div>
+
+			<div id="sig327778" class="signature">Some do, some teach, the rest look it up.<br /><a href="./stormdoku-t32977.html" class="postlink" rel="nofollow">stormdoku</a></div>
+
+		</div>
+
+		
+			<dl class="postprofile" id="profile327778">
+			<dt>
+				<a href="./member2491.html"><img src="./download/2491_1274596818.jpg" width="89" height="93" alt="User avatar" /></a><br />
+				<a href="./member2491.html">StrmCkr</a>
+			</dt>
+
+			
+
+		<dd>&nbsp;</dd>
+
+		<dd><strong>Posts:</strong> 1310</dd><dd><strong>Joined:</strong> 05 September 2006</dd>
+
+		</dl>
+	
+
+		<div class="back2top"><a href="./aic-building-using-graded-equivalence-marking-t40440.html#wrap" class="top" title="Top">Top</a></div>
+
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<hr class="divider" />
+
+	<form id="viewtopic" method="post" action="./aic-building-using-graded-equivalence-marking-t40440.html">
+
+	<fieldset class="display-options" style="margin-top: 0; ">
+		
+		<label>Display posts from previous: <select name="st" id="st"><option value="0" selected="selected">All posts</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select></label>
+		<label>Sort by <select name="sk" id="sk"><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="s">Subject</option></select></label> <label><select name="sd" id="sd"><option value="a" selected="selected">Ascending</option><option value="d">Descending</option></select> <input type="submit" name="sort" value="Go" class="button2" /></label>
+		
+	</fieldset>
+
+	</form>
+	<hr />
+
+
+<div class="topic-actions">
+	<div class="buttons">
+	
+		<div class="reply-icon"><a href="./posting.php?mode=reply&amp;f=6&amp;t=40440" title="Post a reply"><span></span>Post a reply</a></div>
+	
+	</div>
+
+	
+		<div class="pagination">
+			6 posts
+			 &bull; Page <strong>1</strong> of <strong>1</strong>
+		</div>
+	
+</div>
+
+
+	<p></p><p><a href="./advanced-solving-techniques-f6.html" class="left-box left" accesskey="r">Return to Advanced solving techniques</a></p>
+
+	<form method="post" id="jumpbox" action="./viewforum.php" onsubmit="if(this.f.value == -1){return false;}">
+
+	
+		<fieldset class="jumpbox">
+	
+			<label for="f" accesskey="j">Jump to:</label>
+			<select name="f" id="f" onchange="if(this.options[this.selectedIndex].value != -1){ document.forms['jumpbox'].submit() }">
+			
+				<option value="-1">Select a forum</option>
+			<option value="-1">------------------</option>
+				<option value="9">News and announcements</option>
+			
+				<option value="10">&nbsp; &nbsp;About the New Sudoku Players' Forum</option>
+			
+				<option value="5">Sudoku: the puzzle</option>
+			
+				<option value="7">&nbsp; &nbsp;General</option>
+			
+				<option value="33">&nbsp; &nbsp;Puzzles</option>
+			
+				<option value="4">&nbsp; &nbsp;Help with puzzles and solving techniques</option>
+			
+				<option value="6" selected="selected">&nbsp; &nbsp;Advanced solving techniques</option>
+			
+				<option value="8">&nbsp; &nbsp;Interactive games</option>
+			
+				<option value="18">&nbsp; &nbsp;Software</option>
+			
+				<option value="16">Resources</option>
+			
+				<option value="32">&nbsp; &nbsp;Published puzzles</option>
+			
+				<option value="31">&nbsp; &nbsp;Books</option>
+			
+				<option value="17">&nbsp; &nbsp;On the web</option>
+			
+				<option value="11">Related puzzles</option>
+			
+				<option value="12">&nbsp; &nbsp;Sudoku variants</option>
+			
+				<option value="13">&nbsp; &nbsp;Kakuro</option>
+			
+				<option value="14">&nbsp; &nbsp;Other logic puzzles</option>
+			
+				<option value="15">&nbsp; &nbsp;Inventors' studio</option>
+			
+				<option value="19">Off-topic</option>
+			
+				<option value="20">&nbsp; &nbsp;Coffee bar</option>
+			
+				<option value="29">&nbsp; &nbsp;Forum questions and feedback</option>
+			
+			</select>
+			<input type="submit" value="Go" class="button2" />
+		</fieldset>
+	</form>
+
+</div>
+
+<div id="page-footer">
+
+	<div class="navbar">
+		<div class="inner"><span class="corners-top"><span></span></span>
+
+		<ul class="linklist">
+			<li class="icon-home"><a href="./" accesskey="h">Board index</a></li>
+				
+			<li class="rightside"><a href="./the-team.html">The team</a> &bull; <a href="./ucp.php?mode=delete_cookies">Delete all board cookies</a> &bull; All times are UTC </li>
+		</ul>
+		
+		<span class="corners-bottom"><span></span></span></div>
+	</div>
+
+	<div class="copyright">Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Group
+		<br /><br /><a href="http://www.phpbb-seo.com/" title="Search Engine Optimization"><img src="./images/phpbb-seo.png" alt="phpBB SEO"/></a>
+	</div>
+</div>
+
+</div>
+
+<div>
+	<a id="bottom" name="bottom" accesskey="z"></a>
+	
+</div>
+
+</body>
+</html>
